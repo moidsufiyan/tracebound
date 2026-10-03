@@ -1,0 +1,56 @@
+case_id: TB-0003
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "honojs/hono"
+  url: "https://github.com/honojs/hono"
+  language: TypeScript
+  base_commit: "e5bb2062a3ddd645e3a16d1300bd76d6c9af33a5"
+
+source_change:
+  commit: "afb2068c1c53a530528ac5f237e245793dd03c07"
+  pr_url: "https://github.com/honojs/hono/pull/5391"
+  description: "fix(combine): return a Response from a short-circuiting middleware in some()"
+  change_type:
+    - bugfix
+  change_timestamp: "2026-09-30T17:48:22+09:00"
+  evaluation_cutoff: "2026-09-30T17:48:22+09:00"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "src/middleware/combine/index.ts"
+    symbols:
+      - name: "some"
+        kind: function
+  - path: "src/middleware/combine/index.test.ts"
+    symbols:
+      - name: "some"
+        kind: function
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit in the honojs/hono repository"
+  size: null
+  notes: "Evaluating test discovery"
+
+candidates:
+  - artifact_id: C01
+    path: "src/middleware/combine/index.test.ts"
+    content_hash_at_base: "e63f3bd0f90ec364ca15b9210c256e3b23444ee6"
+    artifact_type: test
+    relationship: test-of
+    evidence:
+      - type: structural
+        description: "The test file is colocated in the same directory as index.ts and imports the some() function directly."
+      - type: human
+        description: "A bug fix in the middleware logic strictly requires updating the test file to assert the newly handled short-circuiting Response behavior."
+    relevance: direct-impact
+    labeling_rationale: "The test file asserts the behavior of the middleware module being fixed, requiring co-modification to capture the regression."
+    ambiguity_notes: null
+    label_confidence: high
+    labeled_by: "author"
+    labeled_at: "2026-10-03"
+
+notes: "Pilot case 3 using Hono to test retrieving closely coupled unit tests for a middleware bugfix."

@@ -1,0 +1,56 @@
+case_id: TB-0001
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "moidsufiyan/wollyway"
+  url: "https://github.com/moidsufiyan/wollyway"
+  language: TypeScript
+  base_commit: "bc84e844730daeaec1176656a448adf4e324b61d"
+
+source_change:
+  commit: "a0885a13d3d17eb6eeace9acb681b8b6c0e851a5"
+  pr_url: null
+  description: "Fix checkout lua script typo and add active reservation stock reduction guard to inventory service"
+  change_type:
+    - bugfix
+  change_timestamp: "2026-09-05T23:06:00+05:30"
+  evaluation_cutoff: "2026-09-05T23:06:00+05:30"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "backend/src/services/checkout.service.ts"
+    symbols:
+      - name: "RELEASE_LOCK_LUA"
+        kind: variable
+  - path: "backend/src/services/inventory.service.ts"
+    symbols:
+      - name: "InventoryService.updateStock"
+        kind: function
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit in the backend/src directory"
+  size: null
+  notes: "Focusing on backend services logic"
+
+candidates:
+  - artifact_id: C01
+    path: "backend/src/services/checkout.service.ts"
+    content_hash_at_base: "4a1442b698166e910b80be0223136c14bbb0793e"
+    artifact_type: source
+    relationship: co-changes-with
+    evidence:
+      - type: structural
+        description: "inventory.service.ts was modified to import and depend on checkoutService from checkout.service.ts"
+      - type: human
+        description: "A developer fixing the inventory reservation flaw would need to understand or modify the checkout lock mechanism."
+    relevance: direct-impact
+    labeling_rationale: "Both files were changed together because the bug spanned across inventory stock reduction checks and the checkout lock release logic."
+    ambiguity_notes: null
+    label_confidence: high
+    labeled_by: "author"
+    labeled_at: "2026-10-03"
+
+notes: "Pilot case 1 to test contemporaneous evaluation with cross-domain service dependencies."

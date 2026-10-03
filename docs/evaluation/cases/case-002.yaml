@@ -1,0 +1,55 @@
+case_id: TB-0002
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "moidsufiyan/wollyway"
+  url: "https://github.com/moidsufiyan/wollyway"
+  language: TypeScript
+  base_commit: "42f7453562f2c7e148b3b34cfe325fde4739bbb7"
+
+source_change:
+  commit: "b80220d9c21a2a47a6c32ae1ad81eff3ec49bc9f"
+  pr_url: null
+  description: "Remove stale refunded state from order lifecycle across full stack and documentation"
+  change_type:
+    - feature
+    - documentation
+  change_timestamp: "2026-09-06T00:23:42+05:30"
+  evaluation_cutoff: "2026-09-06T00:23:42+05:30"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "backend/src/constants/index.ts"
+    symbols:
+      - name: "ORDER_STATUS"
+        kind: variable
+  - path: "backend/docs/architecture/order-lifecycle.md"
+    symbols: []
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit across both backend and frontend directories"
+  size: null
+  notes: "Full-stack case evaluating if code changes pull in corresponding architecture documentation"
+
+candidates:
+  - artifact_id: C01
+    path: "backend/docs/architecture/order-lifecycle.md"
+    content_hash_at_base: "c72ca93e34e862c4e25d13dde53448e8c7decc82"
+    artifact_type: documentation
+    relationship: documents
+    evidence:
+      - type: semantic
+        description: "The document describes the order state machine and explicitly diagrams the REFUNDED state."
+      - type: human
+        description: "When modifying global state enums like ORDER_STATUS, architectural documentation must be updated to remain accurate."
+    relevance: direct-impact
+    labeling_rationale: "The documentation diagram explicitly contained the 'REFUNDED' state transition which was being removed in code, requiring synchronized removal to prevent stale architecture documentation."
+    ambiguity_notes: null
+    label_confidence: high
+    labeled_by: "author"
+    labeled_at: "2026-10-03"
+
+notes: "Pilot case 2 to test retrieval of documentation artifacts based on changes to source code constants."

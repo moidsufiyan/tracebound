@@ -31,6 +31,16 @@ Follow-up: Next question or action this finding generates
 
 ## Log
 
+---
+Date: 2026-10-03
+Question: What TypeScript/JavaScript repositories would be good evaluation targets? What properties matter? (Q3)
+Source: Direct observation of `moidsufiyan/wollyway` and `honojs/hono` commit histories during pilot case construction (TB-0001, TB-0002, TB-0003).
+Finding: Both repositories offer distinct, valuable evaluation properties. WollyWay provides excellent examples of cross-domain full-stack couplings (e.g., frontend React components, backend models, and architectural markdown documentation all co-changing). Hono provides a modular, highly tested framework structure where bug fixes frequently involve tightly coupled colocated unit tests.
+Confidence: High. 3 real, structurally diverse cases were successfully generated from these repositories, demonstrating their viability.
+Implication: Tracebound must handle diverse relationship types: structural (co-located tests), semantic/lexical (architectural documentation), and cross-domain references.
+Follow-up: How reliably can deterministic tools (like tsserver) extract cross-domain relationships compared to co-change history?
+---
+
 <!-- No entries yet. Add the first entry when research begins. -->
 
 <!-- Example entry (do not treat as real data):
