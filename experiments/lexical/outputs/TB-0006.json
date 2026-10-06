@@ -1,0 +1,1934 @@
+{
+  "case_id": "TB-0006",
+  "query_terms": [
+    "fix",
+    "catalog",
+    "correct",
+    "inventory",
+    "discovery",
+    "category",
+    "archive",
+    "checks",
+    "controller",
+    "delete",
+    "repository",
+    "get",
+    "product",
+    "ids",
+    "stock",
+    "deletecategory",
+    "getproductidsinstock"
+  ],
+  "metrics": {
+    "total_retrieved": 229,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 226
+  },
+  "relevant_found": [
+    {
+      "path": "backend/docs/database/inventory-domain.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'correct'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "WOLLYWAY_CONTEXT.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'catalog'",
+        "Content matched token: 'correct'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/checkout-order-contract.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/search-performance.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'catalog'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/package-lock.json",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/scripts/verify-order-domain.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correct'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/scripts/verify-payment-domain.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'category'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/app.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'category'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/constants/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'catalog'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/health.controller.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'controller'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/services/order.service.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "bun.lockb",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "components.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "docs/backend-architecture-blueprint.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'catalog'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "docs/frontend/phase-5.1-walkthrough.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correct'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "package-lock.json",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'get'",
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "package.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "postcss.config.mjs",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/ProductBundle.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/components/ProductDetailsTabs.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/ProductGrid.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/components/ProductQuickView.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/components/order/OrderDetailsCard.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductReviewCard.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductReviewsSection.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/product/RelatedProducts.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/ui/alert-dialog.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/ui/drawer.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/ui/sidebar.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/ui/toast.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/user/OrderCard.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/lib/api-client.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/BundleDetail.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/CheckoutSuccess.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/Index.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/Shop.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/views/Wishlist.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'category'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "tailwind.config.js",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'correct'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "CHECKOUT_STATE_MACHINE.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'correct'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/product-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/docs/business-rules.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/category-domain.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'category'",
+        "Path matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/product-domain.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/config/swagger.config.ts",
+      "evidence": [
+        "Content matched token: 'catalog'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/cart.repository.ts",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'repository'",
+        "Path matched token: 'repository'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/cart.routes.ts",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/category.routes.ts",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'category'",
+        "Path matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'deletecategory'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/product.routes.ts",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/services/cart.service.ts",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "docs/adr/0001-nextjs-migration.md",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/services/cart.service.ts",
+      "evidence": [
+        "Content matched token: 'catalog'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/auth.controller.ts",
+      "evidence": [
+        "Content matched token: 'correct'",
+        "Content matched token: 'checks'",
+        "Path matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/models/inventory-transaction.model.ts",
+      "evidence": [
+        "Content matched token: 'correct'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/services/inventory.service.ts",
+      "evidence": [
+        "Content matched token: 'correct'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/inventory.validator.ts",
+      "evidence": [
+        "Content matched token: 'correct'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "docs/frontend/authentication.md",
+      "evidence": [
+        "Content matched token: 'correct'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "docs/frontend/backend-integration.md",
+      "evidence": [
+        "Content matched token: 'correct'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "next.config.ts",
+      "evidence": [
+        "Content matched token: 'correct'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/order-api.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/product-api.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/checkout-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'get'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/cross-domain-interaction-matrix.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/inventory-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/wishlist-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/cart-checkout-contract.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/wishlist-future-roadmap.md",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/builders/product.query-builder.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/inventory.controller.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Path matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/order.controller.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Path matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/product.mapper.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/models/inventory.model.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/product.repository.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'repository'",
+        "Path matched token: 'repository'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/checkout.routes.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/inventory.routes.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/order.routes.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/services/checkout.service.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/services/product.service.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'getproductidsinstock'"
+      ]
+    },
+    {
+      "path": "backend/src/services/wishlist.service.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'getproductidsinstock'"
+      ]
+    },
+    {
+      "path": "backend/src/types/discovery.types.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Path matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/types/Product.ts",
+      "evidence": [
+        "Content matched token: 'inventory'",
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/models/product.model.ts",
+      "evidence": [
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/product.validator.ts",
+      "evidence": [
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/hooks/useProductSearch.ts",
+      "evidence": [
+        "Content matched token: 'discovery'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/hooks/useProducts.ts",
+      "evidence": [
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/services/product.service.ts",
+      "evidence": [
+        "Content matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/types/discovery.types.ts",
+      "evidence": [
+        "Content matched token: 'discovery'",
+        "Path matched token: 'discovery'",
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/cart-api.md",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/wishlist-api.md",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/cart-item.mapper.ts",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/wishlist.mapper.ts",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/models/category.model.ts",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Path matched token: 'category'",
+        "Content matched token: 'archive'"
+      ]
+    },
+    {
+      "path": "backend/src/types/cart.types.ts",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/types/wishlist.types.ts",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/category.validator.ts",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Path matched token: 'category'",
+        "Content matched token: 'archive'"
+      ]
+    },
+    {
+      "path": "docs/adr/0003-api-adapter-pattern.md",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/Collections.tsx",
+      "evidence": [
+        "Content matched token: 'category'"
+      ]
+    },
+    {
+      "path": "src/components/FeaturedProducts.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/ProductFilters.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/components/SearchBar.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/SearchPage.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductBreadcrumb.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductInfo.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/data/products.json",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/types/cart.types.ts",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/types/wishlist.types.ts",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/views/Bundles.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/Cart.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/views/FAQ.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/views/Support.tsx",
+      "evidence": [
+        "Content matched token: 'category'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/cart-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'archive'",
+        "Content matched token: 'checks'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/wishlist-domain.md",
+      "evidence": [
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/product.controller.ts",
+      "evidence": [
+        "Content matched token: 'archive'",
+        "Path matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/wishlist.routes.ts",
+      "evidence": [
+        "Content matched token: 'archive'",
+        "Content matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/types/checkout.types.ts",
+      "evidence": [
+        "Content matched token: 'archive'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "docs/business-rules.md",
+      "evidence": [
+        "Content matched token: 'archive'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": ".github/workflows/backend-ci.yml",
+      "evidence": [
+        "Content matched token: 'checks'",
+        "Content matched token: 'repository'"
+      ]
+    },
+    {
+      "path": "backend/README.md",
+      "evidence": [
+        "Content matched token: 'checks'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/wishlist.repository.ts",
+      "evidence": [
+        "Content matched token: 'checks'",
+        "Content matched token: 'repository'",
+        "Path matched token: 'repository'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'checks'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "middleware.ts",
+      "evidence": [
+        "Content matched token: 'checks'"
+      ]
+    },
+    {
+      "path": "src/components/auth/PasswordStrengthMeter.tsx",
+      "evidence": [
+        "Content matched token: 'checks'"
+      ]
+    },
+    {
+      "path": "src/services/wishlist.service.ts",
+      "evidence": [
+        "Content matched token: 'checks'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "tsconfig.json",
+      "evidence": [
+        "Content matched token: 'checks'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'controller'",
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/auth.routes.ts",
+      "evidence": [
+        "Content matched token: 'controller'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/health.routes.ts",
+      "evidence": [
+        "Content matched token: 'controller'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/payment.routes.ts",
+      "evidence": [
+        "Content matched token: 'controller'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/user.routes.ts",
+      "evidence": [
+        "Content matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "docs/frontend/phase-5.1-audit-report.md",
+      "evidence": [
+        "Content matched token: 'controller'",
+        "Content matched token: 'repository'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/ui/form.tsx",
+      "evidence": [
+        "Content matched token: 'controller'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/services/auth.service.ts",
+      "evidence": [
+        "Content matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/types/auth.ts",
+      "evidence": [
+        "Content matched token: 'controller'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/cart.controller.ts",
+      "evidence": [
+        "Path matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/checkout.controller.ts",
+      "evidence": [
+        "Path matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/payment.controller.ts",
+      "evidence": [
+        "Path matched token: 'controller'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/user.controller.ts",
+      "evidence": [
+        "Path matched token: 'controller'",
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/wishlist.controller.ts",
+      "evidence": [
+        "Path matched token: 'controller'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/docs/integrations/cloudinary.md",
+      "evidence": [
+        "Content matched token: 'delete'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/checkout.repository.ts",
+      "evidence": [
+        "Content matched token: 'delete'",
+        "Content matched token: 'repository'",
+        "Path matched token: 'repository'"
+      ]
+    },
+    {
+      "path": "backend/src/services/cloudinary.service.ts",
+      "evidence": [
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "src/App.tsx",
+      "evidence": [
+        "Content matched token: 'delete'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/user/AddressCard.tsx",
+      "evidence": [
+        "Content matched token: 'delete'"
+      ]
+    },
+    {
+      "path": "src/hooks/use-toast.ts",
+      "evidence": [
+        "Content matched token: 'delete'"
+      ]
+    },
+    {
+      "path": "src/views/PrivacyPolicy.tsx",
+      "evidence": [
+        "Content matched token: 'delete'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/Profile.tsx",
+      "evidence": [
+        "Content matched token: 'delete'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "README.md",
+      "evidence": [
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/order.repository.ts",
+      "evidence": [
+        "Content matched token: 'repository'",
+        "Path matched token: 'repository'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/payment.repository.ts",
+      "evidence": [
+        "Content matched token: 'repository'",
+        "Path matched token: 'repository'"
+      ]
+    },
+    {
+      "path": "backend/src/services/payment.service.ts",
+      "evidence": [
+        "Content matched token: 'repository'",
+        "Content matched token: 'get'",
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/checkout-api.md",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/checkout-domain.md",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/adapters/payment/payment-provider.factory.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/adapters/payment/razorpay.adapter.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/config/cloudinary.config.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/config/redis.config.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/middlewares/auth.middleware.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "backend/src/utils/logger.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "docs/frontend/http-client.md",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "docs/frontend/session-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "scripts/migrate-link-props.ps1",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "scripts/migrate-router.ps1",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/components/ProductQA.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/ReferralProgram.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/auth/AuthGuard.tsx",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductGallery.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductReviewForm.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/product/PromoBanner.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Path matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/contexts/AuthContext.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/contexts/CartContext.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/contexts/WishlistContext.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/hooks/useOrders.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/hooks/useSocialLogin.ts",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/lib/auth-token.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/services/ProductDataService.ts",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/services/checkout.service.ts",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/services/order.service.ts",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/utils/currency.ts",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/views/Checkout.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/Contact.tsx",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/views/Login.tsx",
+      "evidence": [
+        "Content matched token: 'get'"
+      ]
+    },
+    {
+      "path": "src/views/OrderTracking.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/ProductDetail.tsx",
+      "evidence": [
+        "Content matched token: 'get'",
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": ".env.example",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "app/(shop)/product/[id]/page.tsx",
+      "evidence": [
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "app/globals.css",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "app/layout.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/Dockerfile",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/cart-domain.md",
+      "evidence": [
+        "Content matched token: 'product'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/order-domain.md",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/user-domain.md",
+      "evidence": [
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "backend/src/config/db.config.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/config/env.config.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/order.mapper.ts",
+      "evidence": [
+        "Content matched token: 'product'",
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "backend/src/models/cart.model.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/models/checkout-session.model.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/models/order.model.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/models/user.model.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/models/wishlist.model.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/types/order.types.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/cart.validator.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/common.validator.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/wishlist.validator.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/Features.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/Hero.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/LoyaltyPoints.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/ProductSort.tsx",
+      "evidence": [
+        "Content matched token: 'product'",
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/SocialShareButtons.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/index.css",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/types/review.ts",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/About.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/ReturnPolicy.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/SizeGuidePage.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/views/TermsOfService.tsx",
+      "evidence": [
+        "Content matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/product/FeatureCards.tsx",
+      "evidence": [
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "src/components/product/StarRating.tsx",
+      "evidence": [
+        "Path matched token: 'product'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/payment-api.md",
+      "evidence": [
+        "Content matched token: 'ids'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "docs/adr/0004-authentication-strategy.md",
+      "evidence": [
+        "Content matched token: 'ids'"
+      ]
+    },
+    {
+      "path": "backend/src/server.ts",
+      "evidence": [
+        "Content matched token: 'stock'"
+      ]
+    }
+  ]
+}

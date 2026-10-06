@@ -1,0 +1,1883 @@
+{
+  "case_id": "TB-0005",
+  "metrics": {
+    "total_candidates": 187,
+    "truth_rank": 2,
+    "top_1": false,
+    "top_3": true,
+    "top_5": true,
+    "top_10": true,
+    "top_20": true
+  },
+  "top_20_candidates": [
+    {
+      "rank": 1,
+      "path": "src/utils/ipaddr.test.ts",
+      "rank_name": "1. Critical Structural (Incoming Dependent / Test)",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 2,
+      "path": "src/middleware/ip-restriction/index.ts",
+      "rank_name": "1. Critical Structural (Incoming Dependent / Test)",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "is_truth": true
+    },
+    {
+      "rank": 3,
+      "path": "bun.lock",
+      "rank_name": "3. Strong Lexical (High Content Density)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 4,
+      "path": "src/helper/conninfo/index.ts",
+      "rank_name": "4. Weak Structural (Outgoing Dependency)",
+      "signals": [
+        "B1"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 5,
+      "path": "src/utils/color.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 6,
+      "path": "src/utils/cookie.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 7,
+      "path": "src/jsx/utils.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 8,
+      "path": "src/validator/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 9,
+      "path": "src/client/utils.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 10,
+      "path": "src/utils/cookie.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 11,
+      "path": "src/utils/filepath.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 12,
+      "path": "src/helper/streaming/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 13,
+      "path": "src/jsx/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 14,
+      "path": "src/utils/url.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 15,
+      "path": "src/utils/body.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 16,
+      "path": "src/utils/html.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 17,
+      "path": "src/utils/mime.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 18,
+      "path": "src/utils/types.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 19,
+      "path": "src/client/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 20,
+      "path": "src/utils/accept.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    }
+  ],
+  "all_candidates": [
+    {
+      "rank": 1,
+      "path": "src/utils/ipaddr.test.ts",
+      "rank_name": "1. Critical Structural (Incoming Dependent / Test)",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 2,
+      "path": "src/middleware/ip-restriction/index.ts",
+      "rank_name": "1. Critical Structural (Incoming Dependent / Test)",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "is_truth": true
+    },
+    {
+      "rank": 3,
+      "path": "bun.lock",
+      "rank_name": "3. Strong Lexical (High Content Density)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 4,
+      "path": "src/helper/conninfo/index.ts",
+      "rank_name": "4. Weak Structural (Outgoing Dependency)",
+      "signals": [
+        "B1"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 5,
+      "path": "src/utils/color.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 6,
+      "path": "src/utils/cookie.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 7,
+      "path": "src/jsx/utils.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 8,
+      "path": "src/validator/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 9,
+      "path": "src/client/utils.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 10,
+      "path": "src/utils/cookie.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 11,
+      "path": "src/utils/filepath.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 12,
+      "path": "src/helper/streaming/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 13,
+      "path": "src/jsx/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 14,
+      "path": "src/utils/url.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 15,
+      "path": "src/utils/body.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 16,
+      "path": "src/utils/html.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 17,
+      "path": "src/utils/mime.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 18,
+      "path": "src/utils/types.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 19,
+      "path": "src/client/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 20,
+      "path": "src/utils/accept.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 21,
+      "path": "src/utils/buffer.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 22,
+      "path": "src/utils/crypto.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 23,
+      "path": "src/utils/encode.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 24,
+      "path": "src/utils/stream.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 25,
+      "path": "src/jsx/dom/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 26,
+      "path": "src/utils/handler.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 27,
+      "path": "src/utils/headers.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 28,
+      "path": "src/utils/jwt/jwa.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 29,
+      "path": "src/utils/jwt/jws.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 30,
+      "path": "src/utils/jwt/jwt.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 31,
+      "path": "src/utils/compress.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 32,
+      "path": "src/utils/filepath.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 33,
+      "path": "src/utils/jwt/utf8.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 34,
+      "path": "src/utils/url.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 35,
+      "path": "src/utils/body.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 36,
+      "path": "src/utils/constants.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 37,
+      "path": "src/utils/html.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 38,
+      "path": "src/utils/jwt/index.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 39,
+      "path": "src/utils/jwt/types.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 40,
+      "path": "src/utils/mime.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 41,
+      "path": "src/helper/ssg/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 42,
+      "path": "src/utils/basic-auth.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 43,
+      "path": "src/utils/color.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 44,
+      "path": "src/utils/concurrent.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 45,
+      "path": "src/utils/types.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 46,
+      "path": "src/utils/accept.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 47,
+      "path": "src/utils/buffer.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 48,
+      "path": "src/utils/crypto.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 49,
+      "path": "src/utils/encode.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 50,
+      "path": "src/utils/http-status.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 51,
+      "path": "src/utils/stream.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 52,
+      "path": "src/utils/jwt/jwa.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 53,
+      "path": "src/utils/jwt/jwt.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 54,
+      "path": "benchmarks/utils/.gitignore",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 55,
+      "path": "src/validator/utils.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 56,
+      "path": "benchmarks/utils/src/loop.js",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 57,
+      "path": "src/helper/ssg/utils.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 58,
+      "path": "src/utils/basic-auth.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 59,
+      "path": "src/utils/concurrent.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 60,
+      "path": ".github/workflows/autofix.yml",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 61,
+      "path": "benchmarks/utils/package.json",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 62,
+      "path": "benchmarks/utils/src/get-path.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 63,
+      "path": "src/adapter/cloudflare-workers/utils.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 64,
+      "path": "src/adapter/cloudflare-workers/utils.test.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 65,
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 66,
+      "path": "src/client/types.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 67,
+      "path": "benchmarks/routers/bun.lock",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 68,
+      "path": "benchmarks/http-server/benchmark.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 69,
+      "path": "jsr.json",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 70,
+      "path": "package.json",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 71,
+      "path": "src/types.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 72,
+      "path": "src/hono-base.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 73,
+      "path": "src/hono.test.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 74,
+      "path": "src/client/client.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 75,
+      "path": "src/jsx/dom/render.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 76,
+      "path": "src/jsx/dom/server.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 77,
+      "path": "build/validate-exports.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 78,
+      "path": "src/helper/route/index.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 79,
+      "path": "src/middleware/jwk/jwk.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 80,
+      "path": "src/middleware/jwt/jwt.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 81,
+      "path": "src/helper/cookie/index.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 82,
+      "path": "src/adapter/bun/conninfo.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 83,
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 84,
+      "path": "src/helper/conninfo/types.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 85,
+      "path": "src/middleware/etag/index.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 86,
+      "path": "src/jsx/intrinsic-elements.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 87,
+      "path": "src/helper/route/index.test.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 88,
+      "path": "src/middleware/logger/index.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 89,
+      "path": "src/middleware/jwk/index.test.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 90,
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 91,
+      "path": "src/middleware/bearer-auth/index.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 92,
+      "path": "src/middleware/language/language.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 93,
+      "path": "src/middleware/language/index.test.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 94,
+      "path": "README.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 95,
+      "path": "src/context.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 96,
+      "path": "src/request.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 97,
+      "path": "src/jsx/base.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 98,
+      "path": "vitest.config.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 99,
+      "path": "src/types.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 100,
+      "path": "src/jsx/context.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 101,
+      "path": "src/client/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 102,
+      "path": "docs/CONTRIBUTING.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 103,
+      "path": "src/jsx/streaming.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 104,
+      "path": ".vscode/settings.json",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 105,
+      "path": "src/helper/ssg/ssg.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 106,
+      "path": "src/http-exception.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 107,
+      "path": "src/jsx/components.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 108,
+      "path": "src/jsx/dom/context.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 109,
+      "path": "src/jsx/hooks/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 110,
+      "path": "src/jsx/index.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 111,
+      "path": "src/jsx/jsx-runtime.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 112,
+      "path": "src/validator/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 113,
+      "path": "docs/CODE_OF_CONDUCT.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 114,
+      "path": "src/helper/css/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 115,
+      "path": "src/helper/dev/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 116,
+      "path": ".github/workflows/cr.yml",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 117,
+      "path": "benchmarks/jsx/yarn.lock",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 118,
+      "path": "src/client/types.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 119,
+      "path": "src/helper/html/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 120,
+      "path": "src/client/client.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 121,
+      "path": "src/helper/proxy/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 122,
+      "path": "benchmarks/fetch/bench.mts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 123,
+      "path": "src/jsx/jsx-dev-runtime.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 124,
+      "path": "src/jsx/streaming.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 125,
+      "path": "src/validator/validator.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 126,
+      "path": "src/helper/streaming/sse.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 127,
+      "path": "src/helper/testing/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 128,
+      "path": "src/jsx/components.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 129,
+      "path": "src/jsx/dom/server.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 130,
+      "path": "src/middleware/jwt/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 131,
+      "path": "src/helper/ssg/middleware.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 132,
+      "path": "src/helper/streaming/text.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 133,
+      "path": "src/jsx/jsx-runtime.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 134,
+      "path": "src/helper/accepts/accepts.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 135,
+      "path": "src/helper/css/index.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 136,
+      "path": "src/helper/html/index.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 137,
+      "path": "src/helper/websocket/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 138,
+      "path": "src/middleware/cache/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 139,
+      "path": "benchmarks/fetch/summarize.mts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 140,
+      "path": "build/remove-private-fields.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 141,
+      "path": "runtime-tests/workerd/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 142,
+      "path": "src/helper/streaming/stream.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 143,
+      "path": "src/router/common.case.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 144,
+      "path": "src/router/trie-router/node.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 145,
+      "path": "benchmarks/fetch/ts-resolve.mjs",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 146,
+      "path": "runtime-tests/bun/color.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 147,
+      "path": "src/adapter/aws-lambda/types.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 148,
+      "path": "src/helper/cookie/index.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 149,
+      "path": "src/helper/ssg/plugins.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 150,
+      "path": "src/middleware/timing/timing.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 151,
+      "path": "src/validator/validator.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 152,
+      "path": ".github/pull_request_template.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 153,
+      "path": "benchmarks/query-param/bun.lockb",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 154,
+      "path": "src/adapter/bun/conninfo.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 155,
+      "path": "src/helper/factory/index.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 156,
+      "path": "src/middleware/compress/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 157,
+      "path": "src/middleware/jwt/index.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 158,
+      "path": "src/router/trie-router/router.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 159,
+      "path": "src/router/reg-exp-router/node.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 160,
+      "path": "runtime-tests/lambda/index.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 161,
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 162,
+      "path": "src/helper/accepts/accepts.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 163,
+      "path": "src/middleware/basic-auth/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 164,
+      "path": "src/middleware/cache/index.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 165,
+      "path": "src/router/linear-router/router.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 166,
+      "path": "benchmarks/query-param/src/hono.mts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 167,
+      "path": "runtime-tests/deno-jsx/jsx.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 168,
+      "path": "runtime-tests/lambda/stream.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 169,
+      "path": "src/router/pattern-router/router.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 170,
+      "path": "src/router/reg-exp-router/router.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 171,
+      "path": "src/router/trie-router/node.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 172,
+      "path": "benchmarks/query-param/src/bench.mts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 173,
+      "path": "src/middleware/serve-static/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 174,
+      "path": "src/adapter/aws-lambda/handler.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 175,
+      "path": ".github/ISSUE_TEMPLATE/1-bug-report.yml",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 176,
+      "path": "src/adapter/aws-lambda/conninfo.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 177,
+      "path": "src/adapter/lambda-edge/handler.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 178,
+      "path": "src/jsx/intrinsic-element/components.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 179,
+      "path": "src/middleware/method-override/index.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 180,
+      "path": "benchmarks/query-param/package-lock.json",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 181,
+      "path": "runtime-tests/deno/.vscode/settings.json",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 182,
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 183,
+      "path": "benchmarks/routers-deno/.vscode/settings.json",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 184,
+      "path": "src/jsx/intrinsic-element/components.test.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 185,
+      "path": "src/adapter/cloudflare-workers/serve-static.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 186,
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 187,
+      "path": "perf-measures/bundle-check/scripts/check-bundle-size.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    }
+  ]
+}

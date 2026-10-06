@@ -1,0 +1,14 @@
+{
+  "case_id": "TB-0006",
+  "metrics": {
+    "total_retrieved": 0,
+    "relevant_found": 0,
+    "relevant_missed": 1,
+    "false_positives": 0
+  },
+  "relevant_found": [],
+  "relevant_missed": [
+    "backend/docs/database/inventory-domain.md"
+  ],
+  "false_positives": []
+}

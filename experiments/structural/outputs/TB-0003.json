@@ -1,0 +1,57 @@
+{
+  "case_id": "TB-0003",
+  "metrics": {
+    "total_retrieved": 8,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 6
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/middleware/combine/index.test.ts) imports changed source at line 1: `import { every, except, some } from '.'`"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/compose.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 6: `import { compose } from '../../compose'`"
+      ]
+    },
+    {
+      "path": "src/context.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 7: `import { Context } from '../../context'`"
+      ]
+    },
+    {
+      "path": "src/router.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 8: `import { METHOD_NAME_ALL } from '../../router'`"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/index.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 9: `import { TrieRouter } from '../../router/trie-router'`"
+      ]
+    },
+    {
+      "path": "src/types.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 10: `import { MiddlewareHandler, Next } from '../../types'`",
+        "[Direct Import] Source artifact (src/middleware/combine/index.test.ts) imports candidate at line 3: `import { MiddlewareHandler } from '../../types'`"
+      ]
+    },
+    {
+      "path": "src/hono.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.test.ts) imports candidate at line 2: `import { Hono } from '../../hono'`"
+      ]
+    }
+  ]
+}

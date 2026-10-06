@@ -15,7 +15,7 @@ We examined candidate commits from the histories of both WollyWay and Hono, filt
 1. `42f7453 fix(cart): preserve unrelated items during order completion`
    * *Status*: Excluded. The commit mixed business logic fixes for cart state with an unrelated archived category check in `product.service.ts`. This dual-purpose change would confuse the ground truth labeling.
 2. `a0885a1 fix(inventory): protect reservations and release checkout locks`
-   * *Status*: **Selected (TB-0001)**. A clean cross-domain bugfix. The inventory service was modified to import and depend on a method from the checkout service. This is an excellent case for evaluating structural and logical dependency retrieval.
+   * *Status*: **Repaired (TB-0001)**. Originally selected for cross-domain bugfixing, the case initially contained a methodological error (hindsight leakage): it claimed structural evidence for a relationship that was only introduced *by* the commit. The case was repaired by removing the hindsight-biased structural candidate and introducing a genuinely unchanged candidate (`backend/docs/architecture/checkout-lifecycle.md`) that documents the exact reservation lock mechanism being modified. This provides a rigorous test of semantic and architectural documentation traceability without violating the temporal cutoff.
 3. `b80220d fix(order): remove stale refunded state`
    * *Status*: **Selected (TB-0002)**. A massive cross-cutting change across models, validators, APIs, React components, and architecture documentation (`order-lifecycle.md`). This case tests if code changes can successfully pull in related architectural documentation using semantic and structural evidence.
 4. `cfd8793 fix(catalog): correct inventory discovery and category archive checks`
@@ -27,7 +27,12 @@ We examined candidate commits from the histories of both WollyWay and Hono, filt
 2. `f23b146a fix(jsx): allow JSXNode function component results`
    * *Status*: Excluded. A good candidate for JSX typings, but TB-0003 provided a cleaner short-circuiting middleware logic fix.
 
-## Methodological Adherence
+## Methodological Adherence & Unchanged Artifacts
+
+During dataset repair, the repository was audited for investigation-worthy candidates that were **unchanged** by the target commits:
+* **TB-0001**: Successfully identified `backend/docs/architecture/checkout-lifecycle.md` as an unchanged artifact that thoroughly documents the locking mechanism being debugged.
+* **TB-0002**: No unchanged candidates could be defensibly established because the global rename/removal operation touched every single file referencing `REFUNDED`.
+* **TB-0003**: No unchanged candidates could be defensibly established; the fix was isolated strictly to the middleware file and its corresponding test.
 
 For all selected cases:
 * The `base_commit` was explicitly captured to define the exact state of the repository before the change was made.

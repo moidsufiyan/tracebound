@@ -1,0 +1,52 @@
+case_id: TB-0009
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "honojs/hono"
+  url: "https://github.com/honojs/hono"
+  language: TypeScript
+  base_commit: "5e5b83d6ed963a2bc7d8384002e1c953648253b1~1"
+
+source_change:
+  commit: "5e5b83d6ed963a2bc7d8384002e1c953648253b1"
+  pr_url: "https://github.com/honojs/hono/pull/5274"
+  description: "fix(utils/stream): do not let abort listeners crash abort()"
+  change_type:
+    - bugfix
+  change_timestamp: "2026-08-23T16:34:05+09:00"
+  evaluation_cutoff: "2026-08-23T16:34:05+09:00"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "src/utils/stream.ts"
+    symbols:
+      - name: "StreamingApi.abort"
+        kind: function
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit"
+  size: null
+  notes: "Focusing on negative false-positive resistance"
+
+candidates:
+  - artifact_id: C01
+    path: "src/helper/streaming/stream.ts"
+    content_hash_at_base: null
+    artifact_type: source
+    relationship: none
+    evidence:
+      - type: structural
+        description: "The streaming helper uses `utils/stream`."
+      - type: human
+        description: "The change in `utils/stream` is purely internal (swallowing abort errors). It does not change the API contract or the expected behavior for dependents. Dependents like `stream.ts` generate structural signals but do NOT require investigation."
+    relevance: not-relevant
+    labeling_rationale: "Negative case: Tests false-positive resistance. Structural dependants of `utils/stream` should not be falsely flagged as investigation-worthy when an internal implementation detail is patched."
+    ambiguity_notes: null
+    label_confidence: high
+    labeled_by: "author"
+    labeled_at: "2026-10-03"
+
+notes: "Benchmark Expansion: Category 9 - Negative Case"

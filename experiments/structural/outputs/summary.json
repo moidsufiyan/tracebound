@@ -1,0 +1,305 @@
+{
+  "TB-0001": {
+    "case_id": "TB-0001",
+    "metrics": {
+      "total_retrieved": 0,
+      "relevant_found": 0,
+      "relevant_missed": 1,
+      "false_positives": 0
+    },
+    "relevant_found": [],
+    "relevant_missed": [
+      "backend/docs/architecture/checkout-lifecycle.md"
+    ],
+    "false_positives": []
+  },
+  "TB-0002": {
+    "case_id": "TB-0002",
+    "metrics": {
+      "total_retrieved": 0,
+      "relevant_found": 0,
+      "relevant_missed": 1,
+      "false_positives": 0
+    },
+    "relevant_found": [],
+    "relevant_missed": [
+      "backend/docs/architecture/order-lifecycle.md"
+    ],
+    "false_positives": []
+  },
+  "TB-0003": {
+    "case_id": "TB-0003",
+    "metrics": {
+      "total_retrieved": 8,
+      "relevant_found": 1,
+      "relevant_missed": 0,
+      "false_positives": 6
+    },
+    "relevant_found": [
+      {
+        "path": "src/middleware/combine/index.test.ts",
+        "evidence": [
+          "[Test-to-Source Dependency] Test artifact (src/middleware/combine/index.test.ts) imports changed source at line 1: `import { every, except, some } from '.'`"
+        ]
+      }
+    ],
+    "relevant_missed": [],
+    "false_positives": [
+      {
+        "path": "src/compose.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 6: `import { compose } from '../../compose'`"
+        ]
+      },
+      {
+        "path": "src/context.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 7: `import { Context } from '../../context'`"
+        ]
+      },
+      {
+        "path": "src/router.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 8: `import { METHOD_NAME_ALL } from '../../router'`"
+        ]
+      },
+      {
+        "path": "src/router/trie-router/index.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 9: `import { TrieRouter } from '../../router/trie-router'`"
+        ]
+      },
+      {
+        "path": "src/types.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 10: `import { MiddlewareHandler, Next } from '../../types'`",
+          "[Direct Import] Source artifact (src/middleware/combine/index.test.ts) imports candidate at line 3: `import { MiddlewareHandler } from '../../types'`"
+        ]
+      },
+      {
+        "path": "src/hono.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/middleware/combine/index.test.ts) imports candidate at line 2: `import { Hono } from '../../hono'`"
+        ]
+      }
+    ]
+  },
+  "TB-0004": {
+    "case_id": "TB-0004",
+    "metrics": {
+      "total_retrieved": 3,
+      "relevant_found": 1,
+      "relevant_missed": 0,
+      "false_positives": 2
+    },
+    "relevant_found": [
+      {
+        "path": "src/middleware/etag/index.test.ts",
+        "evidence": [
+          "[Test-to-Source Dependency] Test artifact (src/middleware/etag/index.test.ts) imports changed source at line 1: `import { RETAINED_304_HEADERS, etag } from '.'`"
+        ]
+      }
+    ],
+    "relevant_missed": [],
+    "false_positives": [
+      {
+        "path": "src/types.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/middleware/etag/index.ts) imports candidate at line 6: `import { MiddlewareHandler } from '../../types'`"
+        ]
+      },
+      {
+        "path": "src/middleware/etag/digest.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/middleware/etag/index.ts) imports candidate at line 7: `import { generateDigest } from './digest'`"
+        ]
+      }
+    ]
+  },
+  "TB-0005": {
+    "case_id": "TB-0005",
+    "metrics": {
+      "total_retrieved": 3,
+      "relevant_found": 1,
+      "relevant_missed": 0,
+      "false_positives": 2
+    },
+    "relevant_found": [
+      {
+        "path": "src/middleware/ip-restriction/index.ts",
+        "evidence": [
+          "[Reverse Import] Candidate artifact (src/middleware/ip-restriction/index.ts) imports changed source at line 9: `import { InvalidIPAddressError } from '../../utils/ipaddr'`",
+          "[Reverse Import] Candidate artifact (src/middleware/ip-restriction/index.ts) imports changed source at line 10: `import { convertIPv4MappedIPv6ToIPv4, convertIPv4ToBinary, convertIPv6BinaryToString, convertIPv6ToBinary, distinctRemoteAddr, isIPv4MappedIPv6, INVALID_IP_ADDRESS_ERROR_CODE } from '../../utils/ipaddr'`"
+        ]
+      }
+    ],
+    "relevant_missed": [],
+    "false_positives": [
+      {
+        "path": "src/helper/conninfo/index.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/utils/ipaddr.ts) imports candidate at line 6: `import { AddressType } from '../helper/conninfo'`"
+        ]
+      },
+      {
+        "path": "src/utils/ipaddr.test.ts",
+        "evidence": [
+          "[Test-to-Source Dependency] Test artifact (src/utils/ipaddr.test.ts) imports changed source at line 1: `import { convertIPv4BinaryToString, convertIPv4ToBinary, convertIPv6BinaryToString, convertIPv6ToBinary, distinctRemoteAddr, expandIPv6, INVALID_IP_ADDRESS_ERROR_CODE } from './ipaddr'`"
+        ]
+      }
+    ]
+  },
+  "TB-0006": {
+    "case_id": "TB-0006",
+    "metrics": {
+      "total_retrieved": 0,
+      "relevant_found": 0,
+      "relevant_missed": 1,
+      "false_positives": 0
+    },
+    "relevant_found": [],
+    "relevant_missed": [
+      "backend/docs/database/inventory-domain.md"
+    ],
+    "false_positives": []
+  },
+  "TB-0007": {
+    "case_id": "TB-0007",
+    "metrics": {
+      "total_retrieved": 0,
+      "relevant_found": 0,
+      "relevant_missed": 1,
+      "false_positives": 0
+    },
+    "relevant_found": [],
+    "relevant_missed": [
+      "backend/docs/architecture/order-lifecycle.md"
+    ],
+    "false_positives": []
+  },
+  "TB-0008": {
+    "case_id": "TB-0008",
+    "metrics": {
+      "total_retrieved": 12,
+      "relevant_found": 0,
+      "relevant_missed": 0,
+      "false_positives": 12
+    },
+    "relevant_found": [],
+    "relevant_missed": [],
+    "false_positives": [
+      {
+        "path": "src/http-exception.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 2: `import { HTTPException } from './http-exception'`"
+        ]
+      },
+      {
+        "path": "src/request/constants.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 3: `import { GET_MATCH_RESULT } from './request/constants'`"
+        ]
+      },
+      {
+        "path": "src/router.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 4: `import { Result } from './router'`"
+        ]
+      },
+      {
+        "path": "src/types.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 5: `import { Input, InputToDataByTarget, ParamKeyToRecord, ParamKeys, RemoveQuestion, RouterRoute, ValidationTargets } from './types'`"
+        ]
+      },
+      {
+        "path": "src/utils/body.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 14: `import { parseBody } from './utils/body'`",
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 15: `import { BodyData, ParseBodyOptions } from './utils/body'`",
+          "[Reverse Import] Candidate artifact (src/utils/body.ts) imports changed source at line 6: `import { HonoRequest } from '../request'`"
+        ]
+      },
+      {
+        "path": "src/utils/headers.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 16: `import { CustomHeader, RequestHeader } from './utils/headers'`"
+        ]
+      },
+      {
+        "path": "src/utils/types.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 17: `import { Simplify, UnionToIntersection } from './utils/types'`"
+        ]
+      },
+      {
+        "path": "src/utils/url.ts",
+        "evidence": [
+          "[Direct Import] Source artifact (src/request.ts) imports candidate at line 18: `import { getQueryParam, getQueryParams, tryDecodeURIComponent } from './utils/url'`"
+        ]
+      },
+      {
+        "path": "src/context.ts",
+        "evidence": [
+          "[Reverse Import] Candidate artifact (src/context.ts) imports changed source at line 1: `import { HonoRequest } from './request'`"
+        ]
+      },
+      {
+        "path": "src/middleware/cache/index.ts",
+        "evidence": [
+          "[Reverse Import] Candidate artifact (src/middleware/cache/index.ts) imports changed source at line 7: `import { cloneRawRequest } from '../../request'`"
+        ]
+      },
+      {
+        "path": "src/request.test.ts",
+        "evidence": [
+          "[Test-to-Source Dependency] Test artifact (src/request.test.ts) imports changed source at line 2: `import { cloneRawRequest, HonoRequest } from './request'`"
+        ]
+      },
+      {
+        "path": "src/validator/validator.test.ts",
+        "evidence": [
+          "[Test-to-Source Dependency] Test artifact (src/validator/validator.test.ts) imports changed source at line 6: `import { cloneRawRequest } from '../request'`"
+        ]
+      }
+    ]
+  },
+  "TB-0009": {
+    "case_id": "TB-0009",
+    "metrics": {
+      "total_retrieved": 4,
+      "relevant_found": 1,
+      "relevant_missed": 0,
+      "false_positives": 3
+    },
+    "relevant_found": [
+      {
+        "path": "src/helper/streaming/stream.ts",
+        "evidence": [
+          "[Reverse Import] Candidate artifact (src/helper/streaming/stream.ts) imports changed source at line 2: `import { StreamingApi } from '../../utils/stream'`"
+        ]
+      }
+    ],
+    "relevant_missed": [],
+    "false_positives": [
+      {
+        "path": "src/helper/streaming/sse.ts",
+        "evidence": [
+          "[Reverse Import] Candidate artifact (src/helper/streaming/sse.ts) imports changed source at line 3: `import { StreamingApi } from '../../utils/stream'`"
+        ]
+      },
+      {
+        "path": "src/helper/streaming/text.ts",
+        "evidence": [
+          "[Reverse Import] Candidate artifact (src/helper/streaming/text.ts) imports changed source at line 3: `import { StreamingApi } from '../../utils/stream'`"
+        ]
+      },
+      {
+        "path": "src/utils/stream.test.ts",
+        "evidence": [
+          "[Test-to-Source Dependency] Test artifact (src/utils/stream.test.ts) imports changed source at line 1: `import { StreamingApi } from './stream'`"
+        ]
+      }
+    ]
+  }
+}

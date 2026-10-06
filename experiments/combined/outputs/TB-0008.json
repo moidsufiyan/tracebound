@@ -1,0 +1,4640 @@
+{
+  "case_id": "TB-0008",
+  "metrics": {
+    "b1_retrieved": 12,
+    "b2_retrieved": 392,
+    "union_retrieved": 393,
+    "relevant_found": 0,
+    "relevant_missed": 0,
+    "false_positives": 393,
+    "only_b1": 0,
+    "only_b2": 0,
+    "both": 0,
+    "changed_relevant": 0,
+    "unchanged_relevant": 0
+  },
+  "relevant_found": [],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/http-exception.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 2: `import { HTTPException } from './http-exception'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/request/constants.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 3: `import { GET_MATCH_RESULT } from './request/constants'`"
+      ],
+      "b2_evidence": [
+        "Path matched token: 'request'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/router.ts",
+      "signals": [
+        "B1"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 4: `import { Result } from './router'`"
+      ],
+      "b2_evidence": [],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/types.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 5: `import { Input, InputToDataByTarget, ParamKeyToRecord, ParamKeys, RemoveQuestion, RouterRoute, ValidationTargets } from './types'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/utils/body.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 14: `import { parseBody } from './utils/body'`",
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 15: `import { BodyData, ParseBodyOptions } from './utils/body'`",
+        "[Reverse Import] Candidate artifact (src/utils/body.ts) imports changed source at line 6: `import { HonoRequest } from '../request'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 16: `import { CustomHeader, RequestHeader } from './utils/headers'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/utils/types.ts",
+      "signals": [
+        "B1"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 17: `import { Simplify, UnionToIntersection } from './utils/types'`"
+      ],
+      "b2_evidence": [],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/utils/url.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 18: `import { getQueryParam, getQueryParams, tryDecodeURIComponent } from './utils/url'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/context.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Reverse Import] Candidate artifact (src/context.ts) imports changed source at line 1: `import { HonoRequest } from './request'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Reverse Import] Candidate artifact (src/middleware/cache/index.ts) imports changed source at line 7: `import { cloneRawRequest } from '../../request'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/request.test.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/request.test.ts) imports changed source at line 2: `import { cloneRawRequest, HonoRequest } from './request'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Path matched token: 'request'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/validator/validator.test.ts) imports changed source at line 6: `import { cloneRawRequest } from '../request'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/2-feature-request.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Path matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": ".github/workflows/autofix.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Path matched token: 'fix'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/test/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/fetch/bench.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/fetch/ts-resolve.mjs",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/MIGRATION.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/hono.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'",
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/client.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/cookie/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/hono-base.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'",
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/hono.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'",
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/jsx/jsx-runtime.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwk/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwk/jwk.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/language/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/request-id/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Path matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/request-id/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Path matched token: 'request'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/request-id/request-id.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Path matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/router/common.case.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/types.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'",
+        "Content matched token: 'honorequest'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'request'",
+        "Content matched token: 'fix'",
+        "Content matched token: 'jsdoc'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/utils.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/router/trie-router/node.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "build/fixtures/declaration-emit/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "build/fixtures/declaration-emit/tsconfig.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'fix'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "build/fixtures/jsx-types/index.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "build/fixtures/jsx-types/tsconfig.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/hono.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'",
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/hono.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'",
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/src/hono.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'",
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/images/hono-title.pxm",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'",
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/hono.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'",
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/hono.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-hono.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/query-param/src/hono.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/images/hono-logo-monochrome.svg",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/images/hono-logo.png",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/images/hono-logo.pxm",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/images/hono-logo.svg",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/images/hono-title.png",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'hono'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": ".github/workflows/ci-adapters.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'comments'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".github/workflows/cr.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".oxlintrc.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream-backpressure.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/server.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/test/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/deno.d.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/test/serve-static.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/test/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/src/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/src/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/src/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/http-server/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/utils/src/get-path.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/CODE_OF_CONDUCT.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'comments'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "jsr.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "perf-measures/.octocov.consolidated.perf-measures.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/bun/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/middleware.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/stream.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/fastly/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/node/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/server.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/deno.d.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/lambda-edge/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/lambda-edge/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/lambda-edge/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/netlify/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/service-worker/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/service-worker/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/service-worker/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/service-worker/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/vercel/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/vercel/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/vercel/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/client/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/client/types.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/compose.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/context.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/accepts/accepts.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/factory/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/proxy/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/proxy/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/route/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/route/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/sse.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/stream.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/stream.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/text.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/websocket/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/context-isolation.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/context.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/client.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/components.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/context.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/hooks/dom.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/hooks/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/streaming.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/body-limit/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/combine/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/context-storage/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/cors/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/csrf/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/language/language.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/logger/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/method-override/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/powered-by/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/pretty-json/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/serve-static/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/serve-static/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/timeout/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/timeout/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/timing/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/router.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/basic-auth.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/basic-auth.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/body.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/url.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/validator/validator.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'request'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/1-bug-report.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/fetch/summarize.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/http-server/benchmark.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx-dom/benchmark.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers-deno/.vscode/settings.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/bun.lock",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "build/declaration-emit.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "build/jsx-types.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "perf-measures/bundle-check/scripts/check-bundle-size.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/.vscode/settings.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/server.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/server.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/intrinsic-elements.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/utils.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'comments'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/etag/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/node.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/cookie.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/filepath.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "vite.config.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/bench.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/tool.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'comments'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/src/bench-includes-init.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'comments'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/src/bench.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/src/tool.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'comments'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'comments'",
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'comments'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/linear-router/router.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'comments'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "LICENSE",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/server.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static-module.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/test/worker.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/deno.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/test/deno.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/test/ssg.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/deno.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/fetch/compare.sh",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/benchmark.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/benchmark.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/yarn.lock",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/query-param/src/bench.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers-deno/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "build/dts-plugins.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "build/release-adapter.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/MAINTAINING.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "perf-measures/type-check/scripts/generate-app.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/bun/tsconfig.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno-jsx/deno.precompile.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno-jsx/deno.react-jsx.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno-jsx/jsx.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/deno.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/workerd/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/workerd/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/server.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/netlify/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/vercel/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/vercel/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/client/fetch-result-please.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/accepts/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/adapter/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/adapter/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/conninfo/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/css/common.case.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/html/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/plugins.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/testing/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/websocket/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/components.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/components.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/client.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/jsx-dev-runtime.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/jsx-runtime.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/jsx-dev-runtime.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/context-storage/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/jwk/keys.test.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/powered-by/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/middleware/pretty-json/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/preset/quick.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/preset/quick.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/preset/tiny.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/preset/tiny.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/linear-router/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/pattern-router/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/smart-router/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/trie-router/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/crypto.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/encode.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/html.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/jwt/jws.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/jwt/jwt.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/jwt/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/validator/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/validator/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "tsconfig.spec.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'hono'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    }
+  ]
+}

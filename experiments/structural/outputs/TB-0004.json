@@ -1,0 +1,32 @@
+{
+  "case_id": "TB-0004",
+  "metrics": {
+    "total_retrieved": 3,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 2
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/middleware/etag/index.test.ts) imports changed source at line 1: `import { RETAINED_304_HEADERS, etag } from '.'`"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/types.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/middleware/etag/index.ts) imports candidate at line 6: `import { MiddlewareHandler } from '../../types'`"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/digest.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/middleware/etag/index.ts) imports candidate at line 7: `import { generateDigest } from './digest'`"
+      ]
+    }
+  ]
+}

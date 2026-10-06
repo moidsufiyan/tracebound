@@ -1,0 +1,52 @@
+case_id: TB-0007
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "moidsufiyan/wollyway"
+  url: "https://github.com/moidsufiyan/wollyway"
+  language: TypeScript
+  base_commit: "bb80f345c868e13a475f7f7a5ad3200dd593e604~1"
+
+source_change:
+  commit: "bb80f345c868e13a475f7f7a5ad3200dd593e604"
+  pr_url: null
+  description: "fix(order): explicit mapping for CONFIRMED and REFUNDED states in frontend"
+  change_type:
+    - bugfix
+  change_timestamp: "2026-08-28T20:19:00+05:30"
+  evaluation_cutoff: "2026-08-28T20:19:00+05:30"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "src/views/OrderTracking.tsx"
+    symbols:
+      - name: "mapStatus"
+        kind: function
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit"
+  size: null
+  notes: "Focusing on frontend to backend conceptual mappings"
+
+candidates:
+  - artifact_id: C01
+    path: "backend/docs/architecture/order-lifecycle.md"
+    content_hash_at_base: null
+    artifact_type: documentation
+    relationship: contextual
+    evidence:
+      - type: semantic
+        description: "The backend documentation defines the canonical order states."
+      - type: human
+        description: "A frontend mapping fix to support `CONFIRMED` and `REFUNDED` states must conceptually match the backend's documented state machine."
+    relevance: investigation-worthy
+    labeling_rationale: "The architecture document outlines the source-of-truth states that the frontend is explicitly mapping."
+    ambiguity_notes: null
+    label_confidence: high
+    labeled_by: "author"
+    labeled_at: "2026-10-03"
+
+notes: "Benchmark Expansion: Category 9 - Investigation-worthy"

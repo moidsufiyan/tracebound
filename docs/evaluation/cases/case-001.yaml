@@ -37,20 +37,20 @@ artifact_universe:
 
 candidates:
   - artifact_id: C01
-    path: "backend/src/services/checkout.service.ts"
-    content_hash_at_base: "4a1442b698166e910b80be0223136c14bbb0793e"
-    artifact_type: source
-    relationship: co-changes-with
+    path: "backend/docs/architecture/checkout-lifecycle.md"
+    content_hash_at_base: "a52a027dfe55bd59676825e32d3a1a6c7921686a"
+    artifact_type: documentation
+    relationship: documents
     evidence:
-      - type: structural
-        description: "inventory.service.ts was modified to import and depend on checkoutService from checkout.service.ts"
+      - type: semantic
+        description: "The document explicitly details the 'Checkout (Reservation Phase)' and '15 mins expiry sweep (Purges locks)' logic."
       - type: human
-        description: "A developer fixing the inventory reservation flaw would need to understand or modify the checkout lock mechanism."
-    relevance: direct-impact
-    labeling_rationale: "Both files were changed together because the bug spanned across inventory stock reduction checks and the checkout lock release logic."
+        description: "A developer fixing the reservation lock concurrency bug and adding an inventory guard should inspect the architecture document to ensure the new constraints match the documented invariants (or update the document if they diverge)."
+    relevance: investigation-worthy
+    labeling_rationale: "The artifact was not modified in the change, but its content describes the exact lock mechanism being debugged and modified. It is highly investigation-worthy to ensure architectural consistency."
     ambiguity_notes: null
     label_confidence: high
     labeled_by: "author"
     labeled_at: "2026-10-03"
 
-notes: "Pilot case 1 to test contemporaneous evaluation with cross-domain service dependencies."
+notes: "Pilot case 1 repaired: Removed the hindsight-biased structural dependency and replaced it with a valid pre-cutoff semantic documentation dependency."

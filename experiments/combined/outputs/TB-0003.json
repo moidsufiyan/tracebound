@@ -1,0 +1,4433 @@
+{
+  "case_id": "TB-0003",
+  "metrics": {
+    "b1_retrieved": 8,
+    "b2_retrieved": 364,
+    "union_retrieved": 365,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 364,
+    "only_b1": 0,
+    "only_b2": 0,
+    "both": 1,
+    "changed_relevant": 1,
+    "unchanged_relevant": 0
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/middleware/combine/index.test.ts) imports changed source at line 1: `import { every, except, some } from '.'`"
+      ],
+      "b2_evidence": [
+        "Path matched token: 'combine'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/compose.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 6: `import { compose } from '../../compose'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/context.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 7: `import { Context } from '../../context'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/router.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 8: `import { METHOD_NAME_ALL } from '../../router'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/router/trie-router/index.ts",
+      "signals": [
+        "B1"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 9: `import { TrieRouter } from '../../router/trie-router'`"
+      ],
+      "b2_evidence": [],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/types.ts",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.ts) imports candidate at line 10: `import { MiddlewareHandler, Next } from '../../types'`",
+        "[Direct Import] Source artifact (src/middleware/combine/index.test.ts) imports candidate at line 3: `import { MiddlewareHandler } from '../../types'`"
+      ],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": "src/hono.ts",
+      "signals": [
+        "B1"
+      ],
+      "b1_evidence": [
+        "[Direct Import] Source artifact (src/middleware/combine/index.test.ts) imports candidate at line 2: `import { Hono } from '../../hono'`"
+      ],
+      "b2_evidence": [],
+      "tier": "Tier 1 (Structural)"
+    },
+    {
+      "path": ".github/workflows/autofix.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'fix'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/test/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/fetch/bench.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx-dom/benchmark.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'short'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'combine'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/client.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/utils.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/cookie/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'combine'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/hono-base.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/hono.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/server.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/etag/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwk/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwk/jwk.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/language/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/router/common.case.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/router/trie-router/node.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "vite.config.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "build/fixtures/declaration-emit/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "build/fixtures/declaration-emit/tsconfig.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'fix'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "build/fixtures/jsx-types/index.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'fix'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "build/fixtures/jsx-types/tsconfig.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'fix'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'combine'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'combine'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/bun/test/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/MIGRATION.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "runtime-tests/bun/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/middleware.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "runtime-tests/fastly/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "runtime-tests/node/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/client/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/compose.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/factory/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/proxy/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/plugins.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/helper/websocket/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/body-limit/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/context-storage/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/context-storage/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/cors/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/csrf/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/etag/digest.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/language/language.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/logger/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/method-override/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/powered-by/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/powered-by/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/pretty-json/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/pretty-json/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/request-id/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/request-id/request-id.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/serve-static/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/serve-static/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/serve-static/path.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/timeout/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/timeout/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/timing/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/request.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/types.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/utils/jwt/jwt.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/validator/validator.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": ".github/workflows/no-response.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'response'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/etag/digest.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwk/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwk/keys.test.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/jwt/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/language/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/request-id/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/secure-headers/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/secure-headers/permissions-policy.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/serve-static/path.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/middleware/timing/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'middleware'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/1-bug-report.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/fetch/summarize.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/fetch/ts-resolve.mjs",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/http-server/benchmark.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers-deno/.vscode/settings.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/bun.lock",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "build/declaration-emit.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "build/jsx-types.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "perf-measures/bundle-check/scripts/check-bundle-size.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'combine'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/.vscode/settings.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/server.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/intrinsic-elements.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/jsx-runtime.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/utils.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/node.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/cookie.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/filepath.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "jsr.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'combine'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": ".oxlintrc.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/test/mock.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream-mock.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/server.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/bun/src/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static-module.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/utils.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/deno.d.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/src/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/test/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/netlify/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/src/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/src/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/vercel/src/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/page-react.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-hono.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-nano.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-preact.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-react.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/query-param/src/bench.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/query-param/src/fast-querystring.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/query-param/src/hono.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/query-param/src/qs.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/hono.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/src/hono.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/utils/src/get-path.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "build/dts-plugins.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "perf-measures/type-check/scripts/generate-app.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "perf-measures/type-check/scripts/process-results.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno-jsx/jsx.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/hono.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/deno/stream.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/workerd/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "runtime-tests/workerd/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/server.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/bun/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static-module.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/deno.d.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/serve-static.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/ssg.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/deno/websocket.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/netlify/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/service-worker/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/service-worker/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/vercel/handler.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/vercel/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/client/fetch-result-please.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/client/types.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/context.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/accepts/accepts.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/accepts/accepts.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/adapter/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/adapter/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/html/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/proxy/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/route/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/route/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/plugins.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/stream.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/text.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/testing/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/websocket/index.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/http-exception.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/base.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/children.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/children.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/components.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/components.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/context-isolation.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/context.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/client.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/client.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/components.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/components.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/context.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/context.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/jsx-dev-runtime.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/dom/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/hooks/dom.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/hooks/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/hooks/string.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/intrinsic-element/common.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/jsx-dev-runtime.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/streaming.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/jsx/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/preset/quick.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/preset/tiny.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/request.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/linear-router/router.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/matcher.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/router.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/reg-exp-router/trie.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/smart-router/router.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/trie-router/node.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/trie-router/router.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/accept.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/basic-auth.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/body.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/body.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/buffer.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/buffer.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/color.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/color.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/concurrent.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/concurrent.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/crypto.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/encode.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/encode.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/filepath.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/handler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/html.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/http-status.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/ipaddr.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/ipaddr.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'short'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/jwt/jws.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/mime.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/mime.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/stream.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/stream.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/types.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/url.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/url.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/validator/utils.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/validator/utils.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'return'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream-backpressure.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/lambda-edge/src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/service-worker/src/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/CODE_OF_CONDUCT.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/lambda-edge/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/service-worker/types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/client/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/sse.test.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/stream.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/streaming/text.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/http-exception.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'response'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/bench.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'short'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/src/bench-includes-init.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'short'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "benchmarks/routers/src/bench.mts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'short'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/test/deno.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/test/serve-static.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/helper/ssg/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/router/linear-router/router.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "tsconfig.spec.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'middleware'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "adapters/deno/test/ssg.test.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/MAINTAINING.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'some'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    }
+  ]
+}

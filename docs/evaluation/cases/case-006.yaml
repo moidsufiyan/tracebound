@@ -1,0 +1,56 @@
+case_id: TB-0006
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "moidsufiyan/wollyway"
+  url: "https://github.com/moidsufiyan/wollyway"
+  language: TypeScript
+  base_commit: "cfd8793c89cfb29c5e885b6ac768e41d22f8927f~1"
+
+source_change:
+  commit: "cfd8793c89cfb29c5e885b6ac768e41d22f8927f"
+  pr_url: null
+  description: "fix(catalog): correct inventory discovery and category archive checks"
+  change_type:
+    - bugfix
+  change_timestamp: "2026-09-05T23:15:55+05:30"
+  evaluation_cutoff: "2026-09-05T23:15:55+05:30"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "backend/src/controllers/category.controller.ts"
+    symbols:
+      - name: "deleteCategory"
+        kind: function
+  - path: "backend/src/repositories/inventory.repository.ts"
+    symbols:
+      - name: "getProductIdsInStock"
+        kind: function
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit"
+  size: null
+  notes: "Focusing on domain architecture documents"
+
+candidates:
+  - artifact_id: C01
+    path: "backend/docs/database/inventory-domain.md"
+    content_hash_at_base: null
+    artifact_type: documentation
+    relationship: contextual
+    evidence:
+      - type: semantic
+        description: "The document explicitly defines `trackInventory: { type: Boolean, default: true }`."
+      - type: human
+        description: "The code fix adds `trackInventory: false` to the MongoDB query, aligning the broken implementation with the correct architecture document."
+    relevance: contextual-historical
+    labeling_rationale: "The document serves as the ground truth that was previously violated by the code. It is highly contextual to understanding why the query needed to change."
+    ambiguity_notes: null
+    label_confidence: high
+    labeled_by: "author"
+    labeled_at: "2026-10-03"
+
+notes: "Benchmark Expansion: Category 7 / 8 - Lexically Misleading & Abstraction Gap"

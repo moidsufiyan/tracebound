@@ -1,0 +1,3548 @@
+{
+  "case_id": "TB-0007",
+  "metrics": {
+    "b1_retrieved": 0,
+    "b2_retrieved": 282,
+    "union_retrieved": 281,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 280,
+    "only_b1": 0,
+    "only_b2": 1,
+    "both": 0,
+    "changed_relevant": 0,
+    "unchanged_relevant": 1
+  },
+  "relevant_found": [
+    {
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "WOLLYWAY_CONTEXT.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/checkout-order-contract.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/search-performance.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/package-lock.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/scripts/verify-order-domain.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/scripts/verify-payment-domain.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/app.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/constants/index.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/services/order.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'states'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "bun.lockb",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/backend-architecture-blueprint.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'states'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/frontend/phase-5.1-walkthrough.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "package-lock.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ProductBundle.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ProductDetailsTabs.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ProductGrid.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ProductQuickView.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/order/OrderDetailsCard.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/ProductReviewCard.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/ProductReviewsSection.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/RelatedProducts.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/alert-dialog.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/drawer.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/sidebar.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/toast.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/user/OrderCard.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/lib/api-client.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/BundleDetail.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Cart.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Checkout.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'states'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/CheckoutSuccess.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Index.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Shop.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Wishlist.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "tailwind.config.js",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'",
+        "Path matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'states'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'tsx'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(account)/layout.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'tsx'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(account)/order-tracking/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(shop)/checkout-success/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/layout.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/providers.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/api/order-api.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/api/product-api.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'states'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/architecture/cart-lifecycle.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'states'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/architecture/inventory-lifecycle.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/business-rules.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/database/category-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/database/order-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/database/payment-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'states'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/database/user-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'states'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/builders/product.query-builder.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/category.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/order.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/mappers/order.mapper.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'map'",
+        "Path matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/mappers/product.mapper.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'map'",
+        "Path matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/models/order.model.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/repositories/checkout.repository.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'states'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/repositories/inventory.repository.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/repositories/order.repository.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'states'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/repositories/product.repository.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/routes/order.routes.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/services/checkout.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/services/product.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/services/wishlist.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/types/order.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/validators/order.validator.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'confirmed'",
+        "Content matched token: 'refunded'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/frontend/http-client.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tsx'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "docs/frontend/phase-5.1-audit-report.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'tsx'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/App.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'mapping'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'tsx'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/FeaturedProducts.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/Features.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/Hero.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/LoyaltyPoints.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ProductFilters.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ProductQA.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ReferralProgram.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/Testimonials.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/auth/AuthGuard.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/order/OrderStatusSteps.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'status'",
+        "Path matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/order/OrderSummary.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/order/ShippingUpdateBanner.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/FeatureCards.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/ProductGallery.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/ProductInfo.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/ProductReviewForm.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/PromoBanner.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/alert.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/badge.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/calendar.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/checkbox.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/command.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/dropdown-menu.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/hover-card.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/input.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/navigation-menu.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/popover.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/radio-group.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/scroll-area.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/select.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/slider.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/switch.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/table.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/textarea.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/toggle.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/user/AddressCard.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/contexts/AuthContext.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tsx'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/hooks/useOrders.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/services/order.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/types/Product.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/types/discovery.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/types/order.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/About.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Bundles.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Contact.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/FAQ.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Login.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/NotFound.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/PrivacyPolicy.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Profile.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/ReturnPolicy.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/ShippingPolicy.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/SizeGuidePage.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/Support.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tracking'",
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/TermsOfService.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/README.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'mapping'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/architecture/wishlist-lifecycle.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'mapping'",
+        "Content matched token: 'states'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/database/checkout-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'mapping'",
+        "Content matched token: 'states'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/database/inventory-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'mapping'",
+        "Content matched token: 'tracking'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/user/AddressForm.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'states'",
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/types/auth.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'states'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(account)/profile/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(account)/wishlist/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(auth)/login/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/about/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/contact/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/faq/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/privacy-policy/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/return-policy/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/shipping-policy/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/size-guide/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/support/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(public)/terms/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(shop)/bundle/[id]/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(shop)/bundles/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(shop)/cart/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(shop)/checkout/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(shop)/product/[id]/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/(shop)/shop/page.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/Collections.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ProductSort.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ScrollToTop.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/SearchBar.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/SearchPage.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/SizeGuide.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/SocialShareButtons.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/auth/PasswordStrengthMeter.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/auth/SocialLoginButtons.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/ProductBreadcrumb.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/product/StarRating.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/aspect-ratio.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/avatar.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/breadcrumb.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/carousel.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/form.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/label.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/pagination.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/progress.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/skeleton.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/tabs.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/toaster.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/components/ui/toggle-group.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/contexts/CartContext.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/contexts/WishlistContext.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/hooks/use-mobile.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/main.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "src/views/ProductDetail.tsx",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Path matched token: 'tsx'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/docs/wishlist-future-roadmap.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Path matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/mappers/cart-item.mapper.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Path matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/mappers/cart.mapper.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Path matched token: 'map'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/mappers/wishlist.mapper.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Path matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 2 (Strong Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/health.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "components.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'fix'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "app/globals.css",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/api/checkout-api.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/api/payment-api.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/architecture/checkout-lifecycle.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/architecture/cross-domain-interaction-matrix.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/architecture/product-lifecycle.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'explicit'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/database/product-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'states'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/adapters/payment/razorpay.adapter.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/payment.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/models/category.model.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/models/inventory-transaction.model.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/models/payment-webhook-event.model.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/models/product.model.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/repositories/payment.repository.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/routes/category.routes.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/routes/checkout.routes.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/services/payment.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/types/checkout.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/types/payment.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/validators/category.validator.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/validators/product.validator.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/adr/0003-api-adapter-pattern.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/frontend/backend-integration.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/index.css",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/services/checkout.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'order'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/eslint.config.mjs",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'explicit'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/auth.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'explicit'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/business-rules.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'explicit'",
+        "Content matched token: 'states'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "eslint.config.js",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'explicit'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/hooks/useProducts.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'explicit'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/database/cart-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'mapping'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/database/wishlist-domain.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'mapping'",
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/adr/0002-state-management.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'states'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/routes/inventory.routes.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/services/inventory.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'tracking'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/package.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/adr/0001-nextjs-migration.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "scripts/migrate-link-props.ps1",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "scripts/migrate-router.ps1",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "tsconfig.json",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'tsx'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/middlewares/validate.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/services/cart.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/services/cloudinary.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/types/discovery.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/validators/inventory.validator.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/validators/user.validator.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/hooks/use-toast.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/hooks/useProductSearch.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/services/ProductDataService.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/services/auth.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'",
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/services/product.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'map'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docker-compose.yml",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/api/cart-api.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/api/wishlist-api.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/docs/cart-checkout-contract.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/adapters/payment/payment-provider.factory.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/cart.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/checkout.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/inventory.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/product.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/user.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/controllers/wishlist.controller.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/middlewares/auth.middleware.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/middlewares/errorHandler.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/middlewares/rateLimiter.middleware.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/middlewares/upload.middleware.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/models/checkout-session.model.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/models/inventory.model.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/models/user.model.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/routes/health.routes.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/routes/wishlist.routes.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/types/cart.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/types/wishlist.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "backend/src/utils/AppError.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/frontend/authentication.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "docs/migration/Migration-Log.md",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "middleware.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/services/wishlist.service.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/types/cart.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    },
+    {
+      "path": "src/types/wishlist.types.ts",
+      "signals": [
+        "B2"
+      ],
+      "b1_evidence": [],
+      "b2_evidence": [
+        "Content matched token: 'status'"
+      ],
+      "tier": "Tier 3 (Weak Lexical)"
+    }
+  ]
+}

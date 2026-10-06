@@ -1,0 +1,87 @@
+{
+  "case_id": "TB-0008",
+  "metrics": {
+    "total_retrieved": 12,
+    "relevant_found": 0,
+    "relevant_missed": 0,
+    "false_positives": 12
+  },
+  "relevant_found": [],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/http-exception.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 2: `import { HTTPException } from './http-exception'`"
+      ]
+    },
+    {
+      "path": "src/request/constants.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 3: `import { GET_MATCH_RESULT } from './request/constants'`"
+      ]
+    },
+    {
+      "path": "src/router.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 4: `import { Result } from './router'`"
+      ]
+    },
+    {
+      "path": "src/types.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 5: `import { Input, InputToDataByTarget, ParamKeyToRecord, ParamKeys, RemoveQuestion, RouterRoute, ValidationTargets } from './types'`"
+      ]
+    },
+    {
+      "path": "src/utils/body.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 14: `import { parseBody } from './utils/body'`",
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 15: `import { BodyData, ParseBodyOptions } from './utils/body'`",
+        "[Reverse Import] Candidate artifact (src/utils/body.ts) imports changed source at line 6: `import { HonoRequest } from '../request'`"
+      ]
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 16: `import { CustomHeader, RequestHeader } from './utils/headers'`"
+      ]
+    },
+    {
+      "path": "src/utils/types.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 17: `import { Simplify, UnionToIntersection } from './utils/types'`"
+      ]
+    },
+    {
+      "path": "src/utils/url.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/request.ts) imports candidate at line 18: `import { getQueryParam, getQueryParams, tryDecodeURIComponent } from './utils/url'`"
+      ]
+    },
+    {
+      "path": "src/context.ts",
+      "evidence": [
+        "[Reverse Import] Candidate artifact (src/context.ts) imports changed source at line 1: `import { HonoRequest } from './request'`"
+      ]
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "evidence": [
+        "[Reverse Import] Candidate artifact (src/middleware/cache/index.ts) imports changed source at line 7: `import { cloneRawRequest } from '../../request'`"
+      ]
+    },
+    {
+      "path": "src/request.test.ts",
+      "evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/request.test.ts) imports changed source at line 2: `import { cloneRawRequest, HonoRequest } from './request'`"
+      ]
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/validator/validator.test.ts) imports changed source at line 6: `import { cloneRawRequest } from '../request'`"
+      ]
+    }
+  ]
+}

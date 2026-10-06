@@ -1,0 +1,1804 @@
+{
+  "case_id": "TB-0002",
+  "provider": "ollama",
+  "model": "nomic-embed-text:v1.5",
+  "query": "search_query: Change Description: Remove stale refunded state from order lifecycle across full stack and documentation\nFiles Modified:\n- backend/src/constants/index.ts\n- backend/docs/architecture/order-lifecycle.md",
+  "metrics": {
+    "total_artifacts_embedded": 335,
+    "total_chunks_embedded": 366,
+    "excluded_artifacts": 0,
+    "context_failures": 0,
+    "relevant_found_top_1": 0,
+    "relevant_found_top_3": 1,
+    "relevant_found_top_5": 1,
+    "relevant_found_top_10": 1,
+    "relevant_found_top_20": 1
+  },
+  "relevant_artifacts_results": [
+    {
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "is_changed": true,
+      "rank": 2,
+      "similarity": 0.7689043527222289
+    }
+  ],
+  "top_20_candidates": [
+    {
+      "path": "backend/docs/architecture/inventory-lifecycle.md",
+      "similarity": 0.7721283446067067,
+      "evidence": "Cosine similarity (chunk full): 0.7721"
+    },
+    {
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "similarity": 0.7689043527222289,
+      "evidence": "Cosine similarity (chunk full): 0.7689"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "similarity": 0.7524131015094777,
+      "evidence": "Cosine similarity (chunk full): 0.7524"
+    },
+    {
+      "path": "backend/docs/architecture/wishlist-lifecycle.md",
+      "similarity": 0.7453305627221396,
+      "evidence": "Cosine similarity (chunk full): 0.7453"
+    },
+    {
+      "path": "backend/docs/architecture/cart-lifecycle.md",
+      "similarity": 0.7400503289787607,
+      "evidence": "Cosine similarity (chunk full): 0.7401"
+    },
+    {
+      "path": "backend/docs/architecture/checkout-lifecycle.md",
+      "similarity": 0.7360996297022281,
+      "evidence": "Cosine similarity (chunk full): 0.7361"
+    },
+    {
+      "path": "backend/docs/architecture/product-lifecycle.md",
+      "similarity": 0.7175433635165521,
+      "evidence": "Cosine similarity (chunk full): 0.7175"
+    },
+    {
+      "path": "docs/adr/0002-state-management.md",
+      "similarity": 0.7149144142637927,
+      "evidence": "Cosine similarity (chunk full): 0.7149"
+    },
+    {
+      "path": "backend/docs/database/order-domain.md",
+      "similarity": 0.711143357961447,
+      "evidence": "Cosine similarity (chunk full): 0.7111"
+    },
+    {
+      "path": "backend/docs/checkout-order-contract.md",
+      "similarity": 0.7096456183805079,
+      "evidence": "Cosine similarity (chunk full): 0.7096"
+    },
+    {
+      "path": "CHECKOUT_STATE_MACHINE.md",
+      "similarity": 0.7037454852921017,
+      "evidence": "Cosine similarity (chunk full): 0.7037"
+    },
+    {
+      "path": "backend/docs/cart-checkout-contract.md",
+      "similarity": 0.6984483460720124,
+      "evidence": "Cosine similarity (chunk full): 0.6984"
+    },
+    {
+      "path": "backend/src/models/inventory-transaction.model.ts",
+      "similarity": 0.6967987617148467,
+      "evidence": "Cosine similarity (chunk full): 0.6968"
+    },
+    {
+      "path": "src/components/order/OrderSummary.tsx",
+      "similarity": 0.6963940191973274,
+      "evidence": "Cosine similarity (chunk full): 0.6964"
+    },
+    {
+      "path": "backend/src/services/order.service.ts",
+      "similarity": 0.6960146309394935,
+      "evidence": "Cosine similarity (chunk full): 0.6960"
+    },
+    {
+      "path": "docs/adr/0004-authentication-strategy.md",
+      "similarity": 0.6931174418736354,
+      "evidence": "Cosine similarity (chunk full): 0.6931"
+    },
+    {
+      "path": "docs/adr/0003-api-adapter-pattern.md",
+      "similarity": 0.6888697365904177,
+      "evidence": "Cosine similarity (chunk full): 0.6889"
+    },
+    {
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "similarity": 0.6883941058180056,
+      "evidence": "Cosine similarity (chunk full): 0.6884"
+    },
+    {
+      "path": "backend/src/repositories/inventory.repository.ts",
+      "similarity": 0.6856725620365647,
+      "evidence": "Cosine similarity (chunk full): 0.6857"
+    },
+    {
+      "path": "src/components/user/OrderCard.tsx",
+      "similarity": 0.6850511447400114,
+      "evidence": "Cosine similarity (chunk full): 0.6851"
+    }
+  ],
+  "all_candidates": [
+    {
+      "path": "backend/docs/architecture/inventory-lifecycle.md",
+      "similarity": 0.7721283446067067,
+      "evidence": "Cosine similarity (chunk full): 0.7721"
+    },
+    {
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "similarity": 0.7689043527222289,
+      "evidence": "Cosine similarity (chunk full): 0.7689"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "similarity": 0.7524131015094777,
+      "evidence": "Cosine similarity (chunk full): 0.7524"
+    },
+    {
+      "path": "backend/docs/architecture/wishlist-lifecycle.md",
+      "similarity": 0.7453305627221396,
+      "evidence": "Cosine similarity (chunk full): 0.7453"
+    },
+    {
+      "path": "backend/docs/architecture/cart-lifecycle.md",
+      "similarity": 0.7400503289787607,
+      "evidence": "Cosine similarity (chunk full): 0.7401"
+    },
+    {
+      "path": "backend/docs/architecture/checkout-lifecycle.md",
+      "similarity": 0.7360996297022281,
+      "evidence": "Cosine similarity (chunk full): 0.7361"
+    },
+    {
+      "path": "backend/docs/architecture/product-lifecycle.md",
+      "similarity": 0.7175433635165521,
+      "evidence": "Cosine similarity (chunk full): 0.7175"
+    },
+    {
+      "path": "docs/adr/0002-state-management.md",
+      "similarity": 0.7149144142637927,
+      "evidence": "Cosine similarity (chunk full): 0.7149"
+    },
+    {
+      "path": "backend/docs/database/order-domain.md",
+      "similarity": 0.711143357961447,
+      "evidence": "Cosine similarity (chunk full): 0.7111"
+    },
+    {
+      "path": "backend/docs/checkout-order-contract.md",
+      "similarity": 0.7096456183805079,
+      "evidence": "Cosine similarity (chunk full): 0.7096"
+    },
+    {
+      "path": "CHECKOUT_STATE_MACHINE.md",
+      "similarity": 0.7037454852921017,
+      "evidence": "Cosine similarity (chunk full): 0.7037"
+    },
+    {
+      "path": "backend/docs/cart-checkout-contract.md",
+      "similarity": 0.6984483460720124,
+      "evidence": "Cosine similarity (chunk full): 0.6984"
+    },
+    {
+      "path": "backend/src/models/inventory-transaction.model.ts",
+      "similarity": 0.6967987617148467,
+      "evidence": "Cosine similarity (chunk full): 0.6968"
+    },
+    {
+      "path": "src/components/order/OrderSummary.tsx",
+      "similarity": 0.6963940191973274,
+      "evidence": "Cosine similarity (chunk full): 0.6964"
+    },
+    {
+      "path": "backend/src/services/order.service.ts",
+      "similarity": 0.6960146309394935,
+      "evidence": "Cosine similarity (chunk full): 0.6960"
+    },
+    {
+      "path": "docs/adr/0004-authentication-strategy.md",
+      "similarity": 0.6931174418736354,
+      "evidence": "Cosine similarity (chunk full): 0.6931"
+    },
+    {
+      "path": "docs/adr/0003-api-adapter-pattern.md",
+      "similarity": 0.6888697365904177,
+      "evidence": "Cosine similarity (chunk full): 0.6889"
+    },
+    {
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "similarity": 0.6883941058180056,
+      "evidence": "Cosine similarity (chunk full): 0.6884"
+    },
+    {
+      "path": "backend/src/repositories/inventory.repository.ts",
+      "similarity": 0.6856725620365647,
+      "evidence": "Cosine similarity (chunk full): 0.6857"
+    },
+    {
+      "path": "src/components/user/OrderCard.tsx",
+      "similarity": 0.6850511447400114,
+      "evidence": "Cosine similarity (chunk full): 0.6851"
+    },
+    {
+      "path": "backend/src/validators/inventory.validator.ts",
+      "similarity": 0.683867500231802,
+      "evidence": "Cosine similarity (chunk full): 0.6839"
+    },
+    {
+      "path": "backend/scripts/verify-order-domain.ts",
+      "similarity": 0.6834028066366779,
+      "evidence": "Cosine similarity (chunk full): 0.6834"
+    },
+    {
+      "path": "src/lib/api-client.ts",
+      "similarity": 0.6821515807902797,
+      "evidence": "Cosine similarity (chunk full): 0.6822"
+    },
+    {
+      "path": "docs/frontend/session-lifecycle.md",
+      "similarity": 0.6806992932964615,
+      "evidence": "Cosine similarity (chunk full): 0.6807"
+    },
+    {
+      "path": "backend/src/repositories/order.repository.ts",
+      "similarity": 0.6794692307193679,
+      "evidence": "Cosine similarity (chunk full): 0.6795"
+    },
+    {
+      "path": "backend/src/types/checkout.types.ts",
+      "similarity": 0.6785508621901263,
+      "evidence": "Cosine similarity (chunk full): 0.6786"
+    },
+    {
+      "path": "backend/docs/database/checkout-domain.md",
+      "similarity": 0.6780977739505617,
+      "evidence": "Cosine similarity (chunk full): 0.6781"
+    },
+    {
+      "path": "src/views/Checkout.tsx",
+      "similarity": 0.6778804004264125,
+      "evidence": "Cosine similarity (chunk full): 0.6779"
+    },
+    {
+      "path": "backend/src/controllers/health.controller.ts",
+      "similarity": 0.6740263381000597,
+      "evidence": "Cosine similarity (chunk full): 0.6740"
+    },
+    {
+      "path": "backend/src/models/order.model.ts",
+      "similarity": 0.6731168412593852,
+      "evidence": "Cosine similarity (chunk full): 0.6731"
+    },
+    {
+      "path": "src/views/CheckoutSuccess.tsx",
+      "similarity": 0.6730576492122163,
+      "evidence": "Cosine similarity (chunk full): 0.6731"
+    },
+    {
+      "path": "backend/src/routes/order.routes.ts",
+      "similarity": 0.6727820860123269,
+      "evidence": "Cosine similarity (chunk full): 0.6728"
+    },
+    {
+      "path": "src/components/order/OrderStatusSteps.tsx",
+      "similarity": 0.6710303617682822,
+      "evidence": "Cosine similarity (chunk full): 0.6710"
+    },
+    {
+      "path": "src/components/order/OrderDetailsCard.tsx",
+      "similarity": 0.6704493016626887,
+      "evidence": "Cosine similarity (chunk full): 0.6704"
+    },
+    {
+      "path": "src/types/auth.ts",
+      "similarity": 0.670288632789019,
+      "evidence": "Cosine similarity (chunk full): 0.6703"
+    },
+    {
+      "path": "backend/src/routes/health.routes.ts",
+      "similarity": 0.669063852018499,
+      "evidence": "Cosine similarity (chunk full): 0.6691"
+    },
+    {
+      "path": "backend/docs/database/payment-domain.md",
+      "similarity": 0.6687030012847934,
+      "evidence": "Cosine similarity (chunk full): 0.6687"
+    },
+    {
+      "path": "backend/src/controllers/inventory.controller.ts",
+      "similarity": 0.6685306771622415,
+      "evidence": "Cosine similarity (chunk full): 0.6685"
+    },
+    {
+      "path": "backend/src/services/inventory.service.ts",
+      "similarity": 0.6676609643056713,
+      "evidence": "Cosine similarity (chunk full): 0.6677"
+    },
+    {
+      "path": "docs/frontend/phase-5.1-walkthrough.md",
+      "similarity": 0.6669273509547919,
+      "evidence": "Cosine similarity (chunk full): 0.6669"
+    },
+    {
+      "path": "backend/docs/database/product-domain.md",
+      "similarity": 0.665907345057401,
+      "evidence": "Cosine similarity (chunk full): 0.6659"
+    },
+    {
+      "path": "backend/src/types/cart.types.ts",
+      "similarity": 0.6651009289767436,
+      "evidence": "Cosine similarity (chunk full): 0.6651"
+    },
+    {
+      "path": "backend/src/models/inventory.model.ts",
+      "similarity": 0.6647816978706665,
+      "evidence": "Cosine similarity (chunk full): 0.6648"
+    },
+    {
+      "path": "backend/src/controllers/order.controller.ts",
+      "similarity": 0.6643790321790654,
+      "evidence": "Cosine similarity (chunk full): 0.6644"
+    },
+    {
+      "path": "src/views/Shop.tsx",
+      "similarity": 0.6641393423534538,
+      "evidence": "Cosine similarity (chunk full): 0.6641"
+    },
+    {
+      "path": "src/views/Support.tsx",
+      "similarity": 0.6623511057992556,
+      "evidence": "Cosine similarity (chunk full): 0.6624"
+    },
+    {
+      "path": "src/contexts/AuthContext.tsx",
+      "similarity": 0.6615280675451795,
+      "evidence": "Cosine similarity (chunk full): 0.6615"
+    },
+    {
+      "path": "backend/docs/architecture/cross-domain-interaction-matrix.md",
+      "similarity": 0.6612646756647467,
+      "evidence": "Cosine similarity (chunk full): 0.6613"
+    },
+    {
+      "path": "src/types/cart.types.ts",
+      "similarity": 0.661151920117151,
+      "evidence": "Cosine similarity (chunk full): 0.6612"
+    },
+    {
+      "path": "src/App.tsx",
+      "similarity": 0.6610104030928304,
+      "evidence": "Cosine similarity (chunk full): 0.6610"
+    },
+    {
+      "path": "src/services/auth.service.ts",
+      "similarity": 0.6609039788477505,
+      "evidence": "Cosine similarity (chunk full): 0.6609"
+    },
+    {
+      "path": "docs/frontend/phase-5.1-audit-report.md",
+      "similarity": 0.6608413024526628,
+      "evidence": "Cosine similarity (chunk full): 0.6608"
+    },
+    {
+      "path": "src/types/wishlist.types.ts",
+      "similarity": 0.6606852577923282,
+      "evidence": "Cosine similarity (chunk full): 0.6607"
+    },
+    {
+      "path": "backend/src/routes/checkout.routes.ts",
+      "similarity": 0.6606611917844707,
+      "evidence": "Cosine similarity (chunk full): 0.6607"
+    },
+    {
+      "path": "src/main.tsx",
+      "similarity": 0.6605507974103433,
+      "evidence": "Cosine similarity (chunk full): 0.6606"
+    },
+    {
+      "path": "backend/src/types/wishlist.types.ts",
+      "similarity": 0.6600235940663941,
+      "evidence": "Cosine similarity (chunk full): 0.6600"
+    },
+    {
+      "path": "src/components/order/ShippingUpdateBanner.tsx",
+      "similarity": 0.6598368843574813,
+      "evidence": "Cosine similarity (chunk full): 0.6598"
+    },
+    {
+      "path": "docs/frontend/authentication.md",
+      "similarity": 0.6594170034140435,
+      "evidence": "Cosine similarity (chunk full): 0.6594"
+    },
+    {
+      "path": "backend/docs/api/checkout-api.md",
+      "similarity": 0.6590752524764768,
+      "evidence": "Cosine similarity (chunk full): 0.6591"
+    },
+    {
+      "path": "backend/src/services/payment.service.ts",
+      "similarity": 0.6587148493068652,
+      "evidence": "Cosine similarity (chunk full): 0.6587"
+    },
+    {
+      "path": "backend/src/types/payment.types.ts",
+      "similarity": 0.6586961458168502,
+      "evidence": "Cosine similarity (chunk full): 0.6587"
+    },
+    {
+      "path": "backend/src/models/wishlist.model.ts",
+      "similarity": 0.6582426808923366,
+      "evidence": "Cosine similarity (chunk full): 0.6582"
+    },
+    {
+      "path": "backend/src/constants/index.ts",
+      "similarity": 0.6580345295299342,
+      "evidence": "Cosine similarity (chunk full): 0.6580"
+    },
+    {
+      "path": "backend/src/mappers/product.mapper.ts",
+      "similarity": 0.6579842417548385,
+      "evidence": "Cosine similarity (chunk full): 0.6580"
+    },
+    {
+      "path": "backend/src/repositories/product.repository.ts",
+      "similarity": 0.6570880491560784,
+      "evidence": "Cosine similarity (chunk full): 0.6571"
+    },
+    {
+      "path": "backend/docs/wishlist-future-roadmap.md",
+      "similarity": 0.6552323186101291,
+      "evidence": "Cosine similarity (chunk full): 0.6552"
+    },
+    {
+      "path": "backend/src/validators/checkout.validator.ts",
+      "similarity": 0.6550046720580062,
+      "evidence": "Cosine similarity (chunk full): 0.6550"
+    },
+    {
+      "path": "backend/src/models/checkout-session.model.ts",
+      "similarity": 0.6547076340950431,
+      "evidence": "Cosine similarity (chunk full): 0.6547"
+    },
+    {
+      "path": "src/lib/auth-token.ts",
+      "similarity": 0.6540968730396965,
+      "evidence": "Cosine similarity (chunk full): 0.6541"
+    },
+    {
+      "path": "src/components/product/FeatureCards.tsx",
+      "similarity": 0.6518933084919198,
+      "evidence": "Cosine similarity (chunk full): 0.6519"
+    },
+    {
+      "path": "backend/docs/api/order-api.md",
+      "similarity": 0.6518521197784409,
+      "evidence": "Cosine similarity (chunk full): 0.6519"
+    },
+    {
+      "path": "backend/docs/database/wishlist-domain.md",
+      "similarity": 0.6516905741010646,
+      "evidence": "Cosine similarity (chunk full): 0.6517"
+    },
+    {
+      "path": "src/views/ProductDetail.tsx",
+      "similarity": 0.6512105692203711,
+      "evidence": "Cosine similarity (chunk full): 0.6512"
+    },
+    {
+      "path": "backend/src/controllers/checkout.controller.ts",
+      "similarity": 0.6510787507272768,
+      "evidence": "Cosine similarity (chunk full): 0.6511"
+    },
+    {
+      "path": "src/views/OrderTracking.tsx",
+      "similarity": 0.6508045140641051,
+      "evidence": "Cosine similarity (chunk full): 0.6508"
+    },
+    {
+      "path": "backend/docs/database/inventory-domain.md",
+      "similarity": 0.65013726460891,
+      "evidence": "Cosine similarity (chunk full): 0.6501"
+    },
+    {
+      "path": "backend/src/repositories/checkout.repository.ts",
+      "similarity": 0.6500400991159049,
+      "evidence": "Cosine similarity (chunk full): 0.6500"
+    },
+    {
+      "path": "backend/src/mappers/order.mapper.ts",
+      "similarity": 0.649185461330149,
+      "evidence": "Cosine similarity (chunk full): 0.6492"
+    },
+    {
+      "path": "backend/src/routes/product.routes.ts",
+      "similarity": 0.6489832511357141,
+      "evidence": "Cosine similarity (chunk full): 0.6490"
+    },
+    {
+      "path": "backend/src/models/payment-webhook-event.model.ts",
+      "similarity": 0.6489042968379407,
+      "evidence": "Cosine similarity (chunk full): 0.6489"
+    },
+    {
+      "path": "backend/src/validators/order.validator.ts",
+      "similarity": 0.6485530990096695,
+      "evidence": "Cosine similarity (chunk full): 0.6486"
+    },
+    {
+      "path": "src/services/cart.service.ts",
+      "similarity": 0.6477427952201585,
+      "evidence": "Cosine similarity (chunk full): 0.6477"
+    },
+    {
+      "path": "middleware.ts",
+      "similarity": 0.6473745678259922,
+      "evidence": "Cosine similarity (chunk full): 0.6474"
+    },
+    {
+      "path": "backend/src/validators/payment.validator.ts",
+      "similarity": 0.6473587363392155,
+      "evidence": "Cosine similarity (chunk full): 0.6474"
+    },
+    {
+      "path": "src/hooks/use-mobile.tsx",
+      "similarity": 0.6472394610497774,
+      "evidence": "Cosine similarity (chunk full): 0.6472"
+    },
+    {
+      "path": "backend/src/repositories/wishlist.repository.ts",
+      "similarity": 0.6463800889741315,
+      "evidence": "Cosine similarity (chunk full): 0.6464"
+    },
+    {
+      "path": "backend/src/types/order.types.ts",
+      "similarity": 0.6457257636064211,
+      "evidence": "Cosine similarity (chunk full): 0.6457"
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "similarity": 0.6456873230467255,
+      "evidence": "Cosine similarity (chunk full): 0.6457"
+    },
+    {
+      "path": "backend/src/services/checkout.service.ts",
+      "similarity": 0.645533494599463,
+      "evidence": "Cosine similarity (chunk full): 0.6455"
+    },
+    {
+      "path": "backend/src/utils/pricing.util.ts",
+      "similarity": 0.6455185857883506,
+      "evidence": "Cosine similarity (chunk full): 0.6455"
+    },
+    {
+      "path": "backend/src/services/cart.service.ts",
+      "similarity": 0.6454432045257505,
+      "evidence": "Cosine similarity (chunk full): 0.6454"
+    },
+    {
+      "path": "app/(shop)/checkout-success/page.tsx",
+      "similarity": 0.6453836571106679,
+      "evidence": "Cosine similarity (chunk full): 0.6454"
+    },
+    {
+      "path": "src/views/TermsOfService.tsx",
+      "similarity": 0.6443798790567625,
+      "evidence": "Cosine similarity (chunk full): 0.6444"
+    },
+    {
+      "path": "backend/src/routes/inventory.routes.ts",
+      "similarity": 0.644103337661759,
+      "evidence": "Cosine similarity (chunk full): 0.6441"
+    },
+    {
+      "path": "backend/docs/api/product-api.md",
+      "similarity": 0.6437973169803628,
+      "evidence": "Cosine similarity (chunk full): 0.6438"
+    },
+    {
+      "path": "src/views/Profile.tsx",
+      "similarity": 0.6432820171240768,
+      "evidence": "Cosine similarity (chunk full): 0.6433"
+    },
+    {
+      "path": "src/services/checkout.service.ts",
+      "similarity": 0.6428781560283315,
+      "evidence": "Cosine similarity (chunk full): 0.6429"
+    },
+    {
+      "path": "backend/docs/database/cart-domain.md",
+      "similarity": 0.6422531033694445,
+      "evidence": "Cosine similarity (chunk full): 0.6423"
+    },
+    {
+      "path": "backend/src/controllers/category.controller.ts",
+      "similarity": 0.6414487924054687,
+      "evidence": "Cosine similarity (chunk full): 0.6414"
+    },
+    {
+      "path": "backend/src/middlewares/validate.ts",
+      "similarity": 0.6408593668528761,
+      "evidence": "Cosine similarity (chunk full): 0.6409"
+    },
+    {
+      "path": "src/types/review.ts",
+      "similarity": 0.6408259296814119,
+      "evidence": "Cosine similarity (chunk full): 0.6408"
+    },
+    {
+      "path": "src/types/Product.ts",
+      "similarity": 0.6407322295024923,
+      "evidence": "Cosine similarity (chunk full): 0.6407"
+    },
+    {
+      "path": "backend/src/models/category.model.ts",
+      "similarity": 0.6400981960137601,
+      "evidence": "Cosine similarity (chunk full): 0.6401"
+    },
+    {
+      "path": "backend/docs/business-rules.md",
+      "similarity": 0.6400956626800316,
+      "evidence": "Cosine similarity (chunk full): 0.6401"
+    },
+    {
+      "path": "src/components/ProductQA.tsx",
+      "similarity": 0.6400649357699547,
+      "evidence": "Cosine similarity (chunk full): 0.6401"
+    },
+    {
+      "path": "src/views/Cart.tsx",
+      "similarity": 0.639701515455769,
+      "evidence": "Cosine similarity (chunk full): 0.6397"
+    },
+    {
+      "path": "backend/src/middlewares/requestId.middleware.ts",
+      "similarity": 0.6385713474664271,
+      "evidence": "Cosine similarity (chunk full): 0.6386"
+    },
+    {
+      "path": "backend/src/repositories/cart.repository.ts",
+      "similarity": 0.638422732540032,
+      "evidence": "Cosine similarity (chunk full): 0.6384"
+    },
+    {
+      "path": "src/types/discovery.types.ts",
+      "similarity": 0.6380479465481411,
+      "evidence": "Cosine similarity (chunk full): 0.6380"
+    },
+    {
+      "path": "backend/src/validators/wishlist.validator.ts",
+      "similarity": 0.637602346459235,
+      "evidence": "Cosine similarity (chunk full): 0.6376"
+    },
+    {
+      "path": "backend/docs/database/category-domain.md",
+      "similarity": 0.6371570549314485,
+      "evidence": "Cosine similarity (chunk full): 0.6372"
+    },
+    {
+      "path": "backend/src/server.ts",
+      "similarity": 0.6369063060127563,
+      "evidence": "Cosine similarity (chunk full): 0.6369"
+    },
+    {
+      "path": "src/components/product/ProductInfo.tsx",
+      "similarity": 0.6359153850682244,
+      "evidence": "Cosine similarity (chunk full): 0.6359"
+    },
+    {
+      "path": "backend/src/validators/cart.validator.ts",
+      "similarity": 0.6358059926406916,
+      "evidence": "Cosine similarity (chunk full): 0.6358"
+    },
+    {
+      "path": "docs/frontend/http-client.md",
+      "similarity": 0.6356174675025698,
+      "evidence": "Cosine similarity (chunk full): 0.6356"
+    },
+    {
+      "path": "src/services/ProductDataService.ts",
+      "similarity": 0.6354740575108331,
+      "evidence": "Cosine similarity (chunk full): 0.6355"
+    },
+    {
+      "path": "backend/docs/api/cart-api.md",
+      "similarity": 0.6352995328165699,
+      "evidence": "Cosine similarity (chunk full): 0.6353"
+    },
+    {
+      "path": "docs/migration/Migration-Log.md",
+      "similarity": 0.6350758652752809,
+      "evidence": "Cosine similarity (chunk full): 0.6351"
+    },
+    {
+      "path": "src/services/order.service.ts",
+      "similarity": 0.6348083188869375,
+      "evidence": "Cosine similarity (chunk full): 0.6348"
+    },
+    {
+      "path": "src/services/wishlist.service.ts",
+      "similarity": 0.6347475445573998,
+      "evidence": "Cosine similarity (chunk full): 0.6347"
+    },
+    {
+      "path": "backend/src/utils/AppError.ts",
+      "similarity": 0.6342505548807801,
+      "evidence": "Cosine similarity (chunk full): 0.6343"
+    },
+    {
+      "path": "app/providers.tsx",
+      "similarity": 0.6342288380228027,
+      "evidence": "Cosine similarity (chunk full): 0.6342"
+    },
+    {
+      "path": "src/views/ReturnPolicy.tsx",
+      "similarity": 0.6340382125559856,
+      "evidence": "Cosine similarity (chunk full): 0.6340"
+    },
+    {
+      "path": "src/components/ProductSort.tsx",
+      "similarity": 0.6339786208127881,
+      "evidence": "Cosine similarity (chunk full): 0.6340"
+    },
+    {
+      "path": "backend/src/services/wishlist.service.ts",
+      "similarity": 0.6334415668028286,
+      "evidence": "Cosine similarity (chunk full): 0.6334"
+    },
+    {
+      "path": "backend/src/models/product.model.ts",
+      "similarity": 0.6332733558976885,
+      "evidence": "Cosine similarity (chunk full): 0.6333"
+    },
+    {
+      "path": "src/hooks/useOrders.ts",
+      "similarity": 0.6332183391112844,
+      "evidence": "Cosine similarity (chunk full): 0.6332"
+    },
+    {
+      "path": "backend/src/middlewares/rateLimiter.middleware.ts",
+      "similarity": 0.6328297333813231,
+      "evidence": "Cosine similarity (chunk full): 0.6328"
+    },
+    {
+      "path": "backend/src/models/user.model.ts",
+      "similarity": 0.6321153044532285,
+      "evidence": "Cosine similarity (chunk full): 0.6321"
+    },
+    {
+      "path": "backend/src/controllers/product.controller.ts",
+      "similarity": 0.630988410711378,
+      "evidence": "Cosine similarity (chunk full): 0.6310"
+    },
+    {
+      "path": "src/components/ProductBundle.tsx",
+      "similarity": 0.629666354779733,
+      "evidence": "Cosine similarity (chunk full): 0.6297"
+    },
+    {
+      "path": "src/components/product/PromoBanner.tsx",
+      "similarity": 0.6296564096251337,
+      "evidence": "Cosine similarity (chunk full): 0.6297"
+    },
+    {
+      "path": "backend/src/routes/payment.routes.ts",
+      "similarity": 0.6292632305443873,
+      "evidence": "Cosine similarity (chunk full): 0.6293"
+    },
+    {
+      "path": "src/hooks/use-toast.ts",
+      "similarity": 0.6292165243400252,
+      "evidence": "Cosine similarity (chunk full): 0.6292"
+    },
+    {
+      "path": "backend/src/routes/cart.routes.ts",
+      "similarity": 0.6291249025810609,
+      "evidence": "Cosine similarity (chunk full): 0.6291"
+    },
+    {
+      "path": "backend/src/builders/product.query-builder.ts",
+      "similarity": 0.6282634278031217,
+      "evidence": "Cosine similarity (chunk full): 0.6283"
+    },
+    {
+      "path": "backend/src/services/product.service.ts",
+      "similarity": 0.6282466081056257,
+      "evidence": "Cosine similarity (chunk full): 0.6282"
+    },
+    {
+      "path": "backend/docs/database/user-domain.md",
+      "similarity": 0.6279679946588025,
+      "evidence": "Cosine similarity (chunk full): 0.6280"
+    },
+    {
+      "path": "src/components/ProductGrid.tsx",
+      "similarity": 0.627194686771842,
+      "evidence": "Cosine similarity (chunk full): 0.6272"
+    },
+    {
+      "path": "backend/src/routes/category.routes.ts",
+      "similarity": 0.6269725442022414,
+      "evidence": "Cosine similarity (chunk full): 0.6270"
+    },
+    {
+      "path": "docs/backend-architecture-blueprint.md",
+      "similarity": 0.6269454440607417,
+      "evidence": "Cosine similarity (chunk full): 0.6269"
+    },
+    {
+      "path": "src/contexts/WishlistContext.tsx",
+      "similarity": 0.6267903086793635,
+      "evidence": "Cosine similarity (chunk full): 0.6268"
+    },
+    {
+      "path": "backend/src/controllers/payment.controller.ts",
+      "similarity": 0.6263347069337233,
+      "evidence": "Cosine similarity (chunk full): 0.6263"
+    },
+    {
+      "path": "app/(shop)/checkout/page.tsx",
+      "similarity": 0.6261617891579334,
+      "evidence": "Cosine similarity (chunk full): 0.6262"
+    },
+    {
+      "path": "backend/src/types/discovery.types.ts",
+      "similarity": 0.6258245361747197,
+      "evidence": "Cosine similarity (chunk full): 0.6258"
+    },
+    {
+      "path": "src/views/Index.tsx",
+      "similarity": 0.6257352499131525,
+      "evidence": "Cosine similarity (chunk full): 0.6257"
+    },
+    {
+      "path": "backend/docs/api/payment-api.md",
+      "similarity": 0.6254171553260686,
+      "evidence": "Cosine similarity (chunk full): 0.6254"
+    },
+    {
+      "path": "backend/Dockerfile",
+      "similarity": 0.6246514360854337,
+      "evidence": "Cosine similarity (chunk full): 0.6247"
+    },
+    {
+      "path": "src/components/LoyaltyPoints.tsx",
+      "similarity": 0.6244554668276742,
+      "evidence": "Cosine similarity (chunk full): 0.6245"
+    },
+    {
+      "path": "backend/src/models/cart.model.ts",
+      "similarity": 0.6243743620216963,
+      "evidence": "Cosine similarity (chunk full): 0.6244"
+    },
+    {
+      "path": "backend/src/adapters/payment/payment-provider.factory.ts",
+      "similarity": 0.624340912052758,
+      "evidence": "Cosine similarity (chunk full): 0.6243"
+    },
+    {
+      "path": "src/components/ui/progress.tsx",
+      "similarity": 0.6240970231715343,
+      "evidence": "Cosine similarity (chunk full): 0.6241"
+    },
+    {
+      "path": "backend/scripts/verify-payment-domain.ts",
+      "similarity": 0.6239059214460104,
+      "evidence": "Cosine similarity (chunk full): 0.6239"
+    },
+    {
+      "path": "backend/src/routes/auth.routes.ts",
+      "similarity": 0.6238073462098894,
+      "evidence": "Cosine similarity (chunk full): 0.6238"
+    },
+    {
+      "path": "app/(account)/order-tracking/page.tsx",
+      "similarity": 0.623734680099798,
+      "evidence": "Cosine similarity (chunk full): 0.6237"
+    },
+    {
+      "path": "app/(shop)/product/[id]/page.tsx",
+      "similarity": 0.6236117500490402,
+      "evidence": "Cosine similarity (chunk full): 0.6236"
+    },
+    {
+      "path": "docs/adr/0001-nextjs-migration.md",
+      "similarity": 0.6233727096520937,
+      "evidence": "Cosine similarity (chunk full): 0.6234"
+    },
+    {
+      "path": "src/contexts/CartContext.tsx",
+      "similarity": 0.6231452225372413,
+      "evidence": "Cosine similarity (chunk full): 0.6231"
+    },
+    {
+      "path": "backend/.env.example",
+      "similarity": 0.6231074132765316,
+      "evidence": "Cosine similarity (chunk full): 0.6231"
+    },
+    {
+      "path": "backend/src/repositories/payment.repository.ts",
+      "similarity": 0.622896070006247,
+      "evidence": "Cosine similarity (chunk full): 0.6229"
+    },
+    {
+      "path": ".github/workflows/backend-ci.yml",
+      "similarity": 0.6228344350643062,
+      "evidence": "Cosine similarity (chunk full): 0.6228"
+    },
+    {
+      "path": "src/views/FAQ.tsx",
+      "similarity": 0.6227974569124587,
+      "evidence": "Cosine similarity (chunk full): 0.6228"
+    },
+    {
+      "path": "src/components/Collections.tsx",
+      "similarity": 0.6222814424008106,
+      "evidence": "Cosine similarity (chunk full): 0.6223"
+    },
+    {
+      "path": "src/components/ProductQuickView.tsx",
+      "similarity": 0.621857424384453,
+      "evidence": "Cosine similarity (chunk full): 0.6219"
+    },
+    {
+      "path": "src/components/Features.tsx",
+      "similarity": 0.621620513538579,
+      "evidence": "Cosine similarity (chunk full): 0.6216"
+    },
+    {
+      "path": "src/hooks/useProductSearch.ts",
+      "similarity": 0.6212989179235705,
+      "evidence": "Cosine similarity (chunk full): 0.6213"
+    },
+    {
+      "path": "backend/src/mappers/wishlist.mapper.ts",
+      "similarity": 0.621209282280169,
+      "evidence": "Cosine similarity (chunk full): 0.6212"
+    },
+    {
+      "path": "backend/src/routes/user.routes.ts",
+      "similarity": 0.621130843021033,
+      "evidence": "Cosine similarity (chunk full): 0.6211"
+    },
+    {
+      "path": "src/services/payment.service.ts",
+      "similarity": 0.6204076621916085,
+      "evidence": "Cosine similarity (chunk full): 0.6204"
+    },
+    {
+      "path": "backend/src/middlewares/upload.middleware.ts",
+      "similarity": 0.620187277161792,
+      "evidence": "Cosine similarity (chunk full): 0.6202"
+    },
+    {
+      "path": "backend/src/validators/common.validator.ts",
+      "similarity": 0.6197430790172586,
+      "evidence": "Cosine similarity (chunk full): 0.6197"
+    },
+    {
+      "path": "app/(shop)/bundle/[id]/page.tsx",
+      "similarity": 0.6192365334461093,
+      "evidence": "Cosine similarity (chunk full): 0.6192"
+    },
+    {
+      "path": "src/components/user/AddressCard.tsx",
+      "similarity": 0.6190008163609481,
+      "evidence": "Cosine similarity (chunk full): 0.6190"
+    },
+    {
+      "path": "src/components/product/ProductReviewForm.tsx",
+      "similarity": 0.6186683865959011,
+      "evidence": "Cosine similarity (chunk full): 0.6187"
+    },
+    {
+      "path": "backend/src/utils/asyncHandler.ts",
+      "similarity": 0.6181057956501504,
+      "evidence": "Cosine similarity (chunk full): 0.6181"
+    },
+    {
+      "path": "src/views/Login.tsx",
+      "similarity": 0.6158475725777204,
+      "evidence": "Cosine similarity (chunk full): 0.6158"
+    },
+    {
+      "path": "src/components/ReferralProgram.tsx",
+      "similarity": 0.614893875913191,
+      "evidence": "Cosine similarity (chunk full): 0.6149"
+    },
+    {
+      "path": "backend/src/middlewares/auth.middleware.ts",
+      "similarity": 0.6148584369330621,
+      "evidence": "Cosine similarity (chunk full): 0.6149"
+    },
+    {
+      "path": "src/components/user/AddressForm.tsx",
+      "similarity": 0.6141801916422561,
+      "evidence": "Cosine similarity (chunk full): 0.6142"
+    },
+    {
+      "path": "app/(account)/layout.tsx",
+      "similarity": 0.6140118607890911,
+      "evidence": "Cosine similarity (chunk full): 0.6140"
+    },
+    {
+      "path": "backend/src/controllers/wishlist.controller.ts",
+      "similarity": 0.6136113998073012,
+      "evidence": "Cosine similarity (chunk full): 0.6136"
+    },
+    {
+      "path": "backend/src/routes/wishlist.routes.ts",
+      "similarity": 0.6135155667510503,
+      "evidence": "Cosine similarity (chunk full): 0.6135"
+    },
+    {
+      "path": "backend/src/types/express.d.ts",
+      "similarity": 0.613240228965444,
+      "evidence": "Cosine similarity (chunk full): 0.6132"
+    },
+    {
+      "path": "src/components/ProductFilters.tsx",
+      "similarity": 0.6123874481587842,
+      "evidence": "Cosine similarity (chunk full): 0.6124"
+    },
+    {
+      "path": "backend/src/middlewares/errorHandler.ts",
+      "similarity": 0.6123255905586434,
+      "evidence": "Cosine similarity (chunk full): 0.6123"
+    },
+    {
+      "path": "app/(shop)/shop/page.tsx",
+      "similarity": 0.6120535272375752,
+      "evidence": "Cosine similarity (chunk full): 0.6121"
+    },
+    {
+      "path": "backend/src/controllers/cart.controller.ts",
+      "similarity": 0.6116473619824269,
+      "evidence": "Cosine similarity (chunk full): 0.6116"
+    },
+    {
+      "path": "backend/src/config/swagger.config.ts",
+      "similarity": 0.6114565701301055,
+      "evidence": "Cosine similarity (chunk full): 0.6115"
+    },
+    {
+      "path": "src/components/product/ProductReviewCard.tsx",
+      "similarity": 0.6111589214089105,
+      "evidence": "Cosine similarity (chunk full): 0.6112"
+    },
+    {
+      "path": "backend/docs/api/wishlist-api.md",
+      "similarity": 0.611145320546636,
+      "evidence": "Cosine similarity (chunk full): 0.6111"
+    },
+    {
+      "path": "docs/frontend/backend-integration.md",
+      "similarity": 0.6105556799415798,
+      "evidence": "Cosine similarity (chunk full): 0.6106"
+    },
+    {
+      "path": "src/components/ui/toggle.tsx",
+      "similarity": 0.6101844363486922,
+      "evidence": "Cosine similarity (chunk full): 0.6102"
+    },
+    {
+      "path": "src/components/ProductDetailsTabs.tsx",
+      "similarity": 0.6097736391334467,
+      "evidence": "Cosine similarity (chunk full): 0.6098"
+    },
+    {
+      "path": "src/components/ui/toaster.tsx",
+      "similarity": 0.6094884940050423,
+      "evidence": "Cosine similarity (chunk full): 0.6095"
+    },
+    {
+      "path": "backend/src/adapters/payment/razorpay.adapter.ts",
+      "similarity": 0.6091759817851101,
+      "evidence": "Cosine similarity (chunk full): 0.6092"
+    },
+    {
+      "path": "src/components/FeaturedProducts.tsx",
+      "similarity": 0.6090386968906033,
+      "evidence": "Cosine similarity (chunk full): 0.6090"
+    },
+    {
+      "path": "backend/src/controllers/user.controller.ts",
+      "similarity": 0.6089978698103167,
+      "evidence": "Cosine similarity (chunk full): 0.6090"
+    },
+    {
+      "path": "src/components/SocialShareButtons.tsx",
+      "similarity": 0.6089901583274646,
+      "evidence": "Cosine similarity (chunk full): 0.6090"
+    },
+    {
+      "path": "src/views/BundleDetail.tsx",
+      "similarity": 0.6087321585678507,
+      "evidence": "Cosine similarity (chunk full): 0.6087"
+    },
+    {
+      "path": "backend/src/services/cloudinary.service.ts",
+      "similarity": 0.6079683887190511,
+      "evidence": "Cosine similarity (chunk full): 0.6080"
+    },
+    {
+      "path": "bun.lockb",
+      "similarity": 0.6079558019084845,
+      "evidence": "Cosine similarity (chunk 8): 0.6080"
+    },
+    {
+      "path": "src/components/ui/toast.tsx",
+      "similarity": 0.6068537876391354,
+      "evidence": "Cosine similarity (chunk full): 0.6069"
+    },
+    {
+      "path": "scripts/migrate-link-props.ps1",
+      "similarity": 0.6066200951580786,
+      "evidence": "Cosine similarity (chunk full): 0.6066"
+    },
+    {
+      "path": "src/components/product/ProductGallery.tsx",
+      "similarity": 0.606478060882757,
+      "evidence": "Cosine similarity (chunk full): 0.6065"
+    },
+    {
+      "path": "src/components/SearchBar.tsx",
+      "similarity": 0.6061932224148368,
+      "evidence": "Cosine similarity (chunk full): 0.6062"
+    },
+    {
+      "path": "src/views/About.tsx",
+      "similarity": 0.6055026470854724,
+      "evidence": "Cosine similarity (chunk full): 0.6055"
+    },
+    {
+      "path": "app/(public)/terms/page.tsx",
+      "similarity": 0.6048025403931514,
+      "evidence": "Cosine similarity (chunk full): 0.6048"
+    },
+    {
+      "path": "backend/src/config/cloudinary.config.ts",
+      "similarity": 0.6044692667593065,
+      "evidence": "Cosine similarity (chunk full): 0.6045"
+    },
+    {
+      "path": "src/views/PrivacyPolicy.tsx",
+      "similarity": 0.6041348067452291,
+      "evidence": "Cosine similarity (chunk full): 0.6041"
+    },
+    {
+      "path": "src/components/auth/AuthGuard.tsx",
+      "similarity": 0.6037454671822157,
+      "evidence": "Cosine similarity (chunk full): 0.6037"
+    },
+    {
+      "path": "README.md",
+      "similarity": 0.6036837366997773,
+      "evidence": "Cosine similarity (chunk full): 0.6037"
+    },
+    {
+      "path": "src/components/ui/label.tsx",
+      "similarity": 0.6032245588721273,
+      "evidence": "Cosine similarity (chunk full): 0.6032"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "similarity": 0.6030419866210186,
+      "evidence": "Cosine similarity (chunk full): 0.6030"
+    },
+    {
+      "path": "src/components/product/ProductReviewsSection.tsx",
+      "similarity": 0.6029944974351814,
+      "evidence": "Cosine similarity (chunk full): 0.6030"
+    },
+    {
+      "path": "src/components/Testimonials.tsx",
+      "similarity": 0.6024707273025801,
+      "evidence": "Cosine similarity (chunk full): 0.6025"
+    },
+    {
+      "path": "app/layout.tsx",
+      "similarity": 0.6014094756527537,
+      "evidence": "Cosine similarity (chunk full): 0.6014"
+    },
+    {
+      "path": "src/components/ScrollToTop.tsx",
+      "similarity": 0.6007210060514895,
+      "evidence": "Cosine similarity (chunk full): 0.6007"
+    },
+    {
+      "path": "src/components/ui/use-toast.ts",
+      "similarity": 0.6005525699160369,
+      "evidence": "Cosine similarity (chunk full): 0.6006"
+    },
+    {
+      "path": "src/components/product/StarRating.tsx",
+      "similarity": 0.6004025287955101,
+      "evidence": "Cosine similarity (chunk full): 0.6004"
+    },
+    {
+      "path": "backend/src/validators/category.validator.ts",
+      "similarity": 0.6003047304321194,
+      "evidence": "Cosine similarity (chunk full): 0.6003"
+    },
+    {
+      "path": "src/components/ui/form.tsx",
+      "similarity": 0.6002831212036408,
+      "evidence": "Cosine similarity (chunk full): 0.6003"
+    },
+    {
+      "path": "src/views/Bundles.tsx",
+      "similarity": 0.600270725535357,
+      "evidence": "Cosine similarity (chunk full): 0.6003"
+    },
+    {
+      "path": "src/views/Wishlist.tsx",
+      "similarity": 0.6001822773556031,
+      "evidence": "Cosine similarity (chunk full): 0.6002"
+    },
+    {
+      "path": "src/components/ui/badge.tsx",
+      "similarity": 0.5999969747906888,
+      "evidence": "Cosine similarity (chunk full): 0.6000"
+    },
+    {
+      "path": "backend/src/app.ts",
+      "similarity": 0.5998906467530526,
+      "evidence": "Cosine similarity (chunk full): 0.5999"
+    },
+    {
+      "path": "backend/src/validators/product.validator.ts",
+      "similarity": 0.5994038001454361,
+      "evidence": "Cosine similarity (chunk full): 0.5994"
+    },
+    {
+      "path": "backend/.editorconfig",
+      "similarity": 0.598889075251904,
+      "evidence": "Cosine similarity (chunk full): 0.5989"
+    },
+    {
+      "path": "docs/business-rules.md",
+      "similarity": 0.5987907541519315,
+      "evidence": "Cosine similarity (chunk full): 0.5988"
+    },
+    {
+      "path": "backend/src/controllers/auth.controller.ts",
+      "similarity": 0.5987466730371103,
+      "evidence": "Cosine similarity (chunk full): 0.5987"
+    },
+    {
+      "path": "src/components/ui/sidebar.tsx",
+      "similarity": 0.598614380628554,
+      "evidence": "Cosine similarity (chunk full): 0.5986"
+    },
+    {
+      "path": "backend/src/mappers/cart.mapper.ts",
+      "similarity": 0.5981418093297534,
+      "evidence": "Cosine similarity (chunk full): 0.5981"
+    },
+    {
+      "path": "src/components/SearchPage.tsx",
+      "similarity": 0.5980655260245906,
+      "evidence": "Cosine similarity (chunk full): 0.5981"
+    },
+    {
+      "path": "backend/.prettierrc",
+      "similarity": 0.5976087562476994,
+      "evidence": "Cosine similarity (chunk full): 0.5976"
+    },
+    {
+      "path": "backend/docker-compose.yml",
+      "similarity": 0.5973384439583055,
+      "evidence": "Cosine similarity (chunk full): 0.5973"
+    },
+    {
+      "path": "src/hooks/useProducts.ts",
+      "similarity": 0.5967438854646187,
+      "evidence": "Cosine similarity (chunk full): 0.5967"
+    },
+    {
+      "path": "src/services/product.service.ts",
+      "similarity": 0.5965858938059675,
+      "evidence": "Cosine similarity (chunk full): 0.5966"
+    },
+    {
+      "path": "src/components/ui/drawer.tsx",
+      "similarity": 0.5958795316505592,
+      "evidence": "Cosine similarity (chunk full): 0.5959"
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "similarity": 0.5956929396833717,
+      "evidence": "Cosine similarity (chunk full): 0.5957"
+    },
+    {
+      "path": "src/views/ShippingPolicy.tsx",
+      "similarity": 0.5954666513356169,
+      "evidence": "Cosine similarity (chunk full): 0.5955"
+    },
+    {
+      "path": "src/components/product/RelatedProducts.tsx",
+      "similarity": 0.5950434444940873,
+      "evidence": "Cosine similarity (chunk full): 0.5950"
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "similarity": 0.5946634548229733,
+      "evidence": "Cosine similarity (chunk full): 0.5947"
+    },
+    {
+      "path": "app/(auth)/login/page.tsx",
+      "similarity": 0.5946214401655824,
+      "evidence": "Cosine similarity (chunk full): 0.5946"
+    },
+    {
+      "path": "backend/README.md",
+      "similarity": 0.5945312765403354,
+      "evidence": "Cosine similarity (chunk full): 0.5945"
+    },
+    {
+      "path": "src/components/ui/switch.tsx",
+      "similarity": 0.594381149781214,
+      "evidence": "Cosine similarity (chunk full): 0.5944"
+    },
+    {
+      "path": "src/components/ui/checkbox.tsx",
+      "similarity": 0.5943526928725007,
+      "evidence": "Cosine similarity (chunk full): 0.5944"
+    },
+    {
+      "path": "src/views/NotFound.tsx",
+      "similarity": 0.5936139251156709,
+      "evidence": "Cosine similarity (chunk full): 0.5936"
+    },
+    {
+      "path": "backend/docs/integrations/cloudinary.md",
+      "similarity": 0.5934338744887575,
+      "evidence": "Cosine similarity (chunk full): 0.5934"
+    },
+    {
+      "path": "src/components/ui/radio-group.tsx",
+      "similarity": 0.5921737060977552,
+      "evidence": "Cosine similarity (chunk full): 0.5922"
+    },
+    {
+      "path": "backend/src/validators/user.validator.ts",
+      "similarity": 0.5921508476087873,
+      "evidence": "Cosine similarity (chunk full): 0.5922"
+    },
+    {
+      "path": "backend/package.json",
+      "similarity": 0.5915837451169381,
+      "evidence": "Cosine similarity (chunk full): 0.5916"
+    },
+    {
+      "path": "src/components/product/ProductBreadcrumb.tsx",
+      "similarity": 0.5912877058145753,
+      "evidence": "Cosine similarity (chunk full): 0.5913"
+    },
+    {
+      "path": "src/components/ui/aspect-ratio.tsx",
+      "similarity": 0.5909747366147168,
+      "evidence": "Cosine similarity (chunk full): 0.5910"
+    },
+    {
+      "path": "backend/src/config/redis.config.ts",
+      "similarity": 0.5908200343429298,
+      "evidence": "Cosine similarity (chunk full): 0.5908"
+    },
+    {
+      "path": "app/(account)/wishlist/page.tsx",
+      "similarity": 0.5905008377365409,
+      "evidence": "Cosine similarity (chunk full): 0.5905"
+    },
+    {
+      "path": "src/components/ui/skeleton.tsx",
+      "similarity": 0.5904261945713848,
+      "evidence": "Cosine similarity (chunk full): 0.5904"
+    },
+    {
+      "path": "src/utils/currency.ts",
+      "similarity": 0.5903128888772621,
+      "evidence": "Cosine similarity (chunk full): 0.5903"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "similarity": 0.5891945318817043,
+      "evidence": "Cosine similarity (chunk full): 0.5892"
+    },
+    {
+      "path": "src/hooks/useSocialLogin.ts",
+      "similarity": 0.5877994853214713,
+      "evidence": "Cosine similarity (chunk full): 0.5878"
+    },
+    {
+      "path": "app/(shop)/bundles/page.tsx",
+      "similarity": 0.5876182154050898,
+      "evidence": "Cosine similarity (chunk full): 0.5876"
+    },
+    {
+      "path": "app/(public)/support/page.tsx",
+      "similarity": 0.5875252817957574,
+      "evidence": "Cosine similarity (chunk full): 0.5875"
+    },
+    {
+      "path": "src/components/ui/carousel.tsx",
+      "similarity": 0.5871348181338797,
+      "evidence": "Cosine similarity (chunk full): 0.5871"
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "similarity": 0.5869165119215717,
+      "evidence": "Cosine similarity (chunk full): 0.5869"
+    },
+    {
+      "path": "src/components/ui/alert.tsx",
+      "similarity": 0.5865382218251184,
+      "evidence": "Cosine similarity (chunk full): 0.5865"
+    },
+    {
+      "path": "backend/src/utils/token.ts",
+      "similarity": 0.5864667740577787,
+      "evidence": "Cosine similarity (chunk full): 0.5865"
+    },
+    {
+      "path": "backend/src/mappers/cart-item.mapper.ts",
+      "similarity": 0.5863512819381328,
+      "evidence": "Cosine similarity (chunk full): 0.5864"
+    },
+    {
+      "path": "src/components/ui/pagination.tsx",
+      "similarity": 0.5856288344238103,
+      "evidence": "Cosine similarity (chunk full): 0.5856"
+    },
+    {
+      "path": "components.json",
+      "similarity": 0.5841494359307241,
+      "evidence": "Cosine similarity (chunk full): 0.5841"
+    },
+    {
+      "path": "package.json",
+      "similarity": 0.5838542485628737,
+      "evidence": "Cosine similarity (chunk full): 0.5839"
+    },
+    {
+      "path": "backend/docs/search-performance.md",
+      "similarity": 0.5834459452456286,
+      "evidence": "Cosine similarity (chunk full): 0.5834"
+    },
+    {
+      "path": "backend/src/utils/logger.ts",
+      "similarity": 0.5832866623638407,
+      "evidence": "Cosine similarity (chunk full): 0.5833"
+    },
+    {
+      "path": "WOLLYWAY_CONTEXT.md",
+      "similarity": 0.5831590834536209,
+      "evidence": "Cosine similarity (chunk full): 0.5832"
+    },
+    {
+      "path": "src/components/ui/breadcrumb.tsx",
+      "similarity": 0.5823632119617935,
+      "evidence": "Cosine similarity (chunk full): 0.5824"
+    },
+    {
+      "path": "app/(public)/return-policy/page.tsx",
+      "similarity": 0.5823168562327392,
+      "evidence": "Cosine similarity (chunk full): 0.5823"
+    },
+    {
+      "path": "backend/src/config/env.config.ts",
+      "similarity": 0.5822106569152347,
+      "evidence": "Cosine similarity (chunk full): 0.5822"
+    },
+    {
+      "path": "src/views/Contact.tsx",
+      "similarity": 0.581965110901618,
+      "evidence": "Cosine similarity (chunk full): 0.5820"
+    },
+    {
+      "path": "backend/tsconfig.json",
+      "similarity": 0.5815642347116262,
+      "evidence": "Cosine similarity (chunk full): 0.5816"
+    },
+    {
+      "path": "src/data/users.json",
+      "similarity": 0.5810839244731704,
+      "evidence": "Cosine similarity (chunk full): 0.5811"
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "similarity": 0.5809874623263241,
+      "evidence": "Cosine similarity (chunk full): 0.5810"
+    },
+    {
+      "path": "src/components/ui/calendar.tsx",
+      "similarity": 0.5802895116476767,
+      "evidence": "Cosine similarity (chunk full): 0.5803"
+    },
+    {
+      "path": "app/(public)/page.tsx",
+      "similarity": 0.5801903633523164,
+      "evidence": "Cosine similarity (chunk full): 0.5802"
+    },
+    {
+      "path": "app/(public)/about/page.tsx",
+      "similarity": 0.5790732872546669,
+      "evidence": "Cosine similarity (chunk full): 0.5791"
+    },
+    {
+      "path": "src/components/ui/input.tsx",
+      "similarity": 0.5778421835372742,
+      "evidence": "Cosine similarity (chunk full): 0.5778"
+    },
+    {
+      "path": "backend/src/validators/auth.validator.ts",
+      "similarity": 0.5769593781553555,
+      "evidence": "Cosine similarity (chunk full): 0.5770"
+    },
+    {
+      "path": "src/components/ui/hover-card.tsx",
+      "similarity": 0.5764112367238757,
+      "evidence": "Cosine similarity (chunk full): 0.5764"
+    },
+    {
+      "path": "src/components/auth/SocialLoginButtons.tsx",
+      "similarity": 0.5764019369431107,
+      "evidence": "Cosine similarity (chunk full): 0.5764"
+    },
+    {
+      "path": "scripts/migrate-router.ps1",
+      "similarity": 0.5752578056332729,
+      "evidence": "Cosine similarity (chunk full): 0.5753"
+    },
+    {
+      "path": "app/(shop)/cart/page.tsx",
+      "similarity": 0.5751936191758005,
+      "evidence": "Cosine similarity (chunk full): 0.5752"
+    },
+    {
+      "path": "src/components/ui/toggle-group.tsx",
+      "similarity": 0.5751524865424441,
+      "evidence": "Cosine similarity (chunk full): 0.5752"
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "similarity": 0.5750916827450062,
+      "evidence": "Cosine similarity (chunk full): 0.5751"
+    },
+    {
+      "path": "src/components/ui/command.tsx",
+      "similarity": 0.5748950878415746,
+      "evidence": "Cosine similarity (chunk full): 0.5749"
+    },
+    {
+      "path": "backend/.gitignore",
+      "similarity": 0.5725880901558337,
+      "evidence": "Cosine similarity (chunk full): 0.5726"
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "similarity": 0.5720886809296724,
+      "evidence": "Cosine similarity (chunk full): 0.5721"
+    },
+    {
+      "path": "src/components/auth/PasswordStrengthMeter.tsx",
+      "similarity": 0.5720577699225702,
+      "evidence": "Cosine similarity (chunk full): 0.5721"
+    },
+    {
+      "path": "src/components/ui/textarea.tsx",
+      "similarity": 0.5714241778480319,
+      "evidence": "Cosine similarity (chunk full): 0.5714"
+    },
+    {
+      "path": "src/components/ui/select.tsx",
+      "similarity": 0.5708290013349041,
+      "evidence": "Cosine similarity (chunk full): 0.5708"
+    },
+    {
+      "path": "eslint.config.js",
+      "similarity": 0.5703399335512351,
+      "evidence": "Cosine similarity (chunk full): 0.5703"
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "similarity": 0.5702558098209451,
+      "evidence": "Cosine similarity (chunk full): 0.5703"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "similarity": 0.5700496002273183,
+      "evidence": "Cosine similarity (chunk full): 0.5700"
+    },
+    {
+      "path": "package-lock.json",
+      "similarity": 0.5694653280388606,
+      "evidence": "Cosine similarity (chunk 3): 0.5695"
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "similarity": 0.56903799109513,
+      "evidence": "Cosine similarity (chunk full): 0.5690"
+    },
+    {
+      "path": "next.config.ts",
+      "similarity": 0.5689307675329666,
+      "evidence": "Cosine similarity (chunk full): 0.5689"
+    },
+    {
+      "path": "app/(public)/shipping-policy/page.tsx",
+      "similarity": 0.56866600675576,
+      "evidence": "Cosine similarity (chunk full): 0.5687"
+    },
+    {
+      "path": "app/(account)/profile/page.tsx",
+      "similarity": 0.5685741750187717,
+      "evidence": "Cosine similarity (chunk full): 0.5686"
+    },
+    {
+      "path": "src/components/ui/navigation-menu.tsx",
+      "similarity": 0.5681592891797287,
+      "evidence": "Cosine similarity (chunk full): 0.5682"
+    },
+    {
+      "path": ".gitignore",
+      "similarity": 0.5679505664669923,
+      "evidence": "Cosine similarity (chunk full): 0.5680"
+    },
+    {
+      "path": "src/components/ui/dropdown-menu.tsx",
+      "similarity": 0.5678839742992153,
+      "evidence": "Cosine similarity (chunk full): 0.5679"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "similarity": 0.5673777976140754,
+      "evidence": "Cosine similarity (chunk 0): 0.5674"
+    },
+    {
+      "path": "backend/src/config/db.config.ts",
+      "similarity": 0.5669993533551008,
+      "evidence": "Cosine similarity (chunk full): 0.5670"
+    },
+    {
+      "path": ".env.example",
+      "similarity": 0.5665671945380577,
+      "evidence": "Cosine similarity (chunk full): 0.5666"
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "similarity": 0.5643122547629553,
+      "evidence": "Cosine similarity (chunk full): 0.5643"
+    },
+    {
+      "path": "backend/.dockerignore",
+      "similarity": 0.5637396946761943,
+      "evidence": "Cosine similarity (chunk full): 0.5637"
+    },
+    {
+      "path": "src/components/ui/table.tsx",
+      "similarity": 0.563366519945062,
+      "evidence": "Cosine similarity (chunk full): 0.5634"
+    },
+    {
+      "path": "app/(public)/contact/page.tsx",
+      "similarity": 0.5621752376419918,
+      "evidence": "Cosine similarity (chunk full): 0.5622"
+    },
+    {
+      "path": "src/components/ui/popover.tsx",
+      "similarity": 0.5607398782186339,
+      "evidence": "Cosine similarity (chunk full): 0.5607"
+    },
+    {
+      "path": "backend/package-lock.json",
+      "similarity": 0.5599392894063988,
+      "evidence": "Cosine similarity (chunk 0): 0.5599"
+    },
+    {
+      "path": "tsconfig.json",
+      "similarity": 0.5595009278465538,
+      "evidence": "Cosine similarity (chunk full): 0.5595"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "similarity": 0.5591094281869894,
+      "evidence": "Cosine similarity (chunk full): 0.5591"
+    },
+    {
+      "path": "app/(public)/size-guide/page.tsx",
+      "similarity": 0.5578894339697392,
+      "evidence": "Cosine similarity (chunk full): 0.5579"
+    },
+    {
+      "path": "app/(public)/faq/page.tsx",
+      "similarity": 0.5578191493529222,
+      "evidence": "Cosine similarity (chunk full): 0.5578"
+    },
+    {
+      "path": "src/components/ui/avatar.tsx",
+      "similarity": 0.5577262292196652,
+      "evidence": "Cosine similarity (chunk full): 0.5577"
+    },
+    {
+      "path": "src/components/SizeGuide.tsx",
+      "similarity": 0.5574219303581274,
+      "evidence": "Cosine similarity (chunk full): 0.5574"
+    },
+    {
+      "path": "src/components/ui/alert-dialog.tsx",
+      "similarity": 0.557293803720319,
+      "evidence": "Cosine similarity (chunk full): 0.5573"
+    },
+    {
+      "path": "src/components/Hero.tsx",
+      "similarity": 0.555854266417447,
+      "evidence": "Cosine similarity (chunk full): 0.5559"
+    },
+    {
+      "path": "app/(public)/privacy-policy/page.tsx",
+      "similarity": 0.5492000496697468,
+      "evidence": "Cosine similarity (chunk full): 0.5492"
+    },
+    {
+      "path": "src/components/ui/scroll-area.tsx",
+      "similarity": 0.5448180087860187,
+      "evidence": "Cosine similarity (chunk full): 0.5448"
+    },
+    {
+      "path": "src/components/ui/tabs.tsx",
+      "similarity": 0.5440454291802592,
+      "evidence": "Cosine similarity (chunk full): 0.5440"
+    },
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "similarity": 0.5436384666520988,
+      "evidence": "Cosine similarity (chunk full): 0.5436"
+    },
+    {
+      "path": "backend/eslint.config.mjs",
+      "similarity": 0.5385544467096444,
+      "evidence": "Cosine similarity (chunk full): 0.5386"
+    },
+    {
+      "path": "src/components/ui/slider.tsx",
+      "similarity": 0.5376055832208473,
+      "evidence": "Cosine similarity (chunk full): 0.5376"
+    },
+    {
+      "path": "src/index.css",
+      "similarity": 0.5362949921882455,
+      "evidence": "Cosine similarity (chunk full): 0.5363"
+    },
+    {
+      "path": "src/views/SizeGuidePage.tsx",
+      "similarity": 0.5315507534816234,
+      "evidence": "Cosine similarity (chunk full): 0.5316"
+    },
+    {
+      "path": "tailwind.config.js",
+      "similarity": 0.5087327667680288,
+      "evidence": "Cosine similarity (chunk full): 0.5087"
+    },
+    {
+      "path": "src/data/products.json",
+      "similarity": 0.5002237344789522,
+      "evidence": "Cosine similarity (chunk full): 0.5002"
+    },
+    {
+      "path": "public/robots.txt",
+      "similarity": 0.49640009076029634,
+      "evidence": "Cosine similarity (chunk full): 0.4964"
+    },
+    {
+      "path": "app/globals.css",
+      "similarity": 0.49082116629946115,
+      "evidence": "Cosine similarity (chunk full): 0.4908"
+    }
+  ]
+}

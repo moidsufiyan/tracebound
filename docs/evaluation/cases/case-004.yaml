@@ -1,0 +1,52 @@
+case_id: TB-0004
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "honojs/hono"
+  url: "https://github.com/honojs/hono"
+  language: TypeScript
+  base_commit: "c3053ccf14f1c4c70a0c2888eed6121b9f6c8f95~1"
+
+source_change:
+  commit: "c3053ccf14f1c4c70a0c2888eed6121b9f6c8f95"
+  pr_url: "https://github.com/honojs/hono/pull/5475"
+  description: "fix(etag): correctly match mixed-case header name in retainedHeader option"
+  change_type:
+    - bugfix
+  change_timestamp: "2026-09-30T17:36:40+09:00"
+  evaluation_cutoff: "2026-09-30T17:36:40+09:00"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "src/middleware/etag/index.ts"
+    symbols:
+      - name: "etag"
+        kind: function
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit"
+  size: null
+  notes: "Focusing on middleware and tests"
+
+candidates:
+  - artifact_id: C01
+    path: "src/middleware/etag/index.test.ts"
+    content_hash_at_base: null
+    artifact_type: test
+    relationship: direct_structural
+    evidence:
+      - type: structural
+        description: "The test file directly imports the etag middleware."
+      - type: human
+        description: "A fix to the etag middleware's retainedHeader logic directly requires an updated test case to verify the mixed-case matching."
+    relevance: direct-impact
+    labeling_rationale: "The test file must be updated to include the new regression test for mixed-case headers."
+    ambiguity_notes: null
+    label_confidence: high
+    labeled_by: "author"
+    labeled_at: "2026-10-03"
+
+notes: "Benchmark Expansion: Category 2 - Test Relationship"

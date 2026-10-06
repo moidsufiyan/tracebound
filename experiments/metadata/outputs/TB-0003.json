@@ -1,0 +1,1916 @@
+{
+  "case_id": "TB-0003",
+  "metrics": {
+    "total_retrieved": 124,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 123
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 5,
+      "relationships": [
+        "Issue/PR #3905",
+        "Issue/PR #3663",
+        "Issue/PR #3441",
+        "Issue/PR #3393",
+        "Issue/PR #2941"
+      ],
+      "evidence": [
+        "Commit 6ceb1ab (modified source) and Commit 6ceb1ab (modified candidate) both reference #3905",
+        "Commit 4349735 (modified source) and Commit 4349735 (modified candidate) both reference #3663",
+        "Commit fe0a82a (modified source) and Commit fe0a82a (modified candidate) both reference #3441",
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 9a6e52d (modified source) and Commit 9a6e52d (modified candidate) both reference #2941"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 1
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "eslint.config.mjs",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #5442",
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442",
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "package.json",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #2941",
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 9a6e52d (modified source) and Commit 9a6e52d (modified candidate) both reference #2941",
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 3
+    },
+    {
+      "path": "runtime-tests/lambda/stream-mock.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #5442",
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442",
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "src/compose.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3932",
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit c08a2a7 (modified source) and Commit 035c2d7 (modified candidate) both reference #3932",
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 5
+    },
+    {
+      "path": "src/compose.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3932",
+        "Issue/PR #3663"
+      ],
+      "evidence": [
+        "Commit c08a2a7 (modified source) and Commit 035c2d7 (modified candidate) both reference #3932",
+        "Commit 4349735 (modified source) and Commit 4349735 (modified candidate) both reference #3663"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 6
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #5442",
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442",
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 7
+    },
+    {
+      "path": "src/helper/streaming/sse.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 8
+    },
+    {
+      "path": "src/helper/websocket/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #5442",
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442",
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 9
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 10
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #5442",
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442",
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 11
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 12
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 13
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 14
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 15
+    },
+    {
+      "path": "src/types.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3393",
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393",
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 16
+    },
+    {
+      "path": ".eslintignore",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 17
+    },
+    {
+      "path": ".eslintrc.cjs",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 18
+    },
+    {
+      "path": ".oxfmtrc.json",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 19
+    },
+    {
+      "path": "benchmarks/handle-event/index.js",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 20
+    },
+    {
+      "path": "benchmarks/jsx/src/benchmark.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 21
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/benchmark.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 22
+    },
+    {
+      "path": "build/build.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 23
+    },
+    {
+      "path": "build/remove-private-fields.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 24
+    },
+    {
+      "path": "bun.lock",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 25
+    },
+    {
+      "path": "bun.lockb",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 26
+    },
+    {
+      "path": "jsr.json",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2941"
+      ],
+      "evidence": [
+        "Commit 9a6e52d (modified source) and Commit 9a6e52d (modified candidate) both reference #2941"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 27
+    },
+    {
+      "path": "perf-measures/bundle-check/scripts/check-bundle-size.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 28
+    },
+    {
+      "path": "runtime_tests/bun/index.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 29
+    },
+    {
+      "path": "runtime_tests/deno-jsx/jsx.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 30
+    },
+    {
+      "path": "runtime_tests/deno/hono.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 31
+    },
+    {
+      "path": "runtime_tests/deno/middleware.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 32
+    },
+    {
+      "path": "runtime_tests/deno/ssg.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 33
+    },
+    {
+      "path": "runtime_tests/deno/stream.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 34
+    },
+    {
+      "path": "runtime_tests/lambda/stream-mock.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 35
+    },
+    {
+      "path": "runtime_tests/node/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 36
+    },
+    {
+      "path": "runtime_tests/workerd/index.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 37
+    },
+    {
+      "path": "runtime-tests/bun/index.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 38
+    },
+    {
+      "path": "runtime-tests/deno/hono.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 39
+    },
+    {
+      "path": "runtime-tests/lambda/mock.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 40
+    },
+    {
+      "path": "runtime-tests/node/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 41
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 42
+    },
+    {
+      "path": "src/adapter/aws-lambda/types.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 43
+    },
+    {
+      "path": "src/adapter/bun/conninfo.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 44
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 45
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 46
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 47
+    },
+    {
+      "path": "src/adapter/lambda-edge/conninfo.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 48
+    },
+    {
+      "path": "src/adapter/lambda-edge/conninfo.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 49
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 50
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 51
+    },
+    {
+      "path": "src/client/types.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 52
+    },
+    {
+      "path": "src/client/utils.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 53
+    },
+    {
+      "path": "src/context.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 54
+    },
+    {
+      "path": "src/helper/adapter/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 55
+    },
+    {
+      "path": "src/helper/cookie/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 56
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 57
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 58
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 59
+    },
+    {
+      "path": "src/helper/proxy/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 60
+    },
+    {
+      "path": "src/helper/route/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 61
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 62
+    },
+    {
+      "path": "src/helper/ssg/plugins.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 63
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 64
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 65
+    },
+    {
+      "path": "src/helper/streaming/stream.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 66
+    },
+    {
+      "path": "src/helper/streaming/text.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 67
+    },
+    {
+      "path": "src/helper/testing/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 68
+    },
+    {
+      "path": "src/hono-base.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3932"
+      ],
+      "evidence": [
+        "Commit c08a2a7 (modified source) and Commit c08a2a7 (modified candidate) both reference #3932"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 69
+    },
+    {
+      "path": "src/hono.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 70
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 71
+    },
+    {
+      "path": "src/jsx/children.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 72
+    },
+    {
+      "path": "src/jsx/components.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 73
+    },
+    {
+      "path": "src/jsx/context.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 74
+    },
+    {
+      "path": "src/jsx/dom/client.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 75
+    },
+    {
+      "path": "src/jsx/dom/components.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 76
+    },
+    {
+      "path": "src/jsx/dom/context.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 77
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 78
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 79
+    },
+    {
+      "path": "src/jsx/dom/index.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 80
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 81
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.test.tsx",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 82
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 83
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 84
+    },
+    {
+      "path": "src/jsx/dom/server.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 85
+    },
+    {
+      "path": "src/jsx/hooks/dom.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 86
+    },
+    {
+      "path": "src/jsx/hooks/index.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4781"
+      ],
+      "evidence": [
+        "Commit 5d59ac7 (modified source) and Commit 5d59ac7 (modified candidate) both reference #4781"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 87
+    },
+    {
+      "path": "src/jsx/index.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 88
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 89
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 90
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 91
+    },
+    {
+      "path": "src/middleware/body-limit/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 92
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 93
+    },
+    {
+      "path": "src/middleware/context-storage/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 94
+    },
+    {
+      "path": "src/middleware/context-storage/index.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 95
+    },
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 96
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3145"
+      ],
+      "evidence": [
+        "Commit 1afecac (modified source) and Commit 1afecac (modified candidate) both reference #3145"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 97
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.test.tsx",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 98
+    },
+    {
+      "path": "src/middleware/jwk/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 99
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 100
+    },
+    {
+      "path": "src/middleware/language/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 101
+    },
+    {
+      "path": "src/middleware/logger/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 102
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 103
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 104
+    },
+    {
+      "path": "src/middleware/powered-by/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 105
+    },
+    {
+      "path": "src/middleware/pretty-json/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 106
+    },
+    {
+      "path": "src/middleware/request-id/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 107
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 108
+    },
+    {
+      "path": "src/middleware/serve-static/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 109
+    },
+    {
+      "path": "src/middleware/timeout/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 110
+    },
+    {
+      "path": "src/middleware/timing/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 111
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "source_artifact": "src/middleware/combine/index.test.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #5442"
+      ],
+      "evidence": [
+        "Commit 859e2c2 (modified source) and Commit 859e2c2 (modified candidate) both reference #5442"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 112
+    },
+    {
+      "path": "src/preset/quick.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 113
+    },
+    {
+      "path": "src/preset/tiny.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 114
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 115
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 116
+    },
+    {
+      "path": "src/router/smart-router/router.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 117
+    },
+    {
+      "path": "src/types.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 118
+    },
+    {
+      "path": "src/utils/basic-auth.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 119
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 120
+    },
+    {
+      "path": "src/utils/encode.test.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 121
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 122
+    },
+    {
+      "path": "src/utils/stream.ts",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 123
+    },
+    {
+      "path": "yarn.lock",
+      "source_artifact": "src/middleware/combine/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3393"
+      ],
+      "evidence": [
+        "Commit 5f78e4e (modified source) and Commit 5f78e4e (modified candidate) both reference #3393"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 124
+    }
+  ]
+}

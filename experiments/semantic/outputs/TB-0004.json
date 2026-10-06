@@ -1,0 +1,2994 @@
+{
+  "case_id": "TB-0004",
+  "provider": "ollama",
+  "model": "nomic-embed-text:v1.5",
+  "query": "search_query: Change Description: fix(etag): correctly match mixed-case header name in retainedHeader option\nFiles Modified:\n- src/middleware/etag/index.ts",
+  "metrics": {
+    "total_artifacts_embedded": 573,
+    "total_chunks_embedded": 677,
+    "excluded_artifacts": 0,
+    "context_failures": 0,
+    "relevant_found_top_1": 0,
+    "relevant_found_top_3": 1,
+    "relevant_found_top_5": 1,
+    "relevant_found_top_10": 1,
+    "relevant_found_top_20": 1
+  },
+  "relevant_artifacts_results": [
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "is_changed": false,
+      "rank": 2,
+      "similarity": 0.747749088847429
+    }
+  ],
+  "top_20_candidates": [
+    {
+      "path": "src/middleware/etag/index.ts",
+      "similarity": 0.7803963699405988,
+      "evidence": "Cosine similarity (chunk full): 0.7804"
+    },
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "similarity": 0.747749088847429,
+      "evidence": "Cosine similarity (chunk full): 0.7477"
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "similarity": 0.7181401058077411,
+      "evidence": "Cosine similarity (chunk full): 0.7181"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/1-bug-report.yml",
+      "similarity": 0.6679207975335015,
+      "evidence": "Cosine similarity (chunk full): 0.6679"
+    },
+    {
+      "path": "src/middleware/etag/digest.test.ts",
+      "similarity": 0.6637362882891884,
+      "evidence": "Cosine similarity (chunk full): 0.6637"
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "similarity": 0.6541212555814728,
+      "evidence": "Cosine similarity (chunk full): 0.6541"
+    },
+    {
+      "path": "src/middleware/secure-headers/index.ts",
+      "similarity": 0.6517487478123598,
+      "evidence": "Cosine similarity (chunk full): 0.6517"
+    },
+    {
+      "path": "src/helper/accepts/accepts.ts",
+      "similarity": 0.6508544253444394,
+      "evidence": "Cosine similarity (chunk full): 0.6509"
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "similarity": 0.6498800264094183,
+      "evidence": "Cosine similarity (chunk full): 0.6499"
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "similarity": 0.6463160125474327,
+      "evidence": "Cosine similarity (chunk full): 0.6463"
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "similarity": 0.6455785282365643,
+      "evidence": "Cosine similarity (chunk full): 0.6456"
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "similarity": 0.6437624467793502,
+      "evidence": "Cosine similarity (chunk full): 0.6438"
+    },
+    {
+      "path": "src/helper/accepts/index.ts",
+      "similarity": 0.6433108809111052,
+      "evidence": "Cosine similarity (chunk full): 0.6433"
+    },
+    {
+      "path": "adapters/cloudflare-workers/test/worker.ts",
+      "similarity": 0.6427272254709501,
+      "evidence": "Cosine similarity (chunk full): 0.6427"
+    },
+    {
+      "path": "benchmarks/fetch/ts-resolve.mjs",
+      "similarity": 0.6412873034155943,
+      "evidence": "Cosine similarity (chunk full): 0.6413"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/index.ts",
+      "similarity": 0.6410219322977747,
+      "evidence": "Cosine similarity (chunk full): 0.6410"
+    },
+    {
+      "path": "docs/images/hono-title.pxm",
+      "similarity": 0.6409360537319206,
+      "evidence": "Cosine similarity (chunk 0): 0.6409"
+    },
+    {
+      "path": "adapters/deno/test/ssg.test.ts",
+      "similarity": 0.6408614311498148,
+      "evidence": "Cosine similarity (chunk full): 0.6409"
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "similarity": 0.640150456173333,
+      "evidence": "Cosine similarity (chunk 1): 0.6402"
+    },
+    {
+      "path": "adapters/lambda-edge/src/index.ts",
+      "similarity": 0.6399074061680221,
+      "evidence": "Cosine similarity (chunk full): 0.6399"
+    }
+  ],
+  "all_candidates": [
+    {
+      "path": "src/middleware/etag/index.ts",
+      "similarity": 0.7803963699405988,
+      "evidence": "Cosine similarity (chunk full): 0.7804"
+    },
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "similarity": 0.747749088847429,
+      "evidence": "Cosine similarity (chunk full): 0.7477"
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "similarity": 0.7181401058077411,
+      "evidence": "Cosine similarity (chunk full): 0.7181"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/1-bug-report.yml",
+      "similarity": 0.6679207975335015,
+      "evidence": "Cosine similarity (chunk full): 0.6679"
+    },
+    {
+      "path": "src/middleware/etag/digest.test.ts",
+      "similarity": 0.6637362882891884,
+      "evidence": "Cosine similarity (chunk full): 0.6637"
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "similarity": 0.6541212555814728,
+      "evidence": "Cosine similarity (chunk full): 0.6541"
+    },
+    {
+      "path": "src/middleware/secure-headers/index.ts",
+      "similarity": 0.6517487478123598,
+      "evidence": "Cosine similarity (chunk full): 0.6517"
+    },
+    {
+      "path": "src/helper/accepts/accepts.ts",
+      "similarity": 0.6508544253444394,
+      "evidence": "Cosine similarity (chunk full): 0.6509"
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "similarity": 0.6498800264094183,
+      "evidence": "Cosine similarity (chunk full): 0.6499"
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "similarity": 0.6463160125474327,
+      "evidence": "Cosine similarity (chunk full): 0.6463"
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "similarity": 0.6455785282365643,
+      "evidence": "Cosine similarity (chunk full): 0.6456"
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "similarity": 0.6437624467793502,
+      "evidence": "Cosine similarity (chunk full): 0.6438"
+    },
+    {
+      "path": "src/helper/accepts/index.ts",
+      "similarity": 0.6433108809111052,
+      "evidence": "Cosine similarity (chunk full): 0.6433"
+    },
+    {
+      "path": "adapters/cloudflare-workers/test/worker.ts",
+      "similarity": 0.6427272254709501,
+      "evidence": "Cosine similarity (chunk full): 0.6427"
+    },
+    {
+      "path": "benchmarks/fetch/ts-resolve.mjs",
+      "similarity": 0.6412873034155943,
+      "evidence": "Cosine similarity (chunk full): 0.6413"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/index.ts",
+      "similarity": 0.6410219322977747,
+      "evidence": "Cosine similarity (chunk full): 0.6410"
+    },
+    {
+      "path": "docs/images/hono-title.pxm",
+      "similarity": 0.6409360537319206,
+      "evidence": "Cosine similarity (chunk 0): 0.6409"
+    },
+    {
+      "path": "adapters/deno/test/ssg.test.ts",
+      "similarity": 0.6408614311498148,
+      "evidence": "Cosine similarity (chunk full): 0.6409"
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "similarity": 0.640150456173333,
+      "evidence": "Cosine similarity (chunk 1): 0.6402"
+    },
+    {
+      "path": "adapters/lambda-edge/src/index.ts",
+      "similarity": 0.6399074061680221,
+      "evidence": "Cosine similarity (chunk full): 0.6399"
+    },
+    {
+      "path": "src/middleware/serve-static/index.ts",
+      "similarity": 0.6394763966731662,
+      "evidence": "Cosine similarity (chunk full): 0.6395"
+    },
+    {
+      "path": "src/helper/ssg/index.ts",
+      "similarity": 0.6391199444534368,
+      "evidence": "Cosine similarity (chunk full): 0.6391"
+    },
+    {
+      "path": "src/adapter/lambda-edge/index.ts",
+      "similarity": 0.6384771964357234,
+      "evidence": "Cosine similarity (chunk full): 0.6385"
+    },
+    {
+      "path": "adapters/service-worker/src/index.ts",
+      "similarity": 0.6376975561089131,
+      "evidence": "Cosine similarity (chunk full): 0.6377"
+    },
+    {
+      "path": "src/helper/ssg/plugins.ts",
+      "similarity": 0.6376249187742429,
+      "evidence": "Cosine similarity (chunk full): 0.6376"
+    },
+    {
+      "path": "src/middleware/secure-headers/permissions-policy.ts",
+      "similarity": 0.6376204878548667,
+      "evidence": "Cosine similarity (chunk full): 0.6376"
+    },
+    {
+      "path": "src/jsx/intrinsic-elements.ts",
+      "similarity": 0.6375448647878481,
+      "evidence": "Cosine similarity (chunk 1): 0.6375"
+    },
+    {
+      "path": "src/middleware/language/index.test.ts",
+      "similarity": 0.6375152032177628,
+      "evidence": "Cosine similarity (chunk full): 0.6375"
+    },
+    {
+      "path": "adapters/cloudflare-workers/tsconfig.json",
+      "similarity": 0.6374204232037562,
+      "evidence": "Cosine similarity (chunk full): 0.6374"
+    },
+    {
+      "path": "build/fixtures/declaration-emit/tsconfig.json",
+      "similarity": 0.6365443318016198,
+      "evidence": "Cosine similarity (chunk full): 0.6365"
+    },
+    {
+      "path": "adapters/aws-lambda/vite.config.ts",
+      "similarity": 0.6357636584925741,
+      "evidence": "Cosine similarity (chunk full): 0.6358"
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "similarity": 0.6350916957439869,
+      "evidence": "Cosine similarity (chunk full): 0.6351"
+    },
+    {
+      "path": "codecov.yml",
+      "similarity": 0.6345174589961358,
+      "evidence": "Cosine similarity (chunk full): 0.6345"
+    },
+    {
+      "path": "adapters/cloudflare-workers/vite.config.ts",
+      "similarity": 0.633649310818486,
+      "evidence": "Cosine similarity (chunk full): 0.6336"
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "similarity": 0.633002147126663,
+      "evidence": "Cosine similarity (chunk full): 0.6330"
+    },
+    {
+      "path": "src/adapter/service-worker/index.ts",
+      "similarity": 0.6328916912472878,
+      "evidence": "Cosine similarity (chunk full): 0.6329"
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "similarity": 0.6321986976647286,
+      "evidence": "Cosine similarity (chunk full): 0.6322"
+    },
+    {
+      "path": "adapters/deno/src/index.ts",
+      "similarity": 0.6317972366933466,
+      "evidence": "Cosine similarity (chunk full): 0.6318"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/index.ts",
+      "similarity": 0.631304075009596,
+      "evidence": "Cosine similarity (chunk full): 0.6313"
+    },
+    {
+      "path": "docs/MIGRATION.md",
+      "similarity": 0.6310380127400397,
+      "evidence": "Cosine similarity (chunk full): 0.6310"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/utils.test.ts",
+      "similarity": 0.6308437171739176,
+      "evidence": "Cosine similarity (chunk full): 0.6308"
+    },
+    {
+      "path": "adapters/lambda-edge/vite.config.ts",
+      "similarity": 0.6307038153056618,
+      "evidence": "Cosine similarity (chunk full): 0.6307"
+    },
+    {
+      "path": "src/middleware/jwk/index.test.ts",
+      "similarity": 0.6306529433216704,
+      "evidence": "Cosine similarity (chunk 2): 0.6307"
+    },
+    {
+      "path": "adapters/aws-lambda/tsconfig.json",
+      "similarity": 0.6302057672799032,
+      "evidence": "Cosine similarity (chunk full): 0.6302"
+    },
+    {
+      "path": "src/adapter/vercel/index.ts",
+      "similarity": 0.6295904854214629,
+      "evidence": "Cosine similarity (chunk full): 0.6296"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static-module.ts",
+      "similarity": 0.6293519909106194,
+      "evidence": "Cosine similarity (chunk full): 0.6294"
+    },
+    {
+      "path": "src/client/client.ts",
+      "similarity": 0.629304530778385,
+      "evidence": "Cosine similarity (chunk full): 0.6293"
+    },
+    {
+      "path": "adapters/service-worker/tsconfig.json",
+      "similarity": 0.6291526634198621,
+      "evidence": "Cosine similarity (chunk full): 0.6292"
+    },
+    {
+      "path": "adapters/lambda-edge/tsconfig.json",
+      "similarity": 0.6288857578362043,
+      "evidence": "Cosine similarity (chunk full): 0.6289"
+    },
+    {
+      "path": "adapters/aws-lambda/src/index.ts",
+      "similarity": 0.6287530535850647,
+      "evidence": "Cosine similarity (chunk full): 0.6288"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.test.ts",
+      "similarity": 0.6270511583947719,
+      "evidence": "Cosine similarity (chunk full): 0.6271"
+    },
+    {
+      "path": "perf-measures/type-check/client.ts",
+      "similarity": 0.6269943545827235,
+      "evidence": "Cosine similarity (chunk full): 0.6270"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static-module.ts",
+      "similarity": 0.6268550795377082,
+      "evidence": "Cosine similarity (chunk full): 0.6269"
+    },
+    {
+      "path": "docs/images/hono-logo.pxm",
+      "similarity": 0.6264344672787845,
+      "evidence": "Cosine similarity (chunk 0): 0.6264"
+    },
+    {
+      "path": "src/adapter/deno/index.ts",
+      "similarity": 0.6258732348116133,
+      "evidence": "Cosine similarity (chunk full): 0.6259"
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "similarity": 0.6258074768107563,
+      "evidence": "Cosine similarity (chunk 3): 0.6258"
+    },
+    {
+      "path": "src/jsx/utils.test.ts",
+      "similarity": 0.625330845624795,
+      "evidence": "Cosine similarity (chunk full): 0.6253"
+    },
+    {
+      "path": "src/adapter/aws-lambda/index.ts",
+      "similarity": 0.6251822593972235,
+      "evidence": "Cosine similarity (chunk full): 0.6252"
+    },
+    {
+      "path": "adapters/service-worker/src/handler.ts",
+      "similarity": 0.6251614246657153,
+      "evidence": "Cosine similarity (chunk full): 0.6252"
+    },
+    {
+      "path": "src/adapter/deno/ssg.ts",
+      "similarity": 0.6249748949792192,
+      "evidence": "Cosine similarity (chunk full): 0.6250"
+    },
+    {
+      "path": "src/helper/ssg/plugins.test.tsx",
+      "similarity": 0.6249399388562764,
+      "evidence": "Cosine similarity (chunk full): 0.6249"
+    },
+    {
+      "path": "src/adapter/netlify/index.ts",
+      "similarity": 0.6249073096243773,
+      "evidence": "Cosine similarity (chunk full): 0.6249"
+    },
+    {
+      "path": "adapters/deno/test/deno.json",
+      "similarity": 0.6242043864510071,
+      "evidence": "Cosine similarity (chunk full): 0.6242"
+    },
+    {
+      "path": "src/middleware/powered-by/index.ts",
+      "similarity": 0.623654035719275,
+      "evidence": "Cosine similarity (chunk full): 0.6237"
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.test.tsx",
+      "similarity": 0.6234107297445448,
+      "evidence": "Cosine similarity (chunk full): 0.6234"
+    },
+    {
+      "path": "src/middleware/language/index.ts",
+      "similarity": 0.6228466454709107,
+      "evidence": "Cosine similarity (chunk full): 0.6228"
+    },
+    {
+      "path": "adapters/deno/src/ssg.ts",
+      "similarity": 0.6227363304240303,
+      "evidence": "Cosine similarity (chunk full): 0.6227"
+    },
+    {
+      "path": "src/middleware/request-id/request-id.ts",
+      "similarity": 0.6225393967844556,
+      "evidence": "Cosine similarity (chunk full): 0.6225"
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "similarity": 0.6223710679270544,
+      "evidence": "Cosine similarity (chunk full): 0.6224"
+    },
+    {
+      "path": "src/client/index.ts",
+      "similarity": 0.622184066670307,
+      "evidence": "Cosine similarity (chunk full): 0.6222"
+    },
+    {
+      "path": "docs/MAINTAINING.md",
+      "similarity": 0.622146919681114,
+      "evidence": "Cosine similarity (chunk full): 0.6221"
+    },
+    {
+      "path": "adapters/netlify/tsconfig.json",
+      "similarity": 0.6221397773683767,
+      "evidence": "Cosine similarity (chunk full): 0.6221"
+    },
+    {
+      "path": "src/client/utils.test.ts",
+      "similarity": 0.6220654088395345,
+      "evidence": "Cosine similarity (chunk full): 0.6221"
+    },
+    {
+      "path": "src/helper/cookie/index.test.ts",
+      "similarity": 0.6220024150514589,
+      "evidence": "Cosine similarity (chunk full): 0.6220"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/index.ts",
+      "similarity": 0.6218992847518693,
+      "evidence": "Cosine similarity (chunk full): 0.6219"
+    },
+    {
+      "path": "src/helper/proxy/index.ts",
+      "similarity": 0.6215881146159916,
+      "evidence": "Cosine similarity (chunk full): 0.6216"
+    },
+    {
+      "path": "build/fixtures/declaration-emit/index.ts",
+      "similarity": 0.6214016341019843,
+      "evidence": "Cosine similarity (chunk full): 0.6214"
+    },
+    {
+      "path": "adapters/vercel/tsconfig.json",
+      "similarity": 0.6212308442520958,
+      "evidence": "Cosine similarity (chunk full): 0.6212"
+    },
+    {
+      "path": "src/router/common.case.test.ts",
+      "similarity": 0.6210382970019226,
+      "evidence": "Cosine similarity (chunk 0): 0.6210"
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.ts",
+      "similarity": 0.620957847599965,
+      "evidence": "Cosine similarity (chunk full): 0.6210"
+    },
+    {
+      "path": "bunfig.toml",
+      "similarity": 0.6205814982018426,
+      "evidence": "Cosine similarity (chunk full): 0.6206"
+    },
+    {
+      "path": "adapters/deno/tsconfig.json",
+      "similarity": 0.6205353738261927,
+      "evidence": "Cosine similarity (chunk full): 0.6205"
+    },
+    {
+      "path": "src/middleware/pretty-json/index.ts",
+      "similarity": 0.6204736175538218,
+      "evidence": "Cosine similarity (chunk full): 0.6205"
+    },
+    {
+      "path": "adapters/vercel/src/index.ts",
+      "similarity": 0.6202409182338798,
+      "evidence": "Cosine similarity (chunk full): 0.6202"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "similarity": 0.6200555331942309,
+      "evidence": "Cosine similarity (chunk full): 0.6201"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/2-feature-request.yml",
+      "similarity": 0.6199622122070463,
+      "evidence": "Cosine similarity (chunk full): 0.6200"
+    },
+    {
+      "path": "perf-measures/.octocov.consolidated.perf-measures.main.yml",
+      "similarity": 0.6196596040231765,
+      "evidence": "Cosine similarity (chunk full): 0.6197"
+    },
+    {
+      "path": "src/utils/http-status.ts",
+      "similarity": 0.6195776308930907,
+      "evidence": "Cosine similarity (chunk full): 0.6196"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.test.ts",
+      "similarity": 0.6194091099736506,
+      "evidence": "Cosine similarity (chunk full): 0.6194"
+    },
+    {
+      "path": "adapters/netlify/src/index.ts",
+      "similarity": 0.6192004260720777,
+      "evidence": "Cosine similarity (chunk full): 0.6192"
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "similarity": 0.6188877888029424,
+      "evidence": "Cosine similarity (chunk 1): 0.6189"
+    },
+    {
+      "path": "adapters/cloudflare-workers/README.md",
+      "similarity": 0.618846853307082,
+      "evidence": "Cosine similarity (chunk full): 0.6188"
+    },
+    {
+      "path": "src/middleware/language/language.ts",
+      "similarity": 0.6187931161306613,
+      "evidence": "Cosine similarity (chunk full): 0.6188"
+    },
+    {
+      "path": "runtime-tests/workerd/index.test.ts",
+      "similarity": 0.6186973415049362,
+      "evidence": "Cosine similarity (chunk full): 0.6187"
+    },
+    {
+      "path": "src/helper/accepts/accepts.test.ts",
+      "similarity": 0.6177429424875509,
+      "evidence": "Cosine similarity (chunk full): 0.6177"
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "similarity": 0.617732534289514,
+      "evidence": "Cosine similarity (chunk full): 0.6177"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/conninfo.ts",
+      "similarity": 0.6176985559579627,
+      "evidence": "Cosine similarity (chunk full): 0.6177"
+    },
+    {
+      "path": "src/utils/accept.test.ts",
+      "similarity": 0.6175163080337968,
+      "evidence": "Cosine similarity (chunk full): 0.6175"
+    },
+    {
+      "path": "src/utils/accept.ts",
+      "similarity": 0.6172622442268577,
+      "evidence": "Cosine similarity (chunk full): 0.6173"
+    },
+    {
+      "path": "src/router.ts",
+      "similarity": 0.6172236225198819,
+      "evidence": "Cosine similarity (chunk full): 0.6172"
+    },
+    {
+      "path": "runtime-tests/workerd/index.ts",
+      "similarity": 0.616978193965,
+      "evidence": "Cosine similarity (chunk full): 0.6170"
+    },
+    {
+      "path": "perf-measures/.octocov.consolidated.perf-measures.yml",
+      "similarity": 0.6167588906788392,
+      "evidence": "Cosine similarity (chunk full): 0.6168"
+    },
+    {
+      "path": "src/helper/streaming/utils.ts",
+      "similarity": 0.616701395522325,
+      "evidence": "Cosine similarity (chunk full): 0.6167"
+    },
+    {
+      "path": "src/jsx/dom/index.test.tsx",
+      "similarity": 0.6164492519351144,
+      "evidence": "Cosine similarity (chunk 3): 0.6164"
+    },
+    {
+      "path": "src/middleware/cors/index.test.ts",
+      "similarity": 0.6161235109685888,
+      "evidence": "Cosine similarity (chunk full): 0.6161"
+    },
+    {
+      "path": "adapters/bun/tsconfig.json",
+      "similarity": 0.6160527882264595,
+      "evidence": "Cosine similarity (chunk full): 0.6161"
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "similarity": 0.6159999138128801,
+      "evidence": "Cosine similarity (chunk full): 0.6160"
+    },
+    {
+      "path": "adapters/lambda-edge/test/index.test.ts",
+      "similarity": 0.6159735512927095,
+      "evidence": "Cosine similarity (chunk 1): 0.6160"
+    },
+    {
+      "path": "adapters/bun/test/index.test.ts",
+      "similarity": 0.6159129023024366,
+      "evidence": "Cosine similarity (chunk full): 0.6159"
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "similarity": 0.6158601298504894,
+      "evidence": "Cosine similarity (chunk full): 0.6159"
+    },
+    {
+      "path": "adapters/service-worker/vite.config.ts",
+      "similarity": 0.6157711164427507,
+      "evidence": "Cosine similarity (chunk full): 0.6158"
+    },
+    {
+      "path": "adapters/bun/src/ssg.ts",
+      "similarity": 0.6156198763860027,
+      "evidence": "Cosine similarity (chunk full): 0.6156"
+    },
+    {
+      "path": "src/types.ts",
+      "similarity": 0.6151908540649248,
+      "evidence": "Cosine similarity (chunk 2): 0.6152"
+    },
+    {
+      "path": "src/helper/conninfo/index.ts",
+      "similarity": 0.6150785684651884,
+      "evidence": "Cosine similarity (chunk full): 0.6151"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.test.ts",
+      "similarity": 0.6145795900238075,
+      "evidence": "Cosine similarity (chunk full): 0.6146"
+    },
+    {
+      "path": "tsconfig.build.json",
+      "similarity": 0.6141455760445989,
+      "evidence": "Cosine similarity (chunk full): 0.6141"
+    },
+    {
+      "path": "src/utils/constants.ts",
+      "similarity": 0.613897788293075,
+      "evidence": "Cosine similarity (chunk full): 0.6139"
+    },
+    {
+      "path": "src/middleware/serve-static/path.ts",
+      "similarity": 0.6138318561690024,
+      "evidence": "Cosine similarity (chunk full): 0.6138"
+    },
+    {
+      "path": "adapters/aws-lambda/test/mock.ts",
+      "similarity": 0.6136914914306472,
+      "evidence": "Cosine similarity (chunk full): 0.6137"
+    },
+    {
+      "path": "src/jsx/utils.ts",
+      "similarity": 0.6135702767256523,
+      "evidence": "Cosine similarity (chunk full): 0.6136"
+    },
+    {
+      "path": "src/types.test.ts",
+      "similarity": 0.6132562818159892,
+      "evidence": "Cosine similarity (chunk 4): 0.6133"
+    },
+    {
+      "path": "src/middleware/context-storage/index.ts",
+      "similarity": 0.6131765514402074,
+      "evidence": "Cosine similarity (chunk full): 0.6132"
+    },
+    {
+      "path": "adapters/deno/vite.config.ts",
+      "similarity": 0.6129439693940256,
+      "evidence": "Cosine similarity (chunk full): 0.6129"
+    },
+    {
+      "path": "adapters/deno/src/websocket.test.ts",
+      "similarity": 0.6125754867643955,
+      "evidence": "Cosine similarity (chunk full): 0.6126"
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "similarity": 0.6125494792529383,
+      "evidence": "Cosine similarity (chunk full): 0.6125"
+    },
+    {
+      "path": "src/adapter/service-worker/handler.ts",
+      "similarity": 0.6125491338035822,
+      "evidence": "Cosine similarity (chunk full): 0.6125"
+    },
+    {
+      "path": "adapters/bun/vite.config.ts",
+      "similarity": 0.6122252442994794,
+      "evidence": "Cosine similarity (chunk full): 0.6122"
+    },
+    {
+      "path": "adapters/bun/src/index.ts",
+      "similarity": 0.612217735908838,
+      "evidence": "Cosine similarity (chunk full): 0.6122"
+    },
+    {
+      "path": "src/adapter/bun/ssg.ts",
+      "similarity": 0.6122176191594215,
+      "evidence": "Cosine similarity (chunk full): 0.6122"
+    },
+    {
+      "path": "src/index.ts",
+      "similarity": 0.6121714167932302,
+      "evidence": "Cosine similarity (chunk full): 0.6122"
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.test.ts",
+      "similarity": 0.6114959087048212,
+      "evidence": "Cosine similarity (chunk full): 0.6115"
+    },
+    {
+      "path": "src/hono.test.ts",
+      "similarity": 0.6112413163611387,
+      "evidence": "Cosine similarity (chunk 2): 0.6112"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "similarity": 0.6111676961332088,
+      "evidence": "Cosine similarity (chunk 12): 0.6112"
+    },
+    {
+      "path": "benchmarks/fetch/README.md",
+      "similarity": 0.6111370721316605,
+      "evidence": "Cosine similarity (chunk full): 0.6111"
+    },
+    {
+      "path": "src/adapter/bun/index.ts",
+      "similarity": 0.6108381684371613,
+      "evidence": "Cosine similarity (chunk full): 0.6108"
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "similarity": 0.6108213262273683,
+      "evidence": "Cosine similarity (chunk 0): 0.6108"
+    },
+    {
+      "path": "adapters/netlify/vite.config.ts",
+      "similarity": 0.6108035835980081,
+      "evidence": "Cosine similarity (chunk full): 0.6108"
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "similarity": 0.6106724557184005,
+      "evidence": "Cosine similarity (chunk full): 0.6107"
+    },
+    {
+      "path": "runtime-tests/deno/middleware.test.tsx",
+      "similarity": 0.6106424362410953,
+      "evidence": "Cosine similarity (chunk full): 0.6106"
+    },
+    {
+      "path": "src/helper/ssg/ssg.ts",
+      "similarity": 0.6100733580605164,
+      "evidence": "Cosine similarity (chunk full): 0.6101"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.test.ts",
+      "similarity": 0.6100358838181157,
+      "evidence": "Cosine similarity (chunk full): 0.6100"
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "similarity": 0.6099735790034526,
+      "evidence": "Cosine similarity (chunk full): 0.6100"
+    },
+    {
+      "path": "adapters/vercel/vite.config.ts",
+      "similarity": 0.6099035188617629,
+      "evidence": "Cosine similarity (chunk full): 0.6099"
+    },
+    {
+      "path": "src/helper/adapter/index.ts",
+      "similarity": 0.6098310091920723,
+      "evidence": "Cosine similarity (chunk full): 0.6098"
+    },
+    {
+      "path": "adapters/netlify/deno.json",
+      "similarity": 0.6098054352254975,
+      "evidence": "Cosine similarity (chunk full): 0.6098"
+    },
+    {
+      "path": "adapters/service-worker/src/handler.test.ts",
+      "similarity": 0.6097991303678552,
+      "evidence": "Cosine similarity (chunk full): 0.6098"
+    },
+    {
+      "path": "src/validator/utils.ts",
+      "similarity": 0.6095613837563589,
+      "evidence": "Cosine similarity (chunk full): 0.6096"
+    },
+    {
+      "path": "adapters/aws-lambda/README.md",
+      "similarity": 0.609402429420202,
+      "evidence": "Cosine similarity (chunk full): 0.6094"
+    },
+    {
+      "path": "src/adapter/vercel/conninfo.ts",
+      "similarity": 0.6093735733484944,
+      "evidence": "Cosine similarity (chunk full): 0.6094"
+    },
+    {
+      "path": ".oxlintrc.json",
+      "similarity": 0.6090924011928788,
+      "evidence": "Cosine similarity (chunk full): 0.6091"
+    },
+    {
+      "path": "src/utils/basic-auth.ts",
+      "similarity": 0.6089996468987913,
+      "evidence": "Cosine similarity (chunk full): 0.6090"
+    },
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "similarity": 0.608664127360287,
+      "evidence": "Cosine similarity (chunk full): 0.6087"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "similarity": 0.6084428171285072,
+      "evidence": "Cosine similarity (chunk full): 0.6084"
+    },
+    {
+      "path": "adapters/deno/test/serve-static.test.ts",
+      "similarity": 0.6083174023341377,
+      "evidence": "Cosine similarity (chunk full): 0.6083"
+    },
+    {
+      "path": "src/utils/jwt/index.ts",
+      "similarity": 0.6081561607532048,
+      "evidence": "Cosine similarity (chunk full): 0.6082"
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "similarity": 0.6080560393484169,
+      "evidence": "Cosine similarity (chunk full): 0.6081"
+    },
+    {
+      "path": "adapters/service-worker/README.md",
+      "similarity": 0.6078610941083964,
+      "evidence": "Cosine similarity (chunk full): 0.6079"
+    },
+    {
+      "path": ".editorconfig",
+      "similarity": 0.6074652385032633,
+      "evidence": "Cosine similarity (chunk full): 0.6075"
+    },
+    {
+      "path": "src/context.test.ts",
+      "similarity": 0.6074627330337306,
+      "evidence": "Cosine similarity (chunk full): 0.6075"
+    },
+    {
+      "path": "adapters/bun/src/serve-static.ts",
+      "similarity": 0.6073336350072479,
+      "evidence": "Cosine similarity (chunk full): 0.6073"
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.test.ts",
+      "similarity": 0.6073214821185947,
+      "evidence": "Cosine similarity (chunk full): 0.6073"
+    },
+    {
+      "path": "src/client/fetch-result-please.ts",
+      "similarity": 0.6072400817097284,
+      "evidence": "Cosine similarity (chunk full): 0.6072"
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "similarity": 0.6071902081883276,
+      "evidence": "Cosine similarity (chunk full): 0.6072"
+    },
+    {
+      "path": "src/preset/quick.test.ts",
+      "similarity": 0.6071751463971834,
+      "evidence": "Cosine similarity (chunk full): 0.6072"
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream-mock.ts",
+      "similarity": 0.6069396733418799,
+      "evidence": "Cosine similarity (chunk full): 0.6069"
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "similarity": 0.6067489559767463,
+      "evidence": "Cosine similarity (chunk full): 0.6067"
+    },
+    {
+      "path": "src/utils/mime.test.ts",
+      "similarity": 0.6065735499523515,
+      "evidence": "Cosine similarity (chunk full): 0.6066"
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "similarity": 0.6062262945411232,
+      "evidence": "Cosine similarity (chunk full): 0.6062"
+    },
+    {
+      "path": "src/middleware/timing/index.test.ts",
+      "similarity": 0.6062156807678253,
+      "evidence": "Cosine similarity (chunk full): 0.6062"
+    },
+    {
+      "path": "src/router/reg-exp-router/index.ts",
+      "similarity": 0.6059972739442596,
+      "evidence": "Cosine similarity (chunk full): 0.6060"
+    },
+    {
+      "path": "src/request/constants.ts",
+      "similarity": 0.6059439388967781,
+      "evidence": "Cosine similarity (chunk full): 0.6059"
+    },
+    {
+      "path": "adapters/deno/src/serve-static.ts",
+      "similarity": 0.6055080493481223,
+      "evidence": "Cosine similarity (chunk full): 0.6055"
+    },
+    {
+      "path": "src/utils/compress.ts",
+      "similarity": 0.6054862414097448,
+      "evidence": "Cosine similarity (chunk full): 0.6055"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.test.ts",
+      "similarity": 0.6052865247605994,
+      "evidence": "Cosine similarity (chunk full): 0.6053"
+    },
+    {
+      "path": "src/utils/body.test.ts",
+      "similarity": 0.6049902665856056,
+      "evidence": "Cosine similarity (chunk full): 0.6050"
+    },
+    {
+      "path": "adapters/bun/src/websocket.test.ts",
+      "similarity": 0.6045742554462974,
+      "evidence": "Cosine similarity (chunk full): 0.6046"
+    },
+    {
+      "path": "src/utils/handler.ts",
+      "similarity": 0.6045100499778174,
+      "evidence": "Cosine similarity (chunk full): 0.6045"
+    },
+    {
+      "path": "src/middleware/jwk/index.ts",
+      "similarity": 0.6042975663279669,
+      "evidence": "Cosine similarity (chunk full): 0.6043"
+    },
+    {
+      "path": "src/adapter/netlify/mod.ts",
+      "similarity": 0.6041247430449728,
+      "evidence": "Cosine similarity (chunk full): 0.6041"
+    },
+    {
+      "path": "perf-measures/type-check/scripts/tsconfig.json",
+      "similarity": 0.604003988826012,
+      "evidence": "Cosine similarity (chunk full): 0.6040"
+    },
+    {
+      "path": "src/middleware/serve-static/index.test.ts",
+      "similarity": 0.6039061533621427,
+      "evidence": "Cosine similarity (chunk full): 0.6039"
+    },
+    {
+      "path": "src/middleware/combine/index.ts",
+      "similarity": 0.6036214663440866,
+      "evidence": "Cosine similarity (chunk full): 0.6036"
+    },
+    {
+      "path": "adapters/vercel/README.md",
+      "similarity": 0.6034088466205635,
+      "evidence": "Cosine similarity (chunk full): 0.6034"
+    },
+    {
+      "path": "src/http-exception.ts",
+      "similarity": 0.6031775561558063,
+      "evidence": "Cosine similarity (chunk full): 0.6032"
+    },
+    {
+      "path": "src/helper/testing/index.test.ts",
+      "similarity": 0.603134906204674,
+      "evidence": "Cosine similarity (chunk full): 0.6031"
+    },
+    {
+      "path": "src/helper/ssg/utils.test.ts",
+      "similarity": 0.6030845294266791,
+      "evidence": "Cosine similarity (chunk full): 0.6031"
+    },
+    {
+      "path": "src/client/utils.ts",
+      "similarity": 0.603052401656263,
+      "evidence": "Cosine similarity (chunk full): 0.6031"
+    },
+    {
+      "path": "src/adapter/service-worker/handler.test.ts",
+      "similarity": 0.6029393040186158,
+      "evidence": "Cosine similarity (chunk full): 0.6029"
+    },
+    {
+      "path": "src/utils/basic-auth.test.ts",
+      "similarity": 0.6027145111111916,
+      "evidence": "Cosine similarity (chunk full): 0.6027"
+    },
+    {
+      "path": "adapters/vercel/src/handler.test.ts",
+      "similarity": 0.6023212580227422,
+      "evidence": "Cosine similarity (chunk full): 0.6023"
+    },
+    {
+      "path": ".github/workflows/autofix.yml",
+      "similarity": 0.6018674107593381,
+      "evidence": "Cosine similarity (chunk full): 0.6019"
+    },
+    {
+      "path": "adapters/lambda-edge/src/conninfo.test.ts",
+      "similarity": 0.6017548795561102,
+      "evidence": "Cosine similarity (chunk full): 0.6018"
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.test.ts",
+      "similarity": 0.601658463421835,
+      "evidence": "Cosine similarity (chunk full): 0.6017"
+    },
+    {
+      "path": "benchmarks/fetch/tsconfig.json",
+      "similarity": 0.601613352535432,
+      "evidence": "Cosine similarity (chunk full): 0.6016"
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.ts",
+      "similarity": 0.6014905440828493,
+      "evidence": "Cosine similarity (chunk full): 0.6015"
+    },
+    {
+      "path": "src/validator/index.ts",
+      "similarity": 0.6014674048144,
+      "evidence": "Cosine similarity (chunk full): 0.6015"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/conninfo.test.ts",
+      "similarity": 0.6012389388387561,
+      "evidence": "Cosine similarity (chunk full): 0.6012"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "similarity": 0.6011657976488908,
+      "evidence": "Cosine similarity (chunk full): 0.6012"
+    },
+    {
+      "path": "adapters/netlify/src/mod.ts",
+      "similarity": 0.6011470495230264,
+      "evidence": "Cosine similarity (chunk full): 0.6011"
+    },
+    {
+      "path": "src/preset/tiny.test.ts",
+      "similarity": 0.601025898870894,
+      "evidence": "Cosine similarity (chunk full): 0.6010"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.ts",
+      "similarity": 0.6009566059026249,
+      "evidence": "Cosine similarity (chunk full): 0.6010"
+    },
+    {
+      "path": "perf-measures/type-check/scripts/process-results.ts",
+      "similarity": 0.6009349542227161,
+      "evidence": "Cosine similarity (chunk full): 0.6009"
+    },
+    {
+      "path": "adapters/vercel/src/conninfo.ts",
+      "similarity": 0.6007886105091946,
+      "evidence": "Cosine similarity (chunk full): 0.6008"
+    },
+    {
+      "path": "vite.config.ts",
+      "similarity": 0.6003930035308984,
+      "evidence": "Cosine similarity (chunk full): 0.6004"
+    },
+    {
+      "path": "src/helper/route/index.ts",
+      "similarity": 0.6003710281915979,
+      "evidence": "Cosine similarity (chunk full): 0.6004"
+    },
+    {
+      "path": "src/router/trie-router/router.test.ts",
+      "similarity": 0.599592539902853,
+      "evidence": "Cosine similarity (chunk full): 0.5996"
+    },
+    {
+      "path": "adapters/deno/README.md",
+      "similarity": 0.5993928555800541,
+      "evidence": "Cosine similarity (chunk full): 0.5994"
+    },
+    {
+      "path": "adapters/deno/deno.json",
+      "similarity": 0.5992243717251352,
+      "evidence": "Cosine similarity (chunk full): 0.5992"
+    },
+    {
+      "path": "src/utils/jwt/jwt.test.ts",
+      "similarity": 0.5991549388760139,
+      "evidence": "Cosine similarity (chunk 1): 0.5992"
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "similarity": 0.5991479694260444,
+      "evidence": "Cosine similarity (chunk 0): 0.5991"
+    },
+    {
+      "path": "src/middleware/powered-by/index.test.ts",
+      "similarity": 0.5990505392200051,
+      "evidence": "Cosine similarity (chunk full): 0.5991"
+    },
+    {
+      "path": "src/helper/websocket/index.test.ts",
+      "similarity": 0.5989870776431239,
+      "evidence": "Cosine similarity (chunk full): 0.5990"
+    },
+    {
+      "path": "src/middleware/logger/index.test.ts",
+      "similarity": 0.5986343796470832,
+      "evidence": "Cosine similarity (chunk full): 0.5986"
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.ts",
+      "similarity": 0.5984606197116135,
+      "evidence": "Cosine similarity (chunk full): 0.5985"
+    },
+    {
+      "path": "adapters/deno/test/static/hello.world/index.html",
+      "similarity": 0.598118371006246,
+      "evidence": "Cosine similarity (chunk full): 0.5981"
+    },
+    {
+      "path": "adapters/cloudflare-workers/test/websocket.test.ts",
+      "similarity": 0.5980297387663748,
+      "evidence": "Cosine similarity (chunk full): 0.5980"
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.test.ts",
+      "similarity": 0.597867399802252,
+      "evidence": "Cosine similarity (chunk full): 0.5979"
+    },
+    {
+      "path": "src/router/reg-exp-router/trie.ts",
+      "similarity": 0.5978482390344051,
+      "evidence": "Cosine similarity (chunk full): 0.5978"
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.ts",
+      "similarity": 0.5978048439987691,
+      "evidence": "Cosine similarity (chunk full): 0.5978"
+    },
+    {
+      "path": "src/middleware/jwk/keys.test.json",
+      "similarity": 0.5977620902646346,
+      "evidence": "Cosine similarity (chunk full): 0.5978"
+    },
+    {
+      "path": "adapters/bun/src/server.test.ts",
+      "similarity": 0.5977486235844421,
+      "evidence": "Cosine similarity (chunk full): 0.5977"
+    },
+    {
+      "path": "src/helper/websocket/index.ts",
+      "similarity": 0.5977317979688216,
+      "evidence": "Cosine similarity (chunk full): 0.5977"
+    },
+    {
+      "path": "src/middleware/method-override/index.test.ts",
+      "similarity": 0.5975386070012925,
+      "evidence": "Cosine similarity (chunk full): 0.5975"
+    },
+    {
+      "path": "src/middleware/jwk/jwk.ts",
+      "similarity": 0.5974605489356137,
+      "evidence": "Cosine similarity (chunk full): 0.5975"
+    },
+    {
+      "path": "src/utils/body.ts",
+      "similarity": 0.5973801958144164,
+      "evidence": "Cosine similarity (chunk full): 0.5974"
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "similarity": 0.5972999118745782,
+      "evidence": "Cosine similarity (chunk full): 0.5973"
+    },
+    {
+      "path": "src/compose.ts",
+      "similarity": 0.5972907551359082,
+      "evidence": "Cosine similarity (chunk full): 0.5973"
+    },
+    {
+      "path": "src/utils/color.ts",
+      "similarity": 0.5970024604234687,
+      "evidence": "Cosine similarity (chunk full): 0.5970"
+    },
+    {
+      "path": "tsconfig.base.json",
+      "similarity": 0.5969612923615099,
+      "evidence": "Cosine similarity (chunk full): 0.5970"
+    },
+    {
+      "path": "adapters/deno/test/static/helloworld/index.html",
+      "similarity": 0.5969233776797713,
+      "evidence": "Cosine similarity (chunk full): 0.5969"
+    },
+    {
+      "path": "adapters/aws-lambda/src/types.ts",
+      "similarity": 0.5966486960361566,
+      "evidence": "Cosine similarity (chunk full): 0.5966"
+    },
+    {
+      "path": "src/middleware/request-id/index.ts",
+      "similarity": 0.5964341550745773,
+      "evidence": "Cosine similarity (chunk full): 0.5964"
+    },
+    {
+      "path": "benchmarks/routers/tsconfig.json",
+      "similarity": 0.5961073857067625,
+      "evidence": "Cosine similarity (chunk full): 0.5961"
+    },
+    {
+      "path": "src/request.ts",
+      "similarity": 0.5959721524607082,
+      "evidence": "Cosine similarity (chunk full): 0.5960"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/conninfo.ts",
+      "similarity": 0.5959595646720419,
+      "evidence": "Cosine similarity (chunk full): 0.5960"
+    },
+    {
+      "path": "src/helper/streaming/index.ts",
+      "similarity": 0.5956419594314609,
+      "evidence": "Cosine similarity (chunk full): 0.5956"
+    },
+    {
+      "path": "src/client/types.ts",
+      "similarity": 0.5954851817986183,
+      "evidence": "Cosine similarity (chunk full): 0.5955"
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "similarity": 0.5954821646728028,
+      "evidence": "Cosine similarity (chunk full): 0.5955"
+    },
+    {
+      "path": "src/adapter/vercel/handler.ts",
+      "similarity": 0.5954188023486332,
+      "evidence": "Cosine similarity (chunk full): 0.5954"
+    },
+    {
+      "path": "runtime-tests/fastly/tsconfig.json",
+      "similarity": 0.5953407413387933,
+      "evidence": "Cosine similarity (chunk full): 0.5953"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "similarity": 0.5953319136732116,
+      "evidence": "Cosine similarity (chunk full): 0.5953"
+    },
+    {
+      "path": "adapters/lambda-edge/src/conninfo.ts",
+      "similarity": 0.5951888473507814,
+      "evidence": "Cosine similarity (chunk full): 0.5952"
+    },
+    {
+      "path": "perf-measures/type-check/tsconfig.build.json",
+      "similarity": 0.5951840008150582,
+      "evidence": "Cosine similarity (chunk full): 0.5952"
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "similarity": 0.5950094260002359,
+      "evidence": "Cosine similarity (chunk full): 0.5950"
+    },
+    {
+      "path": "src/middleware/timing/index.ts",
+      "similarity": 0.5948666645036678,
+      "evidence": "Cosine similarity (chunk full): 0.5949"
+    },
+    {
+      "path": "src/jsx/dom/utils.ts",
+      "similarity": 0.594726573837129,
+      "evidence": "Cosine similarity (chunk full): 0.5947"
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.test.ts",
+      "similarity": 0.5944960708334316,
+      "evidence": "Cosine similarity (chunk full): 0.5945"
+    },
+    {
+      "path": "benchmarks/routers/src/rou3.mts",
+      "similarity": 0.5944525430300829,
+      "evidence": "Cosine similarity (chunk full): 0.5945"
+    },
+    {
+      "path": "adapters/vercel/src/handler.ts",
+      "similarity": 0.5944172072904692,
+      "evidence": "Cosine similarity (chunk full): 0.5944"
+    },
+    {
+      "path": "adapters/lambda-edge/README.md",
+      "similarity": 0.5943715813381708,
+      "evidence": "Cosine similarity (chunk full): 0.5944"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.ts",
+      "similarity": 0.594330130979956,
+      "evidence": "Cosine similarity (chunk full): 0.5943"
+    },
+    {
+      "path": "src/utils/jwt/utf8.ts",
+      "similarity": 0.5942307915774845,
+      "evidence": "Cosine similarity (chunk full): 0.5942"
+    },
+    {
+      "path": "runtime-tests/bun/color.test.ts",
+      "similarity": 0.5942074246842873,
+      "evidence": "Cosine similarity (chunk full): 0.5942"
+    },
+    {
+      "path": "runtime-tests/node/tsconfig.json",
+      "similarity": 0.5940837535067341,
+      "evidence": "Cosine similarity (chunk full): 0.5941"
+    },
+    {
+      "path": "adapters/aws-lambda/test/index.test.ts",
+      "similarity": 0.5936158524153018,
+      "evidence": "Cosine similarity (chunk 0): 0.5936"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/conninfo.test.ts",
+      "similarity": 0.5935255062495687,
+      "evidence": "Cosine similarity (chunk full): 0.5935"
+    },
+    {
+      "path": "runtime-tests/workerd/tsconfig.json",
+      "similarity": 0.5935007494070696,
+      "evidence": "Cosine similarity (chunk full): 0.5935"
+    },
+    {
+      "path": "build/declaration-emit.test.ts",
+      "similarity": 0.5933290341312093,
+      "evidence": "Cosine similarity (chunk full): 0.5933"
+    },
+    {
+      "path": "runtime-tests/deno/hono.test.ts",
+      "similarity": 0.5933288990551829,
+      "evidence": "Cosine similarity (chunk full): 0.5933"
+    },
+    {
+      "path": "src/preset/quick.ts",
+      "similarity": 0.5933253605303547,
+      "evidence": "Cosine similarity (chunk full): 0.5933"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.ts",
+      "similarity": 0.5932723962008526,
+      "evidence": "Cosine similarity (chunk full): 0.5933"
+    },
+    {
+      "path": "src/adapter/aws-lambda/types.ts",
+      "similarity": 0.5932681033777892,
+      "evidence": "Cosine similarity (chunk full): 0.5933"
+    },
+    {
+      "path": "runtime-tests/deno/.vscode/settings.json",
+      "similarity": 0.5931870711795241,
+      "evidence": "Cosine similarity (chunk full): 0.5932"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "similarity": 0.5931140387226985,
+      "evidence": "Cosine similarity (chunk full): 0.5931"
+    },
+    {
+      "path": "src/utils/color.test.ts",
+      "similarity": 0.5929596487695655,
+      "evidence": "Cosine similarity (chunk full): 0.5930"
+    },
+    {
+      "path": "src/jsx/hooks/index.ts",
+      "similarity": 0.5928521368078413,
+      "evidence": "Cosine similarity (chunk full): 0.5929"
+    },
+    {
+      "path": "src/adapter/lambda-edge/conninfo.test.ts",
+      "similarity": 0.5927810936935413,
+      "evidence": "Cosine similarity (chunk full): 0.5928"
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "similarity": 0.5927179831431688,
+      "evidence": "Cosine similarity (chunk full): 0.5927"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.ts",
+      "similarity": 0.5926242934076211,
+      "evidence": "Cosine similarity (chunk full): 0.5926"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.ts",
+      "similarity": 0.5922647727163498,
+      "evidence": "Cosine similarity (chunk full): 0.5923"
+    },
+    {
+      "path": ".gitignore",
+      "similarity": 0.5922246250231715,
+      "evidence": "Cosine similarity (chunk full): 0.5922"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.ts",
+      "similarity": 0.5919380972091098,
+      "evidence": "Cosine similarity (chunk full): 0.5919"
+    },
+    {
+      "path": "src/adapter/deno/serve-static.ts",
+      "similarity": 0.5919092399574114,
+      "evidence": "Cosine similarity (chunk full): 0.5919"
+    },
+    {
+      "path": "benchmarks/routers-deno/.vscode/settings.json",
+      "similarity": 0.5919021303540392,
+      "evidence": "Cosine similarity (chunk full): 0.5919"
+    },
+    {
+      "path": "build/dts-plugins.ts",
+      "similarity": 0.591739743722245,
+      "evidence": "Cosine similarity (chunk full): 0.5917"
+    },
+    {
+      "path": "src/adapter/service-worker/types.ts",
+      "similarity": 0.5913702370834176,
+      "evidence": "Cosine similarity (chunk full): 0.5914"
+    },
+    {
+      "path": "src/adapter/vercel/handler.test.ts",
+      "similarity": 0.5911274634168523,
+      "evidence": "Cosine similarity (chunk full): 0.5911"
+    },
+    {
+      "path": "adapters/bun/test/static/hello.world/index.html",
+      "similarity": 0.5910028973603063,
+      "evidence": "Cosine similarity (chunk full): 0.5910"
+    },
+    {
+      "path": "src/middleware/serve-static/path.test.ts",
+      "similarity": 0.5909564253376189,
+      "evidence": "Cosine similarity (chunk full): 0.5910"
+    },
+    {
+      "path": "src/adapter/netlify/handler.ts",
+      "similarity": 0.5909104043026245,
+      "evidence": "Cosine similarity (chunk full): 0.5909"
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "similarity": 0.5906544766133023,
+      "evidence": "Cosine similarity (chunk full): 0.5907"
+    },
+    {
+      "path": "src/middleware/context-storage/index.test.ts",
+      "similarity": 0.5906311675397673,
+      "evidence": "Cosine similarity (chunk full): 0.5906"
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "similarity": 0.5906287116767902,
+      "evidence": "Cosine similarity (chunk 0): 0.5906"
+    },
+    {
+      "path": "benchmarks/fetch/compare.sh",
+      "similarity": 0.5905825118286773,
+      "evidence": "Cosine similarity (chunk full): 0.5906"
+    },
+    {
+      "path": "src/helper/streaming/text.test.ts",
+      "similarity": 0.5904862915336485,
+      "evidence": "Cosine similarity (chunk full): 0.5905"
+    },
+    {
+      "path": "src/adapter/bun/websocket.test.ts",
+      "similarity": 0.5904461450702982,
+      "evidence": "Cosine similarity (chunk full): 0.5904"
+    },
+    {
+      "path": "src/router/trie-router/index.ts",
+      "similarity": 0.5904133680880637,
+      "evidence": "Cosine similarity (chunk full): 0.5904"
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "similarity": 0.5900175559568163,
+      "evidence": "Cosine similarity (chunk full): 0.5900"
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.test.ts",
+      "similarity": 0.5898394607594103,
+      "evidence": "Cosine similarity (chunk full): 0.5898"
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "similarity": 0.5898096922486703,
+      "evidence": "Cosine similarity (chunk full): 0.5898"
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.ts",
+      "similarity": 0.5895855387701958,
+      "evidence": "Cosine similarity (chunk full): 0.5896"
+    },
+    {
+      "path": "src/middleware/timeout/index.ts",
+      "similarity": 0.5895138398071206,
+      "evidence": "Cosine similarity (chunk full): 0.5895"
+    },
+    {
+      "path": "src/adapter/lambda-edge/conninfo.ts",
+      "similarity": 0.5894334087816093,
+      "evidence": "Cosine similarity (chunk full): 0.5894"
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "similarity": 0.5893914056426963,
+      "evidence": "Cosine similarity (chunk full): 0.5894"
+    },
+    {
+      "path": "src/router/reg-exp-router/node.ts",
+      "similarity": 0.5892878255236279,
+      "evidence": "Cosine similarity (chunk full): 0.5893"
+    },
+    {
+      "path": "benchmarks/routers/src/memoirist.mts",
+      "similarity": 0.5891392898026232,
+      "evidence": "Cosine similarity (chunk full): 0.5891"
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "similarity": 0.589109645549111,
+      "evidence": "Cosine similarity (chunk full): 0.5891"
+    },
+    {
+      "path": "src/middleware/csrf/index.test.ts",
+      "similarity": 0.5890402152536905,
+      "evidence": "Cosine similarity (chunk full): 0.5890"
+    },
+    {
+      "path": "src/router/smart-router/index.ts",
+      "similarity": 0.5889416639551543,
+      "evidence": "Cosine similarity (chunk full): 0.5889"
+    },
+    {
+      "path": "src/adapter/deno/websocket.test.ts",
+      "similarity": 0.588921702644848,
+      "evidence": "Cosine similarity (chunk full): 0.5889"
+    },
+    {
+      "path": "src/utils/jwt/types.ts",
+      "similarity": 0.588594776817838,
+      "evidence": "Cosine similarity (chunk full): 0.5886"
+    },
+    {
+      "path": "tsconfig.spec.json",
+      "similarity": 0.5884839638750874,
+      "evidence": "Cosine similarity (chunk full): 0.5885"
+    },
+    {
+      "path": "src/router/smart-router/router.test.ts",
+      "similarity": 0.5882008889811033,
+      "evidence": "Cosine similarity (chunk full): 0.5882"
+    },
+    {
+      "path": "build/fixtures/jsx-types/tsconfig.json",
+      "similarity": 0.5876656630279791,
+      "evidence": "Cosine similarity (chunk full): 0.5877"
+    },
+    {
+      "path": "adapters/deno/src/conninfo.test.ts",
+      "similarity": 0.5875742576905676,
+      "evidence": "Cosine similarity (chunk full): 0.5876"
+    },
+    {
+      "path": "src/utils/url.ts",
+      "similarity": 0.5873341728986784,
+      "evidence": "Cosine similarity (chunk full): 0.5873"
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.test.ts",
+      "similarity": 0.5871816650217891,
+      "evidence": "Cosine similarity (chunk full): 0.5872"
+    },
+    {
+      "path": "adapters/vercel/src/conninfo.test.ts",
+      "similarity": 0.5871047761562749,
+      "evidence": "Cosine similarity (chunk full): 0.5871"
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "similarity": 0.587099272258009,
+      "evidence": "Cosine similarity (chunk full): 0.5871"
+    },
+    {
+      "path": "jsr.json",
+      "similarity": 0.5869505809283196,
+      "evidence": "Cosine similarity (chunk full): 0.5870"
+    },
+    {
+      "path": "benchmarks/query-param/src/hono.mts",
+      "similarity": 0.5868865127903026,
+      "evidence": "Cosine similarity (chunk full): 0.5869"
+    },
+    {
+      "path": "adapters/bun/README.md",
+      "similarity": 0.5867857309637245,
+      "evidence": "Cosine similarity (chunk full): 0.5868"
+    },
+    {
+      "path": "benchmarks/routers/src/express.mts",
+      "similarity": 0.5867407296701513,
+      "evidence": "Cosine similarity (chunk full): 0.5867"
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.ts",
+      "similarity": 0.5867385469585029,
+      "evidence": "Cosine similarity (chunk full): 0.5867"
+    },
+    {
+      "path": "adapters/netlify/README.md",
+      "similarity": 0.5866810850903708,
+      "evidence": "Cosine similarity (chunk full): 0.5867"
+    },
+    {
+      "path": "src/helper/factory/index.test.ts",
+      "similarity": 0.5866774887756556,
+      "evidence": "Cosine similarity (chunk full): 0.5867"
+    },
+    {
+      "path": "runtime-tests/node/vitest.config.ts",
+      "similarity": 0.586615887525641,
+      "evidence": "Cosine similarity (chunk full): 0.5866"
+    },
+    {
+      "path": "src/adapter/bun/server.test.ts",
+      "similarity": 0.5866058635394902,
+      "evidence": "Cosine similarity (chunk full): 0.5866"
+    },
+    {
+      "path": "adapters/netlify/src/handler.ts",
+      "similarity": 0.5865504006631521,
+      "evidence": "Cosine similarity (chunk full): 0.5866"
+    },
+    {
+      "path": "src/jsx/constants.ts",
+      "similarity": 0.5864143760362301,
+      "evidence": "Cosine similarity (chunk full): 0.5864"
+    },
+    {
+      "path": "perf-measures/type-check/.gitignore",
+      "similarity": 0.5863863905681528,
+      "evidence": "Cosine similarity (chunk full): 0.5864"
+    },
+    {
+      "path": "src/middleware/jwt/index.ts",
+      "similarity": 0.5863580039113249,
+      "evidence": "Cosine similarity (chunk full): 0.5864"
+    },
+    {
+      "path": "src/client/types.test.ts",
+      "similarity": 0.5863178902635762,
+      "evidence": "Cosine similarity (chunk full): 0.5863"
+    },
+    {
+      "path": "build/release-adapter.ts",
+      "similarity": 0.5863037987805765,
+      "evidence": "Cosine similarity (chunk full): 0.5863"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/koa-router.mts",
+      "similarity": 0.5860423976874909,
+      "evidence": "Cosine similarity (chunk full): 0.5860"
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.test.tsx",
+      "similarity": 0.5860010312531273,
+      "evidence": "Cosine similarity (chunk 1): 0.5860"
+    },
+    {
+      "path": "adapters/deno/src/websocket.ts",
+      "similarity": 0.5859826544879553,
+      "evidence": "Cosine similarity (chunk full): 0.5860"
+    },
+    {
+      "path": "vitest.config.ts",
+      "similarity": 0.585956498075476,
+      "evidence": "Cosine similarity (chunk full): 0.5860"
+    },
+    {
+      "path": "src/utils/filepath.test.ts",
+      "similarity": 0.5859424248487153,
+      "evidence": "Cosine similarity (chunk full): 0.5859"
+    },
+    {
+      "path": ".oxfmtrc.json",
+      "similarity": 0.5857639985771723,
+      "evidence": "Cosine similarity (chunk full): 0.5858"
+    },
+    {
+      "path": "benchmarks/jsx/src/nano.ts",
+      "similarity": 0.5857582001906305,
+      "evidence": "Cosine similarity (chunk full): 0.5858"
+    },
+    {
+      "path": "adapters/bun/test/static/helloworld/index.html",
+      "similarity": 0.5848312100364449,
+      "evidence": "Cosine similarity (chunk full): 0.5848"
+    },
+    {
+      "path": "benchmarks/routers/src/medley-router.mts",
+      "similarity": 0.5847578045232975,
+      "evidence": "Cosine similarity (chunk full): 0.5848"
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "similarity": 0.5846527995165028,
+      "evidence": "Cosine similarity (chunk full): 0.5847"
+    },
+    {
+      "path": "benchmarks/routers/src/koa-router.mts",
+      "similarity": 0.584567293577103,
+      "evidence": "Cosine similarity (chunk full): 0.5846"
+    },
+    {
+      "path": "src/helper/proxy/index.test.ts",
+      "similarity": 0.5845634149409621,
+      "evidence": "Cosine similarity (chunk full): 0.5846"
+    },
+    {
+      "path": "adapters/cloudflare-workers/package.json",
+      "similarity": 0.584305470172722,
+      "evidence": "Cosine similarity (chunk full): 0.5843"
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.ts",
+      "similarity": 0.584285975204847,
+      "evidence": "Cosine similarity (chunk full): 0.5843"
+    },
+    {
+      "path": "src/middleware/body-limit/index.test.ts",
+      "similarity": 0.584188420436181,
+      "evidence": "Cosine similarity (chunk full): 0.5842"
+    },
+    {
+      "path": "runtime-tests/workerd/vitest.config.ts",
+      "similarity": 0.5839785396713213,
+      "evidence": "Cosine similarity (chunk full): 0.5840"
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "similarity": 0.5838746382482869,
+      "evidence": "Cosine similarity (chunk full): 0.5839"
+    },
+    {
+      "path": "src/jsx/streaming.test.tsx",
+      "similarity": 0.583703611612907,
+      "evidence": "Cosine similarity (chunk 1): 0.5837"
+    },
+    {
+      "path": "benchmarks/fetch/bench.mts",
+      "similarity": 0.5834026668140376,
+      "evidence": "Cosine similarity (chunk full): 0.5834"
+    },
+    {
+      "path": "src/preset/tiny.ts",
+      "similarity": 0.5832923688191356,
+      "evidence": "Cosine similarity (chunk full): 0.5833"
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream-backpressure.test.ts",
+      "similarity": 0.5830318657165302,
+      "evidence": "Cosine similarity (chunk full): 0.5830"
+    },
+    {
+      "path": ".github/workflows/no-response.yml",
+      "similarity": 0.582787229464691,
+      "evidence": "Cosine similarity (chunk full): 0.5828"
+    },
+    {
+      "path": "runtime-tests/bun/index.test.tsx",
+      "similarity": 0.5824054351991709,
+      "evidence": "Cosine similarity (chunk full): 0.5824"
+    },
+    {
+      "path": "src/router/smart-router/router.ts",
+      "similarity": 0.5823342120650461,
+      "evidence": "Cosine similarity (chunk full): 0.5823"
+    },
+    {
+      "path": "perf-measures/type-check/scripts/generate-app.ts",
+      "similarity": 0.58215876159746,
+      "evidence": "Cosine similarity (chunk full): 0.5822"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "similarity": 0.5820900352099285,
+      "evidence": "Cosine similarity (chunk full): 0.5821"
+    },
+    {
+      "path": "src/compose.test.ts",
+      "similarity": 0.5820455341629326,
+      "evidence": "Cosine similarity (chunk full): 0.5820"
+    },
+    {
+      "path": "adapters/service-worker/package.json",
+      "similarity": 0.5820026525348053,
+      "evidence": "Cosine similarity (chunk full): 0.5820"
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "similarity": 0.5819140402708393,
+      "evidence": "Cosine similarity (chunk full): 0.5819"
+    },
+    {
+      "path": "src/helper/streaming/stream.ts",
+      "similarity": 0.5818454184759396,
+      "evidence": "Cosine similarity (chunk full): 0.5818"
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "similarity": 0.5815052320571431,
+      "evidence": "Cosine similarity (chunk full): 0.5815"
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.test.ts",
+      "similarity": 0.5814284946729741,
+      "evidence": "Cosine similarity (chunk full): 0.5814"
+    },
+    {
+      "path": "adapters/bun/src/websocket.ts",
+      "similarity": 0.5813720895701092,
+      "evidence": "Cosine similarity (chunk full): 0.5814"
+    },
+    {
+      "path": "adapters/bun/src/server.ts",
+      "similarity": 0.5813242737347566,
+      "evidence": "Cosine similarity (chunk full): 0.5813"
+    },
+    {
+      "path": "src/adapter/deno/websocket.ts",
+      "similarity": 0.5812251131295246,
+      "evidence": "Cosine similarity (chunk full): 0.5812"
+    },
+    {
+      "path": "src/jsx/intrinsic-element/common.ts",
+      "similarity": 0.5811920825579117,
+      "evidence": "Cosine similarity (chunk full): 0.5812"
+    },
+    {
+      "path": "benchmarks/routers/src/bench-includes-init.mts",
+      "similarity": 0.581163352400208,
+      "evidence": "Cosine similarity (chunk full): 0.5812"
+    },
+    {
+      "path": "src/router/reg-exp-router/matcher.ts",
+      "similarity": 0.5811476473874543,
+      "evidence": "Cosine similarity (chunk full): 0.5811"
+    },
+    {
+      "path": "benchmarks/fetch/package.json",
+      "similarity": 0.5807900379117565,
+      "evidence": "Cosine similarity (chunk full): 0.5808"
+    },
+    {
+      "path": "src/adapter/vercel/conninfo.test.ts",
+      "similarity": 0.5807295825598726,
+      "evidence": "Cosine similarity (chunk full): 0.5807"
+    },
+    {
+      "path": "benchmarks/jsx/src/preact.ts",
+      "similarity": 0.580400307165952,
+      "evidence": "Cosine similarity (chunk full): 0.5804"
+    },
+    {
+      "path": "src/middleware/request-id/index.test.ts",
+      "similarity": 0.5803899118943814,
+      "evidence": "Cosine similarity (chunk full): 0.5804"
+    },
+    {
+      "path": "runtime-tests/fastly/index.test.ts",
+      "similarity": 0.5802140480937639,
+      "evidence": "Cosine similarity (chunk full): 0.5802"
+    },
+    {
+      "path": "src/router/pattern-router/index.ts",
+      "similarity": 0.5799049698188878,
+      "evidence": "Cosine similarity (chunk full): 0.5799"
+    },
+    {
+      "path": "src/utils/buffer.test.ts",
+      "similarity": 0.579696331158283,
+      "evidence": "Cosine similarity (chunk full): 0.5797"
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.test.ts",
+      "similarity": 0.5796866430372257,
+      "evidence": "Cosine similarity (chunk full): 0.5797"
+    },
+    {
+      "path": "src/context.ts",
+      "similarity": 0.5795036053667865,
+      "evidence": "Cosine similarity (chunk full): 0.5795"
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/utils.ts",
+      "similarity": 0.579407607215364,
+      "evidence": "Cosine similarity (chunk full): 0.5794"
+    },
+    {
+      "path": "src/jsx/hooks/string.test.tsx",
+      "similarity": 0.5793167078151279,
+      "evidence": "Cosine similarity (chunk full): 0.5793"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/medley-router.mts",
+      "similarity": 0.5790910767391756,
+      "evidence": "Cosine similarity (chunk full): 0.5791"
+    },
+    {
+      "path": "benchmarks/utils/package.json",
+      "similarity": 0.5789332936327244,
+      "evidence": "Cosine similarity (chunk full): 0.5789"
+    },
+    {
+      "path": "src/router/trie-router/router.ts",
+      "similarity": 0.5787848403951878,
+      "evidence": "Cosine similarity (chunk full): 0.5788"
+    },
+    {
+      "path": ".github/workflows/cr.yml",
+      "similarity": 0.5787362518109742,
+      "evidence": "Cosine similarity (chunk full): 0.5787"
+    },
+    {
+      "path": "src/middleware/pretty-json/index.test.ts",
+      "similarity": 0.5785089797541249,
+      "evidence": "Cosine similarity (chunk full): 0.5785"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/koa-tree-router.mts",
+      "similarity": 0.5783321405502675,
+      "evidence": "Cosine similarity (chunk full): 0.5783"
+    },
+    {
+      "path": "src/helper/conninfo/types.ts",
+      "similarity": 0.5779146133309286,
+      "evidence": "Cosine similarity (chunk full): 0.5779"
+    },
+    {
+      "path": "src/jsx/dom/server.test.tsx",
+      "similarity": 0.5778830790591035,
+      "evidence": "Cosine similarity (chunk full): 0.5779"
+    },
+    {
+      "path": "src/utils/url.test.ts",
+      "similarity": 0.5778555129982014,
+      "evidence": "Cosine similarity (chunk full): 0.5779"
+    },
+    {
+      "path": "src/middleware/etag/digest.ts",
+      "similarity": 0.5775700429176287,
+      "evidence": "Cosine similarity (chunk full): 0.5776"
+    },
+    {
+      "path": "src/helper/ssg/utils.ts",
+      "similarity": 0.5773968326401171,
+      "evidence": "Cosine similarity (chunk full): 0.5774"
+    },
+    {
+      "path": "benchmarks/routers/src/koa-tree-router.mts",
+      "similarity": 0.5773387736937339,
+      "evidence": "Cosine similarity (chunk full): 0.5773"
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.ts",
+      "similarity": 0.5772884079761454,
+      "evidence": "Cosine similarity (chunk full): 0.5773"
+    },
+    {
+      "path": "src/router/reg-exp-router/router.test.ts",
+      "similarity": 0.5769967839236328,
+      "evidence": "Cosine similarity (chunk full): 0.5770"
+    },
+    {
+      "path": "src/utils/crypto.test.ts",
+      "similarity": 0.5769136187849975,
+      "evidence": "Cosine similarity (chunk full): 0.5769"
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream.test.ts",
+      "similarity": 0.5765453537210555,
+      "evidence": "Cosine similarity (chunk full): 0.5765"
+    },
+    {
+      "path": "src/utils/cookie.test.ts",
+      "similarity": 0.5762438397210702,
+      "evidence": "Cosine similarity (chunk full): 0.5762"
+    },
+    {
+      "path": "src/helper/streaming/stream.test.ts",
+      "similarity": 0.5760691346116136,
+      "evidence": "Cosine similarity (chunk full): 0.5761"
+    },
+    {
+      "path": "src/utils/jwt/jwa.test.ts",
+      "similarity": 0.5755969300448693,
+      "evidence": "Cosine similarity (chunk full): 0.5756"
+    },
+    {
+      "path": "src/utils/jwt/jwa.ts",
+      "similarity": 0.5755224996042185,
+      "evidence": "Cosine similarity (chunk full): 0.5755"
+    },
+    {
+      "path": "build/fixtures/jsx-types/index.tsx",
+      "similarity": 0.5752873072252753,
+      "evidence": "Cosine similarity (chunk full): 0.5753"
+    },
+    {
+      "path": "src/jsx/index.ts",
+      "similarity": 0.5752827577479374,
+      "evidence": "Cosine similarity (chunk full): 0.5753"
+    },
+    {
+      "path": "benchmarks/jsx/src/page.tsx",
+      "similarity": 0.5751425640369036,
+      "evidence": "Cosine similarity (chunk full): 0.5751"
+    },
+    {
+      "path": "benchmarks/jsx/src/hono.ts",
+      "similarity": 0.5750984627591254,
+      "evidence": "Cosine similarity (chunk full): 0.5751"
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "similarity": 0.5744769453850506,
+      "evidence": "Cosine similarity (chunk full): 0.5745"
+    },
+    {
+      "path": "src/adapter/deno/conninfo.test.ts",
+      "similarity": 0.5741962570485373,
+      "evidence": "Cosine similarity (chunk full): 0.5742"
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.ts",
+      "similarity": 0.5737731272259664,
+      "evidence": "Cosine similarity (chunk full): 0.5738"
+    },
+    {
+      "path": "src/jsx/dom/client.ts",
+      "similarity": 0.573277370946986,
+      "evidence": "Cosine similarity (chunk full): 0.5733"
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "similarity": 0.572835410954158,
+      "evidence": "Cosine similarity (chunk full): 0.5728"
+    },
+    {
+      "path": "src/helper/adapter/index.test.ts",
+      "similarity": 0.5727237128995935,
+      "evidence": "Cosine similarity (chunk full): 0.5727"
+    },
+    {
+      "path": "src/jsx/components.test.tsx",
+      "similarity": 0.5726955418283516,
+      "evidence": "Cosine similarity (chunk full): 0.5727"
+    },
+    {
+      "path": "src/helper/route/index.test.ts",
+      "similarity": 0.5725553390067702,
+      "evidence": "Cosine similarity (chunk full): 0.5726"
+    },
+    {
+      "path": "src/utils/buffer.ts",
+      "similarity": 0.5725087986884964,
+      "evidence": "Cosine similarity (chunk full): 0.5725"
+    },
+    {
+      "path": "adapters/service-worker/src/types.ts",
+      "similarity": 0.5720215897636508,
+      "evidence": "Cosine similarity (chunk full): 0.5720"
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "similarity": 0.5719686503588333,
+      "evidence": "Cosine similarity (chunk full): 0.5720"
+    },
+    {
+      "path": "perf-measures/bundle-check/scripts/check-bundle-size.ts",
+      "similarity": 0.5719400872465735,
+      "evidence": "Cosine similarity (chunk full): 0.5719"
+    },
+    {
+      "path": "src/adapter/bun/websocket.ts",
+      "similarity": 0.5718142067223504,
+      "evidence": "Cosine similarity (chunk full): 0.5718"
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.test.tsx",
+      "similarity": 0.5716491210741917,
+      "evidence": "Cosine similarity (chunk full): 0.5716"
+    },
+    {
+      "path": "src/router/linear-router/router.test.ts",
+      "similarity": 0.5716356144795719,
+      "evidence": "Cosine similarity (chunk full): 0.5716"
+    },
+    {
+      "path": "adapters/lambda-edge/package.json",
+      "similarity": 0.57149658729915,
+      "evidence": "Cosine similarity (chunk full): 0.5715"
+    },
+    {
+      "path": "src/router/trie-router/node.test.ts",
+      "similarity": 0.5710539885195555,
+      "evidence": "Cosine similarity (chunk 1): 0.5711"
+    },
+    {
+      "path": "benchmarks/utils/src/get-path.ts",
+      "similarity": 0.570996538941179,
+      "evidence": "Cosine similarity (chunk full): 0.5710"
+    },
+    {
+      "path": "adapters/deno/test/assert.ts",
+      "similarity": 0.5707682704008502,
+      "evidence": "Cosine similarity (chunk full): 0.5708"
+    },
+    {
+      "path": "adapters/netlify/package.json",
+      "similarity": 0.5706379438516967,
+      "evidence": "Cosine similarity (chunk full): 0.5706"
+    },
+    {
+      "path": "src/hono.ts",
+      "similarity": 0.5706362317431195,
+      "evidence": "Cosine similarity (chunk full): 0.5706"
+    },
+    {
+      "path": "benchmarks/routers/src/radix3.mts",
+      "similarity": 0.5704293778153956,
+      "evidence": "Cosine similarity (chunk full): 0.5704"
+    },
+    {
+      "path": "adapters/aws-lambda/package.json",
+      "similarity": 0.5703870080475457,
+      "evidence": "Cosine similarity (chunk full): 0.5704"
+    },
+    {
+      "path": "benchmarks/jsx/src/benchmark.ts",
+      "similarity": 0.5692562884714045,
+      "evidence": "Cosine similarity (chunk full): 0.5693"
+    },
+    {
+      "path": "src/jsx/dom/client.test.tsx",
+      "similarity": 0.569186258363347,
+      "evidence": "Cosine similarity (chunk full): 0.5692"
+    },
+    {
+      "path": "adapters/deno/src/deno.d.ts",
+      "similarity": 0.5690831438866117,
+      "evidence": "Cosine similarity (chunk full): 0.5691"
+    },
+    {
+      "path": "README.md",
+      "similarity": 0.5690546267279125,
+      "evidence": "Cosine similarity (chunk full): 0.5691"
+    },
+    {
+      "path": "src/middleware/timeout/index.test.ts",
+      "similarity": 0.5688549851789798,
+      "evidence": "Cosine similarity (chunk full): 0.5689"
+    },
+    {
+      "path": "adapters/bun/test/static-absolute-root/plain.txt",
+      "similarity": 0.5688115271531284,
+      "evidence": "Cosine similarity (chunk full): 0.5688"
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.ts",
+      "similarity": 0.5686291781692319,
+      "evidence": "Cosine similarity (chunk full): 0.5686"
+    },
+    {
+      "path": "src/validator/utils.test.ts",
+      "similarity": 0.5684944938866597,
+      "evidence": "Cosine similarity (chunk full): 0.5685"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/hono.ts",
+      "similarity": 0.5684609141808858,
+      "evidence": "Cosine similarity (chunk full): 0.5685"
+    },
+    {
+      "path": "benchmarks/query-param/src/qs.mts",
+      "similarity": 0.5684303527057988,
+      "evidence": "Cosine similarity (chunk full): 0.5684"
+    },
+    {
+      "path": "perf-measures/bundle-check/.gitignore",
+      "similarity": 0.567812758601923,
+      "evidence": "Cosine similarity (chunk full): 0.5678"
+    },
+    {
+      "path": "package.json",
+      "similarity": 0.567368779200771,
+      "evidence": "Cosine similarity (chunk full): 0.5674"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/find-my-way.mts",
+      "similarity": 0.5670239263522607,
+      "evidence": "Cosine similarity (chunk full): 0.5670"
+    },
+    {
+      "path": "src/utils/types.test.ts",
+      "similarity": 0.5665011674423998,
+      "evidence": "Cosine similarity (chunk full): 0.5665"
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "similarity": 0.5662362851044561,
+      "evidence": "Cosine similarity (chunk full): 0.5662"
+    },
+    {
+      "path": "src/validator/validator.ts",
+      "similarity": 0.5661911837370037,
+      "evidence": "Cosine similarity (chunk full): 0.5662"
+    },
+    {
+      "path": "src/jsx/dom/components.ts",
+      "similarity": 0.5661411635076616,
+      "evidence": "Cosine similarity (chunk full): 0.5661"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/nano.ts",
+      "similarity": 0.5659191383730449,
+      "evidence": "Cosine similarity (chunk full): 0.5659"
+    },
+    {
+      "path": "src/helper/streaming/text.ts",
+      "similarity": 0.5658657335397511,
+      "evidence": "Cosine similarity (chunk full): 0.5659"
+    },
+    {
+      "path": "benchmarks/fetch/summarize.mts",
+      "similarity": 0.5656199033416944,
+      "evidence": "Cosine similarity (chunk full): 0.5656"
+    },
+    {
+      "path": "src/adapter/deno/conninfo.ts",
+      "similarity": 0.5655274029858361,
+      "evidence": "Cosine similarity (chunk full): 0.5655"
+    },
+    {
+      "path": "benchmarks/routers/package.json",
+      "similarity": 0.5654459653202972,
+      "evidence": "Cosine similarity (chunk full): 0.5654"
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.ts",
+      "similarity": 0.5654203008991182,
+      "evidence": "Cosine similarity (chunk full): 0.5654"
+    },
+    {
+      "path": "benchmarks/query-param/package.json",
+      "similarity": 0.5653959096629514,
+      "evidence": "Cosine similarity (chunk full): 0.5654"
+    },
+    {
+      "path": "src/adapter/bun/server.ts",
+      "similarity": 0.5653158333810427,
+      "evidence": "Cosine similarity (chunk full): 0.5653"
+    },
+    {
+      "path": ".github/workflows/ci-adapters.yml",
+      "similarity": 0.5651552521164848,
+      "evidence": "Cosine similarity (chunk full): 0.5652"
+    },
+    {
+      "path": "adapters/vercel/package.json",
+      "similarity": 0.5647104578043384,
+      "evidence": "Cosine similarity (chunk full): 0.5647"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/react.ts",
+      "similarity": 0.5646807913940892,
+      "evidence": "Cosine similarity (chunk full): 0.5647"
+    },
+    {
+      "path": "benchmarks/utils/src/loop.js",
+      "similarity": 0.5643261497050198,
+      "evidence": "Cosine similarity (chunk full): 0.5643"
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "similarity": 0.5642634958040641,
+      "evidence": "Cosine similarity (chunk full): 0.5643"
+    },
+    {
+      "path": "runtime-tests/bun/tsconfig.json",
+      "similarity": 0.5641258274737704,
+      "evidence": "Cosine similarity (chunk full): 0.5641"
+    },
+    {
+      "path": "benchmarks/routers/src/hono.mts",
+      "similarity": 0.5633814837372507,
+      "evidence": "Cosine similarity (chunk full): 0.5634"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-hono.tsx",
+      "similarity": 0.5633309382161771,
+      "evidence": "Cosine similarity (chunk full): 0.5633"
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.test.ts",
+      "similarity": 0.563317210667768,
+      "evidence": "Cosine similarity (chunk full): 0.5633"
+    },
+    {
+      "path": "benchmarks/routers/src/find-my-way.mts",
+      "similarity": 0.5631513899363404,
+      "evidence": "Cosine similarity (chunk full): 0.5632"
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.ts",
+      "similarity": 0.5630554475137286,
+      "evidence": "Cosine similarity (chunk full): 0.5631"
+    },
+    {
+      "path": "src/router/linear-router/index.ts",
+      "similarity": 0.563022422964869,
+      "evidence": "Cosine similarity (chunk full): 0.5630"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/benchmark.ts",
+      "similarity": 0.561848755247816,
+      "evidence": "Cosine similarity (chunk full): 0.5618"
+    },
+    {
+      "path": "src/http-exception.test.ts",
+      "similarity": 0.5617676020303434,
+      "evidence": "Cosine similarity (chunk full): 0.5618"
+    },
+    {
+      "path": "src/adapter/deno/deno.d.ts",
+      "similarity": 0.5614079780424405,
+      "evidence": "Cosine similarity (chunk full): 0.5614"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/hono.mts",
+      "similarity": 0.5607975051095385,
+      "evidence": "Cosine similarity (chunk full): 0.5608"
+    },
+    {
+      "path": "benchmarks/jsx/src/page-react.tsx",
+      "similarity": 0.5607793079331411,
+      "evidence": "Cosine similarity (chunk full): 0.5608"
+    },
+    {
+      "path": "src/jsx/dom/jsx-runtime.ts",
+      "similarity": 0.5605041696879115,
+      "evidence": "Cosine similarity (chunk full): 0.5605"
+    },
+    {
+      "path": "adapters/deno/test/static-absolute-root/plain.txt",
+      "similarity": 0.5603564215063263,
+      "evidence": "Cosine similarity (chunk full): 0.5604"
+    },
+    {
+      "path": "src/jsx/context.ts",
+      "similarity": 0.5603403741890404,
+      "evidence": "Cosine similarity (chunk full): 0.5603"
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "similarity": 0.560183017014533,
+      "evidence": "Cosine similarity (chunk full): 0.5602"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "similarity": 0.5601320014253968,
+      "evidence": "Cosine similarity (chunk full): 0.5601"
+    },
+    {
+      "path": "benchmarks/fetch/.gitignore",
+      "similarity": 0.55985660231194,
+      "evidence": "Cosine similarity (chunk full): 0.5599"
+    },
+    {
+      "path": "src/utils/mime.ts",
+      "similarity": 0.5597465823666893,
+      "evidence": "Cosine similarity (chunk full): 0.5597"
+    },
+    {
+      "path": "benchmarks/query-param/src/bench.mts",
+      "similarity": 0.5596838697636684,
+      "evidence": "Cosine similarity (chunk full): 0.5597"
+    },
+    {
+      "path": ".github/actions/perf-measures/action.yml",
+      "similarity": 0.5595926411052172,
+      "evidence": "Cosine similarity (chunk full): 0.5596"
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "similarity": 0.5595301351558398,
+      "evidence": "Cosine similarity (chunk full): 0.5595"
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.test.ts",
+      "similarity": 0.5591798422030588,
+      "evidence": "Cosine similarity (chunk full): 0.5592"
+    },
+    {
+      "path": "adapters/bun/src/conninfo.test.ts",
+      "similarity": 0.5591130169381575,
+      "evidence": "Cosine similarity (chunk full): 0.5591"
+    },
+    {
+      "path": "benchmarks/query-param/src/fast-querystring.mts",
+      "similarity": 0.5590297924150148,
+      "evidence": "Cosine similarity (chunk full): 0.5590"
+    },
+    {
+      "path": "src/helper/streaming/sse.test.tsx",
+      "similarity": 0.5586666774344012,
+      "evidence": "Cosine similarity (chunk full): 0.5587"
+    },
+    {
+      "path": "src/utils/types.ts",
+      "similarity": 0.5585762635539877,
+      "evidence": "Cosine similarity (chunk full): 0.5586"
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "similarity": 0.5584234185360536,
+      "evidence": "Cosine similarity (chunk full): 0.5584"
+    },
+    {
+      "path": "docs/CODE_OF_CONDUCT.md",
+      "similarity": 0.5579666344898118,
+      "evidence": "Cosine similarity (chunk full): 0.5580"
+    },
+    {
+      "path": "adapters/deno/src/conninfo.ts",
+      "similarity": 0.557867717474183,
+      "evidence": "Cosine similarity (chunk full): 0.5579"
+    },
+    {
+      "path": "src/utils/concurrent.ts",
+      "similarity": 0.5577301684111714,
+      "evidence": "Cosine similarity (chunk full): 0.5577"
+    },
+    {
+      "path": "src/utils/encode.ts",
+      "similarity": 0.557653220707381,
+      "evidence": "Cosine similarity (chunk full): 0.5577"
+    },
+    {
+      "path": "src/utils/encode.test.ts",
+      "similarity": 0.5576359904120853,
+      "evidence": "Cosine similarity (chunk full): 0.5576"
+    },
+    {
+      "path": "adapters/bun/test/.static/plain.txt",
+      "similarity": 0.5574790280884856,
+      "evidence": "Cosine similarity (chunk full): 0.5575"
+    },
+    {
+      "path": "benchmarks/jsx/tsconfig.json",
+      "similarity": 0.5572661259021809,
+      "evidence": "Cosine similarity (chunk full): 0.5573"
+    },
+    {
+      "path": "benchmarks/http-server/README.md",
+      "similarity": 0.5571951655444826,
+      "evidence": "Cosine similarity (chunk full): 0.5572"
+    },
+    {
+      "path": "build/jsx-types.test.ts",
+      "similarity": 0.5571751566056683,
+      "evidence": "Cosine similarity (chunk full): 0.5572"
+    },
+    {
+      "path": "runtime-tests/fastly/vitest.config.ts",
+      "similarity": 0.557097619716258,
+      "evidence": "Cosine similarity (chunk full): 0.5571"
+    },
+    {
+      "path": "perf-measures/bundle-check/generated/.gitkeep",
+      "similarity": 0.5570934480399884,
+      "evidence": "Cosine similarity (chunk full): 0.5571"
+    },
+    {
+      "path": "benchmarks/routers/src/bench.mts",
+      "similarity": 0.5567479730297085,
+      "evidence": "Cosine similarity (chunk full): 0.5567"
+    },
+    {
+      "path": "adapters/deno/test/.static/plain.txt",
+      "similarity": 0.55666626009356,
+      "evidence": "Cosine similarity (chunk full): 0.5567"
+    },
+    {
+      "path": "src/router/linear-router/router.ts",
+      "similarity": 0.5566130610312875,
+      "evidence": "Cosine similarity (chunk full): 0.5566"
+    },
+    {
+      "path": "adapters/bun/test/static/plain.txt",
+      "similarity": 0.5565076755248767,
+      "evidence": "Cosine similarity (chunk full): 0.5565"
+    },
+    {
+      "path": "src/utils/stream.test.ts",
+      "similarity": 0.5563304727461406,
+      "evidence": "Cosine similarity (chunk full): 0.5563"
+    },
+    {
+      "path": "runtime-tests/node/index.test.ts",
+      "similarity": 0.5560587299324969,
+      "evidence": "Cosine similarity (chunk full): 0.5561"
+    },
+    {
+      "path": "adapters/deno/test/static/plain.txt",
+      "similarity": 0.5559596782374366,
+      "evidence": "Cosine similarity (chunk full): 0.5560"
+    },
+    {
+      "path": "benchmarks/jsx/src/react.ts",
+      "similarity": 0.5557879202300156,
+      "evidence": "Cosine similarity (chunk full): 0.5558"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-nano.tsx",
+      "similarity": 0.5553968265720792,
+      "evidence": "Cosine similarity (chunk full): 0.5554"
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "similarity": 0.5552930465961736,
+      "evidence": "Cosine similarity (chunk full): 0.5553"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/tsconfig.json",
+      "similarity": 0.5547313862727506,
+      "evidence": "Cosine similarity (chunk full): 0.5547"
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "similarity": 0.5545566213557291,
+      "evidence": "Cosine similarity (chunk full): 0.5546"
+    },
+    {
+      "path": "src/router/pattern-router/router.test.ts",
+      "similarity": 0.5544631641826238,
+      "evidence": "Cosine similarity (chunk full): 0.5545"
+    },
+    {
+      "path": "src/jsx/dom/components.test.tsx",
+      "similarity": 0.5544185110324634,
+      "evidence": "Cosine similarity (chunk full): 0.5544"
+    },
+    {
+      "path": "adapters/bun/package.json",
+      "similarity": 0.5544025579350426,
+      "evidence": "Cosine similarity (chunk full): 0.5544"
+    },
+    {
+      "path": "src/utils/filepath.ts",
+      "similarity": 0.5540804931411637,
+      "evidence": "Cosine similarity (chunk full): 0.5541"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/trek-router.mts",
+      "similarity": 0.5540774924028001,
+      "evidence": "Cosine similarity (chunk full): 0.5541"
+    },
+    {
+      "path": "adapters/deno/package.json",
+      "similarity": 0.5540038935353933,
+      "evidence": "Cosine similarity (chunk full): 0.5540"
+    },
+    {
+      "path": "perf-measures/type-check/generated/.gitkeep",
+      "similarity": 0.553874926094756,
+      "evidence": "Cosine similarity (chunk full): 0.5539"
+    },
+    {
+      "path": "benchmarks/routers/src/trek-router.mts",
+      "similarity": 0.5536789972574946,
+      "evidence": "Cosine similarity (chunk full): 0.5537"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/preact.ts",
+      "similarity": 0.5532721018133525,
+      "evidence": "Cosine similarity (chunk full): 0.5533"
+    },
+    {
+      "path": "runtime-tests/deno-jsx/jsx.test.tsx",
+      "similarity": 0.5526807517588949,
+      "evidence": "Cosine similarity (chunk full): 0.5527"
+    },
+    {
+      "path": "src/helper/css/common.case.test.tsx",
+      "similarity": 0.5525484929391346,
+      "evidence": "Cosine similarity (chunk full): 0.5525"
+    },
+    {
+      "path": "src/jsx/dom/server.ts",
+      "similarity": 0.5523577696186684,
+      "evidence": "Cosine similarity (chunk full): 0.5524"
+    },
+    {
+      "path": "src/utils/html.ts",
+      "similarity": 0.552018927581971,
+      "evidence": "Cosine similarity (chunk full): 0.5520"
+    },
+    {
+      "path": "src/request.test.ts",
+      "similarity": 0.551688614308628,
+      "evidence": "Cosine similarity (chunk full): 0.5517"
+    },
+    {
+      "path": "tsconfig.json",
+      "similarity": 0.5514638329925952,
+      "evidence": "Cosine similarity (chunk full): 0.5515"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/bench.mts",
+      "similarity": 0.5511233308578674,
+      "evidence": "Cosine similarity (chunk full): 0.5511"
+    },
+    {
+      "path": "src/jsx/components.ts",
+      "similarity": 0.5506738036181783,
+      "evidence": "Cosine similarity (chunk full): 0.5507"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "similarity": 0.5495330372144959,
+      "evidence": "Cosine similarity (chunk full): 0.5495"
+    },
+    {
+      "path": "src/jsx/dom/jsx-dev-runtime.ts",
+      "similarity": 0.5494729357829096,
+      "evidence": "Cosine similarity (chunk full): 0.5495"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-preact.tsx",
+      "similarity": 0.5481314715041764,
+      "evidence": "Cosine similarity (chunk full): 0.5481"
+    },
+    {
+      "path": "runtime-tests/deno/stream.test.ts",
+      "similarity": 0.547484402010881,
+      "evidence": "Cosine similarity (chunk full): 0.5475"
+    },
+    {
+      "path": "src/router/trie-router/node.ts",
+      "similarity": 0.5470423422607865,
+      "evidence": "Cosine similarity (chunk full): 0.5470"
+    },
+    {
+      "path": "src/router/utils.ts",
+      "similarity": 0.5466333446393883,
+      "evidence": "Cosine similarity (chunk full): 0.5466"
+    },
+    {
+      "path": "benchmarks/jsx/package.json",
+      "similarity": 0.5464231364851952,
+      "evidence": "Cosine similarity (chunk full): 0.5464"
+    },
+    {
+      "path": "runtime-tests/deno-jsx/deno.precompile.json",
+      "similarity": 0.5461694819337525,
+      "evidence": "Cosine similarity (chunk full): 0.5462"
+    },
+    {
+      "path": "src/hono-base.ts",
+      "similarity": 0.5456626870954349,
+      "evidence": "Cosine similarity (chunk full): 0.5457"
+    },
+    {
+      "path": "src/jsx/hooks/dom.test.tsx",
+      "similarity": 0.5452344483708618,
+      "evidence": "Cosine similarity (chunk full): 0.5452"
+    },
+    {
+      "path": "runtime-tests/deno/deno.json",
+      "similarity": 0.5449050026813703,
+      "evidence": "Cosine similarity (chunk full): 0.5449"
+    },
+    {
+      "path": "benchmarks/jsx-dom/benchmark.ts",
+      "similarity": 0.5448792724448214,
+      "evidence": "Cosine similarity (chunk full): 0.5449"
+    },
+    {
+      "path": "src/utils/html.test.ts",
+      "similarity": 0.5446532339015855,
+      "evidence": "Cosine similarity (chunk full): 0.5447"
+    },
+    {
+      "path": "LICENSE",
+      "similarity": 0.5440426056563038,
+      "evidence": "Cosine similarity (chunk full): 0.5440"
+    },
+    {
+      "path": "src/utils/stream.ts",
+      "similarity": 0.5436532514561956,
+      "evidence": "Cosine similarity (chunk full): 0.5437"
+    },
+    {
+      "path": "src/jsx/dom/context.ts",
+      "similarity": 0.5434693869800075,
+      "evidence": "Cosine similarity (chunk full): 0.5435"
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.test.tsx",
+      "similarity": 0.5425841234379474,
+      "evidence": "Cosine similarity (chunk full): 0.5426"
+    },
+    {
+      "path": "src/helper/html/index.ts",
+      "similarity": 0.5423460170238608,
+      "evidence": "Cosine similarity (chunk full): 0.5423"
+    },
+    {
+      "path": "benchmarks/http-server/benchmark.ts",
+      "similarity": 0.5420551123450952,
+      "evidence": "Cosine similarity (chunk full): 0.5421"
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-react.tsx",
+      "similarity": 0.5418564739751066,
+      "evidence": "Cosine similarity (chunk full): 0.5419"
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "similarity": 0.5414771700881763,
+      "evidence": "Cosine similarity (chunk full): 0.5415"
+    },
+    {
+      "path": "src/jsx/types.ts",
+      "similarity": 0.5412468035499842,
+      "evidence": "Cosine similarity (chunk full): 0.5412"
+    },
+    {
+      "path": "adapters/bun/src/conninfo.ts",
+      "similarity": 0.5412128358729139,
+      "evidence": "Cosine similarity (chunk full): 0.5412"
+    },
+    {
+      "path": "src/jsx/context-isolation.test.ts",
+      "similarity": 0.5407375760051923,
+      "evidence": "Cosine similarity (chunk full): 0.5407"
+    },
+    {
+      "path": "benchmarks/routers-deno/src/tool.mts",
+      "similarity": 0.5403223348804168,
+      "evidence": "Cosine similarity (chunk full): 0.5403"
+    },
+    {
+      "path": "src/utils/concurrent.test.ts",
+      "similarity": 0.5401229760546724,
+      "evidence": "Cosine similarity (chunk full): 0.5401"
+    },
+    {
+      "path": "benchmarks/http-server/.gitignore",
+      "similarity": 0.5399285697885,
+      "evidence": "Cosine similarity (chunk full): 0.5399"
+    },
+    {
+      "path": "src/jsx/dom/context.test.tsx",
+      "similarity": 0.5399007564948909,
+      "evidence": "Cosine similarity (chunk full): 0.5399"
+    },
+    {
+      "path": "benchmarks/query-param/package-lock.json",
+      "similarity": 0.5395885913135602,
+      "evidence": "Cosine similarity (chunk full): 0.5396"
+    },
+    {
+      "path": "benchmarks/routers/README.md",
+      "similarity": 0.539447445427561,
+      "evidence": "Cosine similarity (chunk full): 0.5394"
+    },
+    {
+      "path": "src/jsx/jsx-runtime.test.tsx",
+      "similarity": 0.5392968383152263,
+      "evidence": "Cosine similarity (chunk full): 0.5393"
+    },
+    {
+      "path": "benchmarks/routers-deno/deno.json",
+      "similarity": 0.5392037291075868,
+      "evidence": "Cosine similarity (chunk full): 0.5392"
+    },
+    {
+      "path": "src/utils/jwt/jws.ts",
+      "similarity": 0.5388532588241712,
+      "evidence": "Cosine similarity (chunk full): 0.5389"
+    },
+    {
+      "path": "src/utils/crypto.ts",
+      "similarity": 0.5387840470233476,
+      "evidence": "Cosine similarity (chunk full): 0.5388"
+    },
+    {
+      "path": "benchmarks/utils/.gitignore",
+      "similarity": 0.5381051474394029,
+      "evidence": "Cosine similarity (chunk full): 0.5381"
+    },
+    {
+      "path": "src/adapter/bun/conninfo.test.ts",
+      "similarity": 0.5374539400270016,
+      "evidence": "Cosine similarity (chunk full): 0.5375"
+    },
+    {
+      "path": "runtime-tests/deno-jsx/deno.react-jsx.json",
+      "similarity": 0.5367391869803174,
+      "evidence": "Cosine similarity (chunk full): 0.5367"
+    },
+    {
+      "path": "benchmarks/routers/src/tool.mts",
+      "similarity": 0.5362862884664114,
+      "evidence": "Cosine similarity (chunk full): 0.5363"
+    },
+    {
+      "path": "src/utils/ipaddr.ts",
+      "similarity": 0.535785446082331,
+      "evidence": "Cosine similarity (chunk full): 0.5358"
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "similarity": 0.5347189395195471,
+      "evidence": "Cosine similarity (chunk full): 0.5347"
+    },
+    {
+      "path": "src/jsx/children.ts",
+      "similarity": 0.533170379102823,
+      "evidence": "Cosine similarity (chunk full): 0.5332"
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "similarity": 0.5323128802908668,
+      "evidence": "Cosine similarity (chunk full): 0.5323"
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "similarity": 0.5323123473632653,
+      "evidence": "Cosine similarity (chunk full): 0.5323"
+    },
+    {
+      "path": "src/adapter/bun/conninfo.ts",
+      "similarity": 0.5321335125336092,
+      "evidence": "Cosine similarity (chunk full): 0.5321"
+    },
+    {
+      "path": "benchmarks/query-param/bun.lockb",
+      "similarity": 0.5308872301705967,
+      "evidence": "Cosine similarity (chunk full): 0.5309"
+    },
+    {
+      "path": "src/jsx/jsx-dev-runtime.ts",
+      "similarity": 0.5284845719194777,
+      "evidence": "Cosine similarity (chunk full): 0.5285"
+    },
+    {
+      "path": "src/jsx/base.test.tsx",
+      "similarity": 0.5271147020074763,
+      "evidence": "Cosine similarity (chunk full): 0.5271"
+    },
+    {
+      "path": "src/jsx/children.test.ts",
+      "similarity": 0.5264036796535639,
+      "evidence": "Cosine similarity (chunk full): 0.5264"
+    },
+    {
+      "path": ".tool-versions",
+      "similarity": 0.5255518044889532,
+      "evidence": "Cosine similarity (chunk full): 0.5256"
+    },
+    {
+      "path": "benchmarks/routers-deno/README.md",
+      "similarity": 0.5225845229610677,
+      "evidence": "Cosine similarity (chunk full): 0.5226"
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "similarity": 0.5224458657867347,
+      "evidence": "Cosine similarity (chunk full): 0.5224"
+    },
+    {
+      "path": "adapters/deno/test/static/download",
+      "similarity": 0.5189474762211781,
+      "evidence": "Cosine similarity (chunk full): 0.5189"
+    },
+    {
+      "path": "package.cjs.json",
+      "similarity": 0.5177249216355637,
+      "evidence": "Cosine similarity (chunk full): 0.5177"
+    },
+    {
+      "path": "adapters/bun/test/static/download",
+      "similarity": 0.51625107172167,
+      "evidence": "Cosine similarity (chunk full): 0.5163"
+    },
+    {
+      "path": "src/utils/ipaddr.test.ts",
+      "similarity": 0.5042639553420922,
+      "evidence": "Cosine similarity (chunk full): 0.5043"
+    }
+  ]
+}

@@ -1,0 +1,2921 @@
+{
+  "case_id": "TB-0004",
+  "query_terms": [
+    "fix",
+    "etag",
+    "correctly",
+    "match",
+    "mixed",
+    "case",
+    "header",
+    "name",
+    "retained",
+    "option"
+  ],
+  "metrics": {
+    "total_retrieved": 397,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 395
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Path matched token: 'etag'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'retained'"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/1-bug-report.yml",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": ".github/workflows/autofix.yml",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'fix'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "README.md",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/test/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/bench.mts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/summarize.mts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/ts-resolve.mjs",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "benchmarks/http-server/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx-dom/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/.vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/bun.lock",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'etag'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "build/declaration-emit.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "build/jsx-types.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "package.json",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'etag'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "perf-measures/bundle-check/scripts/check-bundle-size.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/.vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/client/client.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/client/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/client/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/cookie/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/utils.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/hono-base.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/hono.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/server.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/server.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-elements.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/jsx-runtime.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwk/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwk/jwk.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/language/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/router/common.case.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Path matched token: 'case'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/node.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/node.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/cookie.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/filepath.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'correctly'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "vite.config.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "build/fixtures/declaration-emit/index.ts",
+      "evidence": [
+        "Path matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "build/fixtures/declaration-emit/tsconfig.json",
+      "evidence": [
+        "Path matched token: 'fix'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "build/fixtures/jsx-types/index.tsx",
+      "evidence": [
+        "Path matched token: 'fix'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "build/fixtures/jsx-types/tsconfig.json",
+      "evidence": [
+        "Path matched token: 'fix'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "docs/images/hono-logo.pxm",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "docs/images/hono-title.pxm",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "jsr.json",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/pretty-json/index.test.ts",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "evidence": [
+        "Content matched token: 'etag'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Path matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/digest.test.ts",
+      "evidence": [
+        "Path matched token: 'etag'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/digest.ts",
+      "evidence": [
+        "Path matched token: 'etag'"
+      ]
+    },
+    {
+      "path": "adapters/bun/test/index.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/service-worker/src/handler.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/service-worker/handler.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/context.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/sse.test.tsx",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/helper/testing/index.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/body-limit/index.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Path matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/types.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/accept.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/types.test.ts",
+      "evidence": [
+        "Content matched token: 'correctly'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/websocket.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/deno/test/assert.ts",
+      "evidence": [
+        "Content matched token: 'match'"
+      ]
+    },
+    {
+      "path": "adapters/deno/test/serve-static.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/test/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/bench.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/find-my-way.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/hono.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/koa-router.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/koa-tree-router.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/medley-router.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/tool.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/trek-router.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/bench-includes-init.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/bench.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/express.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/find-my-way.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/hono.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/koa-router.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/koa-tree-router.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/medley-router.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/memoirist.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/radix3.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/rou3.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/tool.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/trek-router.mts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/utils/src/get-path.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "build/release-adapter.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "docs/MIGRATION.md",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "perf-measures/type-check/scripts/process-results.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/websocket.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/client/fetch-result-please.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/client/types.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/context.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/accepts/accepts.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/accepts/accepts.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/route/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/route/index.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/plugins.test.tsx",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/text.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/utils.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/middleware/combine/index.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/cors/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/csrf/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'"
+      ]
+    },
+    {
+      "path": "src/middleware/language/language.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/logger/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-override/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/request-id/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Path matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/index.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/preset/quick.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/preset/tiny.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/request.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/request.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/request/constants.ts",
+      "evidence": [
+        "Content matched token: 'match'"
+      ]
+    },
+    {
+      "path": "src/router.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/router/linear-router/router.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/router/linear-router/router.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/router/pattern-router/router.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/matcher.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Path matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/router.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/trie.ts",
+      "evidence": [
+        "Content matched token: 'match'"
+      ]
+    },
+    {
+      "path": "src/router/smart-router/router.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/node.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/router.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/basic-auth.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/body.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/compress.ts",
+      "evidence": [
+        "Content matched token: 'match'"
+      ]
+    },
+    {
+      "path": "src/utils/filepath.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/html.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jwt.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/types.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/mime.test.ts",
+      "evidence": [
+        "Content matched token: 'match'"
+      ]
+    },
+    {
+      "path": "src/utils/mime.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/url.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "evidence": [
+        "Content matched token: 'match'",
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'mixed'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/buffer.test.ts",
+      "evidence": [
+        "Content matched token: 'mixed'",
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".oxlintrc.json",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/client/utils.ts",
+      "evidence": [
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/helper/factory/index.test.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/stream.ts",
+      "evidence": [
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/path.test.ts",
+      "evidence": [
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/router/smart-router/router.test.ts",
+      "evidence": [
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/router.test.ts",
+      "evidence": [
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/utils/accept.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/body.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/buffer.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/utils/ipaddr.test.ts",
+      "evidence": [
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jws.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/stream.ts",
+      "evidence": [
+        "Content matched token: 'case'"
+      ]
+    },
+    {
+      "path": "src/validator/validator.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "vitest.config.ts",
+      "evidence": [
+        "Content matched token: 'case'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/css/common.case.test.tsx",
+      "evidence": [
+        "Path matched token: 'case'",
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream-backpressure.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/websocket.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/vercel/src/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "adapters/vercel/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "runtime-tests/bun/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/hono.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/middleware.test.tsx",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/fastly/index.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/node/index.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/websocket.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/vercel/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/adapter/vercel/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/compose.test.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/helper/proxy/index.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/proxy/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/index.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/plugins.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/ssg.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "evidence": [
+        "Content matched token: 'header'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/text.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/http-exception.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/language/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/powered-by/index.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/powered-by/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/pretty-json/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/request-id/request-id.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Path matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/index.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/timing/index.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/basic-auth.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/validator/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/validator/utils.ts",
+      "evidence": [
+        "Content matched token: 'header'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/permissions-policy.ts",
+      "evidence": [
+        "Path matched token: 'header'"
+      ]
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/2-feature-request.yml",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".github/actions/perf-measures/action.yml",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci-adapters.yml",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".github/workflows/cr.yml",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".github/workflows/no-response.yml",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/bun/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static-module.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/utils.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/deno/deno.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/deno/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/deno.d.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/netlify/deno.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/netlify/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/service-worker/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/service-worker/src/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/vercel/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "adapters/vercel/src/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/compare.sh",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/package.json",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/page-react.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/page.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-hono.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-nano.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-preact.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-react.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/package-lock.json",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "build/dts-plugins.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "docs/MAINTAINING.md",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "perf-measures/type-check/scripts/generate-app.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno-jsx/jsx.test.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/fastly/vitest.config.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/node/vitest.config.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/workerd/index.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/workerd/index.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "runtime-tests/workerd/vitest.config.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static-module.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/deno.d.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/service-worker/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/adapter/vercel/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/adapter/index.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/conninfo/types.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/base.test.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/context-isolation.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/context.test.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-element/common.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/jsx/streaming.test.tsx",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/color.test.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/crypto.ts",
+      "evidence": [
+        "Content matched token: 'name'"
+      ]
+    },
+    {
+      "path": "src/utils/url.test.ts",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "tsconfig.base.json",
+      "evidence": [
+        "Content matched token: 'name'",
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/ssg.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/bun/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/ssg.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/deno/test/deno.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/deno/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/netlify/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/service-worker/src/index.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/service-worker/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "adapters/vercel/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/yarn.lock",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "codecov.yml",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "perf-measures/type-check/scripts/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "perf-measures/type-check/tsconfig.build.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "runtime-tests/bun/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno-jsx/deno.precompile.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno-jsx/deno.react-jsx.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/deno.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "runtime-tests/fastly/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "runtime-tests/node/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "runtime-tests/workerd/tsconfig.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/ssg.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/ssg.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/adapter/service-worker/index.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/client/index.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/compose.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/websocket/index.test.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/helper/websocket/index.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/hono.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/http-exception.test.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/index.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/client.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/middleware/context-storage/index.test.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/preset/quick.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/preset/tiny.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "src/utils/color.ts",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "tsconfig.build.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    },
+    {
+      "path": "tsconfig.spec.json",
+      "evidence": [
+        "Content matched token: 'option'"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,875 @@
+{
+  "case_id": "TB-0005",
+  "metrics": {
+    "total_union": 477,
+    "h1": {
+      "top_1": false,
+      "top_3": true,
+      "top_5": true,
+      "top_10": true,
+      "top_20": true
+    },
+    "h2": {
+      "top_1": false,
+      "top_3": true,
+      "top_5": true,
+      "top_10": true,
+      "top_20": true
+    },
+    "h3": {
+      "top_1": false,
+      "top_3": true,
+      "top_5": true,
+      "top_10": true,
+      "top_20": true
+    }
+  },
+  "h2_top_20": [
+    {
+      "artifact": "src/utils/ipaddr.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 1,
+        "signals": [
+          "B1",
+          "B2"
+        ],
+        "tier": "1. Critical Structural (Incoming Dependent / Test)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 2,
+        "similarity": 0.7245813780022282
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 1
+      },
+      "h2_score": 0.03252247488101534
+    },
+    {
+      "artifact": "src/middleware/ip-restriction/index.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 2,
+        "signals": [
+          "B1",
+          "B2"
+        ],
+        "tier": "1. Critical Structural (Incoming Dependent / Test)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 3,
+        "similarity": 0.7104761867762447
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 2
+      },
+      "h2_score": 0.03200204813108039
+    },
+    {
+      "artifact": "src/utils/headers.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 27,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 5,
+        "similarity": 0.6410838775414128
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 3
+      },
+      "h2_score": 0.026878868258178604
+    },
+    {
+      "artifact": "src/jsx/utils.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 7,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 24,
+        "similarity": 0.5920177093626822
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 4
+      },
+      "h2_score": 0.026830135039090264
+    },
+    {
+      "artifact": "src/jsx/dom/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 25,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 13,
+        "similarity": 0.6063528591544965
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 5
+      },
+      "h2_score": 0.02546333601933924
+    },
+    {
+      "artifact": "src/helper/streaming/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 12,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 29,
+        "similarity": 0.587559593602247
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 6
+      },
+      "h2_score": 0.025124843945068663
+    },
+    {
+      "artifact": "src/utils/cookie.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 6,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 63,
+        "similarity": 0.5708280153637534
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 7
+      },
+      "h2_score": 0.023281596452328163
+    },
+    {
+      "artifact": "src/jsx/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 13,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 45,
+        "similarity": 0.5793038279492329
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 8
+      },
+      "h2_score": 0.023222439660795825
+    },
+    {
+      "artifact": "src/client/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 19,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 35,
+        "similarity": 0.5830184481787749
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 9
+      },
+      "h2_score": 0.02318454363757495
+    },
+    {
+      "artifact": "src/client/utils.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 9,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 62,
+        "similarity": 0.5709228147324252
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 10
+      },
+      "h2_score": 0.022689474934663816
+    },
+    {
+      "artifact": "src/utils/http-status.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 50,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 14,
+        "similarity": 0.6054511584742567
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 11
+      },
+      "h2_score": 0.022604422604422605
+    },
+    {
+      "artifact": "src/middleware/ip-restriction/index.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 65,
+        "signals": [
+          "B2"
+        ],
+        "tier": "6. Moderate Lexical (Multiple Tokens)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 12,
+        "similarity": 0.6101351047070185
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 12
+      },
+      "h2_score": 0.02188888888888889
+    },
+    {
+      "artifact": "src/utils/accept.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 20,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 65,
+        "similarity": 0.570722419382161
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 13
+      },
+      "h2_score": 0.0205
+    },
+    {
+      "artifact": "src/jsx/dom/render.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 75,
+        "signals": [
+          "B2"
+        ],
+        "tier": "6. Moderate Lexical (Multiple Tokens)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 17,
+        "similarity": 0.5989290736164028
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 14
+      },
+      "h2_score": 0.020394420394420396
+    },
+    {
+      "artifact": "src/utils/url.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 14,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 98,
+        "similarity": 0.5630402900275577
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 15
+      },
+      "h2_score": 0.019842627437564146
+    },
+    {
+      "artifact": "src/helper/conninfo/types.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 84,
+        "signals": [
+          "B2"
+        ],
+        "tier": "6. Moderate Lexical (Multiple Tokens)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 19,
+        "similarity": 0.5971800745695376
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 16
+      },
+      "h2_score": 0.01960267229254571
+    },
+    {
+      "artifact": "src/utils/mime.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 40,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 46,
+        "similarity": 0.5782349414583582
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 17
+      },
+      "h2_score": 0.019433962264150943
+    },
+    {
+      "artifact": "src/utils/jwt/utf8.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 33,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 56,
+        "similarity": 0.5736187233313385
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 18
+      },
+      "h2_score": 0.019373377827215425
+    },
+    {
+      "artifact": "src/validator/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 8,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 156,
+        "similarity": 0.5554010553542242
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 19
+      },
+      "h2_score": 0.019335511982570806
+    },
+    {
+      "artifact": "src/helper/conninfo/index.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 4,
+        "signals": [
+          "B1"
+        ],
+        "tier": "4. Weak Structural (Outgoing Dependency)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 215,
+        "similarity": 0.5453213089683349
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 20
+      },
+      "h2_score": 0.019261363636363635
+    }
+  ],
+  "h3_top_20": [
+    {
+      "artifact": "src/utils/ipaddr.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 1,
+        "signals": [
+          "B1",
+          "B2"
+        ],
+        "tier": "1. Critical Structural (Incoming Dependent / Test)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 2,
+        "similarity": 0.7245813780022282
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 1
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "src/middleware/ip-restriction/index.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 2,
+        "signals": [
+          "B1",
+          "B2"
+        ],
+        "tier": "1. Critical Structural (Incoming Dependent / Test)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 3,
+        "similarity": 0.7104761867762447
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 2
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "src/utils/headers.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 27,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 5,
+        "similarity": 0.6410838775414128
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 3
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/jsx/utils.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 7,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 24,
+        "similarity": 0.5920177093626822
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 4
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/jsx/dom/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 25,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 13,
+        "similarity": 0.6063528591544965
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 5
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/helper/streaming/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 12,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 29,
+        "similarity": 0.587559593602247
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 6
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/utils/cookie.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 6,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 63,
+        "similarity": 0.5708280153637534
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 7
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/jsx/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 13,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 45,
+        "similarity": 0.5793038279492329
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 8
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/client/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 19,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 35,
+        "similarity": 0.5830184481787749
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 9
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/client/utils.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 9,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 62,
+        "similarity": 0.5709228147324252
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 10
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/utils/http-status.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 50,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 14,
+        "similarity": 0.6054511584742567
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 11
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/middleware/ip-restriction/index.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 65,
+        "signals": [
+          "B2"
+        ],
+        "tier": "6. Moderate Lexical (Multiple Tokens)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 12,
+        "similarity": 0.6101351047070185
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 12
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/utils/accept.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 20,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 65,
+        "similarity": 0.570722419382161
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 13
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/jsx/dom/render.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 75,
+        "signals": [
+          "B2"
+        ],
+        "tier": "6. Moderate Lexical (Multiple Tokens)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 17,
+        "similarity": 0.5989290736164028
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 14
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/utils/url.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 14,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 98,
+        "similarity": 0.5630402900275577
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 15
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/helper/conninfo/types.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 84,
+        "signals": [
+          "B2"
+        ],
+        "tier": "6. Moderate Lexical (Multiple Tokens)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 19,
+        "similarity": 0.5971800745695376
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 16
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/utils/mime.test.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 40,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 46,
+        "similarity": 0.5782349414583582
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 17
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/utils/jwt/utf8.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 33,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 56,
+        "similarity": 0.5736187233313385
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 18
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/validator/utils.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 8,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 156,
+        "similarity": 0.5554010553542242
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 19
+      },
+      "h3_tier": 2
+    },
+    {
+      "artifact": "src/helper/conninfo/index.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 4,
+        "signals": [
+          "B1"
+        ],
+        "tier": "4. Weak Structural (Outgoing Dependency)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 215,
+        "similarity": 0.5453213089683349
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 20
+      },
+      "h3_tier": 2
+    }
+  ]
+}

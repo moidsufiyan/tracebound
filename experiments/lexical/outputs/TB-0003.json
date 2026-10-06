@@ -1,0 +1,2583 @@
+{
+  "case_id": "TB-0003",
+  "query_terms": [
+    "fix",
+    "combine",
+    "return",
+    "response",
+    "short",
+    "circuiting",
+    "middleware",
+    "some"
+  ],
+  "metrics": {
+    "total_retrieved": 364,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 362
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "evidence": [
+        "Path matched token: 'combine'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/1-bug-report.yml",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": ".github/workflows/autofix.yml",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'fix'"
+      ]
+    },
+    {
+      "path": ".vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "README.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/handler.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/test/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/bench.mts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/summarize.mts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/ts-resolve.mjs",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/http-server/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx-dom/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'short'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/.vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/bun.lock",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "build/declaration-emit.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "build/jsx-types.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "package.json",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'combine'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "perf-measures/bundle-check/scripts/check-bundle-size.ts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'combine'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/.vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/client/client.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/client/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/client/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/helper/cookie/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'combine'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/utils.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/hono-base.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/hono.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/server.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/server.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-elements.ts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/jsx/jsx-runtime.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwk/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwk/jwk.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/language/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/router/common.case.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/node.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/node.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/utils/cookie.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/filepath.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "vite.config.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "build/fixtures/declaration-emit/index.ts",
+      "evidence": [
+        "Path matched token: 'fix'",
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "build/fixtures/declaration-emit/tsconfig.json",
+      "evidence": [
+        "Path matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "build/fixtures/jsx-types/index.tsx",
+      "evidence": [
+        "Path matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "build/fixtures/jsx-types/tsconfig.json",
+      "evidence": [
+        "Path matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "jsr.json",
+      "evidence": [
+        "Content matched token: 'combine'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/ssg.ts",
+      "evidence": [
+        "Content matched token: 'combine'",
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "evidence": [
+        "Content matched token: 'combine'",
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": ".oxlintrc.json",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/test/mock.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream-mock.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/server.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/ssg.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/bun/src/websocket.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/bun/test/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static-module.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/utils.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/deno.d.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/ssg.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/deno/src/websocket.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/src/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/test/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/netlify/src/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/netlify/src/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/service-worker/src/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/service-worker/src/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "adapters/vercel/src/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/vercel/src/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/page-react.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/page.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-hono.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-nano.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-preact.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/page-react.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/src/bench.mts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/src/fast-querystring.mts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/src/hono.mts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/src/qs.mts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/hono.mts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/hono.mts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "benchmarks/utils/src/get-path.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "build/dts-plugins.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "docs/MIGRATION.md",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "perf-measures/type-check/scripts/generate-app.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "perf-measures/type-check/scripts/process-results.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "runtime-tests/bun/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno-jsx/jsx.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/hono.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/middleware.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "runtime-tests/fastly/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "runtime-tests/node/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "runtime-tests/workerd/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "runtime-tests/workerd/index.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/server.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/ssg.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/websocket.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static-module.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/deno.d.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/ssg.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/websocket.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/netlify/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/service-worker/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/service-worker/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/adapter/vercel/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/vercel/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/client/fetch-result-please.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/client/types.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/client/utils.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'"
+      ]
+    },
+    {
+      "path": "src/compose.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/compose.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/context.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/context.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/helper/accepts/accepts.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/helper/accepts/accepts.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/adapter/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/adapter/index.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/factory/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/helper/html/index.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/proxy/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/proxy/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/route/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/route/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/plugins.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/plugins.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/stream.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/text.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/utils.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/testing/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/helper/websocket/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/websocket/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/http-exception.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/jsx/base.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/children.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/children.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/components.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/jsx/context-isolation.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/context.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/client.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/client.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/components.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/context.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/context.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/jsx-dev-runtime.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/utils.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/hooks/dom.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/hooks/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/jsx/hooks/string.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-element/common.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/jsx/jsx-dev-runtime.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/streaming.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/jsx/utils.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/body-limit/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/context-storage/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/context-storage/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/cors/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/csrf/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/digest.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/language/language.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/logger/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-override/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/powered-by/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/powered-by/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/pretty-json/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/pretty-json/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/request-id/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/request-id/request-id.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/path.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/timeout/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/timeout/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/middleware/timing/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'",
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/preset/quick.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/preset/tiny.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/request.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/request.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'short'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/router.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/router/linear-router/router.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/matcher.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/router.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/trie.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/smart-router/router.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/node.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/router.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/types.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/utils/accept.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/basic-auth.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/body.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/body.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/buffer.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/buffer.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/utils/color.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/color.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/concurrent.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/concurrent.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/crypto.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/encode.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/encode.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/filepath.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/handler.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/utils/html.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/http-status.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/ipaddr.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/ipaddr.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'short'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jws.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jwt.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/utils/mime.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/mime.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/utils/stream.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/utils/types.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/utils/url.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/utils/url.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "src/validator/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/validator/utils.ts",
+      "evidence": [
+        "Content matched token: 'return'"
+      ]
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/validator/validator.ts",
+      "evidence": [
+        "Content matched token: 'return'",
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/aws-lambda/test/stream-backpressure.test.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/lambda-edge/src/index.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "adapters/service-worker/src/types.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "docs/CODE_OF_CONDUCT.md",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/lambda-edge/index.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/adapter/service-worker/types.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/client/index.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/sse.test.tsx",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/text.test.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/http-exception.test.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": "src/index.ts",
+      "evidence": [
+        "Content matched token: 'response'",
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "evidence": [
+        "Content matched token: 'response'"
+      ]
+    },
+    {
+      "path": ".github/workflows/no-response.yml",
+      "evidence": [
+        "Path matched token: 'response'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/src/bench.mts",
+      "evidence": [
+        "Content matched token: 'short'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/bench-includes-init.mts",
+      "evidence": [
+        "Content matched token: 'short'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/src/bench.mts",
+      "evidence": [
+        "Content matched token: 'short'"
+      ]
+    },
+    {
+      "path": "adapters/cloudflare-workers/src/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/deno/test/deno.json",
+      "evidence": [
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/deno/test/serve-static.test.ts",
+      "evidence": [
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/index.ts",
+      "evidence": [
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/index.ts",
+      "evidence": [
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/router/linear-router/router.test.ts",
+      "evidence": [
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "tsconfig.spec.json",
+      "evidence": [
+        "Content matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/digest.test.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwk/index.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwk/keys.test.json",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwt/index.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/language/index.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/request-id/index.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/index.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/permissions-policy.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/path.test.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "src/middleware/timing/index.ts",
+      "evidence": [
+        "Path matched token: 'middleware'"
+      ]
+    },
+    {
+      "path": "adapters/deno/test/ssg.test.ts",
+      "evidence": [
+        "Content matched token: 'some'"
+      ]
+    },
+    {
+      "path": "docs/MAINTAINING.md",
+      "evidence": [
+        "Content matched token: 'some'"
+      ]
+    }
+  ]
+}

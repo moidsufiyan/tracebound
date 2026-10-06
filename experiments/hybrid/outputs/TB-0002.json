@@ -1,0 +1,871 @@
+{
+  "case_id": "TB-0002",
+  "metrics": {
+    "total_union": 335,
+    "h1": {
+      "top_1": true,
+      "top_3": true,
+      "top_5": true,
+      "top_10": true,
+      "top_20": true
+    },
+    "h2": {
+      "top_1": true,
+      "top_3": true,
+      "top_5": true,
+      "top_10": true,
+      "top_20": true
+    },
+    "h3": {
+      "top_1": true,
+      "top_3": true,
+      "top_5": true,
+      "top_10": true,
+      "top_20": true
+    }
+  },
+  "h2_top_20": [
+    {
+      "artifact": "backend/docs/architecture/order-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 1,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 2,
+        "similarity": 0.7689043527222289
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 1
+      },
+      "h2_score": 0.03252247488101534
+    },
+    {
+      "artifact": "backend/docs/architecture/wishlist-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 6,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 4,
+        "similarity": 0.7453305627221396
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 2
+      },
+      "h2_score": 0.030776515151515152
+    },
+    {
+      "artifact": "backend/docs/architecture/cart-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 5,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 5,
+        "similarity": 0.7400503289787607
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 3
+      },
+      "h2_score": 0.03076923076923077
+    },
+    {
+      "artifact": "CHECKOUT_STATE_MACHINE.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 2,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 11,
+        "similarity": 0.7037454852921017
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 4
+      },
+      "h2_score": 0.03021353930031804
+    },
+    {
+      "artifact": "backend/docs/architecture/inventory-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 15,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 1,
+        "similarity": 0.7721283446067067
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 5
+      },
+      "h2_score": 0.029726775956284153
+    },
+    {
+      "artifact": "backend/src/services/order.service.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 4,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 15,
+        "similarity": 0.6960146309394935
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 6
+      },
+      "h2_score": 0.028958333333333336
+    },
+    {
+      "artifact": "backend/docs/database/order-domain.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 10,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 9,
+        "similarity": 0.711143357961447
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 7
+      },
+      "h2_score": 0.02877846790890269
+    },
+    {
+      "artifact": "backend/docs/architecture/checkout-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 14,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 6,
+        "similarity": 0.7360996297022281
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 8
+      },
+      "h2_score": 0.028665028665028666
+    },
+    {
+      "artifact": "backend/docs/architecture/product-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 13,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 7,
+        "similarity": 0.7175433635165521
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 9
+      },
+      "h2_score": 0.02862400327131466
+    },
+    {
+      "artifact": "CHANGELOG.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 27,
+        "signals": [
+          "B2"
+        ],
+        "tier": "3. Strong Lexical (High Content Density)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 3,
+        "similarity": 0.7524131015094777
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 10
+      },
+      "h2_score": 0.02736726874657909
+    },
+    {
+      "artifact": "backend/src/routes/order.routes.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 3,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 32,
+        "similarity": 0.6727820860123269
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 11
+      },
+      "h2_score": 0.026742581090407176
+    },
+    {
+      "artifact": "backend/docs/architecture/payment-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 12,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 18,
+        "similarity": 0.6883941058180056
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 12
+      },
+      "h2_score": 0.026709401709401708
+    },
+    {
+      "artifact": "backend/src/repositories/order.repository.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 11,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 25,
+        "similarity": 0.6794692307193679
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 13
+      },
+      "h2_score": 0.025849212924606464
+    },
+    {
+      "artifact": "backend/src/models/order.model.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 9,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 30,
+        "similarity": 0.6731168412593852
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 14
+      },
+      "h2_score": 0.025603864734299518
+    },
+    {
+      "artifact": "docs/adr/0002-state-management.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 32,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 8,
+        "similarity": 0.7149144142637927
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 15
+      },
+      "h2_score": 0.02557544757033248
+    },
+    {
+      "artifact": "backend/docs/checkout-order-contract.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 33,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 10,
+        "similarity": 0.7096456183805079
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 16
+      },
+      "h2_score": 0.0250384024577573
+    },
+    {
+      "artifact": "src/components/user/OrderCard.tsx",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 20,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 20,
+        "similarity": 0.6850511447400114
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 17
+      },
+      "h2_score": 0.025
+    },
+    {
+      "artifact": "docs/frontend/session-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 21,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 24,
+        "similarity": 0.6806992932964615
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 18
+      },
+      "h2_score": 0.024250440917107582
+    },
+    {
+      "artifact": "backend/scripts/verify-order-domain.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 23,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 22,
+        "similarity": 0.6834028066366779
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 19
+      },
+      "h2_score": 0.02424331472230385
+    },
+    {
+      "artifact": "src/components/order/OrderSummary.tsx",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 36,
+        "signals": [
+          "B2"
+        ],
+        "tier": "5. Moderate Lexical (Path Match Only)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 14,
+        "similarity": 0.6963940191973274
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H2 (RRF)",
+        "fused_rank": 20
+      },
+      "h2_score": 0.02393018018018018
+    }
+  ],
+  "h3_top_20": [
+    {
+      "artifact": "backend/docs/architecture/order-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 1,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 2,
+        "similarity": 0.7689043527222289
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 1
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/docs/architecture/wishlist-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 6,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 4,
+        "similarity": 0.7453305627221396
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 2
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/docs/architecture/cart-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 5,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 5,
+        "similarity": 0.7400503289787607
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 3
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "CHECKOUT_STATE_MACHINE.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 2,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 11,
+        "similarity": 0.7037454852921017
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 4
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/docs/architecture/inventory-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 15,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 1,
+        "similarity": 0.7721283446067067
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 5
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/src/services/order.service.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 4,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 15,
+        "similarity": 0.6960146309394935
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 6
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/docs/database/order-domain.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 10,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 9,
+        "similarity": 0.711143357961447
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 7
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/docs/architecture/checkout-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 14,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 6,
+        "similarity": 0.7360996297022281
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 8
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/docs/architecture/product-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 13,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 7,
+        "similarity": 0.7175433635165521
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 9
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/src/routes/order.routes.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 3,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 32,
+        "similarity": 0.6727820860123269
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 10
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/docs/architecture/payment-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 12,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 18,
+        "similarity": 0.6883941058180056
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 11
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/src/repositories/order.repository.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 11,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 25,
+        "similarity": 0.6794692307193679
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 12
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/src/models/order.model.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 9,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 30,
+        "similarity": 0.6731168412593852
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 13
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "src/components/user/OrderCard.tsx",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 20,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 20,
+        "similarity": 0.6850511447400114
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 14
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "docs/frontend/session-lifecycle.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 21,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 24,
+        "similarity": 0.6806992932964615
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 15
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/scripts/verify-order-domain.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 23,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 22,
+        "similarity": 0.6834028066366779
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 16
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "src/components/order/OrderStatusSteps.tsx",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 16,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 33,
+        "similarity": 0.6710303617682822
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 17
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/docs/api/order-api.md",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 7,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 71,
+        "similarity": 0.6518521197784409
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 18
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/src/types/order.types.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 8,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 87,
+        "similarity": 0.6457257636064211
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 19
+      },
+      "h3_tier": 1
+    },
+    {
+      "artifact": "backend/src/controllers/order.controller.ts",
+      "deterministic_evidence": {
+        "found": true,
+        "rank": 25,
+        "signals": [
+          "B2"
+        ],
+        "tier": "2. Strong Lexical (Path + Multi-Content)"
+      },
+      "semantic_evidence": {
+        "found": true,
+        "rank": 44,
+        "similarity": 0.6643790321790654
+      },
+      "hybrid_evidence": {
+        "fusion_method": "H3 (Precedence)",
+        "fused_rank": 20
+      },
+      "h3_tier": 1
+    }
+  ]
+}

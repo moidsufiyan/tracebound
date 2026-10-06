@@ -1,0 +1,124 @@
+{
+  "case_id": "TB-0005",
+  "metrics": {
+    "total_retrieved": 6,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 5
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2813",
+        "Issue/PR #3"
+      ],
+      "evidence": [
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #2813",
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #3"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 5
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/utils/ipaddr.test.ts",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "relationship_count": 6,
+      "relationships": [
+        "Issue/PR #4998",
+        "Issue/PR #4973",
+        "Issue/PR #4971",
+        "Issue/PR #3727",
+        "Issue/PR #2813",
+        "Issue/PR #3"
+      ],
+      "evidence": [
+        "Commit c78932d (modified source) and Commit c78932d (modified candidate) both reference #4998",
+        "Commit d22ff9c (modified source) and Commit d22ff9c (modified candidate) both reference #4973",
+        "Commit bcd290a (modified source) and Commit bcd290a (modified candidate) both reference #4971",
+        "Commit af5affc (modified source) and Commit af5affc (modified candidate) both reference #3727",
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #2813",
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #3"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 1
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #3727",
+        "Issue/PR #2813",
+        "Issue/PR #3"
+      ],
+      "evidence": [
+        "Commit af5affc (modified source) and Commit af5affc (modified candidate) both reference #3727",
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #2813",
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #3"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "jsr.json",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2813",
+        "Issue/PR #3"
+      ],
+      "evidence": [
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #2813",
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #3"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 3
+    },
+    {
+      "path": "package.json",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2813",
+        "Issue/PR #3"
+      ],
+      "evidence": [
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #2813",
+        "Commit 71cdcf4 (modified source) and Commit 71cdcf4 (modified candidate) both reference #3"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "README.md",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #3"
+      ],
+      "evidence": [
+        "Commit 71cdcf4 (modified source) and Commit 4e7b004 (modified candidate) both reference #3"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 6
+    }
+  ]
+}

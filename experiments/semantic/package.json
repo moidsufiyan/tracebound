@@ -1,0 +1,13 @@
+{
+  "name": "semantic-retrieval",
+  "version": "1.0.0",
+  "description": "B7.0 Semantic Retrieval Baseline",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "openai": "^4.28.0"
+  }
+}

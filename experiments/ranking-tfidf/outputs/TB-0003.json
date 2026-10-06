@@ -1,0 +1,352 @@
+{
+  "case_id": "TB-0003",
+  "metrics": {
+    "total_candidates": 365,
+    "truth_rank": 1,
+    "top_1": true,
+    "top_3": true,
+    "top_5": true,
+    "top_10": true,
+    "top_20": true
+  },
+  "top_20_candidates": [
+    {
+      "rank": 1,
+      "path": "src/middleware/combine/index.test.ts",
+      "rank_name": "1. Critical Structural (Incoming Dependent / Test)",
+      "signals": [
+        "B1",
+        "B2"
+      ],
+      "tfidf_score": 31.59510115321221,
+      "lex_all_count": 6,
+      "is_truth": true,
+      "contributions": [
+        "combine: 7.26 (DF: 7)",
+        "short: 6.65 (DF: 13)",
+        "some: 5.47 (DF: 42)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 2,
+      "path": "src/middleware/jwk/jwk.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 23.834234043977446,
+      "lex_all_count": 5,
+      "is_truth": false,
+      "contributions": [
+        "short: 6.65 (DF: 13)",
+        "fix: 4.98 (DF: 69)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 3,
+      "path": "src/middleware/jwt/jwt.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 23.834234043977446,
+      "lex_all_count": 5,
+      "is_truth": false,
+      "contributions": [
+        "short: 6.65 (DF: 13)",
+        "fix: 4.98 (DF: 69)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 4,
+      "path": "src/middleware/etag/index.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 22.661513783155616,
+      "lex_all_count": 5,
+      "is_truth": false,
+      "contributions": [
+        "some: 5.47 (DF: 42)",
+        "fix: 4.98 (DF: 69)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 5,
+      "path": "src/middleware/logger/index.test.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 18.858000176598523,
+      "lex_all_count": 4,
+      "is_truth": false,
+      "contributions": [
+        "short: 6.65 (DF: 13)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 6,
+      "path": "src/middleware/cache/index.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 17.685279915776693,
+      "lex_all_count": 4,
+      "is_truth": false,
+      "contributions": [
+        "some: 5.47 (DF: 42)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 7,
+      "path": "src/middleware/cors/index.test.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 17.685279915776693,
+      "lex_all_count": 4,
+      "is_truth": false,
+      "contributions": [
+        "some: 5.47 (DF: 42)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 8,
+      "path": "src/middleware/logger/index.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 17.188843029462802,
+      "lex_all_count": 4,
+      "is_truth": false,
+      "contributions": [
+        "fix: 4.98 (DF: 69)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 9,
+      "path": "src/middleware/timing/timing.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 17.188843029462802,
+      "lex_all_count": 4,
+      "is_truth": false,
+      "contributions": [
+        "fix: 4.98 (DF: 69)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 10,
+      "path": "src/middleware/jwk/index.test.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 17.188843029462802,
+      "lex_all_count": 4,
+      "is_truth": false,
+      "contributions": [
+        "fix: 4.98 (DF: 69)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 11,
+      "path": "src/middleware/bearer-auth/index.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 17.188843029462802,
+      "lex_all_count": 4,
+      "is_truth": false,
+      "contributions": [
+        "fix: 4.98 (DF: 69)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 12,
+      "path": "src/middleware/ip-restriction/index.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 17.188843029462802,
+      "lex_all_count": 4,
+      "is_truth": false,
+      "contributions": [
+        "fix: 4.98 (DF: 69)",
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 13,
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 15.102980919980043,
+      "lex_all_count": 3,
+      "is_truth": false,
+      "contributions": [
+        "combine: 7.26 (DF: 7)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 14,
+      "path": "src/middleware/timeout/index.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 13.31122145075199,
+      "lex_all_count": 3,
+      "is_truth": false,
+      "contributions": [
+        "some: 5.47 (DF: 42)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 15,
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 13.31122145075199,
+      "lex_all_count": 3,
+      "is_truth": false,
+      "contributions": [
+        "some: 5.47 (DF: 42)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 16,
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 13.31122145075199,
+      "lex_all_count": 3,
+      "is_truth": false,
+      "contributions": [
+        "some: 5.47 (DF: 42)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 17,
+      "path": "src/middleware/jwt/index.test.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 12.814784564438098,
+      "lex_all_count": 3,
+      "is_truth": false,
+      "contributions": [
+        "fix: 4.98 (DF: 69)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 18,
+      "path": "src/middleware/language/index.test.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 12.814784564438098,
+      "lex_all_count": 3,
+      "is_truth": false,
+      "contributions": [
+        "fix: 4.98 (DF: 69)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 19,
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 12.814784564438098,
+      "lex_all_count": 3,
+      "is_truth": false,
+      "contributions": [
+        "fix: 4.98 (DF: 69)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    },
+    {
+      "rank": 20,
+      "path": "src/helper/ssg/middleware.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "tfidf_score": 12.21260916208388,
+      "lex_all_count": 3,
+      "is_truth": false,
+      "contributions": [
+        "response: 4.37 (DF: 126)",
+        "middleware: 4.36 (DF: 128)",
+        "return: 3.48 (DF: 308)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "TB-0009",
+  "metrics": {
+    "total_retrieved": 4,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 3
+  },
+  "relevant_found": [
+    {
+      "path": "src/helper/streaming/stream.ts",
+      "evidence": [
+        "[Reverse Import] Candidate artifact (src/helper/streaming/stream.ts) imports changed source at line 2: `import { StreamingApi } from '../../utils/stream'`"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "evidence": [
+        "[Reverse Import] Candidate artifact (src/helper/streaming/sse.ts) imports changed source at line 3: `import { StreamingApi } from '../../utils/stream'`"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/text.ts",
+      "evidence": [
+        "[Reverse Import] Candidate artifact (src/helper/streaming/text.ts) imports changed source at line 3: `import { StreamingApi } from '../../utils/stream'`"
+      ]
+    },
+    {
+      "path": "src/utils/stream.test.ts",
+      "evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/utils/stream.test.ts) imports changed source at line 1: `import { StreamingApi } from './stream'`"
+      ]
+    }
+  ]
+}

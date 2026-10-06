@@ -1,0 +1,2149 @@
+{
+  "case_id": "TB-0001",
+  "query_terms": [
+    "fix",
+    "checkout",
+    "lua",
+    "script",
+    "typo",
+    "add",
+    "active",
+    "reservation",
+    "stock",
+    "reduction",
+    "guard",
+    "inventory",
+    "service",
+    "release",
+    "lock",
+    "update",
+    "release_lock_lua",
+    "inventoryservice.updatestock"
+  ],
+  "metrics": {
+    "total_retrieved": 245,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 242
+  },
+  "relevant_found": [
+    {
+      "path": "backend/docs/architecture/checkout-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "WOLLYWAY_CONTEXT.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'lua'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/checkout-order-contract.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/search-performance.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'typo'"
+      ]
+    },
+    {
+      "path": "backend/package-lock.json",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'",
+        "Path matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/scripts/verify-order-domain.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Path matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/scripts/verify-payment-domain.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Path matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/app.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'inventory'"
+      ]
+    },
+    {
+      "path": "backend/src/constants/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/health.controller.ts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "backend/src/services/order.service.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "bun.lockb",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'typo'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Path matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "components.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "docs/backend-architecture-blueprint.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "docs/frontend/phase-5.1-walkthrough.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "package-lock.json",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'lua'",
+        "Content matched token: 'script'",
+        "Content matched token: 'typo'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Path matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "package.json",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'typo'"
+      ]
+    },
+    {
+      "path": "postcss.config.mjs",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/ProductBundle.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/components/ProductDetailsTabs.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "src/components/ProductGrid.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/ProductQuickView.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/components/order/OrderDetailsCard.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductReviewCard.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'add'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductReviewsSection.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "src/components/product/RelatedProducts.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/ui/alert-dialog.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/ui/drawer.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/ui/sidebar.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/ui/toast.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/user/OrderCard.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'add'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/lib/api-client.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'active'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/views/BundleDetail.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "src/views/CheckoutSuccess.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "src/views/Index.tsx",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "src/views/Shop.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/views/Wishlist.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'add'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "tailwind.config.js",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'typo'",
+        "Content matched token: 'add'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": ".github/workflows/backend-ci.yml",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "CHANGELOG.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'lua'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "CHECKOUT_STATE_MACHINE.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'lua'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "README.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'typo'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "app/(shop)/checkout-success/page.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'guard'"
+      ]
+    },
+    {
+      "path": "app/(shop)/checkout/page.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'guard'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/checkout-api.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/payment-api.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/cart-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/cross-domain-interaction-matrix.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/inventory-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'lua'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'lua'",
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'lua'",
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/business-rules.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/cart-checkout-contract.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/checkout-domain.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/order-domain.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/payment-domain.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/user-domain.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/adapters/payment/razorpay.adapter.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/checkout.controller.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/payment.controller.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'active'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/order.mapper.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/models/checkout-session.model.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/models/inventory-transaction.model.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/models/order.model.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/checkout.repository.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/inventory.repository.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/order.repository.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'active'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/checkout.routes.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/inventory.routes.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/payment.routes.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'"
+      ]
+    },
+    {
+      "path": "backend/src/server.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "backend/src/services/payment.service.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/types/checkout.types.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/types/order.types.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/types/payment.types.ts",
+      "evidence": [
+        "Content matched token: 'checkout'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/checkout.validator.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'"
+      ]
+    },
+    {
+      "path": "docs/business-rules.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "docs/frontend/backend-integration.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "docs/frontend/http-client.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "docs/frontend/phase-5.1-audit-report.md",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'lua'",
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/App.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/components/product/FeatureCards.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'"
+      ]
+    },
+    {
+      "path": "src/components/product/PromoBanner.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/services/checkout.service.ts",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/views/Cart.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/views/Checkout.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Path matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'reservation'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/views/FAQ.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/views/Profile.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/views/ShippingPolicy.tsx",
+      "evidence": [
+        "Content matched token: 'checkout'",
+        "Content matched token: 'active'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/auth.routes.ts",
+      "evidence": [
+        "Content matched token: 'lua'",
+        "Content matched token: 'script'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "app/layout.tsx",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "backend/Dockerfile",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "backend/README.md",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/product-api.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/product-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/cart-domain.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/category-domain.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/inventory-domain.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/product-domain.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/database/wishlist-domain.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/integrations/cloudinary.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/docs/wishlist-future-roadmap.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/eslint.config.mjs",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "backend/package.json",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "backend/src/builders/product.query-builder.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/config/swagger.config.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/auth.controller.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/category.controller.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/product.mapper.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/models/category.model.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/models/product.model.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/product.repository.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/cart.routes.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/category.routes.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/health.routes.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/order.routes.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/product.routes.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/user.routes.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/routes/wishlist.routes.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "backend/src/services/cloudinary.service.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/types/discovery.types.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/category.validator.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/product.validator.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "docs/frontend/authentication.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'guard'"
+      ]
+    },
+    {
+      "path": "docs/migration/Migration-Log.md",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'release'"
+      ]
+    },
+    {
+      "path": "eslint.config.js",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "middleware.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'guard'"
+      ]
+    },
+    {
+      "path": "next.config.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/Collections.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/Features.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "src/components/ProductQA.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/components/ReferralProgram.tsx",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/SearchPage.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/components/SocialShareButtons.tsx",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/auth/AuthGuard.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'",
+        "Content matched token: 'guard'",
+        "Path matched token: 'guard'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductInfo.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'typo'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/product/ProductReviewForm.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/ui/alert.tsx",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/ui/carousel.tsx",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/ui/form.tsx",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/ui/toaster.tsx",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/components/user/AddressCard.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Path matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/contexts/AuthContext.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/contexts/CartContext.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/contexts/WishlistContext.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/data/products.json",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/hooks/use-toast.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/hooks/useSocialLogin.ts",
+      "evidence": [
+        "Content matched token: 'script'"
+      ]
+    },
+    {
+      "path": "src/lib/auth-token.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "src/types/Product.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'"
+      ]
+    },
+    {
+      "path": "src/types/auth.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "src/types/discovery.types.ts",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/views/Bundles.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/views/Contact.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "src/views/Login.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/views/Support.tsx",
+      "evidence": [
+        "Content matched token: 'script'",
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "scripts/migrate-link-props.ps1",
+      "evidence": [
+        "Path matched token: 'script'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "scripts/migrate-router.ps1",
+      "evidence": [
+        "Path matched token: 'script'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/components/LoyaltyPoints.tsx",
+      "evidence": [
+        "Content matched token: 'typo'",
+        "Path matched token: 'typo'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/cart-api.md",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/order-api.md",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/api/wishlist-api.md",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/docs/architecture/wishlist-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/cart.controller.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/user.controller.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/wishlist.controller.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/cart-item.mapper.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/wishlist.mapper.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/models/cart.model.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/models/user.model.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/models/wishlist.model.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/cart.repository.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/wishlist.repository.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/services/cart.service.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/services/wishlist.service.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/types/cart.types.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/types/wishlist.types.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/auth.validator.ts",
+      "evidence": [
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/user.validator.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/wishlist.validator.ts",
+      "evidence": [
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "src/components/FeaturedProducts.tsx",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/Hero.tsx",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/user/AddressForm.tsx",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Path matched token: 'add'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/hooks/use-mobile.tsx",
+      "evidence": [
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "src/hooks/useProducts.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/services/auth.service.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'active'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/services/cart.service.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/services/order.service.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/services/wishlist.service.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/types/cart.types.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/types/wishlist.types.ts",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/views/PrivacyPolicy.tsx",
+      "evidence": [
+        "Content matched token: 'add'",
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/views/SizeGuidePage.tsx",
+      "evidence": [
+        "Content matched token: 'add'"
+      ]
+    },
+    {
+      "path": "app/globals.css",
+      "evidence": [
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/order.controller.ts",
+      "evidence": [
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/middlewares/auth.middleware.ts",
+      "evidence": [
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "backend/src/services/product.service.ts",
+      "evidence": [
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'guard'",
+        "Content matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Path matched token: 'service'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/components/ProductFilters.tsx",
+      "evidence": [
+        "Content matched token: 'active'",
+        "Content matched token: 'stock'"
+      ]
+    },
+    {
+      "path": "src/components/ProductSort.tsx",
+      "evidence": [
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "src/components/product/StarRating.tsx",
+      "evidence": [
+        "Content matched token: 'active'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/ui/navigation-menu.tsx",
+      "evidence": [
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "src/components/ui/pagination.tsx",
+      "evidence": [
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "src/components/ui/tabs.tsx",
+      "evidence": [
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "src/index.css",
+      "evidence": [
+        "Content matched token: 'active'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/inventory.controller.ts",
+      "evidence": [
+        "Content matched token: 'reservation'",
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'service'",
+        "Content matched token: 'release'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/models/inventory.model.ts",
+      "evidence": [
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/inventory.validator.ts",
+      "evidence": [
+        "Content matched token: 'stock'",
+        "Content matched token: 'inventory'",
+        "Path matched token: 'inventory'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "app/(account)/layout.tsx",
+      "evidence": [
+        "Content matched token: 'guard'"
+      ]
+    },
+    {
+      "path": "docs/frontend/session-lifecycle.md",
+      "evidence": [
+        "Content matched token: 'guard'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "app/(public)/terms/page.tsx",
+      "evidence": [
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/docker-compose.yml",
+      "evidence": [
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "backend/src/controllers/product.controller.ts",
+      "evidence": [
+        "Content matched token: 'service'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "docs/adr/0003-api-adapter-pattern.md",
+      "evidence": [
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/components/Footer.tsx",
+      "evidence": [
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/Testimonials.tsx",
+      "evidence": [
+        "Content matched token: 'service'",
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/hooks/useOrders.ts",
+      "evidence": [
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/hooks/useProductSearch.ts",
+      "evidence": [
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/services/ProductDataService.ts",
+      "evidence": [
+        "Content matched token: 'service'",
+        "Path matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/services/payment.service.ts",
+      "evidence": [
+        "Content matched token: 'service'",
+        "Path matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/services/product.service.ts",
+      "evidence": [
+        "Content matched token: 'service'",
+        "Path matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/views/ProductDetail.tsx",
+      "evidence": [
+        "Content matched token: 'service'"
+      ]
+    },
+    {
+      "path": "src/views/TermsOfService.tsx",
+      "evidence": [
+        "Content matched token: 'service'",
+        "Path matched token: 'service'",
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/components/order/OrderStatusSteps.tsx",
+      "evidence": [
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/order/OrderSummary.tsx",
+      "evidence": [
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/ui/slider.tsx",
+      "evidence": [
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/components/ui/switch.tsx",
+      "evidence": [
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/views/About.tsx",
+      "evidence": [
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/views/NotFound.tsx",
+      "evidence": [
+        "Content matched token: 'lock'"
+      ]
+    },
+    {
+      "path": "src/views/ReturnPolicy.tsx",
+      "evidence": [
+        "Content matched token: 'lock'",
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/mappers/cart.mapper.ts",
+      "evidence": [
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/models/payment-webhook-event.model.ts",
+      "evidence": [
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/repositories/payment.repository.ts",
+      "evidence": [
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/utils/token.ts",
+      "evidence": [
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/cart.validator.ts",
+      "evidence": [
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "backend/src/validators/order.validator.ts",
+      "evidence": [
+        "Content matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/components/order/ShippingUpdateBanner.tsx",
+      "evidence": [
+        "Content matched token: 'update'",
+        "Path matched token: 'update'"
+      ]
+    },
+    {
+      "path": "src/views/OrderTracking.tsx",
+      "evidence": [
+        "Content matched token: 'update'"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1579 @@
+{
+  "case_id": "TB-0007",
+  "metrics": {
+    "total_retrieved": 94,
+    "relevant_found": 0,
+    "relevant_missed": 1,
+    "false_positives": 94
+  },
+  "relevant_found": [],
+  "relevant_missed": [
+    "backend/docs/architecture/order-lifecycle.md"
+  ],
+  "false_positives": [
+    {
+      "path": "src/views/CheckoutSuccess.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 3,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 1
+    },
+    {
+      "path": "src/components/product/ProductInfo.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "src/components/ProductGrid.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 3
+    },
+    {
+      "path": "src/components/SocialShareButtons.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "src/contexts/CartContext.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 5
+    },
+    {
+      "path": "src/types/Product.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 6
+    },
+    {
+      "path": "src/views/Checkout.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 7
+    },
+    {
+      "path": "src/views/ProductDetail.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 8
+    },
+    {
+      "path": "src/views/Profile.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 9
+    },
+    {
+      "path": "src/views/Shop.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 10
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 11
+    },
+    {
+      "path": "next.config.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1783706016,
+      "historical_commits": [
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 12
+    },
+    {
+      "path": "src/views/BundleDetail.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1783706016,
+      "historical_commits": [
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 13
+    },
+    {
+      "path": "src/views/Wishlist.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 2,
+      "latest_timestamp": 1783706016,
+      "historical_commits": [
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        },
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 14
+    },
+    {
+      "path": "backend/src/controllers/checkout.controller.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 15
+    },
+    {
+      "path": "backend/src/routes/checkout.routes.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 16
+    },
+    {
+      "path": "backend/src/services/checkout.service.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 17
+    },
+    {
+      "path": "CHANGELOG.md",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 18
+    },
+    {
+      "path": "docs/frontend/backend-integration.md",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 19
+    },
+    {
+      "path": "eslint.config.js",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 20
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 21
+    },
+    {
+      "path": "src/components/Collections.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 22
+    },
+    {
+      "path": "src/components/FeaturedProducts.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 23
+    },
+    {
+      "path": "src/components/LoyaltyPoints.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 24
+    },
+    {
+      "path": "src/components/product/ProductGallery.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 25
+    },
+    {
+      "path": "src/components/ProductDetailsTabs.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 26
+    },
+    {
+      "path": "src/components/ProductQuickView.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 27
+    },
+    {
+      "path": "src/components/user/AddressCard.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 28
+    },
+    {
+      "path": "src/components/user/AddressForm.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 29
+    },
+    {
+      "path": "src/contexts/AuthContext.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 30
+    },
+    {
+      "path": "src/contexts/WishlistContext.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 31
+    },
+    {
+      "path": "src/hooks/useOrders.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 32
+    },
+    {
+      "path": "src/hooks/useProducts.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 33
+    },
+    {
+      "path": "src/hooks/useProductSearch.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 34
+    },
+    {
+      "path": "src/services/api.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 35
+    },
+    {
+      "path": "src/services/auth.service.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 36
+    },
+    {
+      "path": "src/services/cart.service.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 37
+    },
+    {
+      "path": "src/services/checkout.service.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 38
+    },
+    {
+      "path": "src/services/order.service.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 39
+    },
+    {
+      "path": "src/services/payment.service.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 40
+    },
+    {
+      "path": "src/services/product.service.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 41
+    },
+    {
+      "path": "src/services/ProductDataService.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 42
+    },
+    {
+      "path": "src/services/wishlist.service.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 43
+    },
+    {
+      "path": "src/types/cart.types.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 44
+    },
+    {
+      "path": "src/types/discovery.types.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 45
+    },
+    {
+      "path": "src/types/wishlist.types.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 46
+    },
+    {
+      "path": "src/utils/currency.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 47
+    },
+    {
+      "path": "package-lock.json",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783706016,
+      "historical_commits": [
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 48
+    },
+    {
+      "path": "src/components/ProductBundle.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783706016,
+      "historical_commits": [
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 49
+    },
+    {
+      "path": "src/components/ProductQA.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783706016,
+      "historical_commits": [
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 50
+    },
+    {
+      "path": "src/main.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783706016,
+      "historical_commits": [
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 51
+    },
+    {
+      "path": "tsconfig.json",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783706016,
+      "historical_commits": [
+        {
+          "id": "b04fbe20a5d870dc19f06847d1112fd06958b78d",
+          "timestamp": 1783706016
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 52
+    },
+    {
+      "path": "app/(account)/order-tracking/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 53
+    },
+    {
+      "path": "app/(account)/profile/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 54
+    },
+    {
+      "path": "app/(account)/wishlist/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 55
+    },
+    {
+      "path": "app/(auth)/login/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 56
+    },
+    {
+      "path": "app/(public)/about/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 57
+    },
+    {
+      "path": "app/(public)/contact/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 58
+    },
+    {
+      "path": "app/(public)/faq/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 59
+    },
+    {
+      "path": "app/(public)/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 60
+    },
+    {
+      "path": "app/(public)/privacy-policy/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 61
+    },
+    {
+      "path": "app/(public)/return-policy/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 62
+    },
+    {
+      "path": "app/(public)/shipping-policy/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 63
+    },
+    {
+      "path": "app/(public)/size-guide/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 64
+    },
+    {
+      "path": "app/(public)/support/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 65
+    },
+    {
+      "path": "app/(public)/terms/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 66
+    },
+    {
+      "path": "app/(shop)/bundle/[id]/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 67
+    },
+    {
+      "path": "app/(shop)/bundles/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 68
+    },
+    {
+      "path": "app/(shop)/cart/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 69
+    },
+    {
+      "path": "app/(shop)/checkout-success/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 70
+    },
+    {
+      "path": "app/(shop)/checkout/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 71
+    },
+    {
+      "path": "app/(shop)/product/[id]/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 72
+    },
+    {
+      "path": "app/(shop)/shop/page.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 73
+    },
+    {
+      "path": "app/not-found.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 74
+    },
+    {
+      "path": "index.html",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 75
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 76
+    },
+    {
+      "path": "src/types/order.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 77
+    },
+    {
+      "path": "src/views/About.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 78
+    },
+    {
+      "path": "src/views/Bundles.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 79
+    },
+    {
+      "path": "src/views/Cart.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 80
+    },
+    {
+      "path": "src/views/Contact.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 81
+    },
+    {
+      "path": "src/views/FAQ.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 82
+    },
+    {
+      "path": "src/views/Index.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 83
+    },
+    {
+      "path": "src/views/Login.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 84
+    },
+    {
+      "path": "src/views/NotFound.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 85
+    },
+    {
+      "path": "src/views/PrivacyPolicy.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 86
+    },
+    {
+      "path": "src/views/ReturnPolicy.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 87
+    },
+    {
+      "path": "src/views/ShippingPolicy.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 88
+    },
+    {
+      "path": "src/views/SizeGuidePage.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 89
+    },
+    {
+      "path": "src/views/Support.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 90
+    },
+    {
+      "path": "src/views/TermsOfService.tsx",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 91
+    },
+    {
+      "path": "tsconfig.app.json",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 92
+    },
+    {
+      "path": "tsconfig.node.json",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 93
+    },
+    {
+      "path": "vite.config.ts",
+      "source_artifact": "src/views/OrderTracking.tsx",
+      "co_change_count": 1,
+      "latest_timestamp": 1783700182,
+      "historical_commits": [
+        {
+          "id": "c8de18e20d893d2eaed829421920767dfa6945da",
+          "timestamp": 1783700182
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 94
+    }
+  ]
+}

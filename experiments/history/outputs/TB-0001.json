@@ -1,0 +1,2134 @@
+{
+  "case_id": "TB-0001",
+  "metrics": {
+    "total_retrieved": 121,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 120
+  },
+  "relevant_found": [
+    {
+      "path": "backend/docs/architecture/checkout-lifecycle.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783857699,
+      "historical_commits": [
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 111
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "backend/src/app.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        },
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 1
+    },
+    {
+      "path": "backend/src/constants/index.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "backend/src/controllers/checkout.controller.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 3
+    },
+    {
+      "path": "backend/src/models/checkout-session.model.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "backend/src/repositories/checkout.repository.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 5
+    },
+    {
+      "path": "backend/src/routes/checkout.routes.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 6
+    },
+    {
+      "path": "CHANGELOG.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 7
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 8
+    },
+    {
+      "path": "backend/scripts/verify-order-domain.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 9
+    },
+    {
+      "path": "backend/src/adapters/payment/razorpay.adapter.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 10
+    },
+    {
+      "path": "backend/src/repositories/cart.repository.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 11
+    },
+    {
+      "path": "backend/src/routes/inventory.routes.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 12
+    },
+    {
+      "path": "backend/src/services/order.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 13
+    },
+    {
+      "path": "backend/src/services/payment.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 14
+    },
+    {
+      "path": "backend/src/types/payment.types.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 15
+    },
+    {
+      "path": "backend/src/validators/payment.validator.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 16
+    },
+    {
+      "path": "src/components/FeaturedProducts.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 17
+    },
+    {
+      "path": "src/components/ProductDetailsTabs.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 18
+    },
+    {
+      "path": "src/components/ProductQuickView.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 19
+    },
+    {
+      "path": "src/components/SocialShareButtons.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 20
+    },
+    {
+      "path": "src/contexts/AuthContext.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 21
+    },
+    {
+      "path": "src/contexts/CartContext.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 22
+    },
+    {
+      "path": "src/contexts/WishlistContext.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 23
+    },
+    {
+      "path": "src/services/cart.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 24
+    },
+    {
+      "path": "src/services/checkout.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 25
+    },
+    {
+      "path": "src/types/cart.types.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 26
+    },
+    {
+      "path": "src/types/Product.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 27
+    },
+    {
+      "path": "src/views/Checkout.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 28
+    },
+    {
+      "path": "src/views/CheckoutSuccess.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 29
+    },
+    {
+      "path": "src/views/OrderTracking.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 30
+    },
+    {
+      "path": "src/views/Profile.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 31
+    },
+    {
+      "path": "src/views/Shop.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 32
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 33
+    },
+    {
+      "path": "WOLLYWAY_CONTEXT.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        },
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 34
+    },
+    {
+      "path": "backend/docs/business-rules.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 35
+    },
+    {
+      "path": "backend/docs/checkout-order-contract.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 36
+    },
+    {
+      "path": "backend/src/models/inventory-transaction.model.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 37
+    },
+    {
+      "path": "backend/src/controllers/cart.controller.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 38
+    },
+    {
+      "path": "backend/src/mappers/cart.mapper.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 39
+    },
+    {
+      "path": "backend/src/middlewares/errorHandler.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 40
+    },
+    {
+      "path": "backend/src/middlewares/validate.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 41
+    },
+    {
+      "path": "backend/src/models/wishlist.model.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 42
+    },
+    {
+      "path": "backend/src/repositories/product.repository.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 43
+    },
+    {
+      "path": "backend/src/routes/cart.routes.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 44
+    },
+    {
+      "path": "backend/src/routes/category.routes.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 45
+    },
+    {
+      "path": "backend/src/routes/product.routes.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 46
+    },
+    {
+      "path": "backend/src/services/cart.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 47
+    },
+    {
+      "path": "backend/src/types/cart.types.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 48
+    },
+    {
+      "path": "backend/src/utils/pricing.util.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 49
+    },
+    {
+      "path": "backend/src/validators/common.validator.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 50
+    },
+    {
+      "path": "CHECKOUT_STATE_MACHINE.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 51
+    },
+    {
+      "path": "src/components/Navbar.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 52
+    },
+    {
+      "path": "src/components/order/OrderDetailsCard.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 53
+    },
+    {
+      "path": "src/components/product/RelatedProducts.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 54
+    },
+    {
+      "path": "src/components/ProductBundle.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 55
+    },
+    {
+      "path": "src/components/SearchBar.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 56
+    },
+    {
+      "path": "src/components/user/OrderCard.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 57
+    },
+    {
+      "path": "src/lib/api-client.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 58
+    },
+    {
+      "path": "src/views/BundleDetail.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 59
+    },
+    {
+      "path": "src/views/Bundles.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 60
+    },
+    {
+      "path": "src/views/Cart.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 61
+    },
+    {
+      "path": "src/views/Index.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 62
+    },
+    {
+      "path": "src/views/Wishlist.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1788625853,
+      "historical_commits": [
+        {
+          "id": "bc84e844730daeaec1176656a448adf4e324b61d",
+          "timestamp": 1788625853
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 63
+    },
+    {
+      "path": "docs/frontend/backend-integration.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 64
+    },
+    {
+      "path": "eslint.config.js",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 65
+    },
+    {
+      "path": "src/components/Collections.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 66
+    },
+    {
+      "path": "src/components/LoyaltyPoints.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 67
+    },
+    {
+      "path": "src/components/product/ProductGallery.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 68
+    },
+    {
+      "path": "src/components/product/ProductInfo.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 69
+    },
+    {
+      "path": "src/components/ProductGrid.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 70
+    },
+    {
+      "path": "src/components/user/AddressCard.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 71
+    },
+    {
+      "path": "src/components/user/AddressForm.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 72
+    },
+    {
+      "path": "src/hooks/useOrders.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 73
+    },
+    {
+      "path": "src/hooks/useProducts.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 74
+    },
+    {
+      "path": "src/hooks/useProductSearch.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 75
+    },
+    {
+      "path": "src/services/api.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 76
+    },
+    {
+      "path": "src/services/auth.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 77
+    },
+    {
+      "path": "src/services/order.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 78
+    },
+    {
+      "path": "src/services/payment.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 79
+    },
+    {
+      "path": "src/services/product.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 80
+    },
+    {
+      "path": "src/services/ProductDataService.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 81
+    },
+    {
+      "path": "src/services/wishlist.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 82
+    },
+    {
+      "path": "src/types/discovery.types.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 83
+    },
+    {
+      "path": "src/types/wishlist.types.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 84
+    },
+    {
+      "path": "src/utils/currency.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 85
+    },
+    {
+      "path": "src/views/ProductDetail.tsx",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787927634,
+      "historical_commits": [
+        {
+          "id": "08f157bff0d07185dc676d042b078917b3ce4d8b",
+          "timestamp": 1787927634
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 86
+    },
+    {
+      "path": "backend/docker-compose.yml",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 87
+    },
+    {
+      "path": "backend/docs/api/order-api.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 88
+    },
+    {
+      "path": "backend/docs/api/payment-api.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 89
+    },
+    {
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 90
+    },
+    {
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 91
+    },
+    {
+      "path": "backend/docs/database/order-domain.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 92
+    },
+    {
+      "path": "backend/docs/database/payment-domain.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 93
+    },
+    {
+      "path": "backend/scripts/verify-payment-domain.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 94
+    },
+    {
+      "path": "backend/src/adapters/payment/payment-provider.factory.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 95
+    },
+    {
+      "path": "backend/src/controllers/order.controller.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 96
+    },
+    {
+      "path": "backend/src/controllers/payment.controller.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 97
+    },
+    {
+      "path": "backend/src/mappers/order.mapper.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 98
+    },
+    {
+      "path": "backend/src/models/order.model.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 99
+    },
+    {
+      "path": "backend/src/models/payment-webhook-event.model.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 100
+    },
+    {
+      "path": "backend/src/repositories/inventory.repository.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 101
+    },
+    {
+      "path": "backend/src/repositories/order.repository.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 102
+    },
+    {
+      "path": "backend/src/repositories/payment.repository.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 103
+    },
+    {
+      "path": "backend/src/routes/order.routes.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 104
+    },
+    {
+      "path": "backend/src/routes/payment.routes.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 105
+    },
+    {
+      "path": "backend/src/services/product.service.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 106
+    },
+    {
+      "path": "backend/src/types/express.d.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 107
+    },
+    {
+      "path": "backend/src/types/order.types.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 108
+    },
+    {
+      "path": "backend/src/validators/order.validator.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 109
+    },
+    {
+      "path": "backend/docs/api/checkout-api.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783857699,
+      "historical_commits": [
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 110
+    },
+    {
+      "path": "backend/docs/architecture/cross-domain-interaction-matrix.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783857699,
+      "historical_commits": [
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 112
+    },
+    {
+      "path": "backend/docs/database/checkout-domain.md",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783857699,
+      "historical_commits": [
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 113
+    },
+    {
+      "path": "backend/src/server.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783857699,
+      "historical_commits": [
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 114
+    },
+    {
+      "path": "backend/src/types/checkout.types.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783857699,
+      "historical_commits": [
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 115
+    },
+    {
+      "path": "backend/src/validators/checkout.validator.ts",
+      "source_artifact": "backend/src/services/checkout.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783857699,
+      "historical_commits": [
+        {
+          "id": "ddff4fabffbf81aa5fe6c1612180483bb1e4ec27",
+          "timestamp": 1783857699
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 116
+    },
+    {
+      "path": "backend/docs/architecture/inventory-lifecycle.md",
+      "source_artifact": "backend/src/services/inventory.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798913,
+      "historical_commits": [
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 117
+    },
+    {
+      "path": "backend/docs/database/inventory-domain.md",
+      "source_artifact": "backend/src/services/inventory.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798913,
+      "historical_commits": [
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 118
+    },
+    {
+      "path": "backend/src/controllers/inventory.controller.ts",
+      "source_artifact": "backend/src/services/inventory.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798913,
+      "historical_commits": [
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 119
+    },
+    {
+      "path": "backend/src/models/inventory.model.ts",
+      "source_artifact": "backend/src/services/inventory.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798913,
+      "historical_commits": [
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 120
+    },
+    {
+      "path": "backend/src/validators/inventory.validator.ts",
+      "source_artifact": "backend/src/services/inventory.service.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798913,
+      "historical_commits": [
+        {
+          "id": "327e37ca9ae4f817b3e5e90d912b14cb7cca3769",
+          "timestamp": 1783798913
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 121
+    }
+  ]
+}

@@ -40,8 +40,45 @@ Confidence: High. 3 real, structurally diverse cases were successfully generated
 Implication: Tracebound must handle diverse relationship types: structural (co-located tests), semantic/lexical (architectural documentation), and cross-domain references.
 Follow-up: How reliably can deterministic tools (like tsserver) extract cross-domain relationships compared to co-change history?
 ---
+---
+Date: 2026-10-03
+Question: Are unchanged artifacts well-represented in evaluating change impact?
+Source: Independent evaluation audit of TB-0001, TB-0002, and TB-0003.
+Finding: The initial pilot cases were biased entirely toward artifacts that were modified (changed artifacts). The repair process successfully identified an unchanged, investigation-worthy architectural document for TB-0001 (`checkout-lifecycle.md`). However, TB-0002 and TB-0003 could not defensibly support unchanged candidates based on their historical change boundaries.
+Confidence: High for these specific commits, but remains unverified as a general pattern across all commits.
+Implication: Finding defensible unchanged candidates that developers *should* have investigated requires careful selection. The dataset repair suggests that relying solely on what actually changed introduces severe evaluation bias, artificially inflating recall if the ground truth ignores missed dependencies.
+Follow-up: How do we systematically source investigation-worthy unchanged candidates for future evaluation cases?
+---
 
 <!-- No entries yet. Add the first entry when research begins. -->
+
+---
+Date: 2026-10-03
+Question: Can the deterministic baseline retrieve abstraction-gap and lexically misleading relationships?
+Source: Tracebound evaluation dataset expansion (TB-0006, TB-0007).
+Finding: Observed that deterministic retrieval fails on Abstraction Gap cases. For instance, in TB-0006 (Wollyway), code implementation drifted from correct domain architectural documents. A lexical search for terms like 'inventory' yields hundreds of false positives, while structural and metadata signals yield nothing. 
+Confidence: High. Real historical commits were successfully identified that demonstrate this exact failure mode without fabricating the relationship.
+Implication: The expanded benchmark successfully proves that deterministic retrieval ceilings are not merely a result of a small dataset, but a fundamental limitation when handling semantic conceptual mismatches (the Lexical Abstraction Gap).
+Follow-up: Execute a semantic retrieval experiment against these exact cases.
+---
+
+---
+Date: 2026-10-03
+Question: How resistant are deterministic baselines to negative cases?
+Source: Tracebound evaluation dataset expansion (TB-0009).
+Finding: Observed that structural baselines are highly vulnerable to negative false-positive cases. In TB-0009 (Hono utils/stream internal fix), an internal implementation detail was patched. Structural analysis flags all dependents (e.g., helper/stream.ts) as candidates, even though the external API contract didn't change and investigation is not warranted.
+Confidence: High.
+Implication: Structural analysis is necessary for code dependency tracking but insufficient for determining *relevance*.
+Follow-up: Can semantic retrieval prune these structural false positives by understanding the intent of the change?
+---
+Date: 2026-10-04
+Question: How should corrupted or inaccessible historical checkout states be handled during benchmark evaluation?
+Source: TB-0009 Historical Checkout Repair (Hono `utils/stream` PR #5274).
+Finding: The `case-009.yaml` contained a corrupted commit identifier (`5e5b83d6a858e24c2ed28e932ec79b291d9b32e0`) where only the first 8 characters matched the correct SHA. The verified canonical commit is `5e5b83d6ed963a2bc7d8384002e1c953648253b1`. Fixing this requires updating the evaluation case file directly rather than hardcoding a workaround/alias in the experiment script (`index.js`).
+Confidence: High. Hardcoded aliases hide data integrity defects inside implementation logic.
+Implication: This is a benchmark integrity correction, not an experiment change. The benchmark must explicitly define the exact, valid state of the repository without relying on the implementation script to "fix" it.
+Follow-up: Ensure no other case-specific overrides exist in the semantic experiment runner.
+---
 
 <!-- Example entry (do not treat as real data):
 ---

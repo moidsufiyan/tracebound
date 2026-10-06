@@ -1,0 +1,3474 @@
+{
+  "case_id": "TB-0004",
+  "metrics": {
+    "total_retrieved": 196,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 195
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 19,
+      "relationships": [
+        "Issue/PR #5222",
+        "Issue/PR #5234",
+        "Issue/PR #5196",
+        "Issue/PR #5111",
+        "Issue/PR #5084",
+        "Issue/PR #4198",
+        "Issue/PR #4200",
+        "Issue/PR #4171",
+        "Issue/PR #4035",
+        "Issue/PR #3832",
+        "Issue/PR #3604",
+        "Issue/PR #2763",
+        "Issue/PR #1334",
+        "Issue/PR #1199",
+        "Issue/PR #1129",
+        "Issue/PR #973",
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit f8b7847 (modified source) and Commit f8b7847 (modified candidate) both reference #5222",
+        "Commit 546eca0 (modified source) and Commit 546eca0 (modified candidate) both reference #5234",
+        "Commit f6aa913 (modified source) and Commit f6aa913 (modified candidate) both reference #5196",
+        "Commit 2159deb (modified source) and Commit 2159deb (modified candidate) both reference #5111",
+        "Commit 2126289 (modified source) and Commit 2126289 (modified candidate) both reference #5084",
+        "Commit 4a1dd5f (modified source) and Commit 4a1dd5f (modified candidate) both reference #4198",
+        "Commit 4a1dd5f (modified source) and Commit 4a1dd5f (modified candidate) both reference #4200",
+        "Commit 091ecb7 (modified source) and Commit 091ecb7 (modified candidate) both reference #4171",
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035",
+        "Commit 438983b (modified source) and Commit 438983b (modified candidate) both reference #3832",
+        "Commit 22db73f (modified source) and Commit 22db73f (modified candidate) both reference #3604",
+        "Commit ca97310 (modified source) and Commit ca97310 (modified candidate) both reference #2763",
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334",
+        "Commit f356702 (modified source) and Commit f356702 (modified candidate) both reference #1199",
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 4414e63 (modified source) and Commit 4414e63 (modified candidate) both reference #973",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 1
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "deno_dist/middleware/etag/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 12,
+      "relationships": [
+        "Issue/PR #2701",
+        "Issue/PR #2763",
+        "Issue/PR #1716",
+        "Issue/PR #1410",
+        "Issue/PR #1242",
+        "Issue/PR #1199",
+        "Issue/PR #1129",
+        "Issue/PR #973",
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #461",
+        "Issue/PR #458"
+      ],
+      "evidence": [
+        "Commit 03f1617 (modified source) and Commit 03f1617 (modified candidate) both reference #2701",
+        "Commit ca97310 (modified source) and Commit ca97310 (modified candidate) both reference #2763",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410",
+        "Commit 4b39eba (modified source) and Commit 4b39eba (modified candidate) both reference #1242",
+        "Commit f356702 (modified source) and Commit f356702 (modified candidate) both reference #1199",
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 4414e63 (modified source) and Commit 4414e63 (modified candidate) both reference #973",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit 7345b81 (modified source) and Commit 7345b81 (modified candidate) both reference #461",
+        "Commit 7345b81 (modified source) and Commit 7345b81 (modified candidate) both reference #458"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 11,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716",
+        "Issue/PR #1410",
+        "Issue/PR #1129",
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410",
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 3
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 10,
+      "relationships": [
+        "Issue/PR #4035",
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035",
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 9,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 5
+    },
+    {
+      "path": "src/context.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 8,
+      "relationships": [
+        "Issue/PR #4362",
+        "Issue/PR #4035",
+        "Issue/PR #3089",
+        "Issue/PR #637",
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362",
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035",
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 6
+    },
+    {
+      "path": "src/middleware/powered-by/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 8,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #1716",
+        "Issue/PR #1129",
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 7
+    },
+    {
+      "path": "src/middleware/pretty-json/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 8,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 8
+    },
+    {
+      "path": "src/hono.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 7,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 9
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 7,
+      "relationships": [
+        "Issue/PR #4035",
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716",
+        "Issue/PR #1410",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035",
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 10
+    },
+    {
+      "path": "package.json",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 6,
+      "relationships": [
+        "Issue/PR #4362",
+        "Issue/PR #1716",
+        "Issue/PR #1334",
+        "Issue/PR #228",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 11
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 6,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716",
+        "Issue/PR #1129",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 12
+    },
+    {
+      "path": "src/middleware/etag/digest.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 6,
+      "relationships": [
+        "Issue/PR #4362",
+        "Issue/PR #4198",
+        "Issue/PR #4200",
+        "Issue/PR #3916",
+        "Issue/PR #3832",
+        "Issue/PR #3604"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362",
+        "Commit 4a1dd5f (modified source) and Commit 4a1dd5f (modified candidate) both reference #4198",
+        "Commit 4a1dd5f (modified source) and Commit 4a1dd5f (modified candidate) both reference #4200",
+        "Commit d6757c7 (modified source) and Commit d6757c7 (modified candidate) both reference #3916",
+        "Commit 438983b (modified source) and Commit 438983b (modified candidate) both reference #3832",
+        "Commit 22db73f (modified source) and Commit 22db73f (modified candidate) both reference #3604"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 13
+    },
+    {
+      "path": "deno_dist/middleware/cors/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 5,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #1410",
+        "Issue/PR #1129",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410",
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 14
+    },
+    {
+      "path": "src/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 5,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #637",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 15
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 5,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 16
+    },
+    {
+      "path": "src/middleware/graphql-server/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 5,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 17
+    },
+    {
+      "path": "src/utils/crypto.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 5,
+      "relationships": [
+        "Issue/PR #3604",
+        "Issue/PR #2796",
+        "Issue/PR #461",
+        "Issue/PR #458",
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit 22db73f (modified source) and Commit 22db73f (modified candidate) both reference #3604",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 7345b81 (modified source) and Commit 7345b81 (modified candidate) both reference #461",
+        "Commit 7345b81 (modified source) and Commit 7345b81 (modified candidate) both reference #458",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 18
+    },
+    {
+      "path": "deno_dist/middleware/bearer-auth/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #1410",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 19
+    },
+    {
+      "path": "deno_dist/middleware/cache/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #1129",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 20
+    },
+    {
+      "path": "deno_dist/middleware/powered-by/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #1129",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 21
+    },
+    {
+      "path": "src/compose.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #1410",
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 22
+    },
+    {
+      "path": "src/compose.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 23
+    },
+    {
+      "path": "src/hono.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #1410",
+        "Issue/PR #637",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410",
+        "Commit 6a96ace (modified source) and Commit dcc21af (modified candidate) both reference #637",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 24
+    },
+    {
+      "path": "src/middleware/body-parse/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 25
+    },
+    {
+      "path": "src/middleware/cookie/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 26
+    },
+    {
+      "path": "src/middleware/cors/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #1129",
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 27
+    },
+    {
+      "path": "src/middleware/jwt/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #228"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 28
+    },
+    {
+      "path": "src/middleware/mustache/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 29
+    },
+    {
+      "path": "src/middleware/serve-static/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #228",
+        "Issue/PR #160",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 798425a (modified source) and Commit 798425a (modified candidate) both reference #160",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 30
+    },
+    {
+      "path": "src/router/reg-exp-router/router.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 31
+    },
+    {
+      "path": "src/router/trie-router/node.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 32
+    },
+    {
+      "path": "src/utils/buffer.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 4,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 33
+    },
+    {
+      "path": "deno_dist/middleware/basic-auth/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 34
+    },
+    {
+      "path": "deno_dist/middleware/compress/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 35
+    },
+    {
+      "path": "deno_dist/middleware/jwt/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 36
+    },
+    {
+      "path": "deno_dist/middleware/logger/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 37
+    },
+    {
+      "path": "deno_dist/middleware/pretty-json/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #1716",
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 38
+    },
+    {
+      "path": "src/context.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 39
+    },
+    {
+      "path": "src/hono-base.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 40
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 41
+    },
+    {
+      "path": "src/middleware/graphql-server/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 42
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796",
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 43
+    },
+    {
+      "path": "src/middleware/powered-by/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #1129",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 44
+    },
+    {
+      "path": "src/middleware/serve-static/serve-static.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521",
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 45
+    },
+    {
+      "path": "src/router/reg-exp-router/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 46
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 47
+    },
+    {
+      "path": "src/router/reg-exp-router/trie.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 48
+    },
+    {
+      "path": "src/router/trie-router/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 49
+    },
+    {
+      "path": "src/router/trie-router/node.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 50
+    },
+    {
+      "path": "src/router/trie-router/router.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 51
+    },
+    {
+      "path": "src/router/trie-router/router.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 52
+    },
+    {
+      "path": "src/utils/buffer.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 53
+    },
+    {
+      "path": "src/utils/encode.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #4362",
+        "Issue/PR #280",
+        "Issue/PR #228"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 54
+    },
+    {
+      "path": "src/utils/encode.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #4362",
+        "Issue/PR #2796",
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 55
+    },
+    {
+      "path": "src/utils/url.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 56
+    },
+    {
+      "path": "tsconfig.json",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 3,
+      "relationships": [
+        "Issue/PR #280",
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280",
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 57
+    },
+    {
+      "path": ".eslintrc.js",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #157",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 58
+    },
+    {
+      "path": "deno_dist/deno/serve-static.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 59
+    },
+    {
+      "path": "deno_dist/hono.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 60
+    },
+    {
+      "path": "deno_dist/middleware/serve-static/serve-static.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 61
+    },
+    {
+      "path": "deno_dist/middleware/validator/middleware.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 62
+    },
+    {
+      "path": "deno_dist/utils/crypto.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #461",
+        "Issue/PR #458"
+      ],
+      "evidence": [
+        "Commit 7345b81 (modified source) and Commit 7345b81 (modified candidate) both reference #461",
+        "Commit 7345b81 (modified source) and Commit 7345b81 (modified candidate) both reference #458"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 63
+    },
+    {
+      "path": "jest.config.js",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 64
+    },
+    {
+      "path": "src/adapter/aws-lambda/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #1334"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 65
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #4362",
+        "Issue/PR #1334"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362",
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 66
+    },
+    {
+      "path": "src/adapter/lambda-edge/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #1334"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 67
+    },
+    {
+      "path": "src/deno/serve-static.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 68
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 69
+    },
+    {
+      "path": "src/helper/websocket/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #4362",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 70
+    },
+    {
+      "path": "src/http-exception.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 71
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #4035",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 72
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 73
+    },
+    {
+      "path": "src/middleware/body-parse/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 74
+    },
+    {
+      "path": "src/middleware/cookie/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 75
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 76
+    },
+    {
+      "path": "src/middleware/graphql-server/parse-body.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 77
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 78
+    },
+    {
+      "path": "src/middleware/logger/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 79
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 80
+    },
+    {
+      "path": "src/middleware/mustache/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 81
+    },
+    {
+      "path": "src/middleware/pretty-json/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 82
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 83
+    },
+    {
+      "path": "src/middleware/serve-static/bun.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 84
+    },
+    {
+      "path": "src/middleware/serve-static/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 85
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 86
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 87
+    },
+    {
+      "path": "src/middleware/validator/middleware.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #637",
+        "Issue/PR #521"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637",
+        "Commit e2d704f (modified source) and Commit e2d704f (modified candidate) both reference #521"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 88
+    },
+    {
+      "path": "src/request.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #3089",
+        "Issue/PR #1410"
+      ],
+      "evidence": [
+        "Commit 28de9b3 (modified source) and Commit 28de9b3 (modified candidate) both reference #3089",
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 89
+    },
+    {
+      "path": "src/types.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #4362",
+        "Issue/PR #637"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 90
+    },
+    {
+      "path": "src/types.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #637"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 91
+    },
+    {
+      "path": "src/utils/body.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 92
+    },
+    {
+      "path": "src/utils/body.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 93
+    },
+    {
+      "path": "src/utils/cloudflare.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 94
+    },
+    {
+      "path": "src/utils/crypto.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 95
+    },
+    {
+      "path": "src/utils/http-status.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 96
+    },
+    {
+      "path": "src/utils/mime.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 97
+    },
+    {
+      "path": "src/utils/mime.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #2796",
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796",
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 98
+    },
+    {
+      "path": "tsconfig.build.json",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 99
+    },
+    {
+      "path": "yarn.lock",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 2,
+      "relationships": [
+        "Issue/PR #228",
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228",
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 100
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1334"
+      ],
+      "evidence": [
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 101
+    },
+    {
+      "path": ".npmignore",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 102
+    },
+    {
+      "path": ".vscode/settings.json",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #157"
+      ],
+      "evidence": [
+        "Commit 2af8f2c (modified source) and Commit 2af8f2c (modified candidate) both reference #157"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 103
+    },
+    {
+      "path": "bun.lock",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4362"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 104
+    },
+    {
+      "path": "deno_dist/compose.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #637"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 105
+    },
+    {
+      "path": "deno_dist/context.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #637"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 106
+    },
+    {
+      "path": "deno_dist/helper.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 107
+    },
+    {
+      "path": "deno_dist/helper/dev/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 108
+    },
+    {
+      "path": "deno_dist/hono-base.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 109
+    },
+    {
+      "path": "deno_dist/middleware/jsx-renderer/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 110
+    },
+    {
+      "path": "deno_dist/middleware/secure-headers/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 111
+    },
+    {
+      "path": "deno_dist/middleware/timing/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 112
+    },
+    {
+      "path": "deno_dist/mod.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #637"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 113
+    },
+    {
+      "path": "deno_dist/request.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1410"
+      ],
+      "evidence": [
+        "Commit aee2093 (modified source) and Commit aee2093 (modified candidate) both reference #1410"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 114
+    },
+    {
+      "path": "deno_dist/types.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #637"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 115
+    },
+    {
+      "path": "docs/CODE_OF_CONDUCT.md",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #156"
+      ],
+      "evidence": [
+        "Commit ac713c0 (modified source) and Commit ac713c0 (modified candidate) both reference #156"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 116
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 117
+    },
+    {
+      "path": "runtime_tests/lambda-edge/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1334"
+      ],
+      "evidence": [
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 118
+    },
+    {
+      "path": "runtime-tests/deno/middleware.test.tsx",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 119
+    },
+    {
+      "path": "runtime-tests/lambda-edge/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 120
+    },
+    {
+      "path": "src/adapter/aws-lambda/custom-context.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1334"
+      ],
+      "evidence": [
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 121
+    },
+    {
+      "path": "src/adapter/bun/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 122
+    },
+    {
+      "path": "src/adapter/bun/websocket.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4362"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 123
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 124
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 125
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 126
+    },
+    {
+      "path": "src/adapter/deno/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 127
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4362"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 128
+    },
+    {
+      "path": "src/adapter/netlify/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 129
+    },
+    {
+      "path": "src/adapter/service-worker/handler.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 130
+    },
+    {
+      "path": "src/adapter/vercel/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 131
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4362"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 132
+    },
+    {
+      "path": "src/client/client.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1334"
+      ],
+      "evidence": [
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 133
+    },
+    {
+      "path": "src/client/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 134
+    },
+    {
+      "path": "src/helper.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 135
+    },
+    {
+      "path": "src/helper/accepts/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 136
+    },
+    {
+      "path": "src/helper/adapter/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 137
+    },
+    {
+      "path": "src/helper/conninfo/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 138
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 139
+    },
+    {
+      "path": "src/helper/css/common.case.test.tsx",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 140
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 141
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 142
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 143
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 144
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 145
+    },
+    {
+      "path": "src/helper/html/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 146
+    },
+    {
+      "path": "src/helper/ssg/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 147
+    },
+    {
+      "path": "src/helper/streaming/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 148
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 149
+    },
+    {
+      "path": "src/helper/websocket/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4362"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 150
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 151
+    },
+    {
+      "path": "src/jsx/dom/jsx-dev-runtime.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 152
+    },
+    {
+      "path": "src/jsx/dom/jsx-runtime.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 153
+    },
+    {
+      "path": "src/jsx/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 154
+    },
+    {
+      "path": "src/jsx/jsx-dev-runtime.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 155
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 156
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 157
+    },
+    {
+      "path": "src/middleware/body-limit/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 158
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1129"
+      ],
+      "evidence": [
+        "Commit 8f5ba57 (modified source) and Commit 8f5ba57 (modified candidate) both reference #1129"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 159
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1334"
+      ],
+      "evidence": [
+        "Commit 954c06e (modified source) and Commit 954c06e (modified candidate) both reference #1334"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 160
+    },
+    {
+      "path": "src/middleware/context-storage/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 161
+    },
+    {
+      "path": "src/middleware/context-storage/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 162
+    },
+    {
+      "path": "src/middleware/jwk/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4362"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 163
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #228"
+      ],
+      "evidence": [
+        "Commit 6ddba47 (modified source) and Commit 6ddba47 (modified candidate) both reference #228"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 164
+    },
+    {
+      "path": "src/middleware/request-id/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 165
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 166
+    },
+    {
+      "path": "src/middleware/secure-headers/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 167
+    },
+    {
+      "path": "src/middleware/serve-static/serve-static.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #637"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 168
+    },
+    {
+      "path": "src/middleware/timeout/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 169
+    },
+    {
+      "path": "src/middleware/timing/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #1716"
+      ],
+      "evidence": [
+        "Commit bd36ad1 (modified source) and Commit bd36ad1 (modified candidate) both reference #1716"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 170
+    },
+    {
+      "path": "src/mod.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #637"
+      ],
+      "evidence": [
+        "Commit 6a96ace (modified source) and Commit 6a96ace (modified candidate) both reference #637"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 171
+    },
+    {
+      "path": "src/preset/quick.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 172
+    },
+    {
+      "path": "src/preset/tiny.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 173
+    },
+    {
+      "path": "src/router.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 174
+    },
+    {
+      "path": "src/router/linear-router/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 175
+    },
+    {
+      "path": "src/router/pattern-router/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 176
+    },
+    {
+      "path": "src/router/reg-exp-router/node.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 177
+    },
+    {
+      "path": "src/router/smart-router/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 178
+    },
+    {
+      "path": "src/utils/accept.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4035"
+      ],
+      "evidence": [
+        "Commit 882e75a (modified source) and Commit 882e75a (modified candidate) both reference #4035"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 179
+    },
+    {
+      "path": "src/utils/cloudflare.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 180
+    },
+    {
+      "path": "src/utils/color.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 181
+    },
+    {
+      "path": "src/utils/concurrent.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 182
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 183
+    },
+    {
+      "path": "src/utils/filepath.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 184
+    },
+    {
+      "path": "src/utils/handler.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 185
+    },
+    {
+      "path": "src/utils/html.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 186
+    },
+    {
+      "path": "src/utils/http-status.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 187
+    },
+    {
+      "path": "src/utils/jwt/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 188
+    },
+    {
+      "path": "src/utils/jwt/jws.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4362"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 189
+    },
+    {
+      "path": "src/utils/jwt/jwt.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 190
+    },
+    {
+      "path": "src/utils/jwt/types.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #280"
+      ],
+      "evidence": [
+        "Commit b55eb2e (modified source) and Commit b55eb2e (modified candidate) both reference #280"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 191
+    },
+    {
+      "path": "src/utils/stream.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 192
+    },
+    {
+      "path": "src/utils/types.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 193
+    },
+    {
+      "path": "src/utils/url.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 194
+    },
+    {
+      "path": "src/validator/index.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #2796"
+      ],
+      "evidence": [
+        "Commit 6d9f1f0 (modified source) and Commit 6d9f1f0 (modified candidate) both reference #2796"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 195
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "source_artifact": "src/middleware/etag/index.ts",
+      "relationship_count": 1,
+      "relationships": [
+        "Issue/PR #4362"
+      ],
+      "evidence": [
+        "Commit 3e5a6e8 (modified source) and Commit 3e5a6e8 (modified candidate) both reference #4362"
+      ],
+      "signals": [
+        "B4"
+      ],
+      "rank": 196
+    }
+  ]
+}

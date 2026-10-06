@@ -1,0 +1,138 @@
+{
+  "case_id": "TB-0005",
+  "metrics": {
+    "total_retrieved": 5,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 4
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1779190391,
+      "historical_commits": [
+        {
+          "id": "c831020fb1fa2e929d222f6c84e1abfe013e512b",
+          "timestamp": 1779190391
+        },
+        {
+          "id": "48fa2233bc092f650119f42df043050737cabf39",
+          "timestamp": 1775534755
+        },
+        {
+          "id": "71cdcf40d876484997d91ed57abb072d51b4537a",
+          "timestamp": 1720448761
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 3
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/utils/ipaddr.test.ts",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "co_change_count": 7,
+      "latest_timestamp": 1780523493,
+      "historical_commits": [
+        {
+          "id": "c78932d745cdf6284ae131a156479ac930da0262",
+          "timestamp": 1780523493
+        },
+        {
+          "id": "d22ff9c6fec1b256bd72a3bcf95d73f2fd798f18",
+          "timestamp": 1780376112
+        },
+        {
+          "id": "bcd290a64c0b392fd06d2bd1f256c5dc9835e4a4",
+          "timestamp": 1779674160
+        },
+        {
+          "id": "c831020fb1fa2e929d222f6c84e1abfe013e512b",
+          "timestamp": 1779190391
+        },
+        {
+          "id": "edbf6eea8e6c26a3937518d4ed91d8666edeec37",
+          "timestamp": 1769507238
+        },
+        {
+          "id": "af5affc5b48a9c56f3bc68879adf66180c28e70a",
+          "timestamp": 1733468900
+        },
+        {
+          "id": "71cdcf40d876484997d91ed57abb072d51b4537a",
+          "timestamp": 1720448761
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 1
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1779190391,
+      "historical_commits": [
+        {
+          "id": "c831020fb1fa2e929d222f6c84e1abfe013e512b",
+          "timestamp": 1779190391
+        },
+        {
+          "id": "48fa2233bc092f650119f42df043050737cabf39",
+          "timestamp": 1775534755
+        },
+        {
+          "id": "af5affc5b48a9c56f3bc68879adf66180c28e70a",
+          "timestamp": 1733468900
+        },
+        {
+          "id": "71cdcf40d876484997d91ed57abb072d51b4537a",
+          "timestamp": 1720448761
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "jsr.json",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720448761,
+      "historical_commits": [
+        {
+          "id": "71cdcf40d876484997d91ed57abb072d51b4537a",
+          "timestamp": 1720448761
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "package.json",
+      "source_artifact": "src/utils/ipaddr.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720448761,
+      "historical_commits": [
+        {
+          "id": "71cdcf40d876484997d91ed57abb072d51b4537a",
+          "timestamp": 1720448761
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 5
+    }
+  ]
+}

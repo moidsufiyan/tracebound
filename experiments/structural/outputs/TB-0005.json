@@ -1,0 +1,33 @@
+{
+  "case_id": "TB-0005",
+  "metrics": {
+    "total_retrieved": 3,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 2
+  },
+  "relevant_found": [
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "evidence": [
+        "[Reverse Import] Candidate artifact (src/middleware/ip-restriction/index.ts) imports changed source at line 9: `import { InvalidIPAddressError } from '../../utils/ipaddr'`",
+        "[Reverse Import] Candidate artifact (src/middleware/ip-restriction/index.ts) imports changed source at line 10: `import { convertIPv4MappedIPv6ToIPv4, convertIPv4ToBinary, convertIPv6BinaryToString, convertIPv6ToBinary, distinctRemoteAddr, isIPv4MappedIPv6, INVALID_IP_ADDRESS_ERROR_CODE } from '../../utils/ipaddr'`"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "src/helper/conninfo/index.ts",
+      "evidence": [
+        "[Direct Import] Source artifact (src/utils/ipaddr.ts) imports candidate at line 6: `import { AddressType } from '../helper/conninfo'`"
+      ]
+    },
+    {
+      "path": "src/utils/ipaddr.test.ts",
+      "evidence": [
+        "[Test-to-Source Dependency] Test artifact (src/utils/ipaddr.test.ts) imports changed source at line 1: `import { convertIPv4BinaryToString, convertIPv4ToBinary, convertIPv6BinaryToString, convertIPv6ToBinary, distinctRemoteAddr, expandIPv6, INVALID_IP_ADDRESS_ERROR_CODE } from './ipaddr'`"
+      ]
+    }
+  ]
+}

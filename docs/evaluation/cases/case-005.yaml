@@ -1,0 +1,52 @@
+case_id: TB-0005
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "honojs/hono"
+  url: "https://github.com/honojs/hono"
+  language: TypeScript
+  base_commit: "c91ec9b60df18c76a3feb47533ce097d02f7fe6c~1"
+
+source_change:
+  commit: "c91ec9b60df18c76a3feb47533ce097d02f7fe6c"
+  pr_url: "https://github.com/honojs/hono/pull/5247"
+  description: "fix(utils/ipaddr): avoid truncation on embedded IPv4 addresses in expandIPv6"
+  change_type:
+    - bugfix
+  change_timestamp: "2026-08-18T19:00:54+09:00"
+  evaluation_cutoff: "2026-08-18T19:00:54+09:00"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "src/utils/ipaddr.ts"
+    symbols:
+      - name: "expandIPv6"
+        kind: function
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit"
+  size: null
+  notes: "Focusing on transitive structural dependencies"
+
+candidates:
+  - artifact_id: C01
+    path: "src/middleware/ip-restriction/index.ts"
+    content_hash_at_base: null
+    artifact_type: source
+    relationship: transitive_structural
+    evidence:
+      - type: structural
+        description: "ip-restriction imports expandIPv6 from utils/ipaddr."
+      - type: human
+        description: "A fix to IP address parsing behavior directly impacts the ip-restriction middleware's behavior."
+    relevance: investigation-worthy
+    labeling_rationale: "The middleware itself is not modified, but its behavior changes. It is investigation-worthy to ensure the new IPv6 string expansion doesn't break IP ban lists."
+    ambiguity_notes: null
+    label_confidence: high
+    labeled_by: "author"
+    labeled_at: "2026-10-03"
+
+notes: "Benchmark Expansion: Category 1 / 4 - Transitive Structural"

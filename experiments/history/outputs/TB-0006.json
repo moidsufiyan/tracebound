@@ -1,0 +1,1139 @@
+{
+  "case_id": "TB-0006",
+  "metrics": {
+    "total_retrieved": 68,
+    "relevant_found": 0,
+    "relevant_missed": 1,
+    "false_positives": 68
+  },
+  "relevant_found": [],
+  "relevant_missed": [
+    "backend/docs/database/inventory-domain.md"
+  ],
+  "false_positives": [
+    {
+      "path": "backend/src/app.ts",
+      "source_artifact": "backend/src/controllers/category.controller.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        },
+        {
+          "id": "c244cdb67bd524a3dbe279a588b600d1c23e3b4d",
+          "timestamp": 1783798107
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 1
+    },
+    {
+      "path": "backend/src/constants/index.ts",
+      "source_artifact": "backend/src/controllers/category.controller.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        },
+        {
+          "id": "c244cdb67bd524a3dbe279a588b600d1c23e3b4d",
+          "timestamp": 1783798107
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "backend/docs/business-rules.md",
+      "source_artifact": "backend/src/controllers/category.controller.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "c244cdb67bd524a3dbe279a588b600d1c23e3b4d",
+          "timestamp": 1783798107
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 3
+    },
+    {
+      "path": "backend/src/repositories/cart.repository.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "backend/src/services/product.service.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 5
+    },
+    {
+      "path": "CHANGELOG.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 6
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        },
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 7
+    },
+    {
+      "path": "backend/docker-compose.yml",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 8
+    },
+    {
+      "path": "backend/docs/api/order-api.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 9
+    },
+    {
+      "path": "backend/docs/api/payment-api.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 10
+    },
+    {
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 11
+    },
+    {
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 12
+    },
+    {
+      "path": "backend/docs/checkout-order-contract.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 13
+    },
+    {
+      "path": "backend/docs/database/order-domain.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 14
+    },
+    {
+      "path": "backend/docs/database/payment-domain.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 15
+    },
+    {
+      "path": "backend/scripts/verify-order-domain.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 16
+    },
+    {
+      "path": "backend/scripts/verify-payment-domain.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 17
+    },
+    {
+      "path": "backend/src/adapters/payment/payment-provider.factory.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 18
+    },
+    {
+      "path": "backend/src/adapters/payment/razorpay.adapter.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 19
+    },
+    {
+      "path": "backend/src/controllers/order.controller.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 20
+    },
+    {
+      "path": "backend/src/controllers/payment.controller.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 21
+    },
+    {
+      "path": "backend/src/mappers/order.mapper.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 22
+    },
+    {
+      "path": "backend/src/models/checkout-session.model.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 23
+    },
+    {
+      "path": "backend/src/models/inventory-transaction.model.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 24
+    },
+    {
+      "path": "backend/src/models/order.model.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 25
+    },
+    {
+      "path": "backend/src/models/payment-webhook-event.model.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 26
+    },
+    {
+      "path": "backend/src/repositories/checkout.repository.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 27
+    },
+    {
+      "path": "backend/src/repositories/order.repository.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 28
+    },
+    {
+      "path": "backend/src/repositories/payment.repository.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 29
+    },
+    {
+      "path": "backend/src/routes/order.routes.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 30
+    },
+    {
+      "path": "backend/src/routes/payment.routes.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 31
+    },
+    {
+      "path": "backend/src/services/checkout.service.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 32
+    },
+    {
+      "path": "backend/src/services/order.service.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 33
+    },
+    {
+      "path": "backend/src/services/payment.service.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 34
+    },
+    {
+      "path": "backend/src/types/express.d.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 35
+    },
+    {
+      "path": "backend/src/types/order.types.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 36
+    },
+    {
+      "path": "backend/src/types/payment.types.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 37
+    },
+    {
+      "path": "backend/src/validators/order.validator.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 38
+    },
+    {
+      "path": "backend/src/validators/payment.validator.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 39
+    },
+    {
+      "path": "WOLLYWAY_CONTEXT.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1787906994,
+      "historical_commits": [
+        {
+          "id": "867a5ff9be611195c38137eaaa1cc9bda9c6e6f7",
+          "timestamp": 1787906994
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 40
+    },
+    {
+      "path": "backend/docs/api/cart-api.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 41
+    },
+    {
+      "path": "backend/docs/architecture/cart-lifecycle.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 42
+    },
+    {
+      "path": "backend/docs/cart-checkout-contract.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 43
+    },
+    {
+      "path": "backend/docs/database/cart-domain.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 44
+    },
+    {
+      "path": "backend/src/controllers/cart.controller.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 45
+    },
+    {
+      "path": "backend/src/mappers/cart-item.mapper.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 46
+    },
+    {
+      "path": "backend/src/mappers/cart.mapper.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 47
+    },
+    {
+      "path": "backend/src/models/cart.model.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 48
+    },
+    {
+      "path": "backend/src/routes/cart.routes.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 49
+    },
+    {
+      "path": "backend/src/services/cart.service.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 50
+    },
+    {
+      "path": "backend/src/types/cart.types.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 51
+    },
+    {
+      "path": "backend/src/validators/cart.validator.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 52
+    },
+    {
+      "path": "docs/business-rules.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783855889,
+      "historical_commits": [
+        {
+          "id": "d0fcf27e08ea75976bb4e988174d6cab05f50794",
+          "timestamp": 1783855889
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 53
+    },
+    {
+      "path": "backend/docs/api/product-api.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 54
+    },
+    {
+      "path": "backend/docs/search-performance.md",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 55
+    },
+    {
+      "path": "backend/src/builders/product.query-builder.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 56
+    },
+    {
+      "path": "backend/src/controllers/product.controller.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 57
+    },
+    {
+      "path": "backend/src/mappers/product.mapper.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 58
+    },
+    {
+      "path": "backend/src/models/product.model.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 59
+    },
+    {
+      "path": "backend/src/repositories/product.repository.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 60
+    },
+    {
+      "path": "backend/src/routes/product.routes.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 61
+    },
+    {
+      "path": "backend/src/types/discovery.types.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 62
+    },
+    {
+      "path": "backend/src/validators/product.validator.ts",
+      "source_artifact": "backend/src/repositories/inventory.repository.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783853992,
+      "historical_commits": [
+        {
+          "id": "55c97d0547a4659e05a3832297e62029873cf5f4",
+          "timestamp": 1783853992
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 63
+    },
+    {
+      "path": "backend/docs/database/category-domain.md",
+      "source_artifact": "backend/src/controllers/category.controller.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798107,
+      "historical_commits": [
+        {
+          "id": "c244cdb67bd524a3dbe279a588b600d1c23e3b4d",
+          "timestamp": 1783798107
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 64
+    },
+    {
+      "path": "backend/src/middlewares/auth.middleware.ts",
+      "source_artifact": "backend/src/controllers/category.controller.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798107,
+      "historical_commits": [
+        {
+          "id": "c244cdb67bd524a3dbe279a588b600d1c23e3b4d",
+          "timestamp": 1783798107
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 65
+    },
+    {
+      "path": "backend/src/models/category.model.ts",
+      "source_artifact": "backend/src/controllers/category.controller.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798107,
+      "historical_commits": [
+        {
+          "id": "c244cdb67bd524a3dbe279a588b600d1c23e3b4d",
+          "timestamp": 1783798107
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 66
+    },
+    {
+      "path": "backend/src/routes/category.routes.ts",
+      "source_artifact": "backend/src/controllers/category.controller.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798107,
+      "historical_commits": [
+        {
+          "id": "c244cdb67bd524a3dbe279a588b600d1c23e3b4d",
+          "timestamp": 1783798107
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 67
+    },
+    {
+      "path": "backend/src/validators/category.validator.ts",
+      "source_artifact": "backend/src/controllers/category.controller.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1783798107,
+      "historical_commits": [
+        {
+          "id": "c244cdb67bd524a3dbe279a588b600d1c23e3b4d",
+          "timestamp": 1783798107
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 68
+    }
+  ]
+}

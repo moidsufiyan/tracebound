@@ -1,0 +1,2352 @@
+{
+  "case_id": "TB-0009",
+  "query_terms": [
+    "fix",
+    "utils",
+    "stream",
+    "not",
+    "let",
+    "abort",
+    "listeners",
+    "crash",
+    "streaming",
+    "api",
+    "streamingapi.abort"
+  ],
+  "metrics": {
+    "total_retrieved": 309,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 307
+  },
+  "relevant_found": [
+    {
+      "path": "src/helper/streaming/stream.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/1-bug-report.yml",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": ".github/workflows/autofix.yml",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'fix'"
+      ]
+    },
+    {
+      "path": ".vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "README.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/bench.mts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/summarize.mts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/ts-resolve.mjs",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "benchmarks/http-server/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers-deno/.vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "benchmarks/routers/bun.lock",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "build/remove-private-fields.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "build/validate-exports.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "bun.lock",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "package.json",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "perf-measures/bundle-check/scripts/check-bundle-size.ts",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/.vscode/settings.json",
+      "evidence": [
+        "Content matched token: 'fix'"
+      ]
+    },
+    {
+      "path": "runtime-tests/lambda/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "runtime-tests/lambda/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/client/client.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/client/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/client/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/cookie/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/hono-base.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/hono.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/server.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/server.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-elements.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/jsx/jsx-runtime.test.tsx",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwk/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwk/jwk.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/language/index.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/common.case.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/node.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/node.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/types.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/cookie.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/filepath.test.ts",
+      "evidence": [
+        "Content matched token: 'fix'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/yarn.lock",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/bun.lockb",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/package-lock.json",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/src/bench.mts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "benchmarks/query-param/src/hono.mts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "jsr.json",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "runtime-tests/bun/color.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno-jsx/jsx.test.tsx",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "runtime-tests/workerd/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/adapter/lambda-edge/handler.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/client/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/client/utils.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/context.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'listeners'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/accepts/accepts.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'"
+      ]
+    },
+    {
+      "path": "src/helper/accepts/accepts.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/factory/index.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/helper/html/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/proxy/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/route/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/plugins.test.tsx",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/ssg.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/utils.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/text.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/helper/websocket/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'listeners'"
+      ]
+    },
+    {
+      "path": "src/http-exception.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/jsx/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/jsx/components.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/jsx/context.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/context.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/jsx-dev-runtime.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/streaming.test.tsx",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/jwt/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/middleware/language/language.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/request.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/router/linear-router/router.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/trie.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/node.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/trie-router/router.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/types.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/utils/ipaddr.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/validator/index.ts",
+      "evidence": [
+        "Content matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/validator/utils.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/validator/utils.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/validator/validator.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "vitest.config.ts",
+      "evidence": [
+        "Content matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "benchmarks/utils/.gitignore",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "benchmarks/utils/package.json",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "benchmarks/utils/src/get-path.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "benchmarks/utils/src/loop.js",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/utils.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/utils.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Path matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/utils.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/jsx/utils.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/utils.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/accept.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/accept.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/basic-auth.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/basic-auth.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/body.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/body.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/buffer.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/buffer.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/color.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/color.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/compress.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'stream'"
+      ]
+    },
+    {
+      "path": "src/utils/concurrent.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/concurrent.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/constants.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/crypto.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/utils/crypto.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/encode.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/encode.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/filepath.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/handler.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/html.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/html.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/http-status.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/ipaddr.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/index.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jwa.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jwa.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jws.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/jwt.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/types.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/utils/jwt/utf8.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/mime.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'"
+      ]
+    },
+    {
+      "path": "src/utils/mime.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'stream'"
+      ]
+    },
+    {
+      "path": "src/utils/stream.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/utils/types.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/types.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/utils/url.test.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/utils/url.ts",
+      "evidence": [
+        "Path matched token: 'utils'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "docs/MIGRATION.md",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "runtime-tests/bun/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "runtime-tests/lambda/mock.ts",
+      "evidence": [
+        "Content matched token: 'stream'"
+      ]
+    },
+    {
+      "path": "runtime-tests/lambda/stream-mock.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "runtime-tests/node/index.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/index.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/deno.d.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/compose.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/index.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/sse.test.tsx",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/stream.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'abort'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/streaming/text.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Path matched token: 'stream'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'",
+        "Path matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/jsx/context-isolation.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/jsx/index.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'streaming'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/body-limit/index.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/digest.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/digest.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Content matched token: 'streaming'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'",
+        "Path matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/index.test.ts",
+      "evidence": [
+        "Content matched token: 'stream'",
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": ".github/workflows/no-response.yml",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": ".gitignore",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/README.md",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "benchmarks/fetch/compare.sh",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "build/validate-exports.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "codecov.yml",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "docs/CODE_OF_CONDUCT.md",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "docs/images/hono-logo.pxm",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "eslint.config.mjs",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/middleware.test.tsx",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "runtime-tests/fastly/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "runtime-tests/lambda-edge/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "runtime-tests/workerd/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/websocket.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/adapter/service-worker/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/adapter/service-worker/index.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/adapter/vercel/handler.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/client/fetch-result-please.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/client/types.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/compose.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/context.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/adapter/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/helper/css/common.case.test.tsx",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/helper/proxy/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'abort'"
+      ]
+    },
+    {
+      "path": "src/helper/ssg/plugins.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/testing/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/http-exception.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/index.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/client.test.tsx",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/client.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'listeners'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/hooks/dom.test.tsx",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'listeners'"
+      ]
+    },
+    {
+      "path": "src/jsx/hooks/index.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/hooks/string.test.tsx",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/combine/index.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/context-storage/index.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/cors/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/csrf/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/logger/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-not-allowed/index.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Path matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/method-override/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/powered-by/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/pretty-json/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/request-id/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/secure-headers/permissions-policy.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/serve-static/path.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/timeout/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/timing/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/preset/quick.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/preset/tiny.test.ts",
+      "evidence": [
+        "Content matched token: 'not'"
+      ]
+    },
+    {
+      "path": "src/request.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/router.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/prepared-router.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/router/reg-exp-router/router.test.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/router/smart-router/router.ts",
+      "evidence": [
+        "Content matched token: 'not'",
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "benchmarks/jsx/src/react-jsx/benchmark.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "build/build.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "docs/images/hono-title.pxm",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "perf-measures/type-check/scripts/generate-app.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "runtime-tests/deno/ssg.test.tsx",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/aws-lambda/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/websocket.test.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "evidence": [
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/helper/websocket/index.test.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/components.test.tsx",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/context.test.tsx",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.test.tsx",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "evidence": [
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "evidence": [
+        "Content matched token: 'let'",
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/middleware/request-id/request-id.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/middleware/timeout/index.ts",
+      "evidence": [
+        "Content matched token: 'let'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/websocket.ts",
+      "evidence": [
+        "Content matched token: 'listeners'"
+      ]
+    },
+    {
+      "path": "src/adapter/bun/ssg.ts",
+      "evidence": [
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/deno/ssg.ts",
+      "evidence": [
+        "Content matched token: 'api'"
+      ]
+    },
+    {
+      "path": "src/adapter/netlify/conninfo.ts",
+      "evidence": [
+        "Content matched token: 'api'"
+      ]
+    }
+  ]
+}

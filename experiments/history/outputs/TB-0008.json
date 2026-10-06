@@ -1,0 +1,6649 @@
+{
+  "case_id": "TB-0008",
+  "metrics": {
+    "total_retrieved": 270,
+    "relevant_found": 0,
+    "relevant_missed": 0,
+    "false_positives": 270
+  },
+  "relevant_found": [],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "deno_dist/request.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 63,
+      "latest_timestamp": 1716518280,
+      "historical_commits": [
+        {
+          "id": "406abbb12c76bbe0abce739b4d5a9aaf54322ba7",
+          "timestamp": 1716518280
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "cb2416042cea89419928aa21caf97de0edcc11e5",
+          "timestamp": 1714869449
+        },
+        {
+          "id": "f2985492a30f14f9b2fbeffd5cc6b3aaeb34a2d1",
+          "timestamp": 1714474113
+        },
+        {
+          "id": "40f7f599ef7764c7c3a6824402f8faf41faef38f",
+          "timestamp": 1711483350
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        },
+        {
+          "id": "b0cac62cf1aa73ff3962dea52675b377c6749036",
+          "timestamp": 1706358785
+        },
+        {
+          "id": "68011665fdaa42c5bfbf80903cbff1bccf98569c",
+          "timestamp": 1705847550
+        },
+        {
+          "id": "7b83a89dd743e40daf85e55950f21ccb012c4232",
+          "timestamp": 1705172451
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "22b5f532b47d5e7e6d22dd843d0586b390f81a51",
+          "timestamp": 1701678564
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "ae3546e32a533af782eadf0bc7221d2a01c2a81f",
+          "timestamp": 1700174148
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "e4f7f971a835672ba251fc2efc0f22d2d637440a",
+          "timestamp": 1696491236
+        },
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        },
+        {
+          "id": "2faaa15ea1f8af0ab37394c32a16474c6d0f5681",
+          "timestamp": 1692434929
+        },
+        {
+          "id": "f254fdc84669fef7a820186868e8f35d6b234731",
+          "timestamp": 1692343548
+        },
+        {
+          "id": "85b54920f9c06eae0555ae1e8b028016c27c648d",
+          "timestamp": 1691226612
+        },
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "ddc34e1f6af83e3685f22380d168fab878026acc",
+          "timestamp": 1688023625
+        },
+        {
+          "id": "116aea542df382374f9e918cb228fab89feeff33",
+          "timestamp": 1683254770
+        },
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        },
+        {
+          "id": "d06a3123e728f72a928e30377a2995bdff378f28",
+          "timestamp": 1683012624
+        },
+        {
+          "id": "7c6ebe8f4e91a0609a9b6e1de5804f06c83380e5",
+          "timestamp": 1683010577
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        },
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        },
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "0b2ac1678e72702b9137e913d6c525c4dec87c45",
+          "timestamp": 1676238425
+        },
+        {
+          "id": "d2abad3b347e6feed9544cd8027f96ff2d4fa00e",
+          "timestamp": 1676237457
+        },
+        {
+          "id": "a4800bf9413d62972bb338e3ee96fdd8834b115b",
+          "timestamp": 1675292779
+        },
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "2afa06a5ba1727ecb537b040e27675391be8c6a9",
+          "timestamp": 1674427649
+        },
+        {
+          "id": "698a78357361e90a44ace3d88d51520c7d2ead11",
+          "timestamp": 1674365293
+        },
+        {
+          "id": "e404319824d95085e38fb9df0f25daa17f1cc9bb",
+          "timestamp": 1674363571
+        },
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "eb6f1fdb0df139710bb749b178941beefcab0787",
+          "timestamp": 1673947802
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "b567a574d63bd93378a803de7a0574b9dc0baa70",
+          "timestamp": 1672701921
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "d755ed50b523b8da3dba9c96f8c5e11014b53dcd",
+          "timestamp": 1670947627
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "34231435a6c42b3f19828358347f14f1019033e8",
+          "timestamp": 1670602158
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "06cecbd1e29341c19588f98082886b9b97417e05",
+          "timestamp": 1668384603
+        },
+        {
+          "id": "8e9b1c809923b5ac18bd917bd6b37b31b58fe61a",
+          "timestamp": 1667457565
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "957a5a9ac9228584c1c2a3a3c72cc0846f099245",
+          "timestamp": 1663720817
+        },
+        {
+          "id": "976b2c310ef15bc0e2bff2ce319a81c01c6cc841",
+          "timestamp": 1663678863
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        },
+        {
+          "id": "b6954815cb3566aec276b2ff6b6b8a33a2a6573d",
+          "timestamp": 1662372490
+        },
+        {
+          "id": "128a59aec24d97b1f7e3b7b6e6071a5d26d1bfea",
+          "timestamp": 1661567928
+        },
+        {
+          "id": "c7ee2e760347c654b53c514415494fa0eba8d3ba",
+          "timestamp": 1661387111
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 1
+    },
+    {
+      "path": "src/context.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 34,
+      "latest_timestamp": 1730590319,
+      "historical_commits": [
+        {
+          "id": "ae6165b99440dce8f8839b6e85e9d4c3ed7b2c42",
+          "timestamp": 1730590319
+        },
+        {
+          "id": "e7732a5f23c66ade29531acecc1469a1aa397088",
+          "timestamp": 1730176626
+        },
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "0dfb794df7bca133cedc5c9112da27ce267baeee",
+          "timestamp": 1717182013
+        },
+        {
+          "id": "18324b8b6c668b602199a437456f1c22925cb803",
+          "timestamp": 1716971891
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "68011665fdaa42c5bfbf80903cbff1bccf98569c",
+          "timestamp": 1705847550
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "22b5f532b47d5e7e6d22dd843d0586b390f81a51",
+          "timestamp": 1701678564
+        },
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "116aea542df382374f9e918cb228fab89feeff33",
+          "timestamp": 1683254770
+        },
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        },
+        {
+          "id": "d06a3123e728f72a928e30377a2995bdff378f28",
+          "timestamp": 1683012624
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        },
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "f600ddd8a42e1e1240618b648da776f580636862",
+          "timestamp": 1675257188
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "e404319824d95085e38fb9df0f25daa17f1cc9bb",
+          "timestamp": 1674363571
+        },
+        {
+          "id": "eb6f1fdb0df139710bb749b178941beefcab0787",
+          "timestamp": 1673947802
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "da7eed2fb65b00df51b6e5201e526cb45f1d5ab2",
+          "timestamp": 1672872925
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "7b505b0ac0170adb26200daee6b7dffa894cf5ba",
+          "timestamp": 1657465684
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        },
+        {
+          "id": "5125c780f0c2bb6d353379a70e7d65951355e36c",
+          "timestamp": 1656293545
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "src/hono.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 27,
+      "latest_timestamp": 1758185688,
+      "historical_commits": [
+        {
+          "id": "3fe60f180ae63c607e3783cb720913cc8dd297b1",
+          "timestamp": 1758185688
+        },
+        {
+          "id": "2bde76d3b5725283d2a18ee8fd5300f0925436a6",
+          "timestamp": 1730253545
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "cb2416042cea89419928aa21caf97de0edcc11e5",
+          "timestamp": 1714869449
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "ae3546e32a533af782eadf0bc7221d2a01c2a81f",
+          "timestamp": 1700174148
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        },
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "0b2ac1678e72702b9137e913d6c525c4dec87c45",
+          "timestamp": 1676238425
+        },
+        {
+          "id": "d2abad3b347e6feed9544cd8027f96ff2d4fa00e",
+          "timestamp": 1676237457
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "698a78357361e90a44ace3d88d51520c7d2ead11",
+          "timestamp": 1674365293
+        },
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "d755ed50b523b8da3dba9c96f8c5e11014b53dcd",
+          "timestamp": 1670947627
+        },
+        {
+          "id": "34231435a6c42b3f19828358347f14f1019033e8",
+          "timestamp": 1670602158
+        },
+        {
+          "id": "06cecbd1e29341c19588f98082886b9b97417e05",
+          "timestamp": 1668384603
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "128a59aec24d97b1f7e3b7b6e6071a5d26d1bfea",
+          "timestamp": 1661567928
+        },
+        {
+          "id": "c7ee2e760347c654b53c514415494fa0eba8d3ba",
+          "timestamp": 1661387111
+        },
+        {
+          "id": "fefba4f067523ac0d34be07a981bbff5aca0ac3c",
+          "timestamp": 1659492191
+        },
+        {
+          "id": "e452b7666455cb7adb454ff93b700eb5c15441b9",
+          "timestamp": 1657635706
+        },
+        {
+          "id": "7b505b0ac0170adb26200daee6b7dffa894cf5ba",
+          "timestamp": 1657465684
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 3
+    },
+    {
+      "path": "src/request.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 24,
+      "latest_timestamp": 1789204309,
+      "historical_commits": [
+        {
+          "id": "edd138ee3049749190de3dcd7e32d7bcbf224e41",
+          "timestamp": 1789204309
+        },
+        {
+          "id": "c409d855d91d1f0904d19439692216fcf789e6cb",
+          "timestamp": 1787469418
+        },
+        {
+          "id": "612b59c0227b421090d46721cd5a98243ad8c6ec",
+          "timestamp": 1787468266
+        },
+        {
+          "id": "7967760748503b50de7c315fe3aa76666a8e6cab",
+          "timestamp": 1787137121
+        },
+        {
+          "id": "c85aead088659b98b8d05a1187a07d064e12ffe6",
+          "timestamp": 1784858251
+        },
+        {
+          "id": "d7964503c956ae4af78597b7b11a05f9e5e73d2d",
+          "timestamp": 1784331826
+        },
+        {
+          "id": "54f2f0cfdae64055ea58ab0372f854c35a780290",
+          "timestamp": 1778925003
+        },
+        {
+          "id": "8bd9dddce20eefe94da7ef9602afc603a8df0f91",
+          "timestamp": 1774090970
+        },
+        {
+          "id": "0f499152ee20daf4f394d1f0ef5cc700ce7e2735",
+          "timestamp": 1772609213
+        },
+        {
+          "id": "12806614b92ef39e830b3f33456a02de0016701c",
+          "timestamp": 1760576697
+        },
+        {
+          "id": "3fe60f180ae63c607e3783cb720913cc8dd297b1",
+          "timestamp": 1758185688
+        },
+        {
+          "id": "993d8086217edfff25ea607b2c9672c8c8c35863",
+          "timestamp": 1751620690
+        },
+        {
+          "id": "d2737abfb4a4e2b23f4a4ecf05f23bc38fd2daa6",
+          "timestamp": 1750050862
+        },
+        {
+          "id": "65edaf277a2dd3bb47406379904996ffdd3563e5",
+          "timestamp": 1738503618
+        },
+        {
+          "id": "406abbb12c76bbe0abce739b4d5a9aaf54322ba7",
+          "timestamp": 1716518280
+        },
+        {
+          "id": "40f7f599ef7764c7c3a6824402f8faf41faef38f",
+          "timestamp": 1711483350
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "ae3546e32a533af782eadf0bc7221d2a01c2a81f",
+          "timestamp": 1700174148
+        },
+        {
+          "id": "2faaa15ea1f8af0ab37394c32a16474c6d0f5681",
+          "timestamp": 1692434929
+        },
+        {
+          "id": "f254fdc84669fef7a820186868e8f35d6b234731",
+          "timestamp": 1692343548
+        },
+        {
+          "id": "7c6ebe8f4e91a0609a9b6e1de5804f06c83380e5",
+          "timestamp": 1683010577
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "2afa06a5ba1727ecb537b040e27675391be8c6a9",
+          "timestamp": 1674427649
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "deno_dist/context.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 23,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "68011665fdaa42c5bfbf80903cbff1bccf98569c",
+          "timestamp": 1705847550
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "22b5f532b47d5e7e6d22dd843d0586b390f81a51",
+          "timestamp": 1701678564
+        },
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "116aea542df382374f9e918cb228fab89feeff33",
+          "timestamp": 1683254770
+        },
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        },
+        {
+          "id": "d06a3123e728f72a928e30377a2995bdff378f28",
+          "timestamp": 1683012624
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        },
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "e404319824d95085e38fb9df0f25daa17f1cc9bb",
+          "timestamp": 1674363571
+        },
+        {
+          "id": "eb6f1fdb0df139710bb749b178941beefcab0787",
+          "timestamp": 1673947802
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 5
+    },
+    {
+      "path": "src/hono.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 21,
+      "latest_timestamp": 1716971891,
+      "historical_commits": [
+        {
+          "id": "18324b8b6c668b602199a437456f1c22925cb803",
+          "timestamp": 1716971891
+        },
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "698a78357361e90a44ace3d88d51520c7d2ead11",
+          "timestamp": 1674365293
+        },
+        {
+          "id": "e404319824d95085e38fb9df0f25daa17f1cc9bb",
+          "timestamp": 1674363571
+        },
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "eb6f1fdb0df139710bb749b178941beefcab0787",
+          "timestamp": 1673947802
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "da7eed2fb65b00df51b6e5201e526cb45f1d5ab2",
+          "timestamp": 1672872925
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "8e9b1c809923b5ac18bd917bd6b37b31b58fe61a",
+          "timestamp": 1667457565
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        },
+        {
+          "id": "5125c780f0c2bb6d353379a70e7d65951355e36c",
+          "timestamp": 1656293545
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 6
+    },
+    {
+      "path": "package.json",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 19,
+      "latest_timestamp": 1750050862,
+      "historical_commits": [
+        {
+          "id": "d2737abfb4a4e2b23f4a4ecf05f23bc38fd2daa6",
+          "timestamp": 1750050862
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "116aea542df382374f9e918cb228fab89feeff33",
+          "timestamp": 1683254770
+        },
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        },
+        {
+          "id": "d06a3123e728f72a928e30377a2995bdff378f28",
+          "timestamp": 1683012624
+        },
+        {
+          "id": "0b2ac1678e72702b9137e913d6c525c4dec87c45",
+          "timestamp": 1676238425
+        },
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "e404319824d95085e38fb9df0f25daa17f1cc9bb",
+          "timestamp": 1674363571
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        },
+        {
+          "id": "7b505b0ac0170adb26200daee6b7dffa894cf5ba",
+          "timestamp": 1657465684
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 7
+    },
+    {
+      "path": "src/types.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 19,
+      "latest_timestamp": 1750050862,
+      "historical_commits": [
+        {
+          "id": "d2737abfb4a4e2b23f4a4ecf05f23bc38fd2daa6",
+          "timestamp": 1750050862
+        },
+        {
+          "id": "e7732a5f23c66ade29531acecc1469a1aa397088",
+          "timestamp": 1730176626
+        },
+        {
+          "id": "f2985492a30f14f9b2fbeffd5cc6b3aaeb34a2d1",
+          "timestamp": 1714474113
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "2afa06a5ba1727ecb537b040e27675391be8c6a9",
+          "timestamp": 1674427649
+        },
+        {
+          "id": "698a78357361e90a44ace3d88d51520c7d2ead11",
+          "timestamp": 1674365293
+        },
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 8
+    },
+    {
+      "path": "src/hono-base.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 17,
+      "latest_timestamp": 1750050862,
+      "historical_commits": [
+        {
+          "id": "d2737abfb4a4e2b23f4a4ecf05f23bc38fd2daa6",
+          "timestamp": 1750050862
+        },
+        {
+          "id": "ae6165b99440dce8f8839b6e85e9d4c3ed7b2c42",
+          "timestamp": 1730590319
+        },
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "0dfb794df7bca133cedc5c9112da27ce267baeee",
+          "timestamp": 1717182013
+        },
+        {
+          "id": "18324b8b6c668b602199a437456f1c22925cb803",
+          "timestamp": 1716971891
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        },
+        {
+          "id": "68011665fdaa42c5bfbf80903cbff1bccf98569c",
+          "timestamp": 1705847550
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "22b5f532b47d5e7e6d22dd843d0586b390f81a51",
+          "timestamp": 1701678564
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "ae3546e32a533af782eadf0bc7221d2a01c2a81f",
+          "timestamp": 1700174148
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 9
+    },
+    {
+      "path": "deno_dist/types.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 16,
+      "latest_timestamp": 1714474113,
+      "historical_commits": [
+        {
+          "id": "f2985492a30f14f9b2fbeffd5cc6b3aaeb34a2d1",
+          "timestamp": 1714474113
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "2afa06a5ba1727ecb537b040e27675391be8c6a9",
+          "timestamp": 1674427649
+        },
+        {
+          "id": "698a78357361e90a44ace3d88d51520c7d2ead11",
+          "timestamp": 1674365293
+        },
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 10
+    },
+    {
+      "path": "deno_dist/hono.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 16,
+      "latest_timestamp": 1679038339,
+      "historical_commits": [
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "698a78357361e90a44ace3d88d51520c7d2ead11",
+          "timestamp": 1674365293
+        },
+        {
+          "id": "e404319824d95085e38fb9df0f25daa17f1cc9bb",
+          "timestamp": 1674363571
+        },
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "eb6f1fdb0df139710bb749b178941beefcab0787",
+          "timestamp": 1673947802
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "8e9b1c809923b5ac18bd917bd6b37b31b58fe61a",
+          "timestamp": 1667457565
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 11
+    },
+    {
+      "path": "src/utils/url.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 14,
+      "latest_timestamp": 1784858251,
+      "historical_commits": [
+        {
+          "id": "c85aead088659b98b8d05a1187a07d064e12ffe6",
+          "timestamp": 1784858251
+        },
+        {
+          "id": "3098a3ab239ef461c1cfd05a288b67f272b6deee",
+          "timestamp": 1784810741
+        },
+        {
+          "id": "62edfe2cb9cc3e347a1cbc258c1be4e7846195b6",
+          "timestamp": 1784712181
+        },
+        {
+          "id": "2bde76d3b5725283d2a18ee8fd5300f0925436a6",
+          "timestamp": 1730253545
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        },
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        },
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "e404319824d95085e38fb9df0f25daa17f1cc9bb",
+          "timestamp": 1674363571
+        },
+        {
+          "id": "eb6f1fdb0df139710bb749b178941beefcab0787",
+          "timestamp": 1673947802
+        },
+        {
+          "id": "da7eed2fb65b00df51b6e5201e526cb45f1d5ab2",
+          "timestamp": 1672872925
+        },
+        {
+          "id": "b6954815cb3566aec276b2ff6b6b8a33a2a6573d",
+          "timestamp": 1662372490
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 12
+    },
+    {
+      "path": "src/types.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 14,
+      "latest_timestamp": 1772609213,
+      "historical_commits": [
+        {
+          "id": "0f499152ee20daf4f394d1f0ef5cc700ce7e2735",
+          "timestamp": 1772609213
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "f2985492a30f14f9b2fbeffd5cc6b3aaeb34a2d1",
+          "timestamp": 1714474113
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "2afa06a5ba1727ecb537b040e27675391be8c6a9",
+          "timestamp": 1674427649
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 13
+    },
+    {
+      "path": "src/utils/body.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 13,
+      "latest_timestamp": 1716518280,
+      "historical_commits": [
+        {
+          "id": "406abbb12c76bbe0abce739b4d5a9aaf54322ba7",
+          "timestamp": 1716518280
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "e4f7f971a835672ba251fc2efc0f22d2d637440a",
+          "timestamp": 1696491236
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        },
+        {
+          "id": "f254fdc84669fef7a820186868e8f35d6b234731",
+          "timestamp": 1692343548
+        },
+        {
+          "id": "85b54920f9c06eae0555ae1e8b028016c27c648d",
+          "timestamp": 1691226612
+        },
+        {
+          "id": "b567a574d63bd93378a803de7a0574b9dc0baa70",
+          "timestamp": 1672701921
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "976b2c310ef15bc0e2bff2ce319a81c01c6cc841",
+          "timestamp": 1663678863
+        },
+        {
+          "id": "128a59aec24d97b1f7e3b7b6e6071a5d26d1bfea",
+          "timestamp": 1661567928
+        },
+        {
+          "id": "c7ee2e760347c654b53c514415494fa0eba8d3ba",
+          "timestamp": 1661387111
+        },
+        {
+          "id": "fefba4f067523ac0d34be07a981bbff5aca0ac3c",
+          "timestamp": 1659492191
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 14
+    },
+    {
+      "path": "src/validator/validator.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 12,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "406abbb12c76bbe0abce739b4d5a9aaf54322ba7",
+          "timestamp": 1716518280
+        },
+        {
+          "id": "40f7f599ef7764c7c3a6824402f8faf41faef38f",
+          "timestamp": 1711483350
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        },
+        {
+          "id": "f254fdc84669fef7a820186868e8f35d6b234731",
+          "timestamp": 1692343548
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 15
+    },
+    {
+      "path": "deno_dist/utils/body.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 12,
+      "latest_timestamp": 1716518280,
+      "historical_commits": [
+        {
+          "id": "406abbb12c76bbe0abce739b4d5a9aaf54322ba7",
+          "timestamp": 1716518280
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "e4f7f971a835672ba251fc2efc0f22d2d637440a",
+          "timestamp": 1696491236
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        },
+        {
+          "id": "f254fdc84669fef7a820186868e8f35d6b234731",
+          "timestamp": 1692343548
+        },
+        {
+          "id": "85b54920f9c06eae0555ae1e8b028016c27c648d",
+          "timestamp": 1691226612
+        },
+        {
+          "id": "b567a574d63bd93378a803de7a0574b9dc0baa70",
+          "timestamp": 1672701921
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "976b2c310ef15bc0e2bff2ce319a81c01c6cc841",
+          "timestamp": 1663678863
+        },
+        {
+          "id": "128a59aec24d97b1f7e3b7b6e6071a5d26d1bfea",
+          "timestamp": 1661567928
+        },
+        {
+          "id": "c7ee2e760347c654b53c514415494fa0eba8d3ba",
+          "timestamp": 1661387111
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 16
+    },
+    {
+      "path": "deno_dist/validator/validator.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 11,
+      "latest_timestamp": 1716518280,
+      "historical_commits": [
+        {
+          "id": "406abbb12c76bbe0abce739b4d5a9aaf54322ba7",
+          "timestamp": 1716518280
+        },
+        {
+          "id": "40f7f599ef7764c7c3a6824402f8faf41faef38f",
+          "timestamp": 1711483350
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        },
+        {
+          "id": "f254fdc84669fef7a820186868e8f35d6b234731",
+          "timestamp": 1692343548
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 17
+    },
+    {
+      "path": "deno_dist/hono-base.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 11,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        },
+        {
+          "id": "68011665fdaa42c5bfbf80903cbff1bccf98569c",
+          "timestamp": 1705847550
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "22b5f532b47d5e7e6d22dd843d0586b390f81a51",
+          "timestamp": 1701678564
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "ae3546e32a533af782eadf0bc7221d2a01c2a81f",
+          "timestamp": 1700174148
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 18
+    },
+    {
+      "path": "src/utils/url.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 9,
+      "latest_timestamp": 1784858251,
+      "historical_commits": [
+        {
+          "id": "c85aead088659b98b8d05a1187a07d064e12ffe6",
+          "timestamp": 1784858251
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        },
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "eb6f1fdb0df139710bb749b178941beefcab0787",
+          "timestamp": 1673947802
+        },
+        {
+          "id": "da7eed2fb65b00df51b6e5201e526cb45f1d5ab2",
+          "timestamp": 1672872925
+        },
+        {
+          "id": "b6954815cb3566aec276b2ff6b6b8a33a2a6573d",
+          "timestamp": 1662372490
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 19
+    },
+    {
+      "path": "src/validator/validator.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 8,
+      "latest_timestamp": 1760576697,
+      "historical_commits": [
+        {
+          "id": "12806614b92ef39e830b3f33456a02de0016701c",
+          "timestamp": 1760576697
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        },
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 20
+    },
+    {
+      "path": "src/compose.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 8,
+      "latest_timestamp": 1716971891,
+      "historical_commits": [
+        {
+          "id": "18324b8b6c668b602199a437456f1c22925cb803",
+          "timestamp": 1716971891
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 21
+    },
+    {
+      "path": "deno_dist/utils/url.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 8,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        },
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        },
+        {
+          "id": "0238dc6b91e554a55ff87f46472148d741433171",
+          "timestamp": 1679038339
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "e404319824d95085e38fb9df0f25daa17f1cc9bb",
+          "timestamp": 1674363571
+        },
+        {
+          "id": "eb6f1fdb0df139710bb749b178941beefcab0787",
+          "timestamp": 1673947802
+        },
+        {
+          "id": "b6954815cb3566aec276b2ff6b6b8a33a2a6573d",
+          "timestamp": 1662372490
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 22
+    },
+    {
+      "path": "src/compose.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 8,
+      "latest_timestamp": 1701597338,
+      "historical_commits": [
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        },
+        {
+          "id": "5125c780f0c2bb6d353379a70e7d65951355e36c",
+          "timestamp": 1656293545
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 23
+    },
+    {
+      "path": "deno_dist/middleware/validator/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 8,
+      "latest_timestamp": 1675256529,
+      "historical_commits": [
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "2afa06a5ba1727ecb537b040e27675391be8c6a9",
+          "timestamp": 1674427649
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 24
+    },
+    {
+      "path": "src/middleware/validator/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 8,
+      "latest_timestamp": 1675256529,
+      "historical_commits": [
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "2afa06a5ba1727ecb537b040e27675391be8c6a9",
+          "timestamp": 1674427649
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 25
+    },
+    {
+      "path": "src/middleware/validator/middleware.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 8,
+      "latest_timestamp": 1674361953,
+      "historical_commits": [
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "957a5a9ac9228584c1c2a3a3c72cc0846f099245",
+          "timestamp": 1663720817
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 26
+    },
+    {
+      "path": "src/router/trie-router/node.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 7,
+      "latest_timestamp": 1730590319,
+      "historical_commits": [
+        {
+          "id": "ae6165b99440dce8f8839b6e85e9d4c3ed7b2c42",
+          "timestamp": 1730590319
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 27
+    },
+    {
+      "path": "yarn.lock",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 7,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 28
+    },
+    {
+      "path": "deno_dist/middleware/validator/middleware.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 6,
+      "latest_timestamp": 1674361953,
+      "historical_commits": [
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "957a5a9ac9228584c1c2a3a3c72cc0846f099245",
+          "timestamp": 1663720817
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 29
+    },
+    {
+      "path": "src/middleware/validator/middleware.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 6,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "957a5a9ac9228584c1c2a3a3c72cc0846f099245",
+          "timestamp": 1663720817
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 30
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1784810741,
+      "historical_commits": [
+        {
+          "id": "3098a3ab239ef461c1cfd05a288b67f272b6deee",
+          "timestamp": 1784810741
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        },
+        {
+          "id": "7b505b0ac0170adb26200daee6b7dffa894cf5ba",
+          "timestamp": 1657465684
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 31
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1730590319,
+      "historical_commits": [
+        {
+          "id": "ae6165b99440dce8f8839b6e85e9d4c3ed7b2c42",
+          "timestamp": 1730590319
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 32
+    },
+    {
+      "path": "src/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1716971891,
+      "historical_commits": [
+        {
+          "id": "18324b8b6c668b602199a437456f1c22925cb803",
+          "timestamp": 1716971891
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 33
+    },
+    {
+      "path": "deno_dist/compose.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1701597338,
+      "historical_commits": [
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 34
+    },
+    {
+      "path": "src/mod.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1688024880,
+      "historical_commits": [
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 35
+    },
+    {
+      "path": "src/middleware/validator/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1675256529,
+      "historical_commits": [
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "2afa06a5ba1727ecb537b040e27675391be8c6a9",
+          "timestamp": 1674427649
+        },
+        {
+          "id": "397c12e18139f8aed48c3803aabf5f90e22f0c7a",
+          "timestamp": 1672293597
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 36
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1730590319,
+      "historical_commits": [
+        {
+          "id": "ae6165b99440dce8f8839b6e85e9d4c3ed7b2c42",
+          "timestamp": 1730590319
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 37
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1730176626,
+      "historical_commits": [
+        {
+          "id": "e7732a5f23c66ade29531acecc1469a1aa397088",
+          "timestamp": 1730176626
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 38
+    },
+    {
+      "path": "src/http-exception.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "0dfb794df7bca133cedc5c9112da27ce267baeee",
+          "timestamp": 1717182013
+        },
+        {
+          "id": "18324b8b6c668b602199a437456f1c22925cb803",
+          "timestamp": 1716971891
+        },
+        {
+          "id": "68011665fdaa42c5bfbf80903cbff1bccf98569c",
+          "timestamp": 1705847550
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 39
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 40
+    },
+    {
+      "path": "src/utils/body.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "406abbb12c76bbe0abce739b4d5a9aaf54322ba7",
+          "timestamp": 1716518280
+        },
+        {
+          "id": "e4f7f971a835672ba251fc2efc0f22d2d637440a",
+          "timestamp": 1696491236
+        },
+        {
+          "id": "128a59aec24d97b1f7e3b7b6e6071a5d26d1bfea",
+          "timestamp": 1661567928
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 41
+    },
+    {
+      "path": "deno_dist/client/client.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 42
+    },
+    {
+      "path": "src/client/client.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 43
+    },
+    {
+      "path": "src/context.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 44
+    },
+    {
+      "path": "deno_dist/mod.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1688024880,
+      "historical_commits": [
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        },
+        {
+          "id": "e2b269acb0aaf5b1f669d97bc7609113efeeed88",
+          "timestamp": 1675201008
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 45
+    },
+    {
+      "path": "src/middleware/serve-static/serve-static.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1673877467,
+      "historical_commits": [
+        {
+          "id": "733f05c21c44b1e0fb1d235c82569d4ca4b43749",
+          "timestamp": 1673877467
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 46
+    },
+    {
+      "path": "src/helper/accepts/accepts.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1730176626,
+      "historical_commits": [
+        {
+          "id": "e7732a5f23c66ade29531acecc1469a1aa397088",
+          "timestamp": 1730176626
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 47
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 48
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 49
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        },
+        {
+          "id": "da7eed2fb65b00df51b6e5201e526cb45f1d5ab2",
+          "timestamp": 1672872925
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 50
+    },
+    {
+      "path": "src/helper/factory/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 51
+    },
+    {
+      "path": "src/router/smart-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 52
+    },
+    {
+      "path": "deno_dist/helper/adapter/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 53
+    },
+    {
+      "path": "src/helper/adapter/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 54
+    },
+    {
+      "path": "deno_dist/utils/cookie.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 55
+    },
+    {
+      "path": "deno_dist/router/trie-router/node.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 56
+    },
+    {
+      "path": "src/middleware.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1683252483,
+      "historical_commits": [
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        },
+        {
+          "id": "7b505b0ac0170adb26200daee6b7dffa894cf5ba",
+          "timestamp": 1657465684
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 57
+    },
+    {
+      "path": "src/middleware/cookie/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1683252483,
+      "historical_commits": [
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        },
+        {
+          "id": "5125c780f0c2bb6d353379a70e7d65951355e36c",
+          "timestamp": 1656293545
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 58
+    },
+    {
+      "path": "deno_dist/utils/types.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1674361953,
+      "historical_commits": [
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 59
+    },
+    {
+      "path": "src/utils/types.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1674361953,
+      "historical_commits": [
+        {
+          "id": "a60e46ae5372e224804a22c4251ff0ac6bd5f511",
+          "timestamp": 1674361953
+        },
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 60
+    },
+    {
+      "path": "deno_dist/utils/encode.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "06cecbd1e29341c19588f98082886b9b97417e05",
+          "timestamp": 1668384603
+        },
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 61
+    },
+    {
+      "path": "tsconfig.json",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 62
+    },
+    {
+      "path": "src/middleware/body-parse/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1657635706,
+      "historical_commits": [
+        {
+          "id": "e452b7666455cb7adb454ff93b700eb5c15441b9",
+          "timestamp": 1657635706
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        },
+        {
+          "id": "5125c780f0c2bb6d353379a70e7d65951355e36c",
+          "timestamp": 1656293545
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 63
+    },
+    {
+      "path": "src/middleware/body-parse/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1657635706,
+      "historical_commits": [
+        {
+          "id": "e452b7666455cb7adb454ff93b700eb5c15441b9",
+          "timestamp": 1657635706
+        },
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        },
+        {
+          "id": "5125c780f0c2bb6d353379a70e7d65951355e36c",
+          "timestamp": 1656293545
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 64
+    },
+    {
+      "path": "jsr.json",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1750050862,
+      "historical_commits": [
+        {
+          "id": "d2737abfb4a4e2b23f4a4ecf05f23bc38fd2daa6",
+          "timestamp": 1750050862
+        },
+        {
+          "id": "e7732a5f23c66ade29531acecc1469a1aa397088",
+          "timestamp": 1730176626
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 65
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 66
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 67
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 68
+    },
+    {
+      "path": "src/middleware/etag/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        },
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 69
+    },
+    {
+      "path": "src/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716971891,
+      "historical_commits": [
+        {
+          "id": "18324b8b6c668b602199a437456f1c22925cb803",
+          "timestamp": 1716971891
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 70
+    },
+    {
+      "path": "bun.lockb",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 71
+    },
+    {
+      "path": "runtime_tests/bun/index.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 72
+    },
+    {
+      "path": "src/adapter/aws-lambda/handler.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 73
+    },
+    {
+      "path": "src/helper/cookie/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 74
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 75
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 76
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 77
+    },
+    {
+      "path": "src/jsx/dom/jsx-dev-runtime.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 78
+    },
+    {
+      "path": "src/jsx/dom/utils.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 79
+    },
+    {
+      "path": "src/jsx/hooks/dom.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 80
+    },
+    {
+      "path": "src/jsx/hooks/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 81
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 82
+    },
+    {
+      "path": "src/router/linear-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 83
+    },
+    {
+      "path": "src/router/reg-exp-router/trie.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 84
+    },
+    {
+      "path": "src/utils/buffer.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 85
+    },
+    {
+      "path": "src/utils/crypto.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 86
+    },
+    {
+      "path": "deno_dist/helper/accepts/accepts.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 87
+    },
+    {
+      "path": "deno_dist/helper/cookie/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 88
+    },
+    {
+      "path": "deno_dist/helper/dev/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 89
+    },
+    {
+      "path": "deno_dist/helper/factory/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 90
+    },
+    {
+      "path": "deno_dist/middleware/jsx-renderer/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 91
+    },
+    {
+      "path": "deno_dist/router/smart-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 92
+    },
+    {
+      "path": "deno_dist/utils/buffer.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 93
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "d86fcd41e16edfc0078b481c9d0a966eef8385a4",
+          "timestamp": 1701597338
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 94
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "74865a2c6d0a28796deac12efe631b5b337dc59b",
+          "timestamp": 1706364179
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 95
+    },
+    {
+      "path": "src/utils/buffer.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "5cbd89c3ae06bdac14068cb541e79bcbaa313abe",
+          "timestamp": 1693719781
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 96
+    },
+    {
+      "path": "deno_dist/utils/mime.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 97
+    },
+    {
+      "path": "docs/CONTRIBUTING.md",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "d2abad3b347e6feed9544cd8027f96ff2d4fa00e",
+          "timestamp": 1676237457
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 98
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/serve-static.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 99
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 100
+    },
+    {
+      "path": "src/utils/mime.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        },
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 101
+    },
+    {
+      "path": "deno_dist/router/reg-exp-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        },
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 102
+    },
+    {
+      "path": "deno_dist/middleware/basic-auth/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 103
+    },
+    {
+      "path": "deno_dist/middleware/compress/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        },
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 104
+    },
+    {
+      "path": "deno_dist/router/pattern-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "0a19deaa5bb800a43909c0f25e53d68dbcf4e48a",
+          "timestamp": 1682856420
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 105
+    },
+    {
+      "path": "src/middleware/cache/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        },
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 106
+    },
+    {
+      "path": "deno_dist/client/types.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1688024880,
+      "historical_commits": [
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 107
+    },
+    {
+      "path": "src/client/types.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1688024880,
+      "historical_commits": [
+        {
+          "id": "5b873fcc5c1add14fb0d1048e74f0074c4c26d46",
+          "timestamp": 1688024880
+        },
+        {
+          "id": "68cbbbcde7dafc1d7fddd29484972765b47b409b",
+          "timestamp": 1676323290
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 108
+    },
+    {
+      "path": "deno_dist/middleware.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1683252483,
+      "historical_commits": [
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 109
+    },
+    {
+      "path": "src/middleware/cookie/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1683252483,
+      "historical_commits": [
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        },
+        {
+          "id": "7b505b0ac0170adb26200daee6b7dffa894cf5ba",
+          "timestamp": 1657465684
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 110
+    },
+    {
+      "path": "deno_dist/validator/rule.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 111
+    },
+    {
+      "path": "deno_dist/validator/sanitizer.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 112
+    },
+    {
+      "path": "deno_dist/validator/schema.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 113
+    },
+    {
+      "path": "src/validator/rule.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 114
+    },
+    {
+      "path": "src/validator/rule.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 115
+    },
+    {
+      "path": "src/validator/sanitizer.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 116
+    },
+    {
+      "path": "src/validator/sanitizer.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 117
+    },
+    {
+      "path": "src/validator/schema.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 118
+    },
+    {
+      "path": "src/middleware/html/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1670657834,
+      "historical_commits": [
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        },
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 119
+    },
+    {
+      "path": "deno_dist/middleware/serve-static/serve-static.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        },
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 120
+    },
+    {
+      "path": "deno_dist/middleware/validator/validator.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 121
+    },
+    {
+      "path": "deno_dist/utils/json.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 122
+    },
+    {
+      "path": "src/middleware/validator/validator.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 123
+    },
+    {
+      "path": "src/middleware/validator/validator.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 124
+    },
+    {
+      "path": "src/utils/json.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 125
+    },
+    {
+      "path": "src/utils/json.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        },
+        {
+          "id": "46c6a8de5e5e0bed34cc038b3098ce2b84231278",
+          "timestamp": 1663023246
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 126
+    },
+    {
+      "path": "src/utils/accept.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1784858251,
+      "historical_commits": [
+        {
+          "id": "c85aead088659b98b8d05a1187a07d064e12ffe6",
+          "timestamp": 1784858251
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 127
+    },
+    {
+      "path": "src/utils/accept.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1784858251,
+      "historical_commits": [
+        {
+          "id": "c85aead088659b98b8d05a1187a07d064e12ffe6",
+          "timestamp": 1784858251
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 128
+    },
+    {
+      "path": "src/helper/route/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1750050862,
+      "historical_commits": [
+        {
+          "id": "d2737abfb4a4e2b23f4a4ecf05f23bc38fd2daa6",
+          "timestamp": 1750050862
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 129
+    },
+    {
+      "path": "src/helper/route/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1750050862,
+      "historical_commits": [
+        {
+          "id": "d2737abfb4a4e2b23f4a4ecf05f23bc38fd2daa6",
+          "timestamp": 1750050862
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 130
+    },
+    {
+      "path": "src/request/constants.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1750050862,
+      "historical_commits": [
+        {
+          "id": "d2737abfb4a4e2b23f4a4ecf05f23bc38fd2daa6",
+          "timestamp": 1750050862
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 131
+    },
+    {
+      "path": "src/utils/headers.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1730176626,
+      "historical_commits": [
+        {
+          "id": "e7732a5f23c66ade29531acecc1469a1aa397088",
+          "timestamp": 1730176626
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 132
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 133
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 134
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 135
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 136
+    },
+    {
+      "path": "src/middleware/pretty-json/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 137
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 138
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 139
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1720149695,
+      "historical_commits": [
+        {
+          "id": "28de9b32a827436fb57518bf740073418d588044",
+          "timestamp": 1720149695
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 140
+    },
+    {
+      "path": "runtime_tests/deno-jsx/jsx.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 141
+    },
+    {
+      "path": "src/adapter/bun/websocket.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 142
+    },
+    {
+      "path": "src/helper/accepts/accepts.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 143
+    },
+    {
+      "path": "src/helper/css/common.case.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 144
+    },
+    {
+      "path": "src/helper/dev/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 145
+    },
+    {
+      "path": "src/helper/html/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 146
+    },
+    {
+      "path": "src/helper/html/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 147
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 148
+    },
+    {
+      "path": "src/helper/ssg/ssg.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 149
+    },
+    {
+      "path": "src/helper/ssg/utils.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 150
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 151
+    },
+    {
+      "path": "src/jsx/components.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 152
+    },
+    {
+      "path": "src/jsx/dom/components.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 153
+    },
+    {
+      "path": "src/jsx/dom/components.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 154
+    },
+    {
+      "path": "src/jsx/dom/context.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 155
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 156
+    },
+    {
+      "path": "src/jsx/dom/index.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 157
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 158
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 159
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 160
+    },
+    {
+      "path": "src/jsx/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 161
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 162
+    },
+    {
+      "path": "src/middleware/etag/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 163
+    },
+    {
+      "path": "src/middleware/secure-headers/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 164
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 165
+    },
+    {
+      "path": "src/router/common.case.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 166
+    },
+    {
+      "path": "src/utils/jwt/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 167
+    },
+    {
+      "path": "src/utils/jwt/jws.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 168
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 169
+    },
+    {
+      "path": "src/utils/mime.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716668265,
+      "historical_commits": [
+        {
+          "id": "cc4b2b3c7ff64b3fdf28aeaf3864ece74aaaaeed",
+          "timestamp": 1716668265
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 170
+    },
+    {
+      "path": "deno_dist/helper/css/common.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 171
+    },
+    {
+      "path": "deno_dist/helper/css/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 172
+    },
+    {
+      "path": "deno_dist/helper/streaming/sse.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 173
+    },
+    {
+      "path": "deno_dist/helper/testing/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 174
+    },
+    {
+      "path": "deno_dist/jsx/dom/context.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 175
+    },
+    {
+      "path": "deno_dist/jsx/dom/css.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 176
+    },
+    {
+      "path": "deno_dist/jsx/dom/jsx-dev-runtime.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 177
+    },
+    {
+      "path": "deno_dist/jsx/dom/utils.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 178
+    },
+    {
+      "path": "deno_dist/jsx/hooks/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 179
+    },
+    {
+      "path": "deno_dist/jsx/jsx-runtime.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 180
+    },
+    {
+      "path": "deno_dist/middleware/timing/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 181
+    },
+    {
+      "path": "deno_dist/utils/color.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 182
+    },
+    {
+      "path": "deno_dist/utils/jwt/utf8.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 183
+    },
+    {
+      "path": "deno_dist/utils/stream.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 184
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 185
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 186
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 187
+    },
+    {
+      "path": "src/jsx/dom/context.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 188
+    },
+    {
+      "path": "src/middleware/timing/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 189
+    },
+    {
+      "path": "src/utils/color.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 190
+    },
+    {
+      "path": "src/utils/jwt/utf8.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 191
+    },
+    {
+      "path": "src/utils/stream.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 192
+    },
+    {
+      "path": ".devcontainer/Dockerfile",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 193
+    },
+    {
+      "path": "deno_dist/helper/ssg/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 194
+    },
+    {
+      "path": "src/helper/ssg/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706539460,
+      "historical_commits": [
+        {
+          "id": "b24f9e38da067137c0c2c4489bc93e09c0e80484",
+          "timestamp": 1706539460
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 195
+    },
+    {
+      "path": "deno_dist/adapter/deno/serve-static.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 196
+    },
+    {
+      "path": "deno_dist/utils/filepath.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 197
+    },
+    {
+      "path": "runtime_tests/lambda/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 198
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 199
+    },
+    {
+      "path": "src/adapter/deno/serve-static.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 200
+    },
+    {
+      "path": "src/utils/filepath.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1706534469,
+      "historical_commits": [
+        {
+          "id": "f616ed9abe3e3cc28d3c96894020897796bfbde2",
+          "timestamp": 1706534469
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 201
+    },
+    {
+      "path": "deno_dist/http-exception.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1705847550,
+      "historical_commits": [
+        {
+          "id": "68011665fdaa42c5bfbf80903cbff1bccf98569c",
+          "timestamp": 1705847550
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 202
+    },
+    {
+      "path": "deno_dist/middleware/jwt/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 203
+    },
+    {
+      "path": "deno_dist/utils/jwt/types.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 204
+    },
+    {
+      "path": "src/adapter/aws-lambda/custom-context.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 205
+    },
+    {
+      "path": "src/adapter/aws-lambda/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 206
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 207
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/handler.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 208
+    },
+    {
+      "path": "src/adapter/nextjs/handler.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 209
+    },
+    {
+      "path": "src/adapter/nextjs/handler.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 210
+    },
+    {
+      "path": "src/adapter/nextjs/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 211
+    },
+    {
+      "path": "src/middleware/jwt/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 212
+    },
+    {
+      "path": "src/utils/jwt/types.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704846824,
+      "historical_commits": [
+        {
+          "id": "fb96a76ee53ee8695baccefcb9e4880bf93ac357",
+          "timestamp": 1704846824
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 213
+    },
+    {
+      "path": "deno_dist/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 214
+    },
+    {
+      "path": "deno_dist/router/linear-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 215
+    },
+    {
+      "path": "deno_dist/router/reg-exp-router/node.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 216
+    },
+    {
+      "path": "deno_dist/router/reg-exp-router/trie.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 217
+    },
+    {
+      "path": "deno_dist/router/trie-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 218
+    },
+    {
+      "path": "src/router/linear-router/router.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 219
+    },
+    {
+      "path": "src/router/pattern-router/router.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 220
+    },
+    {
+      "path": "src/router/reg-exp-router/node.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 221
+    },
+    {
+      "path": "src/router/reg-exp-router/router.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 222
+    },
+    {
+      "path": "src/router/smart-router/router.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 223
+    },
+    {
+      "path": "src/router/trie-router/node.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 224
+    },
+    {
+      "path": "src/router/trie-router/router.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 225
+    },
+    {
+      "path": "src/router/trie-router/router.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 226
+    },
+    {
+      "path": "src/test-utils/setup-vitest.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 227
+    },
+    {
+      "path": "vitest.config.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1697413177,
+      "historical_commits": [
+        {
+          "id": "ec94acd909baeeedddc1d1fd8a63b8f1f8c3eac4",
+          "timestamp": 1697413177
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 228
+    },
+    {
+      "path": "deno_dist/middleware/bearer-auth/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1693919323,
+      "historical_commits": [
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 229
+    },
+    {
+      "path": "deno_dist/middleware/cors/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1693919323,
+      "historical_commits": [
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 230
+    },
+    {
+      "path": "deno_dist/middleware/etag/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1693919323,
+      "historical_commits": [
+        {
+          "id": "aee2093a394151208fcc4580499816ac28b2884b",
+          "timestamp": 1693919323
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 231
+    },
+    {
+      "path": "deno_dist/middleware/cookie/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1683252483,
+      "historical_commits": [
+        {
+          "id": "a73f0d23f0b9441f1316fb2b9fa22d036f636aa4",
+          "timestamp": 1683252483
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 232
+    },
+    {
+      "path": "benchmarks/query-param/package-lock.json",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1680098580,
+      "historical_commits": [
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 233
+    },
+    {
+      "path": "benchmarks/query-param/package.json",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1680098580,
+      "historical_commits": [
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 234
+    },
+    {
+      "path": "benchmarks/query-param/src/bench.mts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1680098580,
+      "historical_commits": [
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 235
+    },
+    {
+      "path": "benchmarks/query-param/src/fast-querystring.mts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1680098580,
+      "historical_commits": [
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 236
+    },
+    {
+      "path": "benchmarks/query-param/src/hono.mts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1680098580,
+      "historical_commits": [
+        {
+          "id": "91c04ac073c287f20e05b48e00e7236133641850",
+          "timestamp": 1680098580
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 237
+    },
+    {
+      "path": "deno_dist/validator/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1678540628,
+      "historical_commits": [
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 238
+    },
+    {
+      "path": "src/validator/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1678540628,
+      "historical_commits": [
+        {
+          "id": "9c4197a7729e490ec1be33a797c1395f5fbba6ec",
+          "timestamp": 1678540628
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 239
+    },
+    {
+      "path": "deno_dist/client/utils.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1676292051,
+      "historical_commits": [
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 240
+    },
+    {
+      "path": "deno_dist/middleware/logger/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1676292051,
+      "historical_commits": [
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 241
+    },
+    {
+      "path": "src/client/utils.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1676292051,
+      "historical_commits": [
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 242
+    },
+    {
+      "path": "test_deno/hono.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1676292051,
+      "historical_commits": [
+        {
+          "id": "60c0903a1ce09929d867033c9179bd6fbe4cc249",
+          "timestamp": 1676292051
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 243
+    },
+    {
+      "path": "deno_dist/utils/object.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1675256529,
+      "historical_commits": [
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 244
+    },
+    {
+      "path": "src/utils/object.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1675256529,
+      "historical_commits": [
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 245
+    },
+    {
+      "path": "src/utils/object.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1675256529,
+      "historical_commits": [
+        {
+          "id": "fbf8959b740cd0618f57d837beeba34bb123391a",
+          "timestamp": 1675256529
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 246
+    },
+    {
+      "path": "src/validator/schema.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1672194348,
+      "historical_commits": [
+        {
+          "id": "85e3c6a275fdc833c56255613c9ebfda2de12f1a",
+          "timestamp": 1672194348
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 247
+    },
+    {
+      "path": "deno_dist/middleware/cache/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1671573900,
+      "historical_commits": [
+        {
+          "id": "a6d54dbff3269146425f90a34689fa9bf661875e",
+          "timestamp": 1671573900
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 248
+    },
+    {
+      "path": "deno_dist/middleware/html/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1670657834,
+      "historical_commits": [
+        {
+          "id": "59bb0b1a40bda2ea2f24edb2526edb00e0026808",
+          "timestamp": 1670657834
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 249
+    },
+    {
+      "path": "src/middleware/jsx/index.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669848568,
+      "historical_commits": [
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 250
+    },
+    {
+      "path": "src/middleware/jsx/jsx-dev-runtime.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669848568,
+      "historical_commits": [
+        {
+          "id": "9d73771d4999471ac5e202e614e80fa90f900b33",
+          "timestamp": 1669848568
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 251
+    },
+    {
+      "path": "deno_dist/utils/cloudflare.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 252
+    },
+    {
+      "path": "deno_dist/utils/crypto.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 253
+    },
+    {
+      "path": "src/middleware/basic-auth/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 254
+    },
+    {
+      "path": "src/middleware/jwt/index.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 255
+    },
+    {
+      "path": "src/utils/cloudflare.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 256
+    },
+    {
+      "path": "src/utils/cloudflare.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 257
+    },
+    {
+      "path": "src/utils/crypto.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1669156062,
+      "historical_commits": [
+        {
+          "id": "1eb49b8d9606195631c4f14dab6ea50bf8909848",
+          "timestamp": 1669156062
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 258
+    },
+    {
+      "path": "tsconfig.build.cjs.json",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1666480200,
+      "historical_commits": [
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 259
+    },
+    {
+      "path": "tsconfig.build.json",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1666480200,
+      "historical_commits": [
+        {
+          "id": "8627010094eae1122d703b293f5629acf1b3632f",
+          "timestamp": 1666480200
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 260
+    },
+    {
+      "path": "deno_dist/middleware/validator/rule.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 261
+    },
+    {
+      "path": "deno_dist/middleware/validator/sanitizer.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 262
+    },
+    {
+      "path": "src/middleware/validator/rule.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 263
+    },
+    {
+      "path": "src/middleware/validator/rule.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 264
+    },
+    {
+      "path": "src/middleware/validator/sanitizer.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 265
+    },
+    {
+      "path": "src/middleware/validator/sanitizer.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1663636294,
+      "historical_commits": [
+        {
+          "id": "a2cc1a01c2e68f295c2346fc180b525c04fab535",
+          "timestamp": 1663636294
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 266
+    },
+    {
+      "path": "README.md",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1657635706,
+      "historical_commits": [
+        {
+          "id": "e452b7666455cb7adb454ff93b700eb5c15441b9",
+          "timestamp": 1657635706
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 267
+    },
+    {
+      "path": "src/utils/cookie.test.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1657465684,
+      "historical_commits": [
+        {
+          "id": "7b505b0ac0170adb26200daee6b7dffa894cf5ba",
+          "timestamp": 1657465684
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 268
+    },
+    {
+      "path": "src/middleware/mustache/mustache.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1656639043,
+      "historical_commits": [
+        {
+          "id": "1282473f85e2a0648331b94507c3ae019beed4a4",
+          "timestamp": 1656639043
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 269
+    },
+    {
+      "path": "src/response.ts",
+      "source_artifact": "src/request.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1654147956,
+      "historical_commits": [
+        {
+          "id": "9da10ac44ba01b1c9f058a9deae6c94f56bbaf12",
+          "timestamp": 1654147956
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 270
+    }
+  ]
+}

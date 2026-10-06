@@ -1,0 +1,36 @@
+case_id: TB-0008
+version: "0.2.1"
+created: "2026-10-03"
+status: draft
+exclusion_reason: null
+
+repository:
+  name: "honojs/hono"
+  url: "https://github.com/honojs/hono"
+  language: TypeScript
+  base_commit: "6d73a74f9757ed65d6103c0e8375097fa20873c4~1"
+
+source_change:
+  commit: "6d73a74f9757ed65d6103c0e8375097fa20873c4"
+  pr_url: "https://github.com/honojs/hono/pull/5445"
+  description: "docs(request): fix jsdoc comments for some getters"
+  change_type:
+    - docs
+  change_timestamp: "2026-10-01T21:43:59+09:00"
+  evaluation_cutoff: "2026-10-01T21:43:59+09:00"
+  evaluation_mode: contemporaneous
+
+changed_artifacts:
+  - path: "src/request.ts"
+    symbols:
+      - name: "HonoRequest"
+        kind: class
+
+artifact_universe:
+  definition: "All files tracked by git at base_commit"
+  size: null
+  notes: "Focusing on purely documentary changes"
+
+candidates: []
+
+notes: "Benchmark Expansion: Category 5 - Documentation Relationship"

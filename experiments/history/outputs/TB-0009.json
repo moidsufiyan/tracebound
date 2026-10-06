@@ -1,0 +1,2958 @@
+{
+  "case_id": "TB-0009",
+  "metrics": {
+    "total_retrieved": 170,
+    "relevant_found": 1,
+    "relevant_missed": 0,
+    "false_positives": 169
+  },
+  "relevant_found": [
+    {
+      "path": "src/helper/streaming/stream.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1719971444,
+      "historical_commits": [
+        {
+          "id": "ada10e5bf097b921f0b8ea533bb28e726ffff2dc",
+          "timestamp": 1719971444
+        },
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        },
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 12
+    }
+  ],
+  "relevant_missed": [],
+  "false_positives": [
+    {
+      "path": "deno_dist/utils/stream.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 7,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "34fb36e960a0b48369c9f6047bc57caec7b0ea4b",
+          "timestamp": 1709281983
+        },
+        {
+          "id": "a3d9f1371b12844e39751d61f3d4692dd8516a97",
+          "timestamp": 1709006226
+        },
+        {
+          "id": "0802633e7b97e5ce38c1f37b5a1669501cde0484",
+          "timestamp": 1705997522
+        },
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        },
+        {
+          "id": "2c47bf589088765abb1feb0971a69602fe6099a4",
+          "timestamp": 1695218010
+        },
+        {
+          "id": "31f06052096ad2dce788f481ce5ab12d874cbc74",
+          "timestamp": 1694874537
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 1
+    },
+    {
+      "path": "src/utils/stream.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1785982274,
+      "historical_commits": [
+        {
+          "id": "cd31bc196eb234bcaaae18ecf889784cf30004fd",
+          "timestamp": 1785982274
+        },
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        },
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        },
+        {
+          "id": "2c47bf589088765abb1feb0971a69602fe6099a4",
+          "timestamp": 1695218010
+        },
+        {
+          "id": "31f06052096ad2dce788f481ce5ab12d874cbc74",
+          "timestamp": 1694874537
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 2
+    },
+    {
+      "path": "src/context.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        },
+        {
+          "id": "2c47bf589088765abb1feb0971a69602fe6099a4",
+          "timestamp": 1695218010
+        },
+        {
+          "id": "31f06052096ad2dce788f481ce5ab12d874cbc74",
+          "timestamp": 1694874537
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 3
+    },
+    {
+      "path": "src/helper/streaming/sse.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 5,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "ada10e5bf097b921f0b8ea533bb28e726ffff2dc",
+          "timestamp": 1719971444
+        },
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 4
+    },
+    {
+      "path": "deno_dist/context.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 4,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        },
+        {
+          "id": "2c47bf589088765abb1feb0971a69602fe6099a4",
+          "timestamp": 1695218010
+        },
+        {
+          "id": "31f06052096ad2dce788f481ce5ab12d874cbc74",
+          "timestamp": 1694874537
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 5
+    },
+    {
+      "path": "package.json",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1778926416,
+      "historical_commits": [
+        {
+          "id": "e2f252a8745eb25f06485b8d43e8410bf027c8ef",
+          "timestamp": 1778926416
+        },
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 6
+    },
+    {
+      "path": "runtime_tests/bun/index.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "ada10e5bf097b921f0b8ea533bb28e726ffff2dc",
+          "timestamp": 1719971444
+        },
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 7
+    },
+    {
+      "path": "runtime_tests/deno/stream.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "ada10e5bf097b921f0b8ea533bb28e726ffff2dc",
+          "timestamp": 1719971444
+        },
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 8
+    },
+    {
+      "path": "runtime_tests/node/index.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "ada10e5bf097b921f0b8ea533bb28e726ffff2dc",
+          "timestamp": 1719971444
+        },
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 9
+    },
+    {
+      "path": "src/helper/css/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 10
+    },
+    {
+      "path": "src/jsx/dom/css.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 11
+    },
+    {
+      "path": "src/context.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 3,
+      "latest_timestamp": 1704205084,
+      "historical_commits": [
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        },
+        {
+          "id": "2c47bf589088765abb1feb0971a69602fe6099a4",
+          "timestamp": 1695218010
+        },
+        {
+          "id": "31f06052096ad2dce788f481ce5ab12d874cbc74",
+          "timestamp": 1694874537
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 13
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1778926416,
+      "historical_commits": [
+        {
+          "id": "e2f252a8745eb25f06485b8d43e8410bf027c8ef",
+          "timestamp": 1778926416
+        },
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 14
+    },
+    {
+      "path": "src/jsx/dom/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 15
+    },
+    {
+      "path": "src/jsx/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 16
+    },
+    {
+      "path": "src/middleware/logger/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 17
+    },
+    {
+      "path": "src/router/smart-router/router.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 18
+    },
+    {
+      "path": "src/types.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 19
+    },
+    {
+      "path": "src/utils/cookie.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        },
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 20
+    },
+    {
+      "path": "src/helper/adapter/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 21
+    },
+    {
+      "path": "src/helper/cookie/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 22
+    },
+    {
+      "path": "src/helper/dev/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 23
+    },
+    {
+      "path": "src/helper/factory/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 24
+    },
+    {
+      "path": "src/helper/testing/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 25
+    },
+    {
+      "path": "src/hono-base.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 26
+    },
+    {
+      "path": "src/jsx/dom/jsx-dev-runtime.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 27
+    },
+    {
+      "path": "src/jsx/jsx-runtime.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 28
+    },
+    {
+      "path": "src/middleware/jsx-renderer/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 29
+    },
+    {
+      "path": "src/utils/buffer.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 30
+    },
+    {
+      "path": "src/utils/color.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        },
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 31
+    },
+    {
+      "path": "deno_dist/helper/streaming/sse.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 2,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        },
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 32
+    },
+    {
+      "path": "bun.lock",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1778926416,
+      "historical_commits": [
+        {
+          "id": "e2f252a8745eb25f06485b8d43e8410bf027c8ef",
+          "timestamp": 1778926416
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 33
+    },
+    {
+      "path": "runtime-tests/node/index.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1778926416,
+      "historical_commits": [
+        {
+          "id": "e2f252a8745eb25f06485b8d43e8410bf027c8ef",
+          "timestamp": 1778926416
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 34
+    },
+    {
+      "path": ".eslintignore",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 35
+    },
+    {
+      "path": ".eslintrc.cjs",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 36
+    },
+    {
+      "path": "bun.lockb",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 37
+    },
+    {
+      "path": "eslint.config.mjs",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 38
+    },
+    {
+      "path": "runtime_tests/deno-jsx/jsx.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 39
+    },
+    {
+      "path": "runtime_tests/deno/hono.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 40
+    },
+    {
+      "path": "runtime_tests/deno/middleware.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 41
+    },
+    {
+      "path": "runtime_tests/deno/ssg.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 42
+    },
+    {
+      "path": "runtime_tests/lambda/stream-mock.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 43
+    },
+    {
+      "path": "runtime_tests/workerd/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 44
+    },
+    {
+      "path": "src/adapter/aws-lambda/types.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 45
+    },
+    {
+      "path": "src/adapter/bun/conninfo.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 46
+    },
+    {
+      "path": "src/adapter/bun/serve-static.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 47
+    },
+    {
+      "path": "src/adapter/lambda-edge/conninfo.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 48
+    },
+    {
+      "path": "src/adapter/lambda-edge/conninfo.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 49
+    },
+    {
+      "path": "src/client/client.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 50
+    },
+    {
+      "path": "src/compose.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 51
+    },
+    {
+      "path": "src/helper/css/index.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 52
+    },
+    {
+      "path": "src/helper/ssg/middleware.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 53
+    },
+    {
+      "path": "src/helper/ssg/ssg.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 54
+    },
+    {
+      "path": "src/helper/streaming/sse.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 55
+    },
+    {
+      "path": "src/hono.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 56
+    },
+    {
+      "path": "src/jsx/base.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 57
+    },
+    {
+      "path": "src/jsx/dom/css.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 58
+    },
+    {
+      "path": "src/jsx/dom/hooks/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 59
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 60
+    },
+    {
+      "path": "src/jsx/dom/intrinsic-element/components.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 61
+    },
+    {
+      "path": "src/jsx/dom/render.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 62
+    },
+    {
+      "path": "src/jsx/dom/server.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 63
+    },
+    {
+      "path": "src/jsx/index.test.tsx",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 64
+    },
+    {
+      "path": "src/jsx/intrinsic-element/components.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 65
+    },
+    {
+      "path": "src/middleware/combine/index.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 66
+    },
+    {
+      "path": "src/middleware/combine/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 67
+    },
+    {
+      "path": "src/middleware/compress/index.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 68
+    },
+    {
+      "path": "src/middleware/context-storage/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 69
+    },
+    {
+      "path": "src/middleware/ip-restriction/index.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 70
+    },
+    {
+      "path": "src/preset/quick.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 71
+    },
+    {
+      "path": "src/preset/tiny.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 72
+    },
+    {
+      "path": "src/router/pattern-router/router.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 73
+    },
+    {
+      "path": "src/router/reg-exp-router/router.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 74
+    },
+    {
+      "path": "src/types.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 75
+    },
+    {
+      "path": "src/utils/basic-auth.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 76
+    },
+    {
+      "path": "src/utils/encode.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 77
+    },
+    {
+      "path": "src/utils/jwt/jwt.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 78
+    },
+    {
+      "path": "yarn.lock",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1726110341,
+      "historical_commits": [
+        {
+          "id": "5f78e4e1b300e203920b07cb716e198626d37eed",
+          "timestamp": 1726110341
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 79
+    },
+    {
+      "path": "src/helper/streaming/sse.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1719612028,
+      "historical_commits": [
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 80
+    },
+    {
+      "path": "src/helper/streaming/stream.test.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1719612028,
+      "historical_commits": [
+        {
+          "id": "2d3bc55954ed440ebcccba0d0bcdd448bf94b471",
+          "timestamp": 1719612028
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 81
+    },
+    {
+      "path": "src/adapter/aws-lambda/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 82
+    },
+    {
+      "path": "src/adapter/bun/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 83
+    },
+    {
+      "path": "src/adapter/cloudflare-pages/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 84
+    },
+    {
+      "path": "src/adapter/cloudflare-workers/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 85
+    },
+    {
+      "path": "src/adapter/deno/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 86
+    },
+    {
+      "path": "src/adapter/lambda-edge/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 87
+    },
+    {
+      "path": "src/adapter/netlify/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 88
+    },
+    {
+      "path": "src/adapter/vercel/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 89
+    },
+    {
+      "path": "src/client/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 90
+    },
+    {
+      "path": "src/helper/accepts/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 91
+    },
+    {
+      "path": "src/helper/conninfo/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 92
+    },
+    {
+      "path": "src/helper/html/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 93
+    },
+    {
+      "path": "src/helper/ssg/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 94
+    },
+    {
+      "path": "src/helper/streaming/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 95
+    },
+    {
+      "path": "src/helper/websocket/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 96
+    },
+    {
+      "path": "src/http-exception.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 97
+    },
+    {
+      "path": "src/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 98
+    },
+    {
+      "path": "src/jsx/dom/jsx-runtime.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 99
+    },
+    {
+      "path": "src/jsx/jsx-dev-runtime.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 100
+    },
+    {
+      "path": "src/jsx/streaming.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 101
+    },
+    {
+      "path": "src/middleware/basic-auth/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 102
+    },
+    {
+      "path": "src/middleware/bearer-auth/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 103
+    },
+    {
+      "path": "src/middleware/body-limit/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 104
+    },
+    {
+      "path": "src/middleware/cache/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 105
+    },
+    {
+      "path": "src/middleware/compress/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 106
+    },
+    {
+      "path": "src/middleware/cors/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 107
+    },
+    {
+      "path": "src/middleware/csrf/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 108
+    },
+    {
+      "path": "src/middleware/etag/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 109
+    },
+    {
+      "path": "src/middleware/jwt/jwt.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 110
+    },
+    {
+      "path": "src/middleware/method-override/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 111
+    },
+    {
+      "path": "src/middleware/powered-by/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 112
+    },
+    {
+      "path": "src/middleware/pretty-json/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 113
+    },
+    {
+      "path": "src/middleware/secure-headers/secure-headers.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 114
+    },
+    {
+      "path": "src/middleware/serve-static/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 115
+    },
+    {
+      "path": "src/middleware/timeout/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 116
+    },
+    {
+      "path": "src/middleware/timing/timing.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 117
+    },
+    {
+      "path": "src/middleware/trailing-slash/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 118
+    },
+    {
+      "path": "src/preset/quick.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 119
+    },
+    {
+      "path": "src/preset/tiny.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 120
+    },
+    {
+      "path": "src/router.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 121
+    },
+    {
+      "path": "src/router/linear-router/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 122
+    },
+    {
+      "path": "src/router/pattern-router/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 123
+    },
+    {
+      "path": "src/router/reg-exp-router/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 124
+    },
+    {
+      "path": "src/router/smart-router/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 125
+    },
+    {
+      "path": "src/router/trie-router/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 126
+    },
+    {
+      "path": "src/utils/body.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 127
+    },
+    {
+      "path": "src/utils/concurrent.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 128
+    },
+    {
+      "path": "src/utils/crypto.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 129
+    },
+    {
+      "path": "src/utils/encode.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 130
+    },
+    {
+      "path": "src/utils/filepath.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 131
+    },
+    {
+      "path": "src/utils/handler.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 132
+    },
+    {
+      "path": "src/utils/html.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 133
+    },
+    {
+      "path": "src/utils/http-status.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 134
+    },
+    {
+      "path": "src/utils/jwt/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 135
+    },
+    {
+      "path": "src/utils/mime.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 136
+    },
+    {
+      "path": "src/utils/types.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 137
+    },
+    {
+      "path": "src/utils/url.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 138
+    },
+    {
+      "path": "src/validator/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1716700585,
+      "historical_commits": [
+        {
+          "id": "6d9f1f09a9513aec72565dabfdc9d062fa02de53",
+          "timestamp": 1716700585
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 139
+    },
+    {
+      "path": "deno_dist/helper/accepts/accepts.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 140
+    },
+    {
+      "path": "deno_dist/helper/adapter/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 141
+    },
+    {
+      "path": "deno_dist/helper/cookie/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 142
+    },
+    {
+      "path": "deno_dist/helper/css/common.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 143
+    },
+    {
+      "path": "deno_dist/helper/css/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 144
+    },
+    {
+      "path": "deno_dist/helper/dev/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 145
+    },
+    {
+      "path": "deno_dist/helper/factory/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 146
+    },
+    {
+      "path": "deno_dist/helper/testing/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 147
+    },
+    {
+      "path": "deno_dist/hono-base.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 148
+    },
+    {
+      "path": "deno_dist/jsx/dom/context.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 149
+    },
+    {
+      "path": "deno_dist/jsx/dom/css.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 150
+    },
+    {
+      "path": "deno_dist/jsx/dom/jsx-dev-runtime.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 151
+    },
+    {
+      "path": "deno_dist/jsx/dom/utils.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 152
+    },
+    {
+      "path": "deno_dist/jsx/hooks/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 153
+    },
+    {
+      "path": "deno_dist/jsx/jsx-runtime.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 154
+    },
+    {
+      "path": "deno_dist/middleware/jsx-renderer/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 155
+    },
+    {
+      "path": "deno_dist/middleware/timing/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 156
+    },
+    {
+      "path": "deno_dist/request.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 157
+    },
+    {
+      "path": "deno_dist/router/smart-router/router.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 158
+    },
+    {
+      "path": "deno_dist/utils/buffer.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 159
+    },
+    {
+      "path": "deno_dist/utils/color.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 160
+    },
+    {
+      "path": "deno_dist/utils/jwt/utf8.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 161
+    },
+    {
+      "path": "src/helper/accepts/accepts.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 162
+    },
+    {
+      "path": "src/helper/css/common.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 163
+    },
+    {
+      "path": "src/jsx/dom/context.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 164
+    },
+    {
+      "path": "src/jsx/dom/utils.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 165
+    },
+    {
+      "path": "src/jsx/hooks/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 166
+    },
+    {
+      "path": "src/middleware/timing/index.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 167
+    },
+    {
+      "path": "src/request.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 168
+    },
+    {
+      "path": "src/utils/jwt/utf8.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1715497631,
+      "historical_commits": [
+        {
+          "id": "e5975edc7322aa3439bea03c3843f900241a5f9e",
+          "timestamp": 1715497631
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 169
+    },
+    {
+      "path": "deno_dist/helper/streaming/stream.ts",
+      "source_artifact": "src/utils/stream.ts",
+      "co_change_count": 1,
+      "latest_timestamp": 1704205084,
+      "historical_commits": [
+        {
+          "id": "4dfcda828251f4d34a35771516cda0271eefcaa5",
+          "timestamp": 1704205084
+        }
+      ],
+      "signals": [
+        "B3"
+      ],
+      "rank": 170
+    }
+  ]
+}

@@ -1,0 +1,2392 @@
+{
+  "case_id": "TB-0002",
+  "metrics": {
+    "total_candidates": 244,
+    "truth_rank": 1,
+    "top_1": true,
+    "top_3": true,
+    "top_5": true,
+    "top_10": true,
+    "top_20": true
+  },
+  "top_20_candidates": [
+    {
+      "rank": 1,
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": true
+    },
+    {
+      "rank": 2,
+      "path": "CHECKOUT_STATE_MACHINE.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 3,
+      "path": "backend/src/routes/order.routes.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 4,
+      "path": "backend/src/services/order.service.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 5,
+      "path": "backend/docs/architecture/cart-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 6,
+      "path": "backend/docs/architecture/wishlist-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 7,
+      "path": "backend/docs/api/order-api.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 8,
+      "path": "backend/src/types/order.types.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 9,
+      "path": "backend/src/models/order.model.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 10,
+      "path": "backend/docs/database/order-domain.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 11,
+      "path": "backend/src/repositories/order.repository.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 12,
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 13,
+      "path": "backend/docs/architecture/product-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 14,
+      "path": "backend/docs/architecture/checkout-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 15,
+      "path": "backend/docs/architecture/inventory-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 16,
+      "path": "src/components/order/OrderStatusSteps.tsx",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 17,
+      "path": "PROJECT_STATUS.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 18,
+      "path": "src/views/OrderTracking.tsx",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 19,
+      "path": "src/services/order.service.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 20,
+      "path": "src/components/user/OrderCard.tsx",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    }
+  ],
+  "all_candidates": [
+    {
+      "rank": 1,
+      "path": "backend/docs/architecture/order-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": true
+    },
+    {
+      "rank": 2,
+      "path": "CHECKOUT_STATE_MACHINE.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 3,
+      "path": "backend/src/routes/order.routes.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 4,
+      "path": "backend/src/services/order.service.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 5,
+      "path": "backend/docs/architecture/cart-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 6,
+      "path": "backend/docs/architecture/wishlist-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 7,
+      "path": "backend/docs/api/order-api.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 8,
+      "path": "backend/src/types/order.types.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 9,
+      "path": "backend/src/models/order.model.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 10,
+      "path": "backend/docs/database/order-domain.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 11,
+      "path": "backend/src/repositories/order.repository.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 12,
+      "path": "backend/docs/architecture/payment-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 13,
+      "path": "backend/docs/architecture/product-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 14,
+      "path": "backend/docs/architecture/checkout-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 15,
+      "path": "backend/docs/architecture/inventory-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 16,
+      "path": "src/components/order/OrderStatusSteps.tsx",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 17,
+      "path": "PROJECT_STATUS.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 18,
+      "path": "src/views/OrderTracking.tsx",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 19,
+      "path": "src/services/order.service.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 20,
+      "path": "src/components/user/OrderCard.tsx",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 21,
+      "path": "docs/frontend/session-lifecycle.md",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 22,
+      "path": "backend/src/mappers/order.mapper.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 23,
+      "path": "backend/scripts/verify-order-domain.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 24,
+      "path": "backend/src/validators/order.validator.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 25,
+      "path": "backend/src/controllers/order.controller.ts",
+      "rank_name": "2. Strong Lexical (Path + Multi-Content)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 26,
+      "path": "WOLLYWAY_CONTEXT.md",
+      "rank_name": "3. Strong Lexical (High Content Density)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 27,
+      "path": "CHANGELOG.md",
+      "rank_name": "3. Strong Lexical (High Content Density)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 28,
+      "path": "src/contexts/AuthContext.tsx",
+      "rank_name": "3. Strong Lexical (High Content Density)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 29,
+      "path": "backend/docs/business-rules.md",
+      "rank_name": "3. Strong Lexical (High Content Density)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 30,
+      "path": "backend/src/services/product.service.ts",
+      "rank_name": "3. Strong Lexical (High Content Density)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 31,
+      "path": "docs/frontend/phase-5.1-audit-report.md",
+      "rank_name": "3. Strong Lexical (High Content Density)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 32,
+      "path": "docs/adr/0002-state-management.md",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 33,
+      "path": "backend/docs/checkout-order-contract.md",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 34,
+      "path": "src/hooks/useOrders.ts",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 35,
+      "path": "app/(account)/order-tracking/page.tsx",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 36,
+      "path": "src/components/order/OrderSummary.tsx",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 37,
+      "path": "src/components/order/OrderDetailsCard.tsx",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 38,
+      "path": "src/components/order/ShippingUpdateBanner.tsx",
+      "rank_name": "5. Moderate Lexical (Path Match Only)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 39,
+      "path": "README.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 40,
+      "path": "src/lib/api-client.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 41,
+      "path": "src/components/ProductGrid.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 42,
+      "path": "backend/docs/api/product-api.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 43,
+      "path": "docs/backend-architecture-blueprint.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 44,
+      "path": "backend/src/services/checkout.service.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 45,
+      "path": "backend/src/repositories/checkout.repository.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 46,
+      "path": "app/providers.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 47,
+      "path": "backend/README.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 48,
+      "path": "tsconfig.tsbuildinfo",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 49,
+      "path": "src/views/Contact.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 50,
+      "path": "src/views/Profile.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 51,
+      "path": "src/views/Support.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 52,
+      "path": "src/views/Checkout.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 53,
+      "path": "src/components/Navbar.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 54,
+      "path": "src/views/BundleDetail.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 55,
+      "path": "src/contexts/CartContext.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 56,
+      "path": "src/components/ui/sidebar.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 57,
+      "path": "backend/docs/api/checkout-api.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 58,
+      "path": "src/contexts/WishlistContext.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 59,
+      "path": "src/services/checkout.service.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 60,
+      "path": "src/components/auth/AuthGuard.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 61,
+      "path": "backend/src/types/checkout.types.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 62,
+      "path": "src/components/ProductQuickView.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 63,
+      "path": "backend/docs/database/user-domain.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 64,
+      "path": "backend/src/routes/checkout.routes.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 65,
+      "path": "backend/docs/cart-checkout-contract.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 66,
+      "path": "src/components/product/ProductInfo.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 67,
+      "path": "backend/docs/database/payment-domain.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 68,
+      "path": "backend/docs/database/product-domain.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 69,
+      "path": "backend/src/services/payment.service.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 70,
+      "path": "backend/docs/database/checkout-domain.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 71,
+      "path": "backend/scripts/verify-payment-domain.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 72,
+      "path": "backend/src/services/wishlist.service.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 73,
+      "path": "backend/src/controllers/auth.controller.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 74,
+      "path": "src/components/product/ProductReviewForm.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 75,
+      "path": "backend/src/adapters/payment/razorpay.adapter.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 76,
+      "path": "backend/docs/architecture/cross-domain-interaction-matrix.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 77,
+      "path": "bun.lockb",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 78,
+      "path": "middleware.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 79,
+      "path": "src/index.css",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 80,
+      "path": "app/globals.css",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 81,
+      "path": "package-lock.json",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 82,
+      "path": "src/types/auth.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 83,
+      "path": "src/views/FAQ.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 84,
+      "path": "backend/src/app.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 85,
+      "path": "src/views/Cart.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 86,
+      "path": "src/views/Shop.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 87,
+      "path": "src/views/Login.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 88,
+      "path": "src/types/Product.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 89,
+      "path": "docs/business-rules.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 90,
+      "path": "src/hooks/use-toast.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 91,
+      "path": "src/views/NotFound.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 92,
+      "path": "src/views/Wishlist.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 93,
+      "path": "src/components/Hero.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 94,
+      "path": "src/types/cart.types.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 95,
+      "path": "src/hooks/use-mobile.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 96,
+      "path": "src/views/ReturnPolicy.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 97,
+      "path": "src/components/ui/sheet.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 98,
+      "path": "src/components/ui/table.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 99,
+      "path": "src/components/ui/toast.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 100,
+      "path": "src/views/PrivacyPolicy.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 101,
+      "path": "src/views/ProductDetail.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 102,
+      "path": "backend/docs/api/cart-api.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 103,
+      "path": "docs/frontend/http-client.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 104,
+      "path": "src/components/ProductQA.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 105,
+      "path": "src/components/ui/dialog.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 106,
+      "path": "src/components/ui/select.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 107,
+      "path": "src/components/ui/switch.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 108,
+      "path": "src/components/ui/toggle.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 109,
+      "path": "src/services/auth.service.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 110,
+      "path": "src/types/discovery.types.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 111,
+      "path": "src/views/TermsOfService.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 112,
+      "path": "src/components/ui/popover.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 113,
+      "path": "src/components/ui/tooltip.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 114,
+      "path": "src/hooks/useProductSearch.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 115,
+      "path": "src/views/CheckoutSuccess.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 116,
+      "path": "src/components/ui/checkbox.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 117,
+      "path": "backend/docs/api/payment-api.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 118,
+      "path": "backend/src/types/cart.types.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 119,
+      "path": "docs/frontend/authentication.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 120,
+      "path": "src/components/ui/accordion.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 121,
+      "path": "backend/docs/api/wishlist-api.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 122,
+      "path": "backend/src/models/user.model.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 123,
+      "path": "src/components/ui/hover-card.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 124,
+      "path": "src/services/wishlist.service.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 125,
+      "path": "backend/src/routes/user.routes.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 126,
+      "path": "backend/src/types/payment.types.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 127,
+      "path": "src/components/ReferralProgram.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 128,
+      "path": "src/components/ui/alert-dialog.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 129,
+      "path": "backend/src/models/product.model.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 130,
+      "path": "src/components/ui/dropdown-menu.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 131,
+      "path": "src/components/user/AddressCard.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 132,
+      "path": "backend/src/models/category.model.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 133,
+      "path": "backend/src/services/cart.service.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 134,
+      "path": "docs/adr/0003-api-adapter-pattern.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 135,
+      "path": "backend/src/mappers/product.mapper.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 136,
+      "path": "backend/src/routes/category.routes.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 137,
+      "path": "backend/src/routes/wishlist.routes.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 138,
+      "path": "src/components/ProductDetailsTabs.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 139,
+      "path": "src/components/ui/navigation-menu.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 140,
+      "path": "backend/src/routes/inventory.routes.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 141,
+      "path": "docs/frontend/phase-5.1-walkthrough.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 142,
+      "path": "src/components/product/PromoBanner.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 143,
+      "path": "backend/docs/wishlist-future-roadmap.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 144,
+      "path": "backend/src/mappers/cart-item.mapper.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 145,
+      "path": "backend/docs/database/category-domain.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 146,
+      "path": "backend/docs/database/inventory-domain.md",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 147,
+      "path": "src/components/product/ProductGallery.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 148,
+      "path": "backend/src/controllers/cart.controller.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 149,
+      "path": "backend/src/models/checkout-session.model.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 150,
+      "path": "backend/src/validators/category.validator.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 151,
+      "path": "backend/src/builders/product.query-builder.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 152,
+      "path": "backend/src/controllers/payment.controller.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 153,
+      "path": "backend/src/controllers/category.controller.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 154,
+      "path": "backend/src/controllers/checkout.controller.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 155,
+      "path": "backend/src/controllers/wishlist.controller.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 156,
+      "path": "backend/src/repositories/payment.repository.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 157,
+      "path": "backend/src/repositories/product.repository.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 158,
+      "path": "backend/src/repositories/inventory.repository.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 159,
+      "path": "src/components/product/ProductReviewsSection.tsx",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 160,
+      "path": "backend/src/models/payment-webhook-event.model.ts",
+      "rank_name": "6. Moderate Lexical (Multiple Tokens)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 161,
+      "path": "src/App.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 162,
+      "path": "app/layout.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 163,
+      "path": "tailwind.config.js",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 164,
+      "path": "src/views/About.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 165,
+      "path": "src/views/Index.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 166,
+      "path": "backend/src/server.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 167,
+      "path": "src/lib/auth-token.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 168,
+      "path": "src/views/Bundles.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 169,
+      "path": "app/(account)/layout.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 170,
+      "path": "src/hooks/useProducts.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 171,
+      "path": "backend/package-lock.json",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 172,
+      "path": "src/components/Footer.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 173,
+      "path": "backend/docker-compose.yml",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 174,
+      "path": "src/components/ui/card.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 175,
+      "path": "src/components/ui/form.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 176,
+      "path": "src/components/ui/tabs.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 177,
+      "path": "src/components/Features.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 178,
+      "path": "src/components/ui/alert.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 179,
+      "path": "src/components/ui/badge.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 180,
+      "path": "src/components/ui/input.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 181,
+      "path": "src/hooks/useSocialLogin.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 182,
+      "path": "src/types/wishlist.types.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 183,
+      "path": "src/views/SizeGuidePage.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 184,
+      "path": "src/components/SearchBar.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 185,
+      "path": "src/components/ui/button.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 186,
+      "path": "src/components/ui/drawer.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 187,
+      "path": "src/components/ui/slider.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 188,
+      "path": "src/services/cart.service.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 189,
+      "path": "src/views/ShippingPolicy.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 190,
+      "path": "backend/src/utils/AppError.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 191,
+      "path": "src/components/ui/command.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 192,
+      "path": "src/components/ProductSort.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 193,
+      "path": "src/components/ui/calendar.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 194,
+      "path": "src/components/ui/carousel.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 195,
+      "path": "src/components/ui/textarea.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 196,
+      "path": "docs/migration/Migration-Log.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 197,
+      "path": "src/components/Testimonials.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 198,
+      "path": "src/components/ui/separator.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 199,
+      "path": "src/components/LoyaltyPoints.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 200,
+      "path": "src/components/ProductBundle.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 201,
+      "path": "backend/src/routes/auth.routes.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 202,
+      "path": "backend/src/routes/cart.routes.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 203,
+      "path": "backend/src/utils/pricing.util.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 204,
+      "path": "docs/adr/0001-nextjs-migration.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 205,
+      "path": "src/components/ProductFilters.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 206,
+      "path": "src/components/ui/radio-group.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 207,
+      "path": "src/components/ui/scroll-area.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 208,
+      "path": "backend/docs/search-performance.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 209,
+      "path": "backend/src/mappers/cart.mapper.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 210,
+      "path": "backend/src/middlewares/validate.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 211,
+      "path": "backend/src/routes/health.routes.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 212,
+      "path": "backend/src/types/wishlist.types.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 213,
+      "path": "src/components/FeaturedProducts.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 214,
+      "path": "src/components/user/AddressForm.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 215,
+      "path": "app/(shop)/checkout-success/page.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 216,
+      "path": "backend/src/config/swagger.config.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 217,
+      "path": "backend/src/routes/payment.routes.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 218,
+      "path": "backend/src/types/discovery.types.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 219,
+      "path": "docs/frontend/backend-integration.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 220,
+      "path": "backend/src/models/inventory.model.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 221,
+      "path": "src/components/product/StarRating.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 222,
+      "path": "src/components/SocialShareButtons.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 223,
+      "path": "backend/src/mappers/wishlist.mapper.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 224,
+      "path": "backend/src/middlewares/errorHandler.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 225,
+      "path": "src/components/product/FeatureCards.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 226,
+      "path": "backend/src/validators/cart.validator.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 227,
+      "path": "backend/src/validators/user.validator.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 228,
+      "path": "docs/adr/0004-authentication-strategy.md",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 229,
+      "path": "backend/src/services/inventory.service.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 230,
+      "path": "backend/src/controllers/user.controller.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 231,
+      "path": "backend/src/middlewares/auth.middleware.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 232,
+      "path": "backend/src/services/cloudinary.service.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 233,
+      "path": "backend/src/repositories/cart.repository.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 234,
+      "path": "backend/src/validators/product.validator.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 235,
+      "path": "backend/src/controllers/health.controller.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 236,
+      "path": "backend/src/middlewares/upload.middleware.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 237,
+      "path": "backend/src/validators/wishlist.validator.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 238,
+      "path": "src/components/product/ProductReviewCard.tsx",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 239,
+      "path": "backend/src/controllers/product.controller.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 240,
+      "path": "backend/src/controllers/inventory.controller.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 241,
+      "path": "backend/src/repositories/wishlist.repository.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 242,
+      "path": "backend/src/middlewares/rateLimiter.middleware.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 243,
+      "path": "backend/src/models/inventory-transaction.model.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    },
+    {
+      "rank": 244,
+      "path": "backend/src/adapters/payment/payment-provider.factory.ts",
+      "rank_name": "7. Weak Lexical (Single Token / Generic)",
+      "signals": [
+        "B2"
+      ],
+      "is_truth": false
+    }
+  ]
+}
