@@ -1,4 +1,5 @@
 import type { Database } from '../db/database.js';
+import { requireReadySnapshot } from '../snapshots/snapshots.js';
 
 export type ArtifactKind = 'code' | 'document' | 'config';
 
@@ -75,12 +76,37 @@ export function listSnapshotArtifacts(db: Database, snapshotId: number): Snapsho
        ORDER BY a.path`,
     )
     .all(snapshotId) as unknown as SnapshotArtifactRow[];
-  return rows.map((row) => ({
+  return rows.map(toSnapshotArtifact);
+}
+
+/**
+ * Finds the artifact at `gitRepositoryPath` as it exists in one ready snapshot. Returns undefined
+ * when the snapshot does not contain that path; it never consults any other snapshot or HEAD.
+ * Throws NotFoundError for an unknown snapshot and SnapshotNotReadyError for a failed one.
+ */
+export function findArtifactAtSnapshot(
+  db: Database,
+  snapshotId: number,
+  gitRepositoryPath: string,
+): SnapshotArtifact | undefined {
+  const snapshot = requireReadySnapshot(db, snapshotId);
+  const row = db
+    .prepare(
+      `SELECT a.id AS artifact_id, v.id AS version_id, a.path, a.kind, v.content_sha256, v.git_blob_sha
+       FROM artifact a JOIN artifact_version v ON v.artifact_id = a.id AND v.snapshot_id = ?
+       WHERE a.repository_id = ? AND a.path = ?`,
+    )
+    .get(snapshot.id, snapshot.repositoryId, gitRepositoryPath) as SnapshotArtifactRow | undefined;
+  return row && toSnapshotArtifact(row);
+}
+
+function toSnapshotArtifact(row: SnapshotArtifactRow): SnapshotArtifact {
+  return {
     artifactId: row.artifact_id,
     versionId: row.version_id,
     path: row.path,
     kind: row.kind,
     contentSha256: row.content_sha256,
     gitBlobSha: row.git_blob_sha,
-  }));
+  };
 }
