@@ -6,9 +6,16 @@
 
 ## Current State
 
-**Phase 0 — Problem Validation & Evaluation Design**
+**Production foundation — first vertical slice**
 
-The project is currently in problem validation. No application code has been written. No final technology stack has been selected. The work at this stage is research, documentation, and evaluation design.
+Phase 0/1 research and retrieval experiments (`docs/`, `experiments/`) are complete enough to fix the architecture (`docs/architecture/`). The first production slice is implemented in `src/`: TypeScript on Node.js 24 with SQLite (`node:sqlite`). It covers Projects, Repositories and atomic historical snapshot ingestion (Artifact / ArtifactVersion / Content). Retrieval, embeddings, evidence and reasoning are not built yet.
+
+```
+npm install
+npm test          # vitest
+npm run typecheck
+npm run build     # emits dist/
+```
 
 ---
 
@@ -22,7 +29,6 @@ Investigate a proposed software change and surface potentially related artifacts
 
 - Not a finished product
 - Not a production system
-- Not a tool with a selected stack
 - Not a system with proven effectiveness
 
 The gap between the objective and a working system is the entire problem. Closing that gap responsibly is the project.
@@ -54,7 +60,17 @@ The gap between the objective and a working system is the entire problem. Closin
 tracebound/
 ├── README.md
 ├── .gitignore
+├── src/                 # production code (modular monolith)
+│   ├── db/              # connection, migrations, transactions
+│   ├── git/             # read-only Git object access
+│   ├── projects/        # Project, Repository
+│   ├── snapshots/       # RepositorySnapshot
+│   ├── artifacts/       # Artifact, ArtifactVersion, Content
+│   └── ingestion/       # file policy, normalization, snapshot ingestion
+├── test/
+├── experiments/         # Phase 1 retrieval experiments (standalone scripts)
 └── docs/
+    ├── architecture/    # system overview, domain model, ADRs
     ├── problem/
     │   ├── problem-statement.md
     │   ├── target-user.md

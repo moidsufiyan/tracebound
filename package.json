@@ -1,0 +1,20 @@
+{
+  "name": "tracebound",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Evidence-backed software change impact and traceability.",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
