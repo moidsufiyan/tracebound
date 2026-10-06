@@ -8,7 +8,7 @@
 
 **Production foundation — first vertical slice**
 
-Phase 0/1 research and retrieval experiments (`docs/`, `experiments/`) are complete enough to fix the architecture (`docs/architecture/`). The first production slice is implemented in `src/`: TypeScript on Node.js 24 with SQLite (`node:sqlite`). It covers Projects, Repositories and atomic historical snapshot ingestion (Artifact / ArtifactVersion / Content). Retrieval, embeddings, evidence and reasoning are not built yet.
+Phase 0/1 research and retrieval experiments (`docs/`, `experiments/`) are complete enough to fix the architecture (`docs/architecture/`). The first production slice is implemented in `src/`: TypeScript on Node.js 24 with SQLite (`node:sqlite`). It covers Projects, Repositories and atomic historical snapshot ingestion (Artifact / ArtifactVersion / Content). A deterministic lexical retrieval baseline over snapshots is also implemented (`src/retrieval/`). Semantic retrieval, fusion, evidence and reasoning are not built yet.
 
 ```
 npm install
@@ -66,7 +66,8 @@ tracebound/
 │   ├── projects/        # Project, Repository
 │   ├── snapshots/       # RepositorySnapshot
 │   ├── artifacts/       # Artifact, ArtifactVersion, Content
-│   └── ingestion/       # file policy, normalization, snapshot ingestion
+│   ├── ingestion/       # file policy, normalization, snapshot ingestion
+│   └── retrieval/       # lexical tokenizer, derived index, ranking, search
 ├── test/
 ├── experiments/         # Phase 1 retrieval experiments (standalone scripts)
 └── docs/

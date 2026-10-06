@@ -31,3 +31,12 @@ export {
 } from './artifacts/artifacts.js';
 export { ingestSnapshot, listExcludedEntries, type IngestionResult, type ExcludedEntry } from './ingestion/ingest-snapshot.js';
 export { CommitNotFoundError, GitCommandError, InvalidCommitShaError, NotAGitRepositoryError } from './git/git.js';
+export {
+  indexSnapshotLexically,
+  isSnapshotLexicallyIndexed,
+  LexicalIndexNotBuiltError,
+  type LexicalIndexingResult,
+} from './retrieval/lexical-index.js';
+export { searchLexical, type LexicalCandidate, type LexicalQuery } from './retrieval/lexical-search.js';
+export { LEXICAL_CATEGORIES, type LexicalCategory } from './retrieval/lexical-ranking.js';
+export { queryTerms, tokenize } from './retrieval/tokenizer.js';

@@ -24,8 +24,9 @@ Re-ingesting a ready commit returns the existing snapshot unchanged; re-ingestin
 
 ## Planned Stages (Not Implemented)
 
-None of the following exists yet. They will run against ready snapshots.
+Unless marked implemented, none of the following exists yet. They run against ready snapshots.
 
+- **Lexical index (implemented, derived):** `indexSnapshotLexically` builds the token index for a ready snapshot as a separate, idempotent step; see [ADR: Lexical Retrieval](decisions/lexical-retrieval.md). It is not part of snapshot capture and `ready` does not imply it has run.
 - **Structural Analysis:** AST parsers and Git history analyzers process the Artifacts, generating directed `Relationships` bound to the Snapshot.
 - **Semantic Indexing:** Documents and code are chunked; unseen chunks are sent to the embedding model.
 - **Retrieval, Evidence and Reasoning:** see the retrieval, evidence and system overview documents.

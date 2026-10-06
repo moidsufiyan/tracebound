@@ -31,7 +31,7 @@ Only part of this list exists today: snapshot ingestion (within Ingestion), Arti
     - Internally embeds the 9-case historical benchmark to automatically validate regression performance across any structural or retrieval changes.
 
 ## Persistence Boundary
-- **Persisted:** Repository metadata, snapshots, artifacts and versions, content (by hash) and snapshot exclusion records. Planned: semantic embeddings and ingestion job state.
+- **Persisted:** Repository metadata, snapshots, artifacts and versions, content (by hash) and snapshot exclusion records. Derived and rebuildable: the lexical token index. Planned: semantic embeddings and ingestion job state.
 - **Derived/On-the-fly:** RRF calculations, candidate lists, short-lived Evidence structures, and LLM context prompts.
 
 ## Security Boundaries

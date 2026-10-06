@@ -77,4 +77,28 @@ export const MIGRATIONS: readonly string[] = [
     PRIMARY KEY (snapshot_id, path)
   ) STRICT, WITHOUT ROWID;
   `,
+  // Derived lexical retrieval index. Nothing here is canonical: every row can be rebuilt from
+  // content.text and artifact.path, and none of it is part of what makes a snapshot 'ready'.
+  `
+  -- Distinct tokens of one content text. Keyed by content so identical text shared by many
+  -- artifacts and snapshots is tokenized and stored once.
+  CREATE TABLE content_token (
+    token TEXT NOT NULL,
+    content_sha256 TEXT NOT NULL REFERENCES content (sha256),
+    PRIMARY KEY (token, content_sha256)
+  ) STRICT, WITHOUT ROWID;
+
+  -- Marks content whose tokens are complete, including content that has no tokens at all.
+  CREATE TABLE lexical_indexed_content (
+    content_sha256 TEXT PRIMARY KEY REFERENCES content (sha256)
+  ) STRICT, WITHOUT ROWID;
+
+  -- Distinct tokens of one artifact's Git path. A path always yields at least one token, so an
+  -- artifact with no rows here has not been indexed yet.
+  CREATE TABLE artifact_path_token (
+    artifact_id INTEGER NOT NULL REFERENCES artifact (id),
+    token TEXT NOT NULL,
+    PRIMARY KEY (artifact_id, token)
+  ) STRICT, WITHOUT ROWID;
+  `,
 ];
