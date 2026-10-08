@@ -65,3 +65,14 @@ export {
   type DeterministicCategory,
   type StructuralSignalKind,
 } from './retrieval/deterministic-ranking.js';
+export {
+  indexSnapshotSemantically,
+  isSnapshotSemanticallyIndexed,
+  SemanticIndexIncompatibleError,
+  SemanticIndexNotBuiltError,
+  type SemanticIndexingResult,
+} from './semantic/semantic-index.js';
+export { searchSemantic, type SemanticCandidate, type SemanticQuery } from './semantic/semantic-search.js';
+export { createOllamaEmbeddingProvider, type OllamaOptions } from './semantic/ollama-provider.js';
+export { EmbeddingInputTooLongError, EmbeddingProviderError, type EmbeddingProvider } from './semantic/provider.js';
+export { EmbeddingResponseError } from './semantic/vectors.js';

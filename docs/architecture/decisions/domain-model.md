@@ -5,7 +5,7 @@
 **Alternatives:** 
 - A fully generalized `Artifact` with unstructured JSON metadata.
 - Completely disparate domain entities (e.g., `SourceFile`, `Issue`, `Document`).
-**Chosen approach:** A Hybrid Model. A foundational `Artifact` entity represents the universal concepts (identity as repository + `git_repository_path`, with versions pointing at content-hashed text; embeddings are planned) required for the unified retrieval layer. Sub-modules (like the AST analyzer) project specific, strongly-typed views (like `CodeEntity`) mapped to the core `Artifact` ID.
+**Chosen approach:** A Hybrid Model. A foundational `Artifact` entity represents the universal concepts (identity as repository + `git_repository_path`, with versions pointing at content-hashed text; embeddings are derived, per model and input text, see the semantic retrieval ADR) required for the unified retrieval layer. Sub-modules (like the AST analyzer) project specific, strongly-typed views (like `CodeEntity`) mapped to the core `Artifact` ID.
 **Tradeoffs:** 
 - *Pros:* Decouples the unified hybrid retrieval pipeline from the complexities of language-specific parsers. Ensures semantic embeddings and deterministic ranks can target a single identity.
 - *Cons:* Requires a mapping layer between the structural relationship graph and the core retrieval index.

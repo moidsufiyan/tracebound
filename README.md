@@ -8,7 +8,7 @@
 
 **Production foundation — first vertical slice**
 
-Phase 0/1 research and retrieval experiments (`docs/`, `experiments/`) are complete enough to fix the architecture (`docs/architecture/`). The first production slice is implemented in `src/`: TypeScript on Node.js 24 with SQLite (`node:sqlite`). It covers Projects, Repositories and atomic historical snapshot ingestion (Artifact / ArtifactVersion / Content). A deterministic retrieval baseline over snapshots (lexical plus import-based structural signals, `src/retrieval/` and `src/analysis/`) is also implemented. Semantic retrieval, fusion, evidence and reasoning are not built yet.
+Phase 0/1 research and retrieval experiments (`docs/`, `experiments/`) are complete enough to fix the architecture (`docs/architecture/`). The first production slice is implemented in `src/`: TypeScript on Node.js 24 with SQLite (`node:sqlite`). It covers Projects, Repositories and atomic historical snapshot ingestion (Artifact / ArtifactVersion / Content). A deterministic retrieval baseline over snapshots (lexical plus import-based structural signals, `src/retrieval/` and `src/analysis/`) is also implemented, along with an independent semantic candidate pipeline (`src/semantic/`, local Ollama embeddings). Fusion, evidence and reasoning are not built yet.
 
 ```
 npm install
@@ -68,7 +68,8 @@ tracebound/
 │   ├── artifacts/       # Artifact, ArtifactVersion, Content
 │   ├── ingestion/       # file policy, normalization, snapshot ingestion
 │   ├── analysis/        # import extraction, module resolution, structural index
-│   └── retrieval/       # lexical tokenizer, derived index, ranking, search
+│   ├── retrieval/       # lexical tokenizer, derived index, ranking, search
+│   └── semantic/        # chunking, embedding provider, vector storage, cosine search
 ├── test/
 ├── experiments/         # Phase 1 retrieval experiments (standalone scripts)
 └── docs/

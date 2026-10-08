@@ -30,6 +30,8 @@ export interface BenchmarkCase {
   id: string;
   repositoryName: string;
   baseCommit: string;
+  /** The change description as written in the case, used verbatim by the semantic query. */
+  description: string;
   query: LexicalQuery;
   changedPaths: Set<string>;
   /** Candidates a developer should investigate. */
@@ -70,6 +72,7 @@ export function loadCases(): BenchmarkCase[] {
         id: data.case_id,
         repositoryName: data.repository.name,
         baseCommit: data.repository.base_commit,
+        description: data.source_change.description,
         query: {
           text: [data.source_change.description, ...names].join(' '),
           symbols: changed.flatMap((artifact) => (artifact.symbols ?? []).map((symbol) => symbol.name)),
@@ -164,4 +167,41 @@ export function loadResearchStructural(caseId: string): Map<string, Set<Research
     kinds.set(path, set);
   }
   return kinds;
+}
+
+const SEMANTIC_OUTPUTS = join(ROOT, 'experiments', 'semantic', 'outputs');
+
+/** The Ollama server for the semantic benchmark (for example http://127.0.0.1:11434). */
+export function ollamaUrl(): string | undefined {
+  return process.env['TRACEBOUND_OLLAMA_URL'];
+}
+
+export function semanticBenchmarkAvailable(): boolean {
+  return benchmarkAvailable() && ollamaUrl() !== undefined && existsSync(SEMANTIC_OUTPUTS);
+}
+
+export interface ResearchSemanticCase {
+  /** Rank and similarity B7.1 recorded for each labelled candidate, among all artifacts. */
+  labelled: { path: string; rank: number; similarity: number | null }[];
+  totalArtifacts: number;
+  /** B7.1's ranking, best first. */
+  ranking: { path: string; similarity: number }[];
+}
+
+export function loadResearchSemantic(caseId: string): ResearchSemanticCase {
+  const report = JSON.parse(readFileSync(join(SEMANTIC_OUTPUTS, `${caseId}.json`), 'utf8')) as {
+    metrics: { total_artifacts_embedded: number };
+    relevant_artifacts_results: { path: string; rank: number; similarity: number | null }[];
+    all_candidates: { path: string; similarity: number }[];
+  };
+  return {
+    labelled: report.relevant_artifacts_results,
+    totalArtifacts: report.metrics.total_artifacts_embedded,
+    ranking: report.all_candidates,
+  };
+}
+
+/** SHA-256 keys of every text the B7.1 run embedded (its Ollama response cache). */
+export function loadResearchEmbeddingKeys(): Set<string> {
+  return new Set(Object.keys(JSON.parse(readFileSync(join(SEMANTIC_OUTPUTS, 'ollama_embeddings_cache.json'), 'utf8'))));
 }

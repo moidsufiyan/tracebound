@@ -144,4 +144,42 @@ export const MIGRATIONS: readonly string[] = [
     snapshot_id INTEGER PRIMARY KEY REFERENCES repository_snapshot (id)
   ) STRICT, WITHOUT ROWID;
   `,
+  // Derived semantic index. An embedding belongs to one model and to the exact text that was sent to
+  // it (which includes the file path), so it is shared by every snapshot and repository that
+  // produces the same text. Which chunks make up a snapshot is recorded per model, and a snapshot
+  // counts as indexed for a model only through its marker row. None of it affects 'ready'.
+  `
+  -- Vectors are little-endian float32, dimensions * 4 bytes.
+  CREATE TABLE semantic_embedding (
+    id INTEGER PRIMARY KEY,
+    model_id TEXT NOT NULL CHECK (length(model_id) > 0),
+    input_hash TEXT NOT NULL CHECK (length(input_hash) = 64),
+    dimensions INTEGER NOT NULL CHECK (dimensions > 0),
+    vector BLOB NOT NULL,
+    UNIQUE (model_id, input_hash),
+    CHECK (length(vector) = dimensions * 4)
+  ) STRICT;
+
+  -- The chunks of one artifact version, for one model. The composite foreign keys tie a chunk to a
+  -- version that exists in the snapshot and to an embedding of the same model.
+  CREATE TABLE semantic_chunk (
+    model_id TEXT NOT NULL,
+    snapshot_id INTEGER NOT NULL,
+    artifact_id INTEGER NOT NULL,
+    chunk_index INTEGER NOT NULL CHECK (chunk_index >= 0),
+    input_hash TEXT NOT NULL,
+    PRIMARY KEY (model_id, snapshot_id, artifact_id, chunk_index),
+    FOREIGN KEY (model_id, input_hash) REFERENCES semantic_embedding (model_id, input_hash),
+    FOREIGN KEY (snapshot_id, artifact_id) REFERENCES artifact_version (snapshot_id, artifact_id)
+  ) STRICT, WITHOUT ROWID;
+
+  -- Written in the same transaction as the snapshot's chunks, after every embedding exists.
+  CREATE TABLE semantic_indexed_snapshot (
+    model_id TEXT NOT NULL,
+    snapshot_id INTEGER NOT NULL REFERENCES repository_snapshot (id),
+    dimensions INTEGER NOT NULL CHECK (dimensions > 0),
+    max_input_chars INTEGER NOT NULL CHECK (max_input_chars > 0),
+    PRIMARY KEY (model_id, snapshot_id)
+  ) STRICT, WITHOUT ROWID;
+  `,
 ];
