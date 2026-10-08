@@ -41,11 +41,28 @@ export function categorize(distinctTermCount: number, pathTermCount: number): Le
   return 'single-term';
 }
 
+export interface LexicalStrength {
+  /** Distinct query terms matched in the path or the content. */
+  termCount: number;
+  pathTermCount: number;
+  path: string;
+}
+
 /**
- * Orders matches by category, then by distinct terms matched, then by path terms matched, then by
- * shorter path, then by path in UTF-16 code unit order (locale independent). Git paths are unique
- * within a snapshot, so the order is total. Ranks are 1-based.
+ * Orders candidates of equal category, strongest first: more distinct terms, then more path terms,
+ * then shorter path, then path in UTF-16 code unit order (locale independent). Git paths are unique
+ * within a snapshot, so the order is total.
  */
+export function compareLexicalStrength(a: LexicalStrength, b: LexicalStrength): number {
+  return (
+    b.termCount - a.termCount ||
+    b.pathTermCount - a.pathTermCount ||
+    a.path.length - b.path.length ||
+    (a.path < b.path ? -1 : a.path > b.path ? 1 : 0)
+  );
+}
+
+/** Orders matches by category, then by compareLexicalStrength. Ranks are 1-based. */
 export function rankMatches<T extends LexicalMatch>(matches: readonly T[]): (T & Ranking)[] {
   const scored = matches.map((match) => {
     const matchedTerms = [...new Set([...match.contentTerms, ...match.pathTerms])].sort();
@@ -55,10 +72,10 @@ export function rankMatches<T extends LexicalMatch>(matches: readonly T[]): (T &
   scored.sort(
     (a, b) =>
       LEXICAL_CATEGORIES.indexOf(a.category) - LEXICAL_CATEGORIES.indexOf(b.category) ||
-      b.matchedTerms.length - a.matchedTerms.length ||
-      b.pathTerms.size - a.pathTerms.size ||
-      a.path.length - b.path.length ||
-      (a.path < b.path ? -1 : a.path > b.path ? 1 : 0),
+      compareLexicalStrength(
+        { termCount: a.matchedTerms.length, pathTermCount: a.pathTerms.size, path: a.path },
+        { termCount: b.matchedTerms.length, pathTermCount: b.pathTerms.size, path: b.path },
+      ),
   );
   return scored.map((match, index) => ({ ...match, rank: index + 1 }));
 }

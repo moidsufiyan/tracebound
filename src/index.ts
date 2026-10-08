@@ -40,3 +40,28 @@ export {
 export { searchLexical, type LexicalCandidate, type LexicalQuery } from './retrieval/lexical-search.js';
 export { LEXICAL_CATEGORIES, type LexicalCategory } from './retrieval/lexical-ranking.js';
 export { queryTerms, tokenize } from './retrieval/tokenizer.js';
+export {
+  indexSnapshotStructurally,
+  isSnapshotStructurallyIndexed,
+  StructuralIndexNotBuiltError,
+  type StructuralIndexingResult,
+} from './analysis/structural-index.js';
+export {
+  findIncomingRelationships,
+  findOutgoingRelationships,
+  type RelationshipEnd,
+  type RelationshipKind,
+  type SnapshotRelationship,
+} from './analysis/relationships.js';
+export {
+  retrieveCandidates,
+  type DeterministicCandidate,
+  type DeterministicQuery,
+  type StructuralSignal,
+} from './retrieval/deterministic-retrieval.js';
+export {
+  DETERMINISTIC_CATEGORIES,
+  STRUCTURAL_SIGNAL_KINDS,
+  type DeterministicCategory,
+  type StructuralSignalKind,
+} from './retrieval/deterministic-ranking.js';

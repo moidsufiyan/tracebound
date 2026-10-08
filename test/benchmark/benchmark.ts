@@ -23,7 +23,7 @@ interface CaseFile {
   repository: { name: string; base_commit: string };
   source_change: { description: string };
   changed_artifacts?: { path: string; symbols?: { name: string }[] }[];
-  candidates?: { path: string; relevance: string }[];
+  candidates?: { path: string; relevance: string; relationship?: string }[];
 }
 
 export interface BenchmarkCase {
@@ -36,6 +36,8 @@ export interface BenchmarkCase {
   positives: string[];
   /** Candidates labelled not-relevant (negative cases). */
   negatives: string[];
+  /** The labelled relationship of each positive, e.g. 'test-of' or 'documents'. */
+  positiveRelationships: string[];
 }
 
 export function repositoryPath(repositoryName: string): string | undefined {
@@ -75,6 +77,7 @@ export function loadCases(): BenchmarkCase[] {
         changedPaths: new Set(changed.map((artifact) => artifact.path)),
         positives: candidates.filter((c) => c.relevance !== 'not-relevant').map((c) => c.path),
         negatives: candidates.filter((c) => c.relevance === 'not-relevant').map((c) => c.path),
+        positiveRelationships: candidates.filter((c) => c.relevance !== 'not-relevant').map((c) => c.relationship ?? ''),
       };
     });
 }
@@ -134,4 +137,31 @@ export function researchLexicalRanking(candidates: ResearchCandidate[]): string[
         a.path.localeCompare(b.path),
     )
     .map((c) => c.path);
+}
+
+/** The number of candidates B6 ranked for the case (B2 and B1 candidates, changed files excluded). */
+export function loadResearchB6CandidateCount(caseId: string): number {
+  const summary = JSON.parse(readFileSync(B6_SUMMARY, 'utf8')) as Record<string, { metrics: { total_candidates: number } }>;
+  return summary[caseId]!.metrics.total_candidates;
+}
+
+export type ResearchStructuralKind = 'test-to-source' | 'incoming-import' | 'outgoing-import';
+
+/** B1 structural candidates for a case, with the kinds of signal B1 recorded for each path. */
+export function loadResearchStructural(caseId: string): Map<string, Set<ResearchStructuralKind>> {
+  const output = JSON.parse(readFileSync(join(ROOT, 'experiments', 'structural', 'outputs', `${caseId}.json`), 'utf8')) as {
+    relevant_found: { path: string; evidence: string[] }[];
+    false_positives: { path: string; evidence: string[] }[];
+  };
+  const kinds = new Map<string, Set<ResearchStructuralKind>>();
+  for (const { path, evidence } of [...output.relevant_found, ...output.false_positives]) {
+    const set = new Set<ResearchStructuralKind>();
+    for (const line of evidence) {
+      if (line.startsWith('[Test-to-Source Dependency]')) set.add('test-to-source');
+      else if (line.startsWith('[Reverse Import]')) set.add('incoming-import');
+      else if (line.startsWith('[Direct Import]')) set.add('outgoing-import');
+    }
+    kinds.set(path, set);
+  }
+  return kinds;
 }

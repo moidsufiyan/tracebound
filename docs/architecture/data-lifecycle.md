@@ -27,7 +27,8 @@ Re-ingesting a ready commit returns the existing snapshot unchanged; re-ingestin
 Unless marked implemented, none of the following exists yet. They run against ready snapshots.
 
 - **Lexical index (implemented, derived):** `indexSnapshotLexically` builds the token index for a ready snapshot as a separate, idempotent step; see [ADR: Lexical Retrieval](decisions/lexical-retrieval.md). It is not part of snapshot capture and `ready` does not imply it has run.
-- **Structural Analysis:** AST parsers and Git history analyzers process the Artifacts, generating directed `Relationships` bound to the Snapshot.
+- **Structural index (implemented, derived):** `indexSnapshotStructurally` extracts import facts per content and resolves import and test-to-source relationships per snapshot, as a separate, idempotent step; see [ADR: Structural Signals](decisions/structural-signals.md). Like the lexical index it is not part of snapshot capture and `ready` does not imply it has run.
+- **Further structural analysis:** Git history analyzers (co-change), transitive relationships and other languages' parsers.
 - **Semantic Indexing:** Documents and code are chunked; unseen chunks are sent to the embedding model.
 - **Retrieval, Evidence and Reasoning:** see the retrieval, evidence and system overview documents.
 - **IngestionJob:** A planned entity to track multi-stage, retryable processing (e.g., Queued, Extracting, Parsing, Embedding, Complete, Failed). It is not part of the current model.

@@ -39,7 +39,7 @@ interface MatchRow {
   token: string;
 }
 
-interface ArtifactMatch extends LexicalMatch {
+export interface ArtifactMatch extends LexicalMatch {
   kind: ArtifactKind;
   contentTerms: Set<string>;
   pathTerms: Set<string>;
@@ -60,7 +60,25 @@ export function searchLexical(db: Database, snapshotId: number, query: LexicalQu
   const snapshot = requireReadySnapshot(db, snapshotId);
   if (!isSnapshotLexicallyIndexed(db, snapshot.id)) throw new LexicalIndexNotBuiltError(snapshot.id);
 
-  const terms = queryTerms(query);
+  const matches = findLexicalMatches(db, snapshot.id, queryTerms(query));
+  return rankMatches(matches).map((ranked) => ({
+    rank: ranked.rank,
+    artifactId: ranked.artifactId,
+    versionId: ranked.versionId,
+    path: ranked.path,
+    kind: ranked.kind,
+    category: ranked.category,
+    contentMatchCount: ranked.contentTerms.size,
+    pathMatchCount: ranked.pathTerms.size,
+    matchedTerms: ranked.matchedTerms,
+  }));
+}
+
+/**
+ * The artifacts of a snapshot matching any of `terms` in their content or path, unranked. The
+ * caller must have verified that the snapshot is ready and lexically indexed.
+ */
+export function findLexicalMatches(db: Database, snapshotId: number, terms: readonly string[]): ArtifactMatch[] {
   if (terms.length === 0) return [];
   const placeholders = terms.map(() => '?').join(', ');
 
@@ -72,7 +90,7 @@ export function searchLexical(db: Database, snapshotId: number, query: LexicalQu
        JOIN artifact a ON a.id = v.artifact_id
        WHERE ct.token IN (${placeholders})`,
     )
-    .all(snapshot.id, ...terms) as unknown as MatchRow[];
+    .all(snapshotId, ...terms) as unknown as MatchRow[];
   const pathRows = db
     .prepare(
       `SELECT v.artifact_id, v.id AS version_id, a.path, a.kind, pt.token
@@ -81,7 +99,7 @@ export function searchLexical(db: Database, snapshotId: number, query: LexicalQu
        JOIN artifact a ON a.id = v.artifact_id
        WHERE pt.token IN (${placeholders})`,
     )
-    .all(snapshot.id, ...terms) as unknown as MatchRow[];
+    .all(snapshotId, ...terms) as unknown as MatchRow[];
 
   const matches = new Map<number, ArtifactMatch>();
   const collect = (rows: MatchRow[], side: 'contentTerms' | 'pathTerms') => {
@@ -104,15 +122,5 @@ export function searchLexical(db: Database, snapshotId: number, query: LexicalQu
   collect(contentRows, 'contentTerms');
   collect(pathRows, 'pathTerms');
 
-  return rankMatches([...matches.values()]).map((ranked) => ({
-    rank: ranked.rank,
-    artifactId: ranked.artifactId,
-    versionId: ranked.versionId,
-    path: ranked.path,
-    kind: ranked.kind,
-    category: ranked.category,
-    contentMatchCount: ranked.contentTerms.size,
-    pathMatchCount: ranked.pathTerms.size,
-    matchedTerms: ranked.matchedTerms,
-  }));
+  return [...matches.values()];
 }

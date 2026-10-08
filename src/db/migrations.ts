@@ -101,4 +101,47 @@ export const MIGRATIONS: readonly string[] = [
     PRIMARY KEY (artifact_id, token)
   ) STRICT, WITHOUT ROWID;
   `,
+  // Derived structural index. Import facts depend only on content (and the parse dialect), so they
+  // are shared by every snapshot and repository containing that text; relationships are resolved
+  // per snapshot against that snapshot's own artifacts. None of it affects what 'ready' means.
+  `
+  -- Records that a content text was parsed in a dialect, including texts that have no imports and
+  -- texts the parser rejected. A rejected text yields no import facts.
+  CREATE TABLE structural_parsed_content (
+    content_sha256 TEXT NOT NULL REFERENCES content (sha256),
+    dialect TEXT NOT NULL CHECK (dialect IN ('typescript', 'typescript-jsx')),
+    status TEXT NOT NULL CHECK (status IN ('parsed', 'syntax_error')),
+    PRIMARY KEY (content_sha256, dialect)
+  ) STRICT, WITHOUT ROWID;
+
+  -- Module specifiers of the import declarations in one content text, exactly as written.
+  CREATE TABLE content_import (
+    content_sha256 TEXT NOT NULL,
+    dialect TEXT NOT NULL,
+    specifier TEXT NOT NULL,
+    PRIMARY KEY (content_sha256, dialect, specifier),
+    FOREIGN KEY (content_sha256, dialect) REFERENCES structural_parsed_content (content_sha256, dialect)
+  ) STRICT, WITHOUT ROWID;
+
+  -- A resolved relationship between two artifacts of one snapshot, stored once in the direction
+  -- source -> target (the source imports the target). 'test-to-source' is stored in addition to
+  -- 'imports' when the source path is a test file. Reverse lookups query target_artifact_id.
+  CREATE TABLE snapshot_relationship (
+    snapshot_id INTEGER NOT NULL,
+    source_artifact_id INTEGER NOT NULL,
+    target_artifact_id INTEGER NOT NULL,
+    kind TEXT NOT NULL CHECK (kind IN ('imports', 'test-to-source')),
+    PRIMARY KEY (snapshot_id, source_artifact_id, target_artifact_id, kind),
+    FOREIGN KEY (snapshot_id, source_artifact_id) REFERENCES artifact_version (snapshot_id, artifact_id),
+    FOREIGN KEY (snapshot_id, target_artifact_id) REFERENCES artifact_version (snapshot_id, artifact_id),
+    CHECK (source_artifact_id <> target_artifact_id)
+  ) STRICT, WITHOUT ROWID;
+
+  CREATE INDEX snapshot_relationship_target_idx ON snapshot_relationship (snapshot_id, target_artifact_id);
+
+  -- Marks snapshots whose relationships are complete, including snapshots that have none.
+  CREATE TABLE structurally_indexed_snapshot (
+    snapshot_id INTEGER PRIMARY KEY REFERENCES repository_snapshot (id)
+  ) STRICT, WITHOUT ROWID;
+  `,
 ];

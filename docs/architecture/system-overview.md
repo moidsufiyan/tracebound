@@ -5,7 +5,7 @@ Tracebound follows a **Modular Monolith** architecture. As a system heavily depe
 
 ## Core Modules
 
-Only part of this list exists today: snapshot ingestion (within Ingestion), Artifacts, and the Project/Repository registration part of Projects. The GitHub, Code-Analysis, Relationships, Embeddings, Retrieval, Evidence, Reasoning and Evaluation modules, and Projects' ingestion schedules, are planned.
+Only part of this list exists today: snapshot ingestion (within Ingestion), Artifacts, the Project/Repository registration part of Projects, import extraction and snapshot relationships (the import part of Code-Analysis and Relationships), and the deterministic part of Retrieval. The GitHub module, the remainder of Code-Analysis and Relationships (history, co-change), Embeddings, the semantic and fusion parts of Retrieval, Evidence, Reasoning and Evaluation modules, and Projects' ingestion schedules, are planned.
 
 1. **Projects Module**
    - Manages user workspace context, repository configuration, and ingestion schedules.
@@ -31,7 +31,7 @@ Only part of this list exists today: snapshot ingestion (within Ingestion), Arti
     - Internally embeds the 9-case historical benchmark to automatically validate regression performance across any structural or retrieval changes.
 
 ## Persistence Boundary
-- **Persisted:** Repository metadata, snapshots, artifacts and versions, content (by hash) and snapshot exclusion records. Derived and rebuildable: the lexical token index. Planned: semantic embeddings and ingestion job state.
+- **Persisted:** Repository metadata, snapshots, artifacts and versions, content (by hash) and snapshot exclusion records. Derived and rebuildable: the lexical token index and the structural index (content import facts and per-snapshot relationships). Planned: semantic embeddings and ingestion job state.
 - **Derived/On-the-fly:** RRF calculations, candidate lists, short-lived Evidence structures, and LLM context prompts.
 
 ## Security Boundaries

@@ -19,7 +19,7 @@ See [ADR: Snapshot Ingestion and Artifact Identity](decisions/snapshot-ingestion
 
 ### Retrieval & Analysis
 - **Change:** The trigger input for an analysis (e.g., a Diff, a Pull Request, or a specific commit).
-- **Relationship:** A directed edge between two Artifacts (e.g., `imports`, `historically_co_changed`). Tagged with a temporal validity window (valid at Snapshot X).
+- **Relationship:** A directed edge between two Artifacts (e.g., `imports`, `historically_co_changed`). Tagged with a temporal validity window (valid at Snapshot X). Implemented: `imports` and `test-to-source` edges per Snapshot, source importing target (see [ADR: Structural Signals](decisions/structural-signals.md)); `historically_co_changed` is planned.
 - **Embedding:** The mathematical vector representation of an Artifact or a chunk of an Artifact, utilized by the semantic retrieval subsystem.
 
 ### Impact & Evidence

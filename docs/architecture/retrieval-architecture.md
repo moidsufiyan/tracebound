@@ -12,7 +12,7 @@ When a `Change` is submitted, two independent retrieval pipelines execute concur
 
 These two lists are combined into a mathematical union set.
 
-Implemented so far: the lexical part of the deterministic pipeline (`searchLexical`, ordered candidates with 1-based ranks), described in [ADR: Lexical Retrieval](decisions/lexical-retrieval.md). Structural relationships, the semantic pipeline and fusion are planned.
+Implemented so far: the deterministic pipeline's lexical and import-based structural signals, combined under the B6 category precedence into ordered candidates with 1-based ranks (`retrieveCandidates`); see [ADR: Lexical Retrieval](decisions/lexical-retrieval.md) and [ADR: Structural Signals](decisions/structural-signals.md). Historical co-change, the semantic pipeline and fusion are planned.
 
 ### 2. Candidate Fusion (H2 RRF)
 The unified candidate list is scored statelessly using Reciprocal Rank Fusion:
