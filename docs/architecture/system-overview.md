@@ -5,7 +5,7 @@ Tracebound follows a **Modular Monolith** architecture. As a system heavily depe
 
 ## Core Modules
 
-Only part of this list exists today: snapshot ingestion (within Ingestion), Artifacts, the Project/Repository registration part of Projects, import extraction and snapshot relationships (the import part of Code-Analysis and Relationships), the Embeddings module (chunking, an Ollama provider, stored vectors) and the deterministic and semantic parts of Retrieval. The GitHub module, the remainder of Code-Analysis and Relationships (history, co-change), the fusion part of Retrieval, Evidence, Reasoning and Evaluation modules, and Projects' ingestion schedules, are planned.
+Only part of this list exists today: snapshot ingestion (within Ingestion), Artifacts, the Project/Repository registration part of Projects, import extraction and snapshot relationships (the import part of Code-Analysis and Relationships), the Embeddings module (chunking, an Ollama provider, stored vectors) and Retrieval (deterministic, semantic and the Reciprocal Rank Fusion of the two). The GitHub module, the remainder of Code-Analysis and Relationships (history, co-change), Evidence, Reasoning and Evaluation modules, and Projects' ingestion schedules, are planned.
 
 1. **Projects Module**
    - Manages user workspace context, repository configuration, and ingestion schedules.

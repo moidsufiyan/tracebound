@@ -76,3 +76,13 @@ export { searchSemantic, type SemanticCandidate, type SemanticQuery } from './se
 export { createOllamaEmbeddingProvider, type OllamaOptions } from './semantic/ollama-provider.js';
 export { EmbeddingInputTooLongError, EmbeddingProviderError, type EmbeddingProvider } from './semantic/provider.js';
 export { EmbeddingResponseError } from './semantic/vectors.js';
+export {
+  DEFAULT_RRF_K,
+  fuseRrf,
+  InconsistentCandidateError,
+  type FusedCandidate,
+  type RankedCandidate,
+  type RankedDeterministicCandidate,
+  type RrfOptions,
+} from './retrieval/rrf.js';
+export { searchHybrid, type HybridQuery } from './retrieval/hybrid-search.js';

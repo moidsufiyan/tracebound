@@ -205,3 +205,21 @@ export function loadResearchSemantic(caseId: string): ResearchSemanticCase {
 export function loadResearchEmbeddingKeys(): Set<string> {
   return new Set(Object.keys(JSON.parse(readFileSync(join(SEMANTIC_OUTPUTS, 'ollama_embeddings_cache.json'), 'utf8'))));
 }
+
+/** The rank H2 gave a path in its fused top 20 (the only part B7's hybrid run recorded), or null beyond it. */
+export function loadResearchHybridRank(caseId: string, path: string): { rank: number | null; deterministicRank: number | null; semanticRank: number | null } {
+  const report = JSON.parse(readFileSync(join(ROOT, 'experiments', 'hybrid', 'outputs', `${caseId}.json`), 'utf8')) as {
+    h2_top_20: {
+      artifact: string;
+      deterministic_evidence: { rank: number | null };
+      semantic_evidence: { rank: number | null };
+      hybrid_evidence: { fused_rank: number };
+    }[];
+  };
+  const entry = report.h2_top_20.find((candidate) => candidate.artifact === path);
+  return {
+    rank: entry?.hybrid_evidence.fused_rank ?? null,
+    deterministicRank: entry?.deterministic_evidence.rank ?? null,
+    semanticRank: entry?.semantic_evidence.rank ?? null,
+  };
+}
