@@ -3,11 +3,11 @@ import { isSnapshotStructurallyIndexed, StructuralIndexNotBuiltError } from '../
 import type { Database } from '../db/database.js';
 import type { EmbeddingProvider } from '../semantic/provider.js';
 import { isSnapshotSemanticallyIndexed, SemanticIndexNotBuiltError } from '../semantic/semantic-index.js';
-import { searchSemantic } from '../semantic/semantic-search.js';
+import { searchSemantic, type SemanticCandidate } from '../semantic/semantic-search.js';
 import { requireReadySnapshot } from '../snapshots/snapshots.js';
-import { retrieveCandidates } from './deterministic-retrieval.js';
+import { retrieveCandidates, type DeterministicCandidate } from './deterministic-retrieval.js';
 import { isSnapshotLexicallyIndexed, LexicalIndexNotBuiltError } from './lexical-index.js';
-import { fuseRrf, type FusedCandidate } from './rrf.js';
+import { DEFAULT_RRF_K, fuseRrf, type FusedCandidate } from './rrf.js';
 
 export interface HybridQuery {
   /** The change description. */
@@ -16,6 +16,23 @@ export interface HybridQuery {
   changedPaths: readonly string[];
   /** Explicit identifiers (function or constant names) for the lexical side. */
   symbols?: readonly string[];
+}
+
+/** One hybrid run with the inputs that produced its ranking, so nothing needs to be retrieved again. */
+export interface HybridSearchResult {
+  snapshotId: number;
+  /** The query as supplied. */
+  query: HybridQuery;
+  /** The RRF constant the fusion used. */
+  rrfK: number;
+  /** The embedding model whose index the semantic ranking came from. */
+  modelId: string;
+  /** The complete deterministic ranking. */
+  deterministic: DeterministicCandidate[];
+  /** The complete semantic ranking. */
+  semantic: SemanticCandidate[];
+  /** The fused ranking: the same candidates `searchHybrid` returns. */
+  fused: FusedCandidate[];
 }
 
 /**
@@ -40,6 +57,20 @@ export async function searchHybrid(
   provider: EmbeddingProvider,
   query: HybridQuery,
 ): Promise<FusedCandidate[]> {
+  return (await searchHybridDetailed(db, snapshotId, provider, query)).fused;
+}
+
+/**
+ * The same search as `searchHybrid`, returning the deterministic and semantic rankings and the
+ * fusion settings along with the fused ranking. Evidence is built from this result, which is why
+ * it never has to repeat the retrieval or the query embedding.
+ */
+export async function searchHybridDetailed(
+  db: Database,
+  snapshotId: number,
+  provider: EmbeddingProvider,
+  query: HybridQuery,
+): Promise<HybridSearchResult> {
   const snapshot = requireReadySnapshot(db, snapshotId);
   if (!isSnapshotLexicallyIndexed(db, snapshot.id)) throw new LexicalIndexNotBuiltError(snapshot.id);
   if (!isSnapshotStructurallyIndexed(db, snapshot.id)) throw new StructuralIndexNotBuiltError(snapshot.id);
@@ -57,5 +88,14 @@ export async function searchHybrid(
     changedPaths: query.changedPaths,
   });
 
-  return fuseRrf(deterministic, semantic);
+  const rrfK = DEFAULT_RRF_K;
+  return {
+    snapshotId: snapshot.id,
+    query,
+    rrfK,
+    modelId: provider.modelId,
+    deterministic,
+    semantic,
+    fused: fuseRrf(deterministic, semantic, { k: rrfK }),
+  };
 }

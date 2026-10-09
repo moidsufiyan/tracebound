@@ -85,4 +85,18 @@ export {
   type RankedDeterministicCandidate,
   type RrfOptions,
 } from './retrieval/rrf.js';
-export { searchHybrid, type HybridQuery } from './retrieval/hybrid-search.js';
+export { searchHybrid, searchHybridDetailed, type HybridQuery, type HybridSearchResult } from './retrieval/hybrid-search.js';
+export {
+  constructEvidence,
+  DEFAULT_EVIDENCE_LIMIT,
+  type ChangedPathFacts,
+  type Evidence,
+  type EvidenceBundle,
+  type EvidenceCandidate,
+  type EvidenceOptions,
+  type FusionEvidence,
+  type LexicalEvidence,
+  type SemanticEvidence,
+  type SourceExcerpt,
+  type StructuralEvidence,
+} from './retrieval/evidence.js';

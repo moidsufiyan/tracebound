@@ -27,22 +27,77 @@ export function parseDialectFor(gitRepositoryPath: string): ParseDialect | undef
   return gitRepositoryPath.endsWith('.ts') ? 'typescript' : 'typescript-jsx';
 }
 
-/** Distinct module specifiers of the import declarations in `text`, in order of appearance. */
-export function extractImports(text: string, dialect: ParseDialect): ImportExtraction {
-  let program: unknown;
+/** The syntax tree of `text`, or undefined when the parser rejects it. */
+function parseProgram(text: string, dialect: ParseDialect): unknown {
   try {
-    program = parse(text, {
+    return parse(text, {
       sourceType: 'module',
       plugins: dialect === 'typescript-jsx' ? ['typescript', 'jsx'] : ['typescript'],
     }).program;
   } catch {
-    // Like B1, a text the parser rejects contributes no imports.
-    return { ok: false };
+    return undefined;
   }
+}
+
+/** Distinct module specifiers of the import declarations in `text`, in order of appearance. */
+export function extractImports(text: string, dialect: ParseDialect): ImportExtraction {
+  // Like B1, a text the parser rejects contributes no imports.
+  const program = parseProgram(text, dialect);
+  if (program === undefined) return { ok: false };
 
   const specifiers = new Set<string>();
   collectImportSpecifiers(program, specifiers);
   return { ok: true, specifiers: [...specifiers] };
+}
+
+/** Where one import declaration sits in the parsed text. */
+export interface ImportDeclarationLocation {
+  specifier: string;
+  /** Offsets into the text in UTF-16 code units; `end` is exclusive. */
+  start: number;
+  end: number;
+  /** 1-based, inclusive. */
+  startLine: number;
+  endLine: number;
+}
+
+export type ImportLocations = { ok: true; declarations: ImportDeclarationLocation[] } | { ok: false };
+
+/**
+ * Every import declaration in `text` (the same ones `extractImports` finds, each occurrence rather
+ * than each distinct specifier) with its position, in source order.
+ */
+export function locateImportDeclarations(text: string, dialect: ParseDialect): ImportLocations {
+  const program = parseProgram(text, dialect);
+  if (program === undefined) return { ok: false };
+
+  const declarations: ImportDeclarationLocation[] = [];
+  collectImportLocations(program, declarations);
+  return { ok: true, declarations: declarations.sort((a, b) => a.start - b.start) };
+}
+
+function collectImportLocations(node: unknown, declarations: ImportDeclarationLocation[]): void {
+  if (Array.isArray(node)) {
+    for (const child of node) collectImportLocations(child, declarations);
+    return;
+  }
+  if (node === null || typeof node !== 'object') return;
+
+  const record = node as Record<string, unknown>;
+  if (record['type'] === 'ImportDeclaration') {
+    const loc = record['loc'] as { start: { line: number }; end: { line: number } };
+    declarations.push({
+      specifier: (record['source'] as { value: string }).value,
+      start: record['start'] as number,
+      end: record['end'] as number,
+      startLine: loc.start.line,
+      endLine: loc.end.line,
+    });
+  }
+  for (const [key, child] of Object.entries(record)) {
+    if (key === 'loc' || key === 'start' || key === 'end') continue;
+    if (child !== null && typeof child === 'object') collectImportLocations(child, declarations);
+  }
 }
 
 // A generic walk, as in B1, so import declarations nested in `declare module` blocks are found too.

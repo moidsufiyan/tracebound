@@ -20,6 +20,7 @@ The unified candidate list is scored statelessly using Reciprocal Rank Fusion:
 - This organic fusion consistently elevates artifacts with dual-consensus while gracefully buffering semantic false-positives without requiring hard heuristics.
 
 ### 3. Evidence Collection
+Implemented as `constructEvidence`, which builds request-scoped, typed facts from the single hybrid run that produced the ranking (`searchHybridDetailed`) and the snapshot, verifying them against both; see [ADR: Evidence Construction](decisions/evidence-construction.md). The description below is the design it follows.
 The top-K candidates output by RRF are passed to the Evidence Module.
 Instead of passing raw rank scores to the LLM, the system materializes explicit `Evidence` objects by querying the Snapshot. 
 - Example: "Candidate X is included because it explicitly imports the changed function `foo()` on line 42."

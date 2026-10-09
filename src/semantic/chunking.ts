@@ -26,6 +26,16 @@ function formatChunk(path: string, chunkIndex: number, content: string): string 
   return `search_document: File: ${path} (Chunk ${chunkIndex})\n\n${content}`;
 }
 
+/**
+ * The source text inside an embedding input, without the `search_document: File: ...` framing that
+ * was added for the model. Undefined when `input` does not carry the framing this module gives an
+ * input of that file at that chunk index.
+ */
+export function sourceTextOfInput(path: string, input: EmbeddingInput, wholeFile: boolean): string | undefined {
+  const framing = wholeFile ? formatWhole(path, '') : formatChunk(path, input.chunkIndex, '');
+  return input.text.startsWith(framing) ? input.text.slice(framing.length) : undefined;
+}
+
 /** The B7 query: the change description and the paths of the modified files. */
 export function formatSemanticQuery(description: string, changedPaths: readonly string[]): string {
   return `search_query: Change Description: ${description}\nFiles Modified:\n${changedPaths.map((p) => `- ${p}`).join('\n')}`;
