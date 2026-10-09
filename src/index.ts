@@ -100,3 +100,30 @@ export {
   type SourceExcerpt,
   type StructuralEvidence,
 } from './retrieval/evidence.js';
+export {
+  assessImpact,
+  IMPACT_REASONING_INSTRUCTIONS,
+  planReasoningBatches,
+  ReasoningInputTooLargeError,
+  type ImpactRequest,
+} from './reasoning/impact-reasoning.js';
+export {
+  IMPACT_CLASSIFICATIONS,
+  IMPACT_OUTPUT_SCHEMA,
+  InvalidReasoningOutputError,
+  validateImpactOutput,
+  type CandidateAssessment,
+  type Finding,
+  type ImpactClassification,
+  type ImpactReport,
+} from './reasoning/impact-report.js';
+export {
+  ReasoningProviderError,
+  ReasoningProviderTimeoutError,
+  serializeReasoningInput,
+  type ReasoningCandidate,
+  type ReasoningInput,
+  type ReasoningProvider,
+  type ReasoningRequest,
+} from './reasoning/provider.js';
+export { createOllamaReasoningProvider, type OllamaReasoningOptions } from './reasoning/ollama-reasoning-provider.js';

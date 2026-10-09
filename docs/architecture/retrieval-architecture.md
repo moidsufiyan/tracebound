@@ -26,6 +26,7 @@ Instead of passing raw rank scores to the LLM, the system materializes explicit 
 - Example: "Candidate X is included because it explicitly imports the changed function `foo()` on line 42."
 
 ### 4. LLM Reasoning Boundary
+Implemented as `assessImpact`, an optional step behind a `ReasoningProvider` that classifies each candidate from its evidence and cites evidence ids, with deterministic validation of the answer; see [ADR: Impact Reasoning](decisions/impact-reasoning.md). The description below is the design it follows.
 The LLM is invoked with a heavily structured prompt containing:
 1. The `Change` context.
 2. The Top-K Candidates.
