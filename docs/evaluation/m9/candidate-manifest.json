@@ -1,0 +1,418 @@
+{
+  "schema": "tracebound.m9.candidate-manifest",
+  "schemaVersion": "1.0.0",
+  "identityScope": "database-scoped",
+  "protocol": {
+    "version": "1.3.0",
+    "amendment": "docs/evaluation/m9/protocol-amendment-1.3.0.md",
+    "amends": "evaluation protocol v1.2.0 (named by the evaluation owner; its text is not stored in this repository)",
+    "supersedes": "the H2-derived candidate selection, preserved below as historical context only"
+  },
+  "selection": {
+    "source": "production-m6-searchHybridDetailed",
+    "rrfK": 60,
+    "candidatesPerCase": 3,
+    "changedPathPolicy": "A candidate whose Git repository path is exactly equal (string equality, no normalization) to a changed path of the case is ineligible. Ineligible candidates keep their fused rank; the eligible rank counts only eligible candidates in fused order. The three candidates with the best eligible ranks are selected.",
+    "originalRun": {
+      "recordedIn": "provenance/m6-verification-run.json",
+      "recordedSha256": "f1ac5903773514ee563ede40fdd10a2ac3a8afaaa1d8ce2a4ba566067d6a6f0f",
+      "kind": "verification run on a disposable backup copy of the source database",
+      "embeddingModelId": "ollama:nomic-embed-text:v1.5@0a109f422b47",
+      "embeddingWeightsDigest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+      "rankedCandidateCounts": {
+        "TB-0001": 319,
+        "TB-0004": 541,
+        "TB-0008": 541,
+        "TB-0009": 446
+      },
+      "reproducibility": "two production runs produced identical rank order and bitwise-identical semantic scores",
+      "diagnosticRecordedIn": "provenance/m6-vs-h2-diagnostic.json",
+      "diagnosticSha256": "bc7320e667fb1f934ebcb47d81a63720d3d6d301383e56834b1d148fd6b2cf55"
+    }
+  },
+  "database": {
+    "originSha256": "3721d8fc8d16b455b1e8639cd7355b1e7177d345eeafc5d1f932671ac4cd91c4",
+    "originNote": "bench.sqlite as it was when the selection was frozen; ids below are rows of this data. The frozen release database is its logical copy (per-table digests in the release manifest)."
+  },
+  "cases": [
+    {
+      "caseId": "TB-0001",
+      "repository": "moidsufiyan/wollyway",
+      "snapshot": {
+        "id": 1,
+        "baseCommitSha": "bc84e844730daeaec1176656a448adf4e324b61d",
+        "treeSha": "90ab5cd7cfee8d691a552bae6bb496f1251de281",
+        "committedAt": "2026-09-05T16:30:53.000Z",
+        "status": "ready"
+      },
+      "changedPaths": [
+        "backend/src/services/checkout.service.ts",
+        "backend/src/services/inventory.service.ts"
+      ],
+      "changedPathFusedRanks": [
+        {
+          "path": "backend/src/services/checkout.service.ts",
+          "rank": 1
+        },
+        {
+          "path": "backend/src/services/inventory.service.ts",
+          "rank": 15
+        }
+      ],
+      "rankedCandidateCount": 319,
+      "candidates": [
+        {
+          "position": 1,
+          "artifactId": 49,
+          "versionId": 49,
+          "path": "backend/docs/cart-checkout-contract.md",
+          "kind": "document",
+          "contentSha256": "491ab0ec6ea3c10d9eea04326e2ded5b10dcb131da5dbd2114599b648dba89a3",
+          "gitBlobSha": "c5acb914f5abdc6a5457fe2622af030f9fb0eb43",
+          "fusedRank": 2,
+          "eligibleRank": 1,
+          "deterministicRank": 9,
+          "semanticRank": 3
+        },
+        {
+          "position": 2,
+          "artifactId": 3,
+          "versionId": 3,
+          "path": "CHECKOUT_STATE_MACHINE.md",
+          "kind": "document",
+          "contentSha256": "79e8d0d1ab14086e8cd9a4e66ec8698389438fec962e04b5f6c6c7c591f8af2c",
+          "gitBlobSha": "25b6b9131561891d4a2c7a53fc0e8155e0f49540",
+          "fusedRank": 3,
+          "eligibleRank": 2,
+          "deterministicRank": 7,
+          "semanticRank": 5
+        },
+        {
+          "position": 3,
+          "artifactId": 121,
+          "versionId": 121,
+          "path": "backend/src/routes/inventory.routes.ts",
+          "kind": "code",
+          "contentSha256": "e3450ba684741c03d11bd74743ea8561f17b23f5ad79948d794d4f0335fc8a2a",
+          "gitBlobSha": "131b47965fe118ef82deab18f71f9999fe87e9da",
+          "fusedRank": 4,
+          "eligibleRank": 3,
+          "deterministicRank": 14,
+          "semanticRank": 2
+        }
+      ]
+    },
+    {
+      "caseId": "TB-0004",
+      "repository": "honojs/hono",
+      "snapshot": {
+        "id": 4,
+        "baseCommitSha": "c437d7569219a21e45fa81797749e8f34fe19dcc",
+        "treeSha": "261729381755d69d6ccff8187619432af709ec18",
+        "committedAt": "2026-09-30T06:45:12.000Z",
+        "status": "ready"
+      },
+      "changedPaths": [
+        "src/middleware/etag/index.ts"
+      ],
+      "changedPathFusedRanks": [
+        {
+          "path": "src/middleware/etag/index.ts",
+          "rank": 2
+        }
+      ],
+      "rankedCandidateCount": 541,
+      "candidates": [
+        {
+          "position": 1,
+          "artifactId": 727,
+          "versionId": 1587,
+          "path": "src/middleware/etag/index.test.ts",
+          "kind": "code",
+          "contentSha256": "ce1f1d33322420c513b426353863c6cb07fec28ee3ab6bd4810c50fe616b38b9",
+          "gitBlobSha": "b13808d88fbeeff8fa21f5be9f424efc66e513dc",
+          "fusedRank": 1,
+          "eligibleRank": 1,
+          "deterministicRank": 1,
+          "semanticRank": 2
+        },
+        {
+          "position": 2,
+          "artifactId": 717,
+          "versionId": 1577,
+          "path": "src/middleware/compress/index.test.ts",
+          "kind": "code",
+          "contentSha256": "93f35bbd0d769095f8d2385f477206bf530ce1562f9df23dcb8aac2ac0250394",
+          "gitBlobSha": "2eb6529883f2f81ea8b5665f07c53e15b67939f0",
+          "fusedRank": 3,
+          "eligibleRank": 2,
+          "deterministicRank": 22,
+          "semanticRank": 8
+        },
+        {
+          "position": 3,
+          "artifactId": 756,
+          "versionId": 1616,
+          "path": "src/middleware/secure-headers/index.test.ts",
+          "kind": "code",
+          "contentSha256": "f2b5771d535d1f255763083983657bfc666100a5ff3c6e04e3becb0db2f7c77f",
+          "gitBlobSha": "c9dcae736cfe37a0c45c6d3b64f7fcb36259c518",
+          "fusedRank": 4,
+          "eligibleRank": 3,
+          "deterministicRank": 9,
+          "semanticRank": 23
+        }
+      ]
+    },
+    {
+      "caseId": "TB-0008",
+      "repository": "honojs/hono",
+      "snapshot": {
+        "id": 8,
+        "baseCommitSha": "deff529656cff775b35956f7f9071388d4eb55ae",
+        "treeSha": "6773cd9a51851e9b2b4c9bd83089495607db31c2",
+        "committedAt": "2026-10-01T12:26:01.000Z",
+        "status": "ready"
+      },
+      "changedPaths": [
+        "src/request.ts"
+      ],
+      "changedPathFusedRanks": [
+        {
+          "path": "src/request.ts",
+          "rank": 2
+        }
+      ],
+      "rankedCandidateCount": 541,
+      "candidates": [
+        {
+          "position": 1,
+          "artifactId": 611,
+          "versionId": 3093,
+          "path": "src/context.ts",
+          "kind": "code",
+          "contentSha256": "0c6b70d66a89e9d70854f29c2276cd462b81ba5e016b8d66e2a352100dceb0f3",
+          "gitBlobSha": "acd762522c3eaacc9a0ecbbb6bb8e1c0b275c517",
+          "fusedRank": 1,
+          "eligibleRank": 1,
+          "deterministicRank": 2,
+          "semanticRank": 7
+        },
+        {
+          "position": 2,
+          "artifactId": 325,
+          "versionId": 2807,
+          "path": ".github/pull_request_template.md",
+          "kind": "document",
+          "contentSha256": "103879b26c32ae75b834626575dd8c4979f056f9cab300b4bb3d4511e5a43d1a",
+          "gitBlobSha": "6fa38135e70911235d41e4e7593f18eeeade4a7a",
+          "fusedRank": 3,
+          "eligibleRank": 2,
+          "deterministicRank": 8,
+          "semanticRank": 2
+        },
+        {
+          "position": 3,
+          "artifactId": 828,
+          "versionId": 3310,
+          "path": "src/utils/headers.ts",
+          "kind": "code",
+          "contentSha256": "edb6ce9ae7887a7909231d96d56a87f34ca32f9fde4799a3e28534c48757ea1f",
+          "gitBlobSha": "8d8954b49784fec8817c05fe867ed3310fcc6e44",
+          "fusedRank": 4,
+          "eligibleRank": 3,
+          "deterministicRank": 12,
+          "semanticRank": 1
+        }
+      ]
+    },
+    {
+      "caseId": "TB-0009",
+      "repository": "honojs/hono",
+      "snapshot": {
+        "id": 9,
+        "baseCommitSha": "241ae4c72b7ab732e425f40ea28cd3af2e78d8a2",
+        "treeSha": "d4f678823eb9bbfc25ef40601a9dd464350db98b",
+        "committedAt": "2026-08-23T07:24:01.000Z",
+        "status": "ready"
+      },
+      "changedPaths": [
+        "src/utils/stream.ts"
+      ],
+      "changedPathFusedRanks": [
+        {
+          "path": "src/utils/stream.ts",
+          "rank": 2
+        }
+      ],
+      "rankedCandidateCount": 446,
+      "candidates": [
+        {
+          "position": 1,
+          "artifactId": 844,
+          "versionId": 3773,
+          "path": "src/utils/stream.test.ts",
+          "kind": "code",
+          "contentSha256": "457f58dd81a35b8c7eaa4a67500ef2bbf569483e8a63a56f6303ab09cf11c6a5",
+          "gitBlobSha": "c9edaf70e794c696ddf1ebd4e5b6b1f6a3ff6aef",
+          "fusedRank": 1,
+          "eligibleRank": 1,
+          "deterministicRank": 1,
+          "semanticRank": 5
+        },
+        {
+          "position": 2,
+          "artifactId": 647,
+          "versionId": 3576,
+          "path": "src/helper/streaming/stream.ts",
+          "kind": "code",
+          "contentSha256": "97d240f56482dedd1891067ae12c48e5a99cab8a6611eacef425582801d261d7",
+          "gitBlobSha": "6db85149ea2e3b146df0b08475f3e3ca18d6499e",
+          "fusedRank": 3,
+          "eligibleRank": 2,
+          "deterministicRank": 3,
+          "semanticRank": 3
+        },
+        {
+          "position": 3,
+          "artifactId": 646,
+          "versionId": 3575,
+          "path": "src/helper/streaming/stream.test.ts",
+          "kind": "code",
+          "contentSha256": "f90c5457c0d99a483b09397abc27cb06ad8fe3b777143a5fdffe2a03b0f584d9",
+          "gitBlobSha": "8782bfddc6cc9991895c6ff2f73306e88a34405f",
+          "fusedRank": 4,
+          "eligibleRank": 3,
+          "deterministicRank": 6,
+          "semanticRank": 2
+        }
+      ]
+    }
+  ],
+  "historicalSelection": {
+    "status": "superseded; non-authoritative; not reproduced by the production system",
+    "source": "research H2 hybrid ranking (experiments/hybrid) with changed paths excluded",
+    "candidates": [
+      {
+        "caseId": "TB-0004",
+        "snapshotId": 4,
+        "artifactId": 727,
+        "versionId": 1587,
+        "path": "src/middleware/etag/index.test.ts",
+        "kind": "code",
+        "contentSha256": "ce1f1d33322420c513b426353863c6cb07fec28ee3ab6bd4810c50fe616b38b9",
+        "gitBlobSha": "b13808d88fbeeff8fa21f5be9f424efc66e513dc"
+      },
+      {
+        "caseId": "TB-0004",
+        "snapshotId": 4,
+        "artifactId": 828,
+        "versionId": 1688,
+        "path": "src/utils/headers.ts",
+        "kind": "code",
+        "contentSha256": "edb6ce9ae7887a7909231d96d56a87f34ca32f9fde4799a3e28534c48757ea1f",
+        "gitBlobSha": "8d8954b49784fec8817c05fe867ed3310fcc6e44"
+      },
+      {
+        "caseId": "TB-0004",
+        "snapshotId": 4,
+        "artifactId": 756,
+        "versionId": 1616,
+        "path": "src/middleware/secure-headers/index.test.ts",
+        "kind": "code",
+        "contentSha256": "f2b5771d535d1f255763083983657bfc666100a5ff3c6e04e3becb0db2f7c77f",
+        "gitBlobSha": "c9dcae736cfe37a0c45c6d3b64f7fcb36259c518"
+      },
+      {
+        "caseId": "TB-0001",
+        "snapshotId": 1,
+        "artifactId": 50,
+        "versionId": 50,
+        "path": "backend/docs/checkout-order-contract.md",
+        "kind": "document",
+        "contentSha256": "38ecc23dbc3ba1d2521ee81cec2ae638f365dbb63760c30d6d1068cde596c863",
+        "gitBlobSha": "492c5f9214e770848935368ef2c51468fb03c66d"
+      },
+      {
+        "caseId": "TB-0001",
+        "snapshotId": 1,
+        "artifactId": 49,
+        "versionId": 49,
+        "path": "backend/docs/cart-checkout-contract.md",
+        "kind": "document",
+        "contentSha256": "491ab0ec6ea3c10d9eea04326e2ded5b10dcb131da5dbd2114599b648dba89a3",
+        "gitBlobSha": "c5acb914f5abdc6a5457fe2622af030f9fb0eb43"
+      },
+      {
+        "caseId": "TB-0001",
+        "snapshotId": 1,
+        "artifactId": 3,
+        "versionId": 3,
+        "path": "CHECKOUT_STATE_MACHINE.md",
+        "kind": "document",
+        "contentSha256": "79e8d0d1ab14086e8cd9a4e66ec8698389438fec962e04b5f6c6c7c591f8af2c",
+        "gitBlobSha": "25b6b9131561891d4a2c7a53fc0e8155e0f49540"
+      },
+      {
+        "caseId": "TB-0009",
+        "snapshotId": 9,
+        "artifactId": 647,
+        "versionId": 3576,
+        "path": "src/helper/streaming/stream.ts",
+        "kind": "code",
+        "contentSha256": "97d240f56482dedd1891067ae12c48e5a99cab8a6611eacef425582801d261d7",
+        "gitBlobSha": "6db85149ea2e3b146df0b08475f3e3ca18d6499e"
+      },
+      {
+        "caseId": "TB-0009",
+        "snapshotId": 9,
+        "artifactId": 646,
+        "versionId": 3575,
+        "path": "src/helper/streaming/stream.test.ts",
+        "kind": "code",
+        "contentSha256": "f90c5457c0d99a483b09397abc27cb06ad8fe3b777143a5fdffe2a03b0f584d9",
+        "gitBlobSha": "8782bfddc6cc9991895c6ff2f73306e88a34405f"
+      },
+      {
+        "caseId": "TB-0009",
+        "snapshotId": 9,
+        "artifactId": 645,
+        "versionId": 3574,
+        "path": "src/helper/streaming/sse.ts",
+        "kind": "code",
+        "contentSha256": "d66e7f8c085c6f35d3d365199f2fdb1896971de841e1c00288d94a6e458b7a54",
+        "gitBlobSha": "be658ec6164ce53bf731d42d81beca2538421451"
+      },
+      {
+        "caseId": "TB-0008",
+        "snapshotId": 8,
+        "artifactId": 325,
+        "versionId": 2807,
+        "path": ".github/pull_request_template.md",
+        "kind": "document",
+        "contentSha256": "103879b26c32ae75b834626575dd8c4979f056f9cab300b4bb3d4511e5a43d1a",
+        "gitBlobSha": "6fa38135e70911235d41e4e7593f18eeeade4a7a"
+      },
+      {
+        "caseId": "TB-0008",
+        "snapshotId": 8,
+        "artifactId": 828,
+        "versionId": 3310,
+        "path": "src/utils/headers.ts",
+        "kind": "code",
+        "contentSha256": "edb6ce9ae7887a7909231d96d56a87f34ca32f9fde4799a3e28534c48757ea1f",
+        "gitBlobSha": "8d8954b49784fec8817c05fe867ed3310fcc6e44"
+      },
+      {
+        "caseId": "TB-0008",
+        "snapshotId": 8,
+        "artifactId": 322,
+        "versionId": 2804,
+        "path": ".github/ISSUE_TEMPLATE/2-feature-request.yml",
+        "kind": "config",
+        "contentSha256": "e544038e2c5f3ef0adf76a2e374012c6e901006ad074fde43566763bf9ac9bac",
+        "gitBlobSha": "316bb2c6c25186466f97b1f2186c40cbbf969fbc"
+      }
+    ]
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "TB-0001": {
+    "stableRankingAcrossTwoRuns": true,
+    "semanticScoresBitwiseEqualAcrossRuns": true,
+    "lists": {
+      "production_top3": [
+        "backend/docs/cart-checkout-contract.md",
+        "CHECKOUT_STATE_MACHINE.md",
+        "backend/src/routes/inventory.routes.ts"
+      ],
+      "production_no_symbols_top3": [
+        "CHECKOUT_STATE_MACHINE.md",
+        "backend/docs/cart-checkout-contract.md",
+        "backend/src/services/order.service.ts"
+      ],
+      "deterministic_only_top3": [
+        "backend/src/services/order.service.ts",
+        "backend/src/controllers/inventory.controller.ts",
+        "backend/src/services/payment.service.ts"
+      ],
+      "semantic_only_top3": [
+        "CHANGELOG.md",
+        "backend/src/routes/inventory.routes.ts",
+        "backend/docs/cart-checkout-contract.md"
+      ],
+      "research_h2_top3": [
+        "backend/docs/checkout-order-contract.md",
+        "backend/docs/cart-checkout-contract.md",
+        "CHECKOUT_STATE_MACHINE.md"
+      ]
+    },
+    "expectedRanksInProduction": [
+      {
+        "path": "backend/docs/checkout-order-contract.md",
+        "fusedRank": 6,
+        "eligibleRank": 5,
+        "det": 10,
+        "sem": 10
+      },
+      {
+        "path": "backend/docs/cart-checkout-contract.md",
+        "fusedRank": 2,
+        "eligibleRank": 1,
+        "det": 9,
+        "sem": 3
+      },
+      {
+        "path": "CHECKOUT_STATE_MACHINE.md",
+        "fusedRank": 3,
+        "eligibleRank": 2,
+        "det": 7,
+        "sem": 5
+      }
+    ],
+    "listsMatchingExpectedMembership": [
+      "research_h2_top3"
+    ]
+  },
+  "TB-0004": {
+    "stableRankingAcrossTwoRuns": true,
+    "semanticScoresBitwiseEqualAcrossRuns": true,
+    "lists": {
+      "production_top3": [
+        "src/middleware/etag/index.test.ts",
+        "src/middleware/compress/index.test.ts",
+        "src/middleware/secure-headers/index.test.ts"
+      ],
+      "production_no_symbols_top3": [
+        "src/middleware/etag/index.test.ts",
+        "src/middleware/compress/index.test.ts",
+        "src/middleware/secure-headers/index.test.ts"
+      ],
+      "deterministic_only_top3": [
+        "src/middleware/etag/index.test.ts",
+        "src/router/common.case.test.ts",
+        "src/helper/css/common.case.test.tsx"
+      ],
+      "semantic_only_top3": [
+        "src/middleware/etag/index.test.ts",
+        "src/utils/headers.ts",
+        "docs/MIGRATION.md"
+      ],
+      "research_h2_top3": [
+        "src/middleware/etag/index.test.ts",
+        "src/utils/headers.ts",
+        "src/middleware/secure-headers/index.test.ts"
+      ]
+    },
+    "expectedRanksInProduction": [
+      {
+        "path": "src/middleware/etag/index.test.ts",
+        "fusedRank": 1,
+        "eligibleRank": 1,
+        "det": 1,
+        "sem": 2
+      },
+      {
+        "path": "src/utils/headers.ts",
+        "fusedRank": 12,
+        "eligibleRank": 11,
+        "det": 52,
+        "sem": 3
+      },
+      {
+        "path": "src/middleware/secure-headers/index.test.ts",
+        "fusedRank": 4,
+        "eligibleRank": 3,
+        "det": 9,
+        "sem": 23
+      }
+    ],
+    "listsMatchingExpectedMembership": [
+      "research_h2_top3"
+    ]
+  },
+  "TB-0008": {
+    "stableRankingAcrossTwoRuns": true,
+    "semanticScoresBitwiseEqualAcrossRuns": true,
+    "lists": {
+      "production_top3": [
+        "src/context.ts",
+        ".github/pull_request_template.md",
+        "src/utils/headers.ts"
+      ],
+      "production_no_symbols_top3": [
+        ".github/pull_request_template.md",
+        "src/context.ts",
+        "src/utils/headers.ts"
+      ],
+      "deterministic_only_top3": [
+        "src/request.test.ts",
+        "src/context.ts",
+        "src/utils/body.ts"
+      ],
+      "semantic_only_top3": [
+        "src/utils/headers.ts",
+        ".github/pull_request_template.md",
+        "src/helper/accepts/index.ts"
+      ],
+      "research_h2_top3": [
+        ".github/pull_request_template.md",
+        "src/utils/headers.ts",
+        ".github/ISSUE_TEMPLATE/2-feature-request.yml"
+      ]
+    },
+    "expectedRanksInProduction": [
+      {
+        "path": ".github/pull_request_template.md",
+        "fusedRank": 3,
+        "eligibleRank": 2,
+        "det": 8,
+        "sem": 2
+      },
+      {
+        "path": "src/utils/headers.ts",
+        "fusedRank": 4,
+        "eligibleRank": 3,
+        "det": 12,
+        "sem": 1
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/2-feature-request.yml",
+        "fusedRank": 10,
+        "eligibleRank": 9,
+        "det": 20,
+        "sem": 27
+      }
+    ],
+    "listsMatchingExpectedMembership": [
+      "research_h2_top3"
+    ]
+  },
+  "TB-0009": {
+    "stableRankingAcrossTwoRuns": true,
+    "semanticScoresBitwiseEqualAcrossRuns": true,
+    "lists": {
+      "production_top3": [
+        "src/utils/stream.test.ts",
+        "src/helper/streaming/stream.ts",
+        "src/helper/streaming/stream.test.ts"
+      ],
+      "production_no_symbols_top3": [
+        "src/utils/stream.test.ts",
+        "src/helper/streaming/stream.ts",
+        "src/helper/streaming/stream.test.ts"
+      ],
+      "deterministic_only_top3": [
+        "src/utils/stream.test.ts",
+        "src/helper/streaming/sse.ts",
+        "src/helper/streaming/stream.ts"
+      ],
+      "semantic_only_top3": [
+        "src/helper/streaming/stream.test.ts",
+        "src/helper/streaming/stream.ts",
+        "src/helper/streaming/sse.test.tsx"
+      ],
+      "research_h2_top3": [
+        "src/helper/streaming/stream.ts",
+        "src/helper/streaming/stream.test.ts",
+        "src/helper/streaming/sse.ts"
+      ]
+    },
+    "expectedRanksInProduction": [
+      {
+        "path": "src/helper/streaming/stream.ts",
+        "fusedRank": 3,
+        "eligibleRank": 2,
+        "det": 3,
+        "sem": 3
+      },
+      {
+        "path": "src/helper/streaming/stream.test.ts",
+        "fusedRank": 4,
+        "eligibleRank": 3,
+        "det": 6,
+        "sem": 2
+      },
+      {
+        "path": "src/helper/streaming/sse.ts",
+        "fusedRank": 6,
+        "eligibleRank": 5,
+        "det": 2,
+        "sem": 10
+      }
+    ],
+    "listsMatchingExpectedMembership": [
+      "research_h2_top3"
+    ]
+  }
+}

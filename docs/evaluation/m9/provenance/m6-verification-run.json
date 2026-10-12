@@ -1,0 +1,217 @@
+{
+  "model": "ollama:nomic-embed-text:v1.5@0a109f422b47",
+  "digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+  "cases": {
+    "TB-0001": {
+      "query": {
+        "description": "Fix checkout lua script typo and add active reservation stock reduction guard to inventory service",
+        "changedPaths": [
+          "backend/src/services/checkout.service.ts",
+          "backend/src/services/inventory.service.ts"
+        ],
+        "symbols": [
+          "RELEASE_LOCK_LUA",
+          "InventoryService.updateStock"
+        ]
+      },
+      "changed": [
+        "backend/src/services/checkout.service.ts",
+        "backend/src/services/inventory.service.ts"
+      ],
+      "top3": [
+        {
+          "rank": 2,
+          "path": "backend/docs/cart-checkout-contract.md",
+          "artifactId": 49,
+          "versionId": 49,
+          "det": 9,
+          "sem": 3,
+          "score": 0.03036576949620428
+        },
+        {
+          "rank": 3,
+          "path": "CHECKOUT_STATE_MACHINE.md",
+          "artifactId": 3,
+          "versionId": 3,
+          "det": 7,
+          "sem": 5,
+          "score": 0.030309988518943745
+        },
+        {
+          "rank": 4,
+          "path": "backend/src/routes/inventory.routes.ts",
+          "artifactId": 121,
+          "versionId": 121,
+          "det": 14,
+          "sem": 2,
+          "score": 0.02964254577157803
+        }
+      ],
+      "rrfK": 60,
+      "rankedCount": 319,
+      "changedRanks": [
+        {
+          "path": "backend/src/services/checkout.service.ts",
+          "rank": 1
+        },
+        {
+          "path": "backend/src/services/inventory.service.ts",
+          "rank": 15
+        }
+      ]
+    },
+    "TB-0004": {
+      "query": {
+        "description": "fix(etag): correctly match mixed-case header name in retainedHeader option",
+        "changedPaths": [
+          "src/middleware/etag/index.ts"
+        ],
+        "symbols": [
+          "etag"
+        ]
+      },
+      "changed": [
+        "src/middleware/etag/index.ts"
+      ],
+      "top3": [
+        {
+          "rank": 1,
+          "path": "src/middleware/etag/index.test.ts",
+          "artifactId": 727,
+          "versionId": 1587,
+          "det": 1,
+          "sem": 2,
+          "score": 0.03252247488101534
+        },
+        {
+          "rank": 3,
+          "path": "src/middleware/compress/index.test.ts",
+          "artifactId": 717,
+          "versionId": 1577,
+          "det": 22,
+          "sem": 8,
+          "score": 0.02690100430416069
+        },
+        {
+          "rank": 4,
+          "path": "src/middleware/secure-headers/index.test.ts",
+          "artifactId": 756,
+          "versionId": 1616,
+          "det": 9,
+          "sem": 23,
+          "score": 0.026540946394272742
+        }
+      ],
+      "rrfK": 60,
+      "rankedCount": 541,
+      "changedRanks": [
+        {
+          "path": "src/middleware/etag/index.ts",
+          "rank": 2
+        }
+      ]
+    },
+    "TB-0008": {
+      "query": {
+        "description": "docs(request): fix jsdoc comments for some getters",
+        "changedPaths": [
+          "src/request.ts"
+        ],
+        "symbols": [
+          "HonoRequest"
+        ]
+      },
+      "changed": [
+        "src/request.ts"
+      ],
+      "top3": [
+        {
+          "rank": 1,
+          "path": "src/context.ts",
+          "artifactId": 611,
+          "versionId": 3093,
+          "det": 2,
+          "sem": 7,
+          "score": 0.031054405392392875
+        },
+        {
+          "rank": 3,
+          "path": ".github/pull_request_template.md",
+          "artifactId": 325,
+          "versionId": 2807,
+          "det": 8,
+          "sem": 2,
+          "score": 0.030834914611005692
+        },
+        {
+          "rank": 4,
+          "path": "src/utils/headers.ts",
+          "artifactId": 828,
+          "versionId": 3310,
+          "det": 12,
+          "sem": 1,
+          "score": 0.03028233151183971
+        }
+      ],
+      "rrfK": 60,
+      "rankedCount": 541,
+      "changedRanks": [
+        {
+          "path": "src/request.ts",
+          "rank": 2
+        }
+      ]
+    },
+    "TB-0009": {
+      "query": {
+        "description": "fix(utils/stream): do not let abort listeners crash abort()",
+        "changedPaths": [
+          "src/utils/stream.ts"
+        ],
+        "symbols": [
+          "StreamingApi.abort"
+        ]
+      },
+      "changed": [
+        "src/utils/stream.ts"
+      ],
+      "top3": [
+        {
+          "rank": 1,
+          "path": "src/utils/stream.test.ts",
+          "artifactId": 844,
+          "versionId": 3773,
+          "det": 1,
+          "sem": 5,
+          "score": 0.03177805800756621
+        },
+        {
+          "rank": 3,
+          "path": "src/helper/streaming/stream.ts",
+          "artifactId": 647,
+          "versionId": 3576,
+          "det": 3,
+          "sem": 3,
+          "score": 0.031746031746031744
+        },
+        {
+          "rank": 4,
+          "path": "src/helper/streaming/stream.test.ts",
+          "artifactId": 646,
+          "versionId": 3575,
+          "det": 6,
+          "sem": 2,
+          "score": 0.03128054740957967
+        }
+      ],
+      "rrfK": 60,
+      "rankedCount": 446,
+      "changedRanks": [
+        {
+          "path": "src/utils/stream.ts",
+          "rank": 2
+        }
+      ]
+    }
+  }
+}

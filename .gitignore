@@ -36,3 +36,6 @@ logs/
 
 # Build output (reserved for future)
 out/
+
+# M9 release artifacts (frozen database, packages, review packets); never committed with the source
+release/
