@@ -174,7 +174,9 @@ const STATUS_BY_LETTER: Readonly<Record<string, FileChangeStatus>> = { A: 'added
 export async function diffCommits(repoPath: string, from: string, to: string): Promise<FileChange[]> {
   const fromSha = parseCommitSha(from);
   const toSha = parseCommitSha(to);
-  const output = await runGit(repoPath, ['diff-tree', '-r', '-z', '-M', '--name-status', '--no-commit-id', fromSha, toSha]);
+  // The trailing `--` marks both ids as revisions, so a working-tree file with the same name cannot
+  // make them ambiguous; no path follows it.
+  const output = await runGit(repoPath, ['diff-tree', '-r', '-z', '-M', '--name-status', '--no-commit-id', fromSha, toSha, '--']);
   const fields: string[] = [];
   let start = 0;
   while (start < output.length) {
@@ -206,9 +208,60 @@ export async function diffCommits(repoPath: string, from: string, to: string): P
   return changes;
 }
 
-/** Lists every non-tree entry reachable from the commit's root tree, recursively. */
-export async function listTree(repoPath: string, commitSha: string): Promise<TreeEntry[]> {
-  const output = await runGit(repoPath, ['ls-tree', '-r', '-l', '-z', '--full-tree', commitSha]);
+/** Whether the repository is a shallow clone, whose history is cut off below some commits. */
+export async function isShallowRepository(repoPath: string): Promise<boolean> {
+  return (await runGit(repoPath, ['rev-parse', '--is-shallow-repository'])).toString('utf8').trim() === 'true';
+}
+
+/** One commit of a history listing. */
+export interface HistoryCommit {
+  sha: string;
+  parents: readonly string[];
+  /** Committer time, in seconds since the epoch. */
+  committedAtSeconds: number;
+  /** The subject as Git's `%s` gives it: the first paragraph of the message, line breaks joined by spaces. */
+  subject: string;
+}
+
+/**
+ * The commits reachable from `head`, excluding those reachable from `since` when given, in the order
+ * `git log` lists them. Both must be full commit ids (InvalidCommitShaError otherwise, before Git
+ * runs). Signatures are not shown, and the message is read as UTF-8. The ids are followed by `--`,
+ * so a working-tree file named like one of them cannot make it ambiguous.
+ */
+export async function listCommitHistory(repoPath: string, head: string, since?: string): Promise<HistoryCommit[]> {
+  const range = [parseCommitSha(head), ...(since === undefined ? [] : [`^${parseCommitSha(since)}`])];
+  // -z separates commits with NUL; each record is "<sha> <parents...>\0<committer time>\0<subject>".
+  const output = await runGit(repoPath, ['-c', 'log.showSignature=false', 'log', '-z', '--encoding=UTF-8', '--format=%H %P%x00%ct%x00%s', ...range, '--']);
+  let text: string;
+  try {
+    text = strictUtf8.decode(output);
+  } catch {
+    throw new Error(`The history of ${head} contains a commit message that is not valid UTF-8`);
+  }
+  const fields = text.split('\0');
+  if (fields.at(-1) === '') fields.pop();
+  if (fields.length % 3 !== 0) throw new Error(`Unexpected git log output for ${head}`);
+  const commits: HistoryCommit[] = [];
+  for (let i = 0; i < fields.length; i += 3) {
+    const [sha, ...parents] = fields[i]!.trim().split(' ').filter((part) => part.length > 0);
+    const seconds = Number(fields[i + 1]);
+    if (!sha || !OBJECT_ID.test(sha) || parents.some((p) => !OBJECT_ID.test(p)) || !Number.isInteger(seconds)) {
+      throw new Error(`Unexpected git log record for ${head}: ${JSON.stringify(fields.slice(i, i + 3))}`);
+    }
+    commits.push({ sha, parents, committedAtSeconds: seconds, subject: fields[i + 2]! });
+  }
+  return commits;
+}
+
+/**
+ * Lists every non-tree entry reachable from the commit's root tree, recursively. With `paths`, only
+ * entries at those exact paths, or under them when a path names a directory, are listed; the paths
+ * are matched literally (no wildcards), and a partial name such as `src/a` does not match `src/ab.ts`.
+ */
+export async function listTree(repoPath: string, commitSha: string, paths?: readonly string[]): Promise<TreeEntry[]> {
+  if (paths !== undefined && paths.length === 0) return [];
+  const output = await runGit(repoPath, ['ls-tree', '-r', '-l', '-z', '--full-tree', commitSha, ...(paths ? ['--', ...paths] : [])]);
   const entries: TreeEntry[] = [];
   let start = 0;
   while (start < output.length) {
