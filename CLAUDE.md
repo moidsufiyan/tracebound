@@ -7,7 +7,7 @@ Source of truth for architecture: `docs/architecture/` (ADRs in `docs/architectu
 - Node >= 24 is required (`node:sqlite`). Tests create throwaway Git repos in the OS temp dir.
 
 ## Layout
-- `src/<module>/` follows the modular monolith: `db`, `git`, `projects`, `snapshots`, `artifacts`, `ingestion`, `analysis`, `retrieval`, `semantic`. Persistence is plain SQL in module functions taking a `Database`; there is no ORM.
+- `src/<module>/` follows the modular monolith: `db`, `git`, `projects`, `snapshots`, `artifacts`, `ingestion`, `analysis`, `retrieval`, `semantic`, `reasoning`, `investigation` (the end-to-end report), `cli` (the `investigate` command). Persistence is plain SQL in module functions taking a `Database`; there is no ORM.
 - Schema changes: append a new entry to `src/db/migrations.ts`. Never edit an applied migration.
 - `experiments/` holds standalone Phase 1 research scripts. Do not import from them or refactor them as part of production work.
 

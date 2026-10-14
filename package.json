@@ -10,7 +10,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "investigate": "node dist/cli/investigate.js"
   },
   "devDependencies": {
     "@types/node": "^24.19.1",

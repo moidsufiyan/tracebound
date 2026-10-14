@@ -128,3 +128,15 @@ export {
   type ReasoningRequest,
 } from './reasoning/provider.js';
 export { createOllamaReasoningProvider, type OllamaReasoningOptions } from './reasoning/ollama-reasoning-provider.js';
+export {
+  describeEvidence,
+  investigateChange,
+  type ChangedFile,
+  type EvidenceLine,
+  type InvestigationCandidate,
+  type InvestigationOptions,
+  type InvestigationReport,
+  type ReasoningStatus,
+  type RetrievalSignals,
+} from './investigation/investigate.js';
+export { renderInvestigationMarkdown } from './investigation/render.js';

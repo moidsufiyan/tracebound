@@ -132,6 +132,80 @@ function parseCommitHeaders(sha: string, body: string): Omit<CommitInfo, 'sha'> 
   return { treeSha, committedAt: new Date(Number(seconds) * 1000).toISOString() };
 }
 
+/**
+ * Whether commit `ancestor` is an ancestor of (or the same as) commit `descendant`;
+ * `git merge-base --is-ancestor` answers with its exit code. Both must be full commit ids
+ * (InvalidCommitShaError otherwise, before Git runs) of commits that exist.
+ */
+export async function isAncestor(repoPath: string, ancestor: string, descendant: string): Promise<boolean> {
+  const ancestorSha = parseCommitSha(ancestor);
+  const descendantSha = parseCommitSha(descendant);
+  try {
+    await runGit(repoPath, ['merge-base', '--is-ancestor', ancestorSha, descendantSha]);
+    return true;
+  } catch (error) {
+    if (error instanceof GitCommandError && error.exitCode === 1) return false;
+    throw error;
+  }
+}
+
+export type FileChangeStatus = 'added' | 'modified' | 'deleted' | 'renamed' | 'type_changed';
+
+/** One file that differs between two commits. */
+export interface FileChange {
+  status: FileChangeStatus;
+  /** The path in the newer commit; for a deletion, the path that was deleted. */
+  path: string;
+  /** For a rename, the path in the older commit; otherwise null. */
+  previousPath: string | null;
+  /** For a rename, Git's similarity score in percent; otherwise null. */
+  similarity: number | null;
+}
+
+const STATUS_BY_LETTER: Readonly<Record<string, FileChangeStatus>> = { A: 'added', M: 'modified', D: 'deleted', R: 'renamed', T: 'type_changed' };
+
+/**
+ * The files that differ between two commits, as `git diff-tree -r -M` reports them: whole-tree
+ * comparison, recursive, with rename detection at Git's default similarity threshold (50%). Copies
+ * are not detected, so a copied file is reported as added. Both ids must be full commit ids
+ * (InvalidCommitShaError otherwise, before Git runs); no working tree, index or ref is read. Paths
+ * are exactly as recorded in the trees.
+ */
+export async function diffCommits(repoPath: string, from: string, to: string): Promise<FileChange[]> {
+  const fromSha = parseCommitSha(from);
+  const toSha = parseCommitSha(to);
+  const output = await runGit(repoPath, ['diff-tree', '-r', '-z', '-M', '--name-status', '--no-commit-id', fromSha, toSha]);
+  const fields: string[] = [];
+  let start = 0;
+  while (start < output.length) {
+    const end = output.indexOf(0, start);
+    const field = output.subarray(start, end === -1 ? output.length : end);
+    try {
+      fields.push(strictUtf8.decode(field));
+    } catch {
+      throw new Error(`The diff between ${fromSha} and ${toSha} contains a path that is not valid UTF-8: ${field.toString('hex')}`);
+    }
+    start = end === -1 ? output.length : end + 1;
+  }
+  const changes: FileChange[] = [];
+  for (let i = 0; i < fields.length; ) {
+    const code = fields[i++]!;
+    const status = STATUS_BY_LETTER[code[0] ?? ''];
+    if (!status) throw new Error(`Unexpected change status ${JSON.stringify(code)} between ${fromSha} and ${toSha}`);
+    if (status === 'renamed') {
+      const previousPath = fields[i++];
+      const path = fields[i++];
+      if (previousPath === undefined || path === undefined) throw new Error(`Truncated rename record between ${fromSha} and ${toSha}`);
+      changes.push({ status, path, previousPath, similarity: Number(code.slice(1)) });
+    } else {
+      const path = fields[i++];
+      if (path === undefined) throw new Error(`Truncated change record between ${fromSha} and ${toSha}`);
+      changes.push({ status, path, previousPath: null, similarity: null });
+    }
+  }
+  return changes;
+}
+
 /** Lists every non-tree entry reachable from the commit's root tree, recursively. */
 export async function listTree(repoPath: string, commitSha: string): Promise<TreeEntry[]> {
   const output = await runGit(repoPath, ['ls-tree', '-r', '-l', '-z', '--full-tree', commitSha]);
