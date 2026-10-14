@@ -195,8 +195,16 @@ describe('assessImpact', () => {
 });
 
 describe('invalid answers fail the analysis', () => {
+  // Only the answers vary within a test, so the snapshot and evidence are prepared once per test
+  // (each prepare commits and ingests through Git, the slow part) and reused: assessImpact writes
+  // nothing and the evidence package is frozen. Reset per test, since the database is per test.
+  let prepared: Prepared | undefined;
+  beforeEach(() => {
+    prepared = undefined;
+  });
+
   const run = async (respond: (input: ReasoningInput) => unknown) => {
-    const prepared = await prepare();
+    prepared ??= await prepare();
     const provider = new FakeReasoningProvider({ respond: (request) => respond(request.input) });
     return assessImpact(db, prepared.snapshotId, provider, { description: DESCRIPTION, bundle: prepared.bundle });
   };
