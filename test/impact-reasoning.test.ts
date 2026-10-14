@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { indexSnapshotStructurally } from '../src/analysis/structural-index.js';
 import { openDatabase, type Database } from '../src/db/database.js';
@@ -10,6 +11,7 @@ import { InconsistentCandidateError } from '../src/retrieval/rrf.js';
 import {
   assessImpact,
   IMPACT_REASONING_INSTRUCTIONS,
+  IMPACT_REASONING_INSTRUCTIONS_VERSION,
   planReasoningBatches,
   ReasoningInputTooLargeError,
 } from '../src/reasoning/impact-reasoning.js';
@@ -358,6 +360,29 @@ describe('untrusted text', () => {
     expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/independently/);
     expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/no tools/i);
     expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/Do not give a confidence number/);
+  });
+
+  it('has instructions that explain evidence direction and meaning and when to abstain (version 1.3.0)', () => {
+    expect(IMPACT_REASONING_INSTRUCTIONS_VERSION).toBe('1.3.0');
+    expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/"incoming-import" means the candidate imports a changed file/);
+    expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/"outgoing-import" means a changed file imports the candidate/);
+    expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/"test-to-source" means the candidate is a test that imports a changed file/);
+    expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/does not show that a particular symbol is used or that the changed behavior is executed/);
+    expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/it is not a count of tests, calls or uses/);
+    expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/None of them proves that the change affects the file/);
+    expect(IMPACT_REASONING_INSTRUCTIONS).toMatch(/When you find no relationship, answer insufficient_evidence/);
+  });
+
+  it('tells the model that likely_affected needs evidence in which the candidate is the importer (the rule grounding.ts enforces)', () => {
+    const rule = IMPACT_REASONING_INSTRUCTIONS.split('\n').find((line) => line.startsWith('- likely_affected:'))!;
+    expect(rule).toMatch(/the candidate imports a changed file \("candidateIs" is "source", that is "incoming-import" or "test-to-source"\)/);
+    expect(rule).toMatch(/"outgoing-import", "candidateIs" "target"\) does not qualify/);
+    expect(rule).toMatch(/whose import declaration was located/);
+  });
+
+  it('pins the instruction text to its version: any edit needs a new version and a new hash', () => {
+    const sha256 = createHash('sha256').update(IMPACT_REASONING_INSTRUCTIONS).digest('hex');
+    expect([IMPACT_REASONING_INSTRUCTIONS_VERSION, sha256]).toEqual(['1.3.0', '5a92ff927c3996bf583e5794c53a5ca3477c7c3e5d83f886674ab7778a8f88d8']);
   });
 });
 

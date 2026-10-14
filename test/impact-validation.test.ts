@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import type { FusionEvidence } from '../src/retrieval/evidence.js';
+import type { FusionEvidence, StructuralEvidence } from '../src/retrieval/evidence.js';
 import {
   IMPACT_CLASSIFICATIONS,
   InvalidReasoningOutputError,
@@ -23,6 +23,24 @@ const INPUT: ReasoningInput = {
   snapshot: { id: 7, commitSha: 'a'.repeat(40) },
   change: { description: 'Fix the lock', changedPaths: ['src/lock.ts'] },
   candidates: [candidate(1), candidate(2), candidate(3)],
+};
+
+/** Candidate 1 with a located structural relationship to the changed file (it imports it). */
+const IMPORTING: StructuralEvidence = {
+  type: 'structural',
+  id: 's1',
+  snapshotId: 7,
+  signal: 'incoming-import',
+  relationship: 'imports',
+  source: { artifactId: 1, versionId: 101, path: 'src/f1.ts' },
+  target: { artifactId: 50, versionId: 150, path: 'src/lock.ts' },
+  candidateIs: 'source',
+  changedPath: 'src/lock.ts',
+  declarations: [{ specifier: './lock', startLine: 1, endLine: 1, excerpt: { text: "import { lock } from './lock'", truncated: false, totalChars: 29 } }],
+};
+const WITH_STRUCTURE: ReasoningInput = {
+  ...INPUT,
+  candidates: [{ ...candidate(1), evidence: [IMPORTING, ...candidate(1).evidence] }, candidate(2), candidate(3)],
 };
 
 type Assessment = Record<string, unknown>;
@@ -59,11 +77,29 @@ describe('validateImpactOutput accepts', () => {
     expect(result[0]!.findings).toEqual([{ statement: 'Candidate 1 imports the changed file.', evidenceIds: ['e1a'] }]);
   });
 
-  it('each permitted classification', () => {
-    for (const classification of IMPACT_CLASSIFICATIONS) {
+  it('each permitted classification, on evidence that can carry it', () => {
+    // The abstaining classifications on any cited evidence of the candidate.
+    for (const classification of ['potentially_affected', 'insufficient_evidence'] as const) {
       const result = validateImpactOutput(output([assessment(1, { classification }), assessment(2), assessment(3)]), INPUT);
       expect(result[0]!.classification).toBe(classification);
     }
+    // likely_affected needs a cited, located structural relationship (impact-grounding.test.ts covers the rest).
+    const result = validateImpactOutput(
+      output([assessment(1, { classification: 'likely_affected', findings: [{ statement: 'Candidate 1 imports the changed file.', evidenceIds: ['s1'] }] }), assessment(2), assessment(3)]),
+      WITH_STRUCTURE,
+    );
+    expect(result[0]!.classification).toBe('likely_affected');
+    expect(IMPACT_CLASSIFICATIONS).toEqual(['likely_affected', 'potentially_affected', 'no_impact_indicated', 'insufficient_evidence']);
+  });
+
+  it('no_impact_indicated is a permitted value, but no current evidence type can carry it', () => {
+    // Contract change (M8.1): non-impact is never inferred from missing signals, keyword matches or scores.
+    rejects(output([assessment(1, { classification: 'no_impact_indicated' }), assessment(2), assessment(3)]), /no_impact_indicated, but none of its cited evidence can show/);
+    rejects(
+      output([assessment(1, { classification: 'no_impact_indicated', findings: [{ statement: 'Candidate 1 imports the changed file.', evidenceIds: ['s1'] }] }), assessment(2), assessment(3)]),
+      /no_impact_indicated, but none of its cited evidence can show/,
+      WITH_STRUCTURE,
+    );
   });
 
   it('an abstention with no findings, or with cited ones', () => {
@@ -224,9 +260,11 @@ describe('validateImpactOutput checks findings and their citations', () => {
 
 describe('what validation does not establish', () => {
   it('accepts a well-formed claim whose truth it cannot check', () => {
-    // Structure and references are verified; whether the statement follows from the evidence is not.
-    const claim = [{ statement: 'This file is certainly broken by the change.', evidenceIds: ['e1a'] }];
-    const result = validateImpactOutput(output([assessment(1, { classification: 'likely_affected', findings: claim }), assessment(2), assessment(3)]), INPUT);
+    // Structure, references and the deterministic grounding guards are verified; whether the
+    // statement follows from the evidence is not. A located import satisfies the likely_affected
+    // precondition without showing that the file is broken.
+    const claim = [{ statement: 'This file is certainly broken by the change.', evidenceIds: ['s1'] }];
+    const result = validateImpactOutput(output([assessment(1, { classification: 'likely_affected', findings: claim }), assessment(2), assessment(3)]), WITH_STRUCTURE);
     expect(result[0]).toMatchObject({ classification: 'likely_affected', findings: claim });
   });
 });

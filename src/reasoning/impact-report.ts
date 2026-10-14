@@ -1,3 +1,5 @@
+import type { Evidence } from '../retrieval/evidence.js';
+import { classificationGroundingProblem, findingGroundingProblem } from './grounding.js';
 import type { ReasoningCandidate, ReasoningInput } from './provider.js';
 
 export const IMPACT_CLASSIFICATIONS = ['likely_affected', 'potentially_affected', 'no_impact_indicated', 'insufficient_evidence'] as const;
@@ -89,7 +91,12 @@ export const IMPACT_OUTPUT_SCHEMA = {
  * order of `input.candidates`. It establishes structure and references only: the shape and types,
  * the snapshot, exactly the candidates supplied (by artifact, version and path, each once), a
  * permitted classification, bounded sizes, and findings that cite evidence of their own candidate.
- * It cannot tell whether a statement is true or follows from the evidence it cites.
+ * After that, the grounding guards (`grounding.ts`) reject a few explicit, deterministic mismatches
+ * between a finding and the evidence it cites (a reversed import direction, a symbol use shown only
+ * by an import, a test count from a keyword count, a quoted query term contradicted or not recorded)
+ * and two classifications the cited evidence cannot carry (`likely_affected` without a located
+ * structural relationship; `no_impact_indicated`, which no current evidence type can show). It still
+ * cannot tell whether a statement is true or follows from the evidence it cites.
  *
  * Throws InvalidReasoningOutputError for the first problem found; nothing is repaired or dropped.
  */
@@ -126,7 +133,7 @@ export function validateImpactOutput(output: unknown, input: ReasoningInput): Ca
     if (!isClassification(classification)) {
       throw new InvalidReasoningOutputError(`${label} has classification ${JSON.stringify(classification)}, which is not permitted`);
     }
-    const findings = validateFindings(record['findings'], candidate, classification, label);
+    const findings = validateFindings(record['findings'], candidate, classification, label, input.change);
     statementChars += findings.reduce((total, finding) => total + finding.statement.length, 0);
     byVersion.set(candidate.versionId, {
       artifactId: candidate.artifactId,
@@ -147,7 +154,13 @@ export function validateImpactOutput(output: unknown, input: ReasoningInput): Ca
   return input.candidates.map((candidate) => byVersion.get(candidate.versionId)!);
 }
 
-function validateFindings(raw: unknown, candidate: ReasoningCandidate, classification: ImpactClassification, label: string): Finding[] {
+function validateFindings(
+  raw: unknown,
+  candidate: ReasoningCandidate,
+  classification: ImpactClassification,
+  label: string,
+  change: ReasoningInput['change'],
+): Finding[] {
   if (!Array.isArray(raw)) throw new InvalidReasoningOutputError(`${label} has no list of findings`);
   if (raw.length > MAX_FINDINGS_PER_CANDIDATE) {
     throw new InvalidReasoningOutputError(`${label} has ${raw.length} findings; at most ${MAX_FINDINGS_PER_CANDIDATE} are accepted`);
@@ -156,8 +169,9 @@ function validateFindings(raw: unknown, candidate: ReasoningCandidate, classific
     throw new InvalidReasoningOutputError(`${label} is ${classification} but has no finding to support it`);
   }
 
-  const own = new Set(candidate.evidence.map((evidence) => evidence.id));
-  return raw.map((entry: unknown, index) => {
+  const own = new Map(candidate.evidence.map((evidence) => [evidence.id, evidence]));
+  const citedByAssessment: Evidence[] = [];
+  const findings = raw.map((entry: unknown, index) => {
     const where = `${label}, finding ${index}`;
     const record = asRecord(entry, where, ['statement', 'evidenceIds']);
     const statement = record['statement'];
@@ -181,8 +195,17 @@ function validateFindings(raw: unknown, candidate: ReasoningCandidate, classific
       if (seen.has(id)) throw new InvalidReasoningOutputError(`${where} cites ${JSON.stringify(id)} twice`);
       seen.add(id);
     }
+    // Citations are known to be this candidate's own evidence here; only then is what the
+    // statement claims compared with the cited objects.
+    const cited = (ids as string[]).map((id) => own.get(id)!);
+    const problem = findingGroundingProblem(statement, cited, { candidate, change }, where);
+    if (problem) throw new InvalidReasoningOutputError(problem);
+    citedByAssessment.push(...cited);
     return { statement, evidenceIds: ids as string[] };
   });
+  const problem = classificationGroundingProblem(classification, citedByAssessment, label);
+  if (problem) throw new InvalidReasoningOutputError(problem);
+  return findings;
 }
 
 function asRecord(value: unknown, label: string, keys: readonly string[]): Record<string, unknown> {

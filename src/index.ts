@@ -103,6 +103,7 @@ export {
 export {
   assessImpact,
   IMPACT_REASONING_INSTRUCTIONS,
+  IMPACT_REASONING_INSTRUCTIONS_VERSION,
   planReasoningBatches,
   ReasoningInputTooLargeError,
   type ImpactRequest,
