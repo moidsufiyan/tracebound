@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { listSnapshotArtifacts, readContent } from '../src/artifacts/artifacts.js';
 import { openDatabase, type Database } from '../src/db/database.js';
 import { CommitNotFoundError, InvalidCommitShaError } from '../src/git/git.js';
@@ -7,6 +7,9 @@ import { MAX_FILE_BYTES } from '../src/ingestion/file-policy.js';
 import { createProject, registerRepository, type Repository } from '../src/projects/projects.js';
 import { findSnapshot } from '../src/snapshots/snapshots.js';
 import { FixtureRepo } from './git-fixture.js';
+
+// Every test builds Git fixtures and spawns several Git processes; the 5 s default is too tight when the suite runs in parallel.
+vi.setConfig({ testTimeout: 60_000 });
 
 let db: Database;
 let fixture: FixtureRepo;

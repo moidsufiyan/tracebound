@@ -1,7 +1,7 @@
 import { existsSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { runInvestigateCli } from '../src/cli/investigate.js';
 import { openDatabase } from '../src/db/database.js';
 import { CommitNotFoundError, diffCommits, InvalidCommitShaError, isAncestor } from '../src/git/git.js';
@@ -9,6 +9,9 @@ import { changedPathsOf, EmptyChangeSetError, resolveCommitRange, UnsupportedCom
 import { investigateChange, type InvestigationReport } from '../src/investigation/investigate.js';
 import { FakeEmbeddingProvider } from './fake-embedding-provider.js';
 import { FixtureRepo } from './git-fixture.js';
+
+// Running Git CLI commands and diffs spawns many Git processes; the 5 s default is too tight when the suite runs in parallel.
+vi.setConfig({ testTimeout: 60_000 });
 
 // Git-native change input: the changed paths come from the diff of two commits, and the change is
 // investigated in the base snapshot.
