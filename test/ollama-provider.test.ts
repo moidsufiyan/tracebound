@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { createOllamaEmbeddingProvider } from '../src/semantic/ollama-provider.js';
-import { EmbeddingInputTooLongError, EmbeddingProviderError } from '../src/semantic/provider.js';
+import { EmbeddingInputTooLongError, EmbeddingProviderError, EmbeddingProviderUnavailableError } from '../src/semantic/provider.js';
 import { EmbeddingResponseError } from '../src/semantic/vectors.js';
 
 const DIGEST = '0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f';
@@ -38,6 +38,18 @@ describe('createOllamaEmbeddingProvider', () => {
     expect(provider.modelId).toBe(`ollama:nomic-embed-text:v1.5@${DIGEST.slice(0, 12)}`);
     expect(provider.dimensions).toBe(3);
     expect(provider.maxInputChars).toBe(3500);
+  });
+
+  it('reports the full weights digest the server gives for the installed model', async () => {
+    const other = `${DIGEST.slice(0, 12)}${'0'.repeat(52)}`;
+    const tags = (digest: string) => ({ models: [{ name: 'nomic-embed-text:v1.5', digest, details: { embedding_length: 3 } }] });
+    const provider = await createOllamaEmbeddingProvider({ fetch: stubFetch(() => ({ body: { embeddings: [] } }), tags(DIGEST)).implementation });
+    const sameTag = await createOllamaEmbeddingProvider({ fetch: stubFetch(() => ({ body: { embeddings: [] } }), tags(other)).implementation });
+
+    expect(provider.weightsDigest).toBe(DIGEST);
+    // Same first 12 characters, so the same model id: only the full digest tells the builds apart.
+    expect(sameTag.modelId).toBe(provider.modelId);
+    expect(sameTag.weightsDigest).toBe(other);
   });
 
   it('sends one batch request that disables silent truncation and returns validated vectors', async () => {
@@ -102,6 +114,43 @@ describe('createOllamaEmbeddingProvider', () => {
       throw new TypeError('fetch failed');
     }) as typeof fetch;
     await expect(createOllamaEmbeddingProvider({ fetch: unreachable })).rejects.toThrow(/Cannot reach Ollama/);
+  });
+
+  it('reports a server that cannot be reached, or says it is unavailable, as unavailable', async () => {
+    let reachable = true;
+    const flaky = (async (url: string | URL | Request, init?: RequestInit) => {
+      if (!reachable) throw new TypeError('fetch failed');
+      return stubFetch(() => ({ body: { embeddings: [[1, 2, 3]] } })).implementation(url, init);
+    }) as typeof fetch;
+    const provider = await createOllamaEmbeddingProvider({ fetch: flaky });
+    reachable = false;
+    const error = await provider.embed(['a']).catch((e: unknown) => e);
+    expect(error).toBeInstanceOf(EmbeddingProviderUnavailableError);
+    expect(error).toBeInstanceOf(EmbeddingProviderError);
+    expect((error as Error).cause).toBeInstanceOf(TypeError);
+
+    for (const status of [502, 503, 504]) {
+      const down = await createOllamaEmbeddingProvider({ fetch: stubFetch(() => ({ status, body: 'unavailable' })).implementation });
+      await expect(down.embed(['a'])).rejects.toThrow(EmbeddingProviderUnavailableError);
+    }
+  });
+
+  it('keeps every other failure an ordinary provider error', async () => {
+    const outcomes: [string, ReturnType<Parameters<typeof stubFetch>[0]>][] = [
+      ['server error', { status: 500, body: 'boom' }],
+      ['bad request', { status: 400, body: 'bad input' }],
+      ['not found', { status: 404, body: 'model not found' }],
+      ['not JSON', 'not json'],
+      ['unavailable text in a 500', { status: 500, body: 'service unavailable, connection refused' }],
+    ];
+    for (const [label, answer] of outcomes) {
+      const provider = await createOllamaEmbeddingProvider({ fetch: stubFetch(() => answer).implementation });
+      const error = await provider.embed(['a']).catch((e: unknown) => e);
+      expect(error, label).toBeInstanceOf(EmbeddingProviderError);
+      expect(error, label).not.toBeInstanceOf(EmbeddingProviderUnavailableError);
+    }
+    const tooLong = await createOllamaEmbeddingProvider({ fetch: stubFetch(() => ({ status: 400, body: 'the input length exceeds the context length' })).implementation });
+    await expect(tooLong.embed(['a'])).rejects.toThrow(EmbeddingInputTooLongError);
   });
 
   it('gives different ids to different builds of the same tag', async () => {

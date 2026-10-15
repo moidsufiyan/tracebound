@@ -1,0 +1,2 @@
+# Published co-change reports are cited by SHA-256; keep their LF line endings on every checkout.
+docs/evaluation/cochange/*.md text eol=lf

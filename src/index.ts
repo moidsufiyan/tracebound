@@ -73,8 +73,8 @@ export {
   type SemanticIndexingResult,
 } from './semantic/semantic-index.js';
 export { searchSemantic, type SemanticCandidate, type SemanticQuery } from './semantic/semantic-search.js';
-export { createOllamaEmbeddingProvider, type OllamaOptions } from './semantic/ollama-provider.js';
-export { EmbeddingInputTooLongError, EmbeddingProviderError, type EmbeddingProvider } from './semantic/provider.js';
+export { createOllamaEmbeddingProvider, type OllamaEmbeddingProvider, type OllamaOptions } from './semantic/ollama-provider.js';
+export { EmbeddingInputTooLongError, EmbeddingProviderError, EmbeddingProviderUnavailableError, type EmbeddingProvider } from './semantic/provider.js';
 export { EmbeddingResponseError } from './semantic/vectors.js';
 export {
   DEFAULT_RRF_K,

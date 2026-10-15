@@ -11,7 +11,8 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "investigate": "node dist/cli/investigate.js"
+    "investigate": "node dist/cli/investigate.js",
+    "cochange": "node scripts/evaluation/cochange/run.mjs"
   },
   "devDependencies": {
     "@types/node": "^24.19.1",
