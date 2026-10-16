@@ -38,13 +38,17 @@ HEAD_SHA=$(git -C "$REPO" rev-parse <commit or ref>)
 BASE_SHA=$(git -C "$REPO" rev-parse "$HEAD_SHA^")
 
 npm run investigate -- --db tracebound.sqlite --repo "$REPO" --base "$BASE_SHA" --head "$HEAD_SHA" \
-  --description "$(git -C "$REPO" log -1 --format=%s "$HEAD_SHA")" \
+  --description "Retry failed uploads once before reporting an error" \
   --out impact.md --json-out impact.json
 ```
 
+Replace the description with a sentence or two on what your change does and why. The rankings match against it, and a bare commit subject gives them little to match (see "What to expect from the ranking" under [Usage](#usage)).
+
 In PowerShell, set `$head = git -C $repo rev-parse <commit>` and `$base = git -C $repo rev-parse "$head^"`, and pass them to the same `npm run investigate -- ...` arguments.
 
-The first run on a commit ingests it and builds its three indexes into the SQLite file named by `--db`, with progress on standard error. The semantic index embeds every included file, so this takes minutes (about five for one 250-file repository on the author's machine, a single timing). Later runs against the same base reuse the stored data. Tracebound reads only Git objects: the repository's working tree, index and refs are never read or changed. Running the command with no arguments prints the usage text (there is no `--help`).
+The first run on a commit ingests it and builds its three indexes into the SQLite file named by `--db`, with progress on standard error. The semantic index embeds every included file, so this takes minutes (about five for one 250-file repository on the author's machine, a single timing). Later runs against the same base reuse the stored data. Tracebound reads only Git objects: the repository's working tree, index and refs are never read or changed. `npm run investigate -- --help` lists every option with an example.
+
+New to Tracebound? [Getting started](docs/getting-started.md) walks through setup, readiness checks, a first run, reading the report and troubleshooting.
 
 ## Usage
 
@@ -56,7 +60,7 @@ The first run on a commit ingests it and builds its three indexes into the SQLit
 | `--repo <path> --commit <full SHA> [--changed <path>]...` | The commit's snapshot, with the changed paths you name (the flag is repeatable; they are not derived). |
 | `--snapshot <id> [--changed <path>]...` | An already ingested snapshot in `--db`. |
 
-`--db` and `--description` are always required. The description is the text the term and similarity rankings match against: the commit subject works, or a sentence naming the changed behavior. Optional flags: `--symbol <name>` (extra names to match, repeatable), `--limit <n>` (candidates described, default 20), `--ollama <url>` (another Ollama server), `--format markdown|json` (default Markdown), `--out <file>` (write the report to a file, otherwise standard output) and `--json-out <file>` (also write the JSON report from the same run).
+`--db` and `--description` are always required. The description is the text the term and similarity rankings match against. A short commit subject is a start, but a sentence or two on what the change does and why gives the rankings more to match (see "What to expect from the ranking" below). Optional flags: `--symbol <name>` (extra names to match, repeatable), `--limit <n>` (candidates described, default 20), `--ollama <url>` (another Ollama server), `--format markdown|json` (default Markdown), `--out <file>` (write the report to a file, otherwise standard output) and `--json-out <file>` (also write the JSON report from the same run).
 
 **Outputs.** The Markdown report lists the changed files, a candidate table, and for each candidate its evidence with evidence ids, its retrieval signals, what that evidence cannot show, and the open questions it leaves. The JSON report holds the same information with the complete evidence objects. The optional assessment adds a classification per candidate; `insufficient_evidence` is not a finding that a file is unaffected.
 
@@ -67,7 +71,14 @@ error: InvalidCommitShaError: "HEAD~1" is not a full commit SHA; refs such as br
 hint: name commits by their full id: `git -C <repo> rev-parse <ref>` prints it, and `git -C <repo> rev-parse <sha>^` prints the parent of a commit.
 ```
 
-Invalid repositories, unknown, reversed or identical commits, and empty diffs fail before anything is ingested. A missing output directory is a usage error raised before any work starts. If an optional assessment is rejected or fails, the report still shows the evidence and the command exits 0.
+Invalid repositories, unknown, reversed or identical commits, and empty diffs fail before anything is ingested. A missing directory for `--db`, `--out` or `--json-out` is a usage error raised before any work starts. If an optional assessment is rejected or fails, the report still shows the evidence and the command exits 0.
+
+**What to expect from the ranking.** Candidates are leads to investigate, not findings. Rank, matched terms and similarity explain why a file was surfaced; none of them establishes that the change affects it. Know these limits:
+
+- **Structural evidence comes only from the base snapshot.** Import relationships are found among files that exist before the change, and only `import` declarations are read, not `export … from` re-exports. A file the change adds does not exist in the base snapshot, so it cannot anchor a relationship. A change dominated by added files, or one that touches only re-export files (such as an `index.ts` that just re-exports), may therefore have no structural evidence, and the dependencies used by newly added code can be hard to surface.
+- **Without structural evidence, shared terms and similarity decide.** The terms searched come from your description plus the base names of every changed file, added files included. They can bring up generic documentation or archival material (for example stored experiment outputs, in a repository that has them) alongside genuinely related files. The report marks these candidates "No import relationship with a changed file".
+- **Describe the behavior, not only the label.** Say what the change does and why, naming the behavior and the components involved; `--symbol` adds identifiers to the term search. A short subject gives the rankings little to match: on the evaluated commits, removing the subject lowered hybrid's Recall@10 from 0.7642 to 0.2996 (see [Evaluation](#evaluation)).
+- **Not covered by the evaluation.** The co-change evaluation never used added files as inputs, so how well Tracebound serves changes dominated by added files has not been measured.
 
 ## Example output
 
@@ -107,7 +118,7 @@ A modular monolith in TypeScript on Node.js 24, with plain SQL on `node:sqlite` 
 
 ## Evaluation
 
-A pre-registered, held-out experiment: 50 commits of `sindresorhus/got`, scored on how well each method ranked the test and documentation files the same commit also changed (a weak proxy for impact). The frozen decision rule returned **Supported**: on test files, hybrid's Recall@10 was 0.7642 (95% interval 0.6436 to 0.8723; 47 commits had a test target).
+A held-out experiment: 50 commits of `sindresorhus/got`, scored on how well each method ranked the test and documentation files the same commit also changed (a weak proxy for impact). The protocol was committed in Git before the manifest, the evaluation run and the published results were produced; that order is recorded in Git history, not in an external time-stamp or registry. The frozen decision rule returned **Supported**: on test files, hybrid's Recall@10 was 0.7642 (95% interval 0.6436 to 0.8723; 47 commits had a test target).
 
 **Read these caveats with it:**
 
@@ -122,7 +133,7 @@ Published records: [report](docs/evaluation/cochange/report.md), [machine-readab
 
 **Usable now:** the `investigate` command on a local JavaScript or TypeScript repository, with Ollama running; the library functions behind it; and the test suite.
 
-**Unproven:** whether the suggestions help developers (no user study); whether any suggested file is actually affected (no impact labels); the accuracy of the optional LLM assessment; hybrid's advantage over semantic-only retrieval; behavior on other repositories. The package is marked `private` and has not been released, and nothing here is production-ready. No adoption or usage data exists.
+**Unproven:** whether the suggestions help developers (no user study); whether any suggested file is actually affected (no impact labels); the accuracy of the optional LLM assessment; hybrid's advantage over semantic-only retrieval; behavior on other repositories or on changes dominated by added files. The package is marked `private` and has not been released, and nothing here is production-ready. No adoption or usage data exists.
 
 ## Development
 
@@ -147,6 +158,7 @@ docs/           architecture and ADRs, problem framing, research, evaluation rec
 
 ## Further reading
 
+- [Getting started](docs/getting-started.md): setup, a first run, reading the report and troubleshooting
 - [Case study](docs/case-study.md): architecture, engineering decisions, evaluation and limitations in depth
 - [System overview](docs/architecture/system-overview.md), [retrieval architecture](docs/architecture/retrieval-architecture.md), [domain model](docs/architecture/domain-model.md)
 - [Architecture decision records](docs/architecture/decisions/), starting with the [investigation report](docs/architecture/decisions/investigation-report.md)

@@ -1,9 +1,9 @@
-import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { indexSnapshotStructurally } from '../src/analysis/structural-index.js';
-import { runInvestigateCli } from '../src/cli/investigate.js';
+import { HELP, runInvestigateCli, USAGE } from '../src/cli/investigate.js';
 import { openDatabase, type Database } from '../src/db/database.js';
 import { ingestSnapshot } from '../src/ingestion/ingest-snapshot.js';
 import { investigateChange, type InvestigationReport } from '../src/investigation/investigate.js';
@@ -251,6 +251,70 @@ describe('tracebound-investigate', () => {
     const badCommit = capture();
     expect(await runInvestigateCli(['--db', join(dir, 'y.sqlite'), '--repo', fixture.path, '--commit', 'HEAD', '--description', 'x'], badCommit.deps)).toBe(1);
     expect(badCommit.err.join('')).toMatch(/error: InvalidCommitShaError/);
+  });
+
+  it('prints the help or the version to standard output and exits 0 without running', async () => {
+    for (const argv of [['--help'], ['-h'], ['--db', join(dir, 'x.sqlite'), '--help']]) {
+      const run = capture();
+      expect(await runInvestigateCli(argv, run.deps)).toBe(0);
+      expect(run.out.join('')).toBe(HELP);
+      expect(run.err).toEqual([]);
+    }
+    expect(existsSync(join(dir, 'x.sqlite'))).toBe(false);
+
+    const version = capture();
+    expect(await runInvestigateCli(['--version'], version.deps)).toBe(0);
+    const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8')) as { version: string };
+    expect(version.out.join('')).toBe(`tracebound ${pkg.version}\n`);
+  });
+
+  it('documents in the help every flag the usage names, and points usage errors to it', async () => {
+    for (const flag of new Set(USAGE.match(/--[a-z-]+/g))) expect(HELP).toContain(flag);
+    const run = capture();
+    expect(await runInvestigateCli([], run.deps)).toBe(2);
+    expect(run.err.join('')).toMatch(/--db is required\nUsage: npm run investigate -- [\s\S]*Run with --help/);
+
+    // What the command receives from `npm run investigate --db x.sqlite ...`: npm keeps only the values.
+    const swallowed = capture();
+    expect(await runInvestigateCli(['x.sqlite', 'fix'], swallowed.deps)).toBe(2);
+    expect(swallowed.err.join('')).toMatch(/Unexpected argument 'x\.sqlite'.*\nPut -- right after `npm run investigate`/);
+  });
+
+  it('refuses a --db in a missing directory before connecting to anything, and does not create it', async () => {
+    const run = capture();
+    let connected = false;
+    const missingDir = join(dir, 'missing');
+    const code = await runInvestigateCli(['--db', join(missingDir, 'tb.sqlite'), '--repo', fixture.path, '--commit', sha, '--description', 'x'], {
+      ...run.deps,
+      createEmbedder: async () => {
+        connected = true;
+        return new FakeEmbeddingProvider(VOCABULARY);
+      },
+    });
+    expect(code).toBe(2);
+    expect(run.err.join('')).toMatch(/^--db: the directory .*missing does not exist\n/);
+    expect(connected).toBe(false);
+    expect(existsSync(missingDir)).toBe(false);
+  });
+
+  it('checks the reasoning model before ingesting anything', async () => {
+    const dbFile = join(dir, 'tb.sqlite');
+    const run = capture();
+    const unknownModel = async () => {
+      throw new ReasoningProviderError('Ollama at http://127.0.0.1:11434 does not have the model "typo" installed');
+    };
+    const code = await runInvestigateCli(
+      ['--db', dbFile, '--repo', fixture.path, '--commit', sha, '--description', 'x', '--changed', 'src/billing.ts', '--reasoning-model', 'typo', '--reasoning-max-input-chars', '1000'],
+      { ...run.deps, createReasoner: unknownModel },
+    );
+    expect(code).toBe(1);
+    expect(run.err.join('')).toMatch(/^error: ReasoningProviderError: .*"typo" installed\n$/);
+    const db = openDatabase(dbFile);
+    try {
+      expect(db.prepare('SELECT COUNT(*) AS n FROM repository_snapshot').get()).toEqual({ n: 0 });
+    } finally {
+      db.close();
+    }
   });
 });
 
