@@ -1,4 +1,4 @@
-import { existsSync, mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
@@ -7,6 +7,7 @@ import { openDatabase } from '../src/db/database.js';
 import { CommitNotFoundError, diffCommits, InvalidCommitShaError, isAncestor } from '../src/git/git.js';
 import { changedPathsOf, EmptyChangeSetError, resolveCommitRange, UnsupportedCommitRangeError } from '../src/investigation/change-set.js';
 import { investigateChange, type InvestigationReport } from '../src/investigation/investigate.js';
+import { EmbeddingProviderUnavailableError } from '../src/semantic/provider.js';
 import { FakeEmbeddingProvider } from './fake-embedding-provider.js';
 import { FixtureRepo } from './git-fixture.js';
 
@@ -267,6 +268,68 @@ describe('npm run investigate with --base and --head', () => {
     const again = capture();
     expect(await runInvestigateCli(['--db', join(dir, 'tb.sqlite'), '--snapshot', String(report.snapshot.id), '--description', 'fix refund billing', '--changed', 'src/billing.ts', '--format', 'json'], again.deps)).toBe(0);
     expect((JSON.parse(again.out.join('')) as InvestigationReport).candidates.map((c) => c.evidence)).toEqual(report.candidates.map((c) => c.evidence));
+  });
+});
+
+describe('npm run investigate report files and hints', () => {
+  const capture = () => {
+    const out: string[] = [];
+    const err: string[] = [];
+    return { out, err, deps: { createEmbedder: async () => new FakeEmbeddingProvider(VOCABULARY), stdout: (t: string) => out.push(t), stderr: (t: string) => err.push(t) } };
+  };
+  const rangeArgs = (head: string, ...extra: string[]) => ['--db', join(dir, 'tb.sqlite'), '--repo', fixture.path, '--base', base, '--head', head, '--description', 'fix refund billing', ...extra];
+
+  it('writes the Markdown and the JSON report of one run', async () => {
+    const head = modify();
+    const md = join(dir, 'report.md');
+    const json = join(dir, 'report.json');
+    const run = capture();
+    expect(await runInvestigateCli(rangeArgs(head, '--out', md, '--json-out', json), run.deps)).toBe(0);
+    expect(run.out).toEqual([]);
+    expect(run.err.join('')).toContain(`JSON report written to ${json}`);
+    const markdown = readFileSync(md, 'utf8');
+    const report = JSON.parse(readFileSync(json, 'utf8')) as InvestigationReport;
+    expect(markdown).toMatch(/^# Change investigation/);
+    expect(report.candidates.length).toBeGreaterThan(0);
+    for (const c of report.candidates) for (const e of c.evidence) expect(markdown).toContain(`\`${e.id}\``);
+
+    // The same report as --format json on the same snapshot.
+    const again = capture();
+    expect(await runInvestigateCli(rangeArgs(head, '--format', 'json'), again.deps)).toBe(0);
+    expect(again.out.join('')).toBe(readFileSync(json, 'utf8'));
+  });
+
+  it('refuses unusable report paths before opening the database', async () => {
+    const head = modify();
+    const cases: [string[], RegExp][] = [
+      [['--out', join(dir, 'r.json'), '--json-out', join(dir, 'r.json')], /--out and --json-out must name different files/],
+      [['--out', join(dir, 'missing', 'r.md')], /--out: the directory .*missing does not exist/],
+      [['--json-out', join(dir, 'missing', 'r.json')], /--json-out: the directory .*missing does not exist/],
+    ];
+    for (const [extra, pattern] of cases) {
+      const run = capture();
+      expect(await runInvestigateCli(rangeArgs(head, ...extra), run.deps)).toBe(2);
+      expect(run.err.join('')).toMatch(pattern);
+    }
+    expect(existsSync(join(dir, 'tb.sqlite'))).toBe(false);
+  });
+
+  it('adds a hint for a ref given as a commit and for an unreachable embedding server', async () => {
+    const head = modify();
+    const ref = capture();
+    expect(await runInvestigateCli(['--db', join(dir, 'tb.sqlite'), '--repo', fixture.path, '--base', 'HEAD~1', '--head', head, '--description', 'x'], ref.deps)).toBe(1);
+    expect(ref.err.join('')).toMatch(/error: InvalidCommitShaError[\s\S]*\nhint: name commits by their full id: `git -C <repo> rev-parse <ref>`/);
+
+    const down = capture();
+    const unreachable = async () => {
+      throw new EmbeddingProviderUnavailableError('Cannot reach Ollama at http://127.0.0.1:11434/api/tags');
+    };
+    expect(await runInvestigateCli(rangeArgs(head), { ...down.deps, createEmbedder: unreachable })).toBe(1);
+    expect(down.err.join('')).toMatch(/error: EmbeddingProviderUnavailableError[\s\S]*\nhint: .*`ollama pull nomic-embed-text:v1\.5`/);
+
+    const other = capture();
+    expect(await runInvestigateCli(['--db', join(dir, 'tb.sqlite'), '--snapshot', '99', '--description', 'x'], other.deps)).toBe(1);
+    expect(other.err.join('')).not.toContain('hint:');
   });
 });
 

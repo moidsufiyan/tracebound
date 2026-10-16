@@ -1,9 +1,10 @@
-import { writeFileSync } from 'node:fs';
-import { basename, resolve } from 'node:path';
+import { existsSync, writeFileSync } from 'node:fs';
+import { basename, dirname, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { indexSnapshotStructurally, isSnapshotStructurallyIndexed } from '../analysis/structural-index.js';
 import { openDatabase, type Database } from '../db/database.js';
+import { InvalidCommitShaError } from '../git/git.js';
 import { ingestSnapshot } from '../ingestion/ingest-snapshot.js';
 import { changedPathsOf, resolveCommitRange } from '../investigation/change-set.js';
 import { investigateChange } from '../investigation/investigate.js';
@@ -13,7 +14,7 @@ import { createOllamaReasoningProvider } from '../reasoning/ollama-reasoning-pro
 import type { ReasoningProvider } from '../reasoning/provider.js';
 import { indexSnapshotLexically, isSnapshotLexicallyIndexed } from '../retrieval/lexical-index.js';
 import { createOllamaEmbeddingProvider } from '../semantic/ollama-provider.js';
-import type { EmbeddingProvider } from '../semantic/provider.js';
+import { EmbeddingInputTooLongError, EmbeddingProviderError, type EmbeddingProvider } from '../semantic/provider.js';
 import { indexSnapshotSemantically, isSnapshotSemanticallyIndexed } from '../semantic/semantic-index.js';
 
 // `tracebound-investigate`: investigate one change in one repository snapshot and print the report.
@@ -23,7 +24,7 @@ import { indexSnapshotSemantically, isSnapshotSemanticallyIndexed } from '../sem
 //     | --repo <path> --commit <full sha> [--changed <path>]...
 //     | --repo <path> --base <full sha> --head <full sha> )
 //     [--symbol <name>]... [--limit <n>]
-//     [--format markdown|json] [--out <file>] [--ollama <url>]
+//     [--format markdown|json] [--out <file>] [--json-out <file>] [--ollama <url>]
 //     [--reasoning-model <name> --reasoning-max-input-chars <n> [--reasoning-context-tokens <n>] [--reasoning-timeout-ms <n>]]
 //
 // With --repo and --commit the commit is ingested and indexed if it is not already (commits are
@@ -31,11 +32,12 @@ import { indexSnapshotSemantically, isSnapshotSemanticallyIndexed } from '../sem
 // paths are derived from the diff of the two commits (the base must be an ancestor of the head),
 // and the change is investigated in the base snapshot, the state before the change. Missing indexes are built, which for the
 // semantic index embeds the whole snapshot. The impact assessment runs only when a reasoning model
-// is named; without one, the report describes the evidence alone.
+// is named; without one, the report describes the evidence alone. --json-out also writes the JSON
+// report of the same run, so the Markdown and the JSON always describe one retrieval.
 
 export const USAGE = `Usage: tracebound-investigate --db <file> --description <text>
   (--snapshot <id> [--changed <path>]... | --repo <path> --commit <full sha> [--changed <path>]... | --repo <path> --base <full sha> --head <full sha>)
-  [--symbol <name>]... [--limit <n>] [--format markdown|json] [--out <file>]
+  [--symbol <name>]... [--limit <n>] [--format markdown|json] [--out <file>] [--json-out <file>]
   [--ollama <url>] [--reasoning-model <name> --reasoning-max-input-chars <n> [--reasoning-context-tokens <n>] [--reasoning-timeout-ms <n>]]`;
 
 export interface CliDependencies {
@@ -85,12 +87,17 @@ export async function runInvestigateCli(argv: readonly string[], dependencies: P
       { description: args.description, changedPaths, ...(args.symbols.length ? { symbols: args.symbols } : {}) },
       { ...(args.limit !== undefined ? { limit: args.limit } : {}), ...(reasoning ? { reasoning } : {}), ...(range ? { commitRange: range } : {}) },
     );
-    const text = args.format === 'json' ? `${JSON.stringify(report, null, 2)}\n` : renderInvestigationMarkdown(report);
+    const json = `${JSON.stringify(report, null, 2)}\n`;
+    const text = args.format === 'json' ? json : renderInvestigationMarkdown(report);
     if (args.out) {
       writeFileSync(args.out, text);
       deps.stderr(`Report written to ${args.out}\n`);
     } else {
       deps.stdout(text);
+    }
+    if (args.jsonOut) {
+      writeFileSync(args.jsonOut, json);
+      deps.stderr(`JSON report written to ${args.jsonOut}\n`);
     }
     if (report.reasoning.status === 'rejected' || report.reasoning.status === 'failed') {
       deps.stderr(`Impact assessment ${report.reasoning.status}; the report shows the evidence without classifications.\n`);
@@ -102,6 +109,8 @@ export async function runInvestigateCli(argv: readonly string[], dependencies: P
       return 2;
     }
     deps.stderr(`error: ${error instanceof Error ? `${error.name}: ${error.message}` : String(error)}\n`);
+    const hint = hintFor(error);
+    if (hint) deps.stderr(`hint: ${hint}\n`);
     return 1;
   } finally {
     db?.close();
@@ -122,6 +131,7 @@ interface Args {
   limit: number | undefined;
   format: 'markdown' | 'json';
   out: string | undefined;
+  jsonOut: string | undefined;
   ollama: string | undefined;
   reasoningModel: string | undefined;
   reasoningMaxInputChars: number | undefined;
@@ -148,6 +158,7 @@ function parse(argv: readonly string[]): Args {
         limit: { type: 'string' },
         format: { type: 'string' },
         out: { type: 'string' },
+        'json-out': { type: 'string' },
         ollama: { type: 'string' },
         'reasoning-model': { type: 'string' },
         'reasoning-max-input-chars': { type: 'string' },
@@ -178,6 +189,12 @@ function parse(argv: readonly string[]): Args {
   const model = values['reasoning-model'];
   const budget = positiveInteger(values['reasoning-max-input-chars'], '--reasoning-max-input-chars');
   if ((model === undefined) !== (budget === undefined)) throw new UsageError('--reasoning-model and --reasoning-max-input-chars go together');
+  const jsonOut = values['json-out'];
+  if (values.out !== undefined && jsonOut !== undefined && resolve(values.out) === resolve(jsonOut)) throw new UsageError('--out and --json-out must name different files');
+  // Checked before anything runs: building the semantic index of a new snapshot can take minutes.
+  for (const [flag, file] of [['--out', values.out], ['--json-out', jsonOut]] as const) {
+    if (file !== undefined && !existsSync(dirname(resolve(file)))) throw new UsageError(`${flag}: the directory ${dirname(resolve(file))} does not exist`);
+  }
   return {
     db: values.db,
     snapshot: positiveInteger(values.snapshot, '--snapshot'),
@@ -192,6 +209,7 @@ function parse(argv: readonly string[]): Args {
     limit: positiveInteger(values.limit, '--limit'),
     format,
     out: values.out,
+    jsonOut,
     ollama: values.ollama,
     reasoningModel: model,
     reasoningMaxInputChars: budget,
@@ -205,6 +223,17 @@ function positiveInteger(value: string | undefined, name: string): number | unde
   const n = Number(value);
   if (!Number.isInteger(n) || n <= 0) throw new UsageError(`${name} must be a positive integer`);
   return n;
+}
+
+/** What the user can do about an error whose message alone does not say. */
+function hintFor(error: unknown): string | undefined {
+  if (error instanceof InvalidCommitShaError) {
+    return 'name commits by their full id: `git -C <repo> rev-parse <ref>` prints it, and `git -C <repo> rev-parse <sha>^` prints the parent of a commit.';
+  }
+  if (error instanceof EmbeddingProviderError && !(error instanceof EmbeddingInputTooLongError)) {
+    return 'the semantic index needs a local Ollama server with nomic-embed-text:v1.5: start Ollama, run `ollama pull nomic-embed-text:v1.5`, or name the server with --ollama <url>.';
+  }
+  return undefined;
 }
 
 /** The ready snapshot of `commit` in the repository at `repoPath`, registering and ingesting as needed. */
